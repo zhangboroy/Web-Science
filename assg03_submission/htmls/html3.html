@@ -1,0 +1,252 @@
+
+
+<!doctype html>
+<html lang="en" class="supports-viewport-unit-transform default is-not-kiosk promoting shows-brand-logo seams branding-sigalert">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+		<meta itemprop="server" content="10.148.11.226"><meta name="description" content="Nationwide traffic reports. Real-time speeds, accidents, and traffic cameras.  Check conditions on key local routes. Email or text traffic alerts on your personalized routes.">
+<meta name="keywords" content="Nationwide traffic,traffic map,real-time traffic,traffic camera,traffic report,traffic conditions,live traffic,traffic problem,highway map,road conditions,traffic alert,cigalert,all your local roads">
+		<title>Sigalert</title>
+
+		
+	<link rel="stylesheet" type="text/css" href="https://cdn-static.sigalert.com/214/Min/mobile/default.css">
+
+
+<style type="text/css">
+	
+</style>
+					<script type="text/javascript">
+						var googletag = googletag || {};
+						googletag.cmd = googletag.cmd || [];
+						(function() {
+							var gads = document.createElement('script');
+							gads.async = true;
+							gads.type = 'text/javascript';
+							var useSSL = 'https:' == document.location.protocol;
+							gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+							var node = document.getElementsByTagName('script')[0];
+							node.parentNode.insertBefore(gads, node);
+						})();
+					</script>
+				
+	</head>
+	<body>
+		
+			<header class="page-header flex flex-align-items-center">
+				
+					<div class="page-header-logo flex-grow-1 page-header-logo-svg page-header-logo-small-svg">
+						<img src="https://cdn-static.sigalert.com/214/Images/sigalert-logo-white.svg" class="page-header-logo-image">
+						<img src="https://cdn-static.sigalert.com/214/Images/sigalert-logo-small.svg" class="page-header-small-logo-image">
+						<h1 class="page-header-title">St. Lous Traffic Report</h1>
+					</div>
+				
+
+				<div id="page-header-banner-xs" class="page-header-banner page-header-banner-xs">
+					<script type="text/javascript">
+						googletag.cmd.push(function() { googletag.display('page-header-banner-xs'); });
+					</script>
+				</div>
+				<div id="page-header-banner-sm" class="page-header-banner page-header-banner-sm">
+					<script type="text/javascript">
+						googletag.cmd.push(function() { googletag.display('page-header-banner-sm'); });
+					</script>
+				</div>
+				<div id="page-header-banner-md" class="page-header-banner page-header-banner-md">
+					<script type="text/javascript">
+						googletag.cmd.push(function() { googletag.display('page-header-banner-md'); });
+					</script>
+				</div>
+				<div id="page-header-banner-lg" class="page-header-banner page-header-banner-lg">
+					<script type="text/javascript">
+						googletag.cmd.push(function() { googletag.display('page-header-banner-lg'); });
+					</script>
+				</div>
+				<div id="page-header-banner-xl" class="page-header-banner page-header-banner-xl">
+					<script type="text/javascript">
+						googletag.cmd.push(function() { googletag.display('page-header-banner-xl'); });
+					</script>
+				</div>
+			</header>
+		
+
+		<div class="page-body">
+			<main class="map">
+				<div id="map"></div>
+			</main>
+
+			
+				<aside id="aux" class="pane aux-pane">
+					<div class="aux-content">
+						<div id="aux-sheets" class="sheets has-no-sheets">
+							<div class="pane-header sheets-header">
+								<button type="button" class="btn btn-icon btn-flat-icon btn-zoom-hover sheets-header-btn back" data-back="sheets">
+									<i class="icon-arrow-left"></i>
+								</button>
+								<h4 class="title">
+									<span class="title-text">Traffic Details</span>
+								</h4>
+								<button type="button" class="btn btn-icon btn-flat-icon btn-zoom-hover sheets-header-btn pane-resizer pane-resizer-down" data-pane-resize="down">
+									<i class="icon-chevron-down"></i>
+								</button>
+								<button type="button" class="btn btn-icon btn-flat-icon btn-zoom-hover sheets-header-btn pane-resizer pane-resizer-up" data-pane-resize="up">
+									<i class="icon-chevron-up"></i>
+								</button>
+								<button type="button" class="close sheets-header-btn" data-dismiss="pane" aria-hidden="true">&times;</button>
+							</div>
+
+							<div class="pane-body">
+								<div class="road-header aux-road-header hide">
+									<span class="header-location">Location</span>
+									<span class="header-hov">
+										<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 200" xml:space="preserve">
+											<polygon fill="none" stroke="#000000" stroke-width="20" stroke-miterlimit="10" points="10,100 50,18 90,100 50,182 "></polygon>
+										</svg>
+									</span>
+									<span class="header-mph">MPH</span>
+								</div>
+
+								<div class="sheet sheet-traffic-list-items effeckt-page-transition" data-sheet-title="Traffic Details">
+									<div id="mapTrafficItemList"></div>
+								</div>
+
+								<div class="sheet sheet-hotspot-road effeckt-page-transition" data-sheet-title="Traffic Details">
+									<div id="hotspotRoad"></div>
+								</div>
+
+								<div class="sheet sheet-camera effeckt-page-transition" data-sheet-title="Camera">
+									<div id="camera"></div>
+								</div>
+
+								<div class="sheet sheet-road effeckt-page-transition" data-sheet-title="Road Details">
+									<div id="road"></div>
+								</div>
+
+								<div class="sheet sheet-incident effeckt-page-transition" data-sheet-title="Incident">
+									<div id="incident"></div>
+								</div>
+
+								<div class="sheet sheet-map-route effeckt-page-transition" data-sheet-title="Mapped Route">
+									<div id="mapRoute"></div>
+								</div>
+
+								<div class="sheet sheet-instructions show-on-no-sheets">
+									<div class="absolute-vertical-center">
+										Select a point on the map to view speeds, incidents, and cameras.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+						<div class="aux-corner">
+							<div id="aux-banner-md" class="aux-banner aux-banner-md">
+								<script type="text/javascript">
+									googletag.cmd.push(function() { googletag.display('aux-banner-md'); });
+								</script>
+							</div>
+							<div id="aux-banner-xs" class="aux-banner aux-banner-xs">
+								<script type="text/javascript">
+									googletag.cmd.push(function() { googletag.display('aux-banner-xs'); });
+								</script>
+							</div>
+						</div>
+					
+				</aside>
+
+				<div id="route-list" class="pane route-list-pane sheets"></div>
+			
+		</div>
+
+		<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-85482-7']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script><script>
+	 document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+</script><script type="text/javascript">
+	sigalert = {
+		"config": {
+			"tables": {
+				"config": [{"id":"partner","partnerId":"sigalert","isKnown":true,"debug":false,"showAds":true,"branding":"sigalert","emitAppMessages":false,"affiliateId":9999,"tenantId":10,"homepageURL":"https://www.sigalert.com/","comScoreTagType":"2","logInternally":false,"useUpdatingCameras":false,"routesEnabled":true,"analyticsEnabled":true,"userAccountsEnabled":true,"accountCreation":"trial","freeAccounts":false,"showAdsToLoggedInUsers":false,"useMapOnly":false,"seamless":false,"kioskMode":false,"detectHighDPI":true,"trackUserLocation":true,"trackUserToAnyRegion":true,"showUserLocationAccuracy":true,"showMapZoomButtons":true,"showMapFollowUserButton":true,"showMapRefreshButton":true,"showMapChangeCitiesButton":true,"showMapTimestamp":true,"showMapCameras":true,"showMapAboutButton":true,"showBrandLogo":true,"showMapLegend":false,"autoRefreshData":false,"showMapCamerasAutomatically":true,"followUserAutomatically":false,"preventDefaultChangeCitiesBehavior":false,"mapDraggingEnabled":true,"mapDoubleClickZoomEnabled":true,"mapScrollWheelZoomEnabled":true,"mapTouchZoomEnabled":true,"mapBoxZoomEnabled":true,"mapKeyboardNavigationEnabled":true,"useGPS":true,"cssMapControlsTopOffset":"","cssMapControlsBottomOffset":"","cssMapControlsLeftOffset":"","cssMapControlsRightOffset":"","cameraIconUrl":"https://cdn-static.sigalert.com/214/Images/Themes/Common/CameraIcon.png","cameraIconWidth":15,"cameraIconHeight":12,"cameraIconAnchorX":7,"cameraIconAnchorY":6,"userLocationIconUrl":"https://cdn-static.sigalert.com/214/Images/user-location-marker.png","userLocationHeadingIconUrl":"https://cdn-static.sigalert.com/214/Images/user-location-arrow.png","userLocationIconWidth":30,"userLocationIconHeight":30,"userLocationIconAnchorX":15,"userLocationIconAnchorY":15,"userLocationAccuracyStrokeWidth":3,"userLocationAccuracyStrokeColor":"#03f","userLocationAccuracyStrokeOpacity":0.5,"userLocationAccuracyFillColor":"#03f","userLocationAccuracyFillOpacity":0.2,"siteType":"portal"}, {"id":"page","cookieDomain":".sigalert.com","cookiePath":"/","imageHost":"https://cdn-static.sigalert.com/214/Images","maxAdAgeMS":300000,"maxDataAgeMS":300000,"dataStaleMS":900000,"autoDataRefreshIntervalMS":120000,"dfpNetworkCode":"32564576","dfpHierarchy":"Sigalert_responsive","dataPath":"/api","dataVersion":"1.1","hostPath":"https://cdn-static.sigalert.com/214/Min","isApp":false,"buildNumber":214,"supportsLinks":true,"showAds":true,"mapLinkUrl":null,"mapLinkTarget":null,"trafficDataRefreshFailStateCount":3,"mapHotspotsEnabled":true,"mapHotspotSelectionEnabled":true,"androidTouchClickBug":false}, {"id":"user","follow":false,"showCameras":true,"passwordResetId":null,"hasInvalidPasswordResetId":false}, {"id":"branding","brandingId":"sigalert","AccountName":"My Sigalert","AdsEmailAddress":"ads@sigalert.com","AffiliateSupportEmailAddress":"AffiliateSupport@sigalert.com","BillingEmailAddress":"billing@sigalert.com","DarkLogoImageURL":"https://cdn-static.sigalert.com/214/Images/sigalert-logo-white.svg","DomainName":"Sigalert.com","EmailHeaderColor":"#3366CC","EmailHeaderImageURL":"header-bg.png","EmailLogoHeight":98,"EmailLogoImageURL":"sigalert-logo-white-lg.png","EmailLogoWidth":300,"LogoHeight":0,"LogoImageURL":"https://cdn-static.sigalert.com/214/Images/sigalert-logo-white.svg","LogoText":"Sigalert.com","LogoWidth":0,"MapLogoHeight":23,"MapLogoImageURL":"https://cdn-static.sigalert.com/214/Images/sigalert-logo.svg","MapLogoPlacement":"flush","MapLogoWidth":130,"MonthlySubscriptionPrice":2.95,"OrdersEmailAddress":"orders@sigalert.com","PartnersEmailAddress":"partners@sigalert.com","SmallLogoImageURL":"https://cdn-static.sigalert.com/214/Images/sigalert-logo-small.svg","SuggestionsEmailAddress":"suggestions@sigalert.com","SupportEmailAddress":"support@sigalert.com","TilePath":"https://cdn-tiles.sigalert.com/15/Blue","Title":"Sigalert","YearlySubscriptionPrice":19.95}, {"id":"dfp","networkCode":"32564576","hierarchy":"Sigalert_responsive","adTargeting":{"Weather":"Clear"}}, { "id": "app" }],
+				"regions": [{"id":"current","name":"StLouis","southWestBounds":[37.936273,-91.229985],"northEastBounds":[39.41097,-89.348696],"zoomLevels":[{"map":"StLouisZ0","scale":164901,"origin":{"x":-232768,"y":-108952},"widthTiles":16,"heightTiles":16,"stripeWidths":[7.7625,3.88125]},{"map":"StLouisZ1","scale":329802,"origin":{"x":-116384,"y":-54476},"widthTiles":8,"heightTiles":8,"stripeWidths":[5.175,2.5875]},{"map":"StLouisZ2","scale":659604,"origin":{"x":-58192,"y":-27238},"widthTiles":4,"heightTiles":4,"stripeWidths":[3.45,1.725]},{"map":"StLouisZ3","scale":1319208,"origin":{"x":-29096,"y":-13619},"widthTiles":2,"heightTiles":2,"stripeWidths":[2.3,1.15]}]}],
+				"trafficData": [{"id":"StLouis","region":"StLouis","path":"StLouis/6~j","cacheBuster":26951341,"updateTime":1487541660000,"version":26921941,"rootPath":"/Data","maxDataAgeMS":300000}],
+				"joinData": [{ "id": "current", "region": "StLouis" }],
+				"hotspotData": [{ "id": "speeds" }, { "id": "incidents" }, { "id": "cameras" }],
+				"staticRoadData": [{ "id": "current", "region": "StLouis" }],
+				"pushpinData": [],
+				"messageData": [],
+				"updateData": [{"id":"Update 12/28/2016","name":"Update 12/28/2016","path":"https://cdn-static.sigalert.com/Updates/Update.12.28.2016.html","order":7,"region":"StLouis"}],
+				"geoPositions": [{"id":"current","latLng":[38.62336,-90.2235],"zoom":1,"usedDefaultZoom":true}, { "id": "user", "zoom": 0 }],
+				"localAreas": [{"id":"current","lat":38.62336,"lon":-90.2235,"name":"St. Louis","encodedName":"St.+Louis","zoom":1,"adArea":"StLouis","displayName":"St. Lous","region":"StLouis"}, {"lat":38.62336,"lon":-90.2235,"name":"St. Louis","defaultZoomLevel":1,"adArea":"StLouis","displayName":"St. Lous","useInUI":true,"zoom":1,"region":"StLouis"},{"lat":38.649321,"lon":-90.195007,"name":"North St. Louis","defaultZoomLevel":0,"adArea":"StLouis","displayName":"North St. Louis","useInUI":true,"zoom":0,"region":"StLouis"},{"lat":38.610969,"lon":-90.236893,"name":"South St. Louis","defaultZoomLevel":0,"adArea":"StLouis","displayName":"South St. Louis","useInUI":true,"zoom":0,"region":"StLouis"},{"lat":38.647981,"lon":-90.240669,"name":"Midtown","defaultZoomLevel":0,"adArea":"StLouis","displayName":"Midtown","useInUI":true,"zoom":0,"region":"StLouis"},{"lat":38.775499,"lon":-90.197067,"name":"North County","defaultZoomLevel":0,"adArea":"StLouis","displayName":"North County","useInUI":true,"zoom":0,"region":"StLouis"},{"lat":38.498206,"lon":-90.361176,"name":"South County","defaultZoomLevel":0,"adArea":"StLouis","displayName":"South County","useInUI":true,"zoom":0,"region":"StLouis"},{"lat":38.758367,"lon":-90.469666,"name":"St Charles County","defaultZoomLevel":0,"adArea":"StLouis","displayName":"St Charles County","useInUI":true,"zoom":0,"region":"StLouis"},{"lat":38.287781,"lon":-90.571289,"name":"Jefferson County","defaultZoomLevel":0,"adArea":"StLouis","displayName":"Jefferson County","useInUI":true,"zoom":0,"region":"StLouis"},{"lat":38.533933,"lon":-89.943008,"name":"Metro East","defaultZoomLevel":0,"adArea":"StLouis","displayName":"Metro East","useInUI":true,"zoom":0,"region":"StLouis"},{"lat":38.618748,"lon":-90.129776,"name":"East St. Louis","defaultZoomLevel":0,"adArea":"StLouis","displayName":"East St. Louis","useInUI":true,"zoom":0,"region":"StLouis"}],
+				"carriers": [{"id":"alltel","name":"Alltel","address":"message.alltel.com"},{"id":"at&t","name":"AT&T Wireless","address":"txt.att.net"},{"id":"at&t-mycingular","name":"AT&T - My Cingular","address":"mobile.mycingular.com"},{"id":"boostmobile","name":"Boost Mobile","address":"myboostmobile.com"},{"id":"cincinnatibell","name":"Cincinnati Bell","address":"gocbw.com"},{"id":"cingular","name":"Cingular","address":"cingularme.com"},{"id":"metropcs","name":"Metro PCS","address":"mymetropcs.com"},{"id":"nextel","name":"Nextel","address":"messaging.nextel.com"},{"id":"sprint","name":"Sprint PCS","address":"messaging.sprintpcs.com"},{"id":"tmobile","name":"T-Mobile","address":"tmomail.net"},{"id":"uscellular","name":"U.S. Cellular","address":"email.uscc.net"},{"id":"verizon","name":"Verizon","address":"vtext.com"},{"id":"virginmobile","name":"Virgin Mobile (US)","address":"vmobl.com"}],
+				"users": [{}],
+				"current": [{"id":"user"}],
+				"devices": [],
+				"routes": [],
+				"routeAlerts": [],
+				"flash": []
+			}
+		}
+	};
+
+	sigalert.messagesToSubscribeTo = [];
+	sigalert.subscribe = function (message) {
+        sigalert.messagesToSubscribeTo.push(message);
+    };
+
+    sigalert.dataToSet = [];
+	sigalert.set = function () {
+        sigalert.dataToSet.push(Array.prototype.slice.call(arguments));
+    };
+
+    sigalert.dataToGet = [];
+	sigalert.get = function () {
+        sigalert.dataToGet.push(Array.prototype.slice.call(arguments));
+    };
+</script>
+
+<script type="text/javascript">
+	require = {
+		config: {
+			'error': {
+				options: {
+                	errorSetVersion: 0,
+					reportAllErrors: false
+				}
+			},
+	    	'sprout/error': {
+                options: {
+                    reportGlobalErrors: false
+                },
+                requestOptions: {
+                	url: '/api/1.1/submitError.asp',
+                	contentType: undefined
+                }
+            },
+            'sprout/database': {
+        		methodToType: {
+        			'update': 'POST'
+        		}
+            },
+            'sprout/data': {
+        		methodToType: {
+        			'update': 'POST'
+        		}
+            },
+            'env': {"environment":"browser","isWhiteLabelApp":false,"overflowScrollEnabled":true,"simpleModalsEnabled":false}
+	    }
+	};
+</script>
+
+
+				<script src="https://cdn-static.sigalert.com/214/Min/mobile/default-combo.js"></script>
+			
+	</body>
+</html>
