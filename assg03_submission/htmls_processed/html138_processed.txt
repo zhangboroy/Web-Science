@@ -1,0 +1,364 @@
+
+
+
+
+
+
+
+
+
+La mirada del replicante
+GNU/Linux y cultura geek
+
+
+
+Inicio
+GNU/Linux
+Internet
+hacktivismo
+artwork
+juegos
+cine
+Leer
+Android
+Tannhausser
+Contacto
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BlackArch Linux amplía su arsenal de hacking 
+Ene 30, 2017 by tannhausser in hacktivismo  
+
+
+Nueva imagen ISO de BlackArch Linux (28-01-2017), una distribución GNU/Linux basada en Arch Linux, dirigida a profesionales de la seguridad informática y entusiastas del pentesting en general.
+Una distro que nació como una expansión de Arch Linux en forma de repositorio (de hecho sigue siendo sencillo añadirlo sobre una instalación preexistente de Arch) y que desde hace un tiempo camina como sistema independiente, con un instalador propio vía terminal (blackarch installer) cada vez más pulido.
+Más allá del trabajo rutinario –pero imprescindible– de cada nueva publicación como actualizar la lista de paquetes, las entradas de menú en los diferentes escritorios o solucionar algunos errores todavía pendientes; BlackArch nos trae algunas novedades interesantes como la disponibilidad de una nuevo repositorio para arquitecturas aarch64, la compatibilidad con vmware de su instalador y el kernel 4.9.6.
+Los 6 gigas y pico de su ISO nos podría hacer pensar que BlackArch viene con los grandes escritorios de Linux, pues no! han preferido optar por opciones minimalistas, gestores de ventana como awesome, fluxbox (es el predeterminado), openbox, i3, spectrwm, awesome y vmii
+De lo que si viene repleto es de software de seguridad, totalmente actualizado (de paso se han solucionado algunos problemas con herramientas construidas en ruby, tipo metasploit y wpscan) y ampliado su arsenal con 20 nuevos programas:
+
+Hercules: un generador de payloads con capacidad de burlar antivirus (haciendo algo de offtopic, últimamente estoy leyendo varios artículos recomendando pasar de soluciones de terceros y fiarlo todo a la suite de seguridad de Microsoft. Supongo que tienen razón, y que muchos antivirus además de sobrecargar y husmear en el sistema, reaccionan a las diversas amenazas con la misma indiferencia que una vaca ve pasar el tren. Pero amigos,  que sabré yo de virus en Windows, solo soy un linuxero 🙂 ).
+Morpheus: se trata de un framework que automatiza la manipulación de paquetes TCP/UDP. Se puede utilizar para ataques de intermediario.
+Pyjfuzz: como habréis deducido por su nombre, se trata de una herramienta en python en este caso para descubrir vulnerabilidades de seguridad en JSON ((JavaScript Object Notation).
+Bingoo: herramienta de bash para encontrar agujeros de seguridad en sitios web, utiliza Google hacking y Bing.
+Datasploit: este programa permite ejecutar técnicas OSINT (Advanced Open Source Intelligence) para obtener información y monitorizar datos.
+Chisel: un lenguaje desarrollado por la Universidad de Berkeley para la construcción de hardware opensource.
+Pentmenu: otro script de bash en este caso para realizar ataques DOS.
+Truffle Hog: Herramienta para chusmear en git y descubrir fallos de entropía (el nombre le va al pelo).
+Dff (CLI y GUI): interfaz gráfica y versión para la terminal de un framework utilizado en análisis forense digital. Se utiliza para obtener y preservar evidencias.
+Exitmap: un escáner de tipo modular para examinar nodos Tor de salida.
+Quicksand-lite: herramienta en línea de comandos que permite analizar malware y extraerlo de ciertos tipo de documentos, como pueden ser los de Microsoft Office.
+Cminer: este programa permite enumerar aquellas piezas de código que alteran la ejecución de programas con formato PE (Portable Executable)
+Empire: se define como un agente de post explotación de PowerShell.
+Veles: se trata de una herramienta de ingeniería inversa para análisis de binarios y con un toque muy visual.
+Revsh: con este programa se puede establecer una shell inversa, incluyendo soporte de terminal, data tunneling, VPN para enrutar el tráfico de red, etc.
+Airgeddon: Completa herramienta para auditar redes Wi-Fi.
+Hast-extender: Software para buscar debilidades en los algoritmos de sumas de verificación como las diferentes versiones de MD o SHA.
+Poracle: en ese caso el objetivo atacar mensajes cifrados mediante una técnica denominada padding oracle attack.
+Proctal: herramienta en línea de comandos, construida en lenguaje de programación C, en condiciones optimas puede ser capaz de manipular las direcciones de espacio de un programa en Linux y por tanto su entorno de ejecución.
+
+Si queréis probar alguna de estas herramientas o la distro en general lo mejor es que os paséis por la web de BlackArch Linux, donde encontraréis versiones de 32 y 64 bits, incluyendo una opción netinstall. Si la vais a ejecutar en modo live, el usuario es “root” y la contraseña “blackarch”.
+Compártelo:TwitterFacebookGoogleCorreo electrónicoTelegramWhatsAppLinkedInRedditSkypePocketTumblrTagged with: BlackArch, distro hacking, pentesting, seguridad informática 
+
+
+
+
+
+
+  
+
+
+
+About the author tannhausser
+
+
+ 
+
+
+
+
+
+
+
+
+
+3 thoughts on “BlackArch Linux amplía su arsenal de hacking” 
+
+
+
+
+ 
+
+
+victorhck says:
+
+Ene 30, 2017
+
+
+
+Hace un tiempo la descargué y estuve probando por curiosidad…
+Mucho material de análisis forense y demás, del que no tenía ni idea de cómo echar a andar! 🙂
+Pero que seguro que para algunos serán delicias! 😉
+Saludos.
+
+Responder
+
+
+
+
+
+
+ 
+
+
+tannhausser says:
+
+Ene 31, 2017
+
+
+
+Son muchas herramientas (seguro que más de 1000) para verlas o dominarlas todas…También te digo una cosa por el hecho de que sean de seguridad no tienen ni más ni menos valor que cualquier otro tipo de software
+Saludos!
+
+Responder
+
+
+
+
+
+
+ 
+
+
+tannhausser says:
+
+Ene 31, 2017
+
+
+
+A propósito, ayer leí este artículo. Me pareció interesante lo que comenta sobre la imagen del hacker adolescente que nos vende la TV en contraposición al experto programador. 
+http://positech.co.uk/cliffsblog/2017/01/21/time-for-the-teenage-coding-god-meme-to-die/
+
+Responder
+
+
+
+
+
+
+
+Deja un comentario Cancelar respuesta
+
+
+
+
+
+
+
+
+Sígueme en…
+
+Twitter  Facebook  Google+  RSS   
+Comentarios recientestannhausser en Eliminar dependencias innecesarias en Linuxtannhausser en Eliminar dependencias innecesarias en Linuxtannhausser en Eliminar dependencias innecesarias en Linuxtannhausser en Eliminar dependencias innecesarias en LinuxRaul P en Eliminar dependencias innecesarias en LinuxSuscríbete al blog por correo electrónico
+
+Introduce tu correo electrónico para suscribirte a este blog y recibir notificaciones de nuevas entradas.
+Únete a otros 641 suscriptores 
+
+
+							Dirección de email						
+
+
+
+
+
+
+
+
+
+
+
+Categorías 
+Android
+
+artwork
+
+cine/TV
+
+GNU/Linux
+
+hacktivismo
+
+Internet
+
+juegos
+
+Leer
+
+
+Archivos Archivos
+
+Elegir mes
+ febrero 2017  (17)
+ enero 2017  (25)
+ diciembre 2016  (19)
+ noviembre 2016  (33)
+ octubre 2016  (31)
+ septiembre 2016  (33)
+ agosto 2016  (34)
+ julio 2016  (38)
+ junio 2016  (33)
+ mayo 2016  (44)
+ abril 2016  (43)
+ marzo 2016  (42)
+ febrero 2016  (47)
+ enero 2016  (45)
+ diciembre 2015  (54)
+ noviembre 2015  (49)
+ octubre 2015  (49)
+ septiembre 2015  (46)
+ agosto 2015  (39)
+ julio 2015  (55)
+ junio 2015  (60)
+ mayo 2015  (49)
+ abril 2015  (50)
+ marzo 2015  (47)
+ febrero 2015  (53)
+ enero 2015  (50)
+ diciembre 2014  (50)
+ noviembre 2014  (50)
+ octubre 2014  (46)
+ septiembre 2014  (53)
+ agosto 2014  (60)
+ julio 2014  (60)
+ junio 2014  (54)
+ mayo 2014  (52)
+ abril 2014  (50)
+ marzo 2014  (51)
+ febrero 2014  (48)
+ enero 2014  (24)
+ diciembre 2013  (33)
+ noviembre 2013  (7)
+ octubre 2013  (29)
+ septiembre 2013  (35)
+ agosto 2013  (26)
+ julio 2013  (23)
+ junio 2013  (28)
+ mayo 2013  (28)
+ abril 2013  (26)
+ marzo 2013  (24)
+ febrero 2013  (25)
+ enero 2013  (24)
+ diciembre 2012  (16)
+ noviembre 2012  (27)
+ octubre 2012  (29)
+ septiembre 2012  (23)
+ agosto 2012  (20)
+ julio 2012  (20)
+ junio 2012  (25)
+ mayo 2012  (22)
+ abril 2012  (20)
+ marzo 2012  (24)
+ febrero 2012  (22)
+ enero 2012  (19)
+ diciembre 2011  (20)
+ noviembre 2011  (22)
+ octubre 2011  (21)
+ septiembre 2011  (19)
+ agosto 2011  (21)
+ julio 2011  (20)
+ junio 2011  (31)
+ mayo 2011  (25)
+ abril 2011  (6)
+
+ La mirada del replicante is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+ Política de privacidad & image disclaimer
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+Esta web utiliza cookies. Si continúas navegando entendemos que aceptas nuestras condiciones de usoAccept Read More
+
+
+
+
+
+
+
+
+
+
+Enviar a dirección de correo electrónico
+
+Su Nombre
+
+Tu dirección de correo electrónico
+
+
+
+
+
+Cancelar
+
+				La entrada no fue enviada. ¡Comprueba tus direcciones de correo electrónico!			
+
+				Error en la comprobación de email. Por favor, vuelve a intentarlo			
+
+				Lo sentimos, tu blog no puede compartir entradas por correo electrónico.			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
