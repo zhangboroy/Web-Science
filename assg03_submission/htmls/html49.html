@@ -1,0 +1,2685 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQMEU1BRDhAEUFVRAgkCVg=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script>
+	<!-- Static common meta tag for all the views -->
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+		<link rel='dns-prefetch' href='//optimized-by.rubiconproject.com'>
+	<link rel='dns-prefetch' href='//fastlane.rubiconproject.com'>
+	<link rel="preload" href="//www.googletagservices.com/tag/js/gpt.js" as="script">
+	<link rel="preload" href="//c.amazon-adsystem.com/aax2/amzn_ads.js" as="script">
+	<link rel="preload" href="https://www.thesun.co.uk/wp-content/themes/thesun/js/head.js" as="script">
+	<link rel="preload" href="//static.criteo.net/js/ld/publishertag.js" as="script">
+<title>Arsenal youngster Gedion Zelalem could not be less happy after being sent on loan to Dutch second tier side VVV-Venlo instead of Rangers</title>
+<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="C0q6rLPIDXHU7PcyZ9CmiFRLM46bbWgS4qxZ-woBItM" />
+<meta name="p:domain_verify" content="c061a8052bd9e93315b7f01447fa4124" />
+<link rel='dns-prefetch' href='//cdn.livefyre.com' />
+<link rel='dns-prefetch' href='//c.amazon-adsystem.com' />
+<link rel='dns-prefetch' href='//static.criteo.net' />
+<link rel='dns-prefetch' href='//www.googletagservices.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//player.ooyala.com' />
+<link rel='dns-prefetch' href='//widgets.outbrain.com' />
+<link rel='dns-prefetch' href='//video.unrulymedia.com' />
+<link rel='dns-prefetch' href='//s.skimresources.com' />
+<link rel='dns-prefetch' href='//s3-eu-west-1.amazonaws.com' />
+<link rel='dns-prefetch' href='//prod-sunbets-widgets.s3-eu-west-1.amazonaws.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="The Sun &raquo; Feed" href="https://www.thesun.co.uk/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Sun &raquo; Comments Feed" href="https://www.thesun.co.uk/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Sun &raquo; Arsenal youngster Gedion Zelalem could not be less happy after being sent on loan to Dutch second tier side VVV-Venlo instead of Rangers Comments Feed" href="https://www.thesun.co.uk/sport/football/2734707/arsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers/feed/" />
+<meta name='description' content='Zelalem helped Mark Warburton&#039;s side to promotion last year and gave a very awkward interview on his arrival in Holland' />
+<meta name='keywords' content='Arsenal, Rangers, VVV Venlo' />
+<meta name='news_keywords' content='Arsenal, Rangers, VVV Venlo' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.thesun.co.uk\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.2"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='thesun-ooyala-skin-css'  href='//player.ooyala.com/static/v4/stable/latest/skin-plugin/html5-skin.min.css?ver=v4' type='text/css' media='' />
+<link rel='stylesheet' id='all-css-2' href='https://www.thesun.co.uk/_static/??/wp-content/themes/thesun/css/swiper.css,/wp-content/themes/thesun/css/style.css?m=1487274710' type='text/css' media='all' />
+<link rel='stylesheet' id='thesun-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A400%2C500%2C700%7CRoboto+Slab&#038;ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-4' href='https://www.thesun.co.uk/_static/??-eJyNjEsKwzAMBS9UR4Q0n03IUYqRjaPElkxlU3r7toEsuindzYOZB49sULh4LpCqybEGYoXNl2xxhySuRq+gq717Z517HkgcGlS9wO/6RoyggmSjiRJEv0aTiP95eSsnf/Qlze11GvqpH7vuBTsQRqo=' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.thesun.co.uk/wp-content/plugins/livefyre-apps/assets/js/lfapps.js?m=1465283101g'></script>
+<script type='text/javascript' src='https://cdn.livefyre.com/Livefyre.js?ver=1.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thesun_ad_settings = {"providers":[{"bidder":"rubicon","params":{"accountId":"7753","siteId":"15119","zoneId":"445790"}},{"bidder":"appnexus","params":{"placementId":"6546370"}},{"bidder":"criteo","params":{"accountId":"4713"}},{"bidder":"amazon","params":{"accountId":"3360"}},{"bidder":"pubmatic","params":{"publisherId":"156034","adSlotPrefix":"TheSun"}},{"bidder":"indexExchange","params":{"siteID":"188806"}}],"prebid_timeout":"2000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.thesun.co.uk/wp-content/themes/thesun/js/generic.js?m=1472129379g'></script>
+<script type='text/javascript' async="async" onload="try { amznads.getAdsAsync(3360); } catch(e) { console.error(e); }" src='//c.amazon-adsystem.com/aax2/amzn_ads.js'></script>
+<script type='text/javascript' async="async" onload="try { Criteo.CallRTA({'networkid' : '4713'}); Criteo.SetTargeting({'adserver' : 'DFP'}); } catch(e) { console.error(e); }" src='//static.criteo.net/js/ld/publishertag.js'></script>
+<script type='text/javascript' async="async" src='//www.googletagservices.com/tag/js/gpt.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thesun_googletag = {"networkID":"3048","dfpSiteID":"d.thesun","sectionID":"sport\/football\/premierleague","path":"\/sport\/football\/2734707\/arsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers\/","sec_id":"348","sec":"art","topics":"arsenal,rangers","kw":"arsenal,youngster,gedion,zelalem,could,not,be,less,happy,after,being,sent,on,loan,to,dutch,second,tier,side,vvvvenlo,instead,of,rangers,by,sam,street,helped,mark,warburtons,sideto,promotion,last,year,and,gave,a,very,awkward,interview,his,arrival,in,holland,road,zel,football,premierleague","aid":"2734707","search":"null","article_type":"post","hide_ads":"","article_slug":"Video"};
+var utag_data = {"page_site_name":"the sun","amp_page_site_name":"the sun amp","page_site_region":"uk","page_restrictions":"public","page_name":"article: Arsenal youngster Gedion Zelalem could not be less happy after being sent on loan to Dutch second tier side VVV-Venlo instead of Rangers","page_section":"Sport","page_section_id":"321","page_section_2":"Sport:Football","page_section_2_id":"339","page_section_3":"Sport:Football:Premier League","page_section_3_id":"348","page_type":"article","article_name":"Arsenal youngster Gedion Zelalem could not be less happy after being sent on loan to Dutch second tier side VVV-Venlo instead of Rangers","article_publish_timestamp":"2017\/01\/29 19:29 Sunday","article_id":"2734707","article_author":"By SAM STREET","article_id_type":"wordpress","article_tag_name":"Video","page_tags":"Arsenal,Rangers","article_publish_latest":"2017\/01\/29 21:52 Sunday","article_name_latest":"Arsenal youngster Gedion Zelalem could not be less happy after being sent on loan to Dutch second tier side VVV-Venlo instead of Rangers","article_kicker_name":"Road to Zel"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+
+		var pbjs = pbjs || {};
+		pbjs.que = pbjs.que || [];
+</script>
+<script type='text/javascript' src='https://www.thesun.co.uk/wp-content/themes/thesun/js/head.js?m=1484818960g'></script>
+<script type='text/javascript'>
+		var gs_channels="DEFAULT";
+		(function() {
+			var gsurl=window.location!=window.top.location?document.referrer:window.location;
+			var s=document.createElement('script');
+			s.async=true;
+			s.onload=function(){
+				googletag.cmd.push(function() {
+					googletag.pubads().setTargeting("gs_cat", gs_channels);
+				});
+			}
+			s.src='//newscorp.grapeshot.co.uk/thesun/channels.cgi?url=' +encodeURIComponent(gsurl);
+			document.head.appendChild(s);
+		})();
+</script>
+<script type='text/javascript' async="async" src='https://www.thesun.co.uk/wp-content/themes/thesun/js/vendor/prebid.min.js'></script>
+<script type='text/javascript' src='https://www.thesun.co.uk/wp-content/themes/thesun/js/Imager.js?m=1481900656g'></script>
+<script type='text/javascript' async="async" src='https://widgets.outbrain.com/outbrain.js'></script>
+<script type='text/javascript' async="async" src='https://video.unrulymedia.com/native/native-loader.js'></script>
+<script type='text/javascript' src='https://www.thesun.co.uk/_static/??-eJyFjc0ORTAQRl/oMm783oV4FmrQRgedlnh7lTSW7uosvnPywbFGYiGLZMFOqJFvsCNQDIMfhlbg0jGaHU2sJcWKP/AWedwdP1EIJInZ9V71jtocmjPgrxBpOZrWYrhvdP3Nqjwrkl9aqgsGh0gT'></script>
+<link rel='https://api.w.org/' href='https://www.thesun.co.uk/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.thesun.co.uk/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.thesun.co.uk/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.2" />
+<link rel="canonical" href="https://www.thesun.co.uk/sport/football/2734707/arsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers/" />
+<link rel='shortlink' href='https://wp.me/p7ygYG-btqb' />
+<link rel="alternate" type="application/json+oembed" href="https://www.thesun.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thesun.co.uk%2Fsport%2Ffootball%2F2734707%2Farsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.thesun.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thesun.co.uk%2Fsport%2Ffootball%2F2734707%2Farsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers%2F&#038;format=xml" />
+
+<link rel='dns-prefetch' href='//v0.wordpress.com'>
+<style type='text/css'>img#wpstats{display:none}</style>	<script type="text/javascript">
+		/* Tealium */
+		(function(a, b, c, d) {
+			a = "https://tags.tiqcdn.com/utag/newsinternational/thesun.2016.web/prod/utag.js";
+			b = document;
+			c = 'script';
+			d = b.createElement(c);
+			d.src = a;
+			d.type = 'text/java' + c;
+			d.async = true;
+			a = b.getElementsByTagName(c)[0];
+			a.parentNode.insertBefore(d, a);
+		})();
+	</script>
+	<link rel="amphtml" href="https://www.thesun.co.uk/sport/football/2734707/arsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers/amp/" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Arsenal youngster Gedion Zelalem could not be less happy after being sent on loan to the Dutch second tier" />
+<meta property="og:url" content="https://www.thesun.co.uk/sport/football/2734707/arsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers/" />
+<meta property="og:description" content="ARSENAL midfielder Gedion Zelalem has joined Dutch second tier side VVV-Venlo on loan until the end of the season, but he doesn&#8217;t look too pleased about it. The 19-year-old claimed he was &amp;#8…" />
+<meta property="article:published_time" content="2017-01-29T19:29:09+00:00" />
+<meta property="article:modified_time" content="2017-01-29T21:52:34+00:00" />
+<meta property="og:site_name" content="The Sun" />
+<meta property="og:image" content="https://www.thesun.co.uk/wp-content/uploads/2017/01/sport-preview-zelalem.jpg?strip=all&#038;w=620&#038;h=413&#038;crop=1" />
+<meta property="og:image:width" content="620" />
+<meta property="og:image:height" content="413" />
+<meta property="og:locale" content="en_GB" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="article:publisher" content="161385360554578" />
+<meta property="article:tag" content="Arsenal, Rangers" />
+<meta property="fb:app_id" content="144647118961553" />
+<meta name="twitter:site" content="@thesun" />
+<meta name="robots" content="noarchive,noodp" />
+<meta property="article:author" content="https://www.facebook.com/SunSportArsenal/" />
+<meta property="fb:pages" content="161385360554578" />
+<link rel="icon" href="https://www.thesun.co.uk/wp-content/uploads/2016/04/icon-e1459786005667.png?strip=all&#038;w=32" sizes="32x32" />
+<link rel="icon" href="https://www.thesun.co.uk/wp-content/uploads/2016/04/icon-e1459786005667.png?strip=all&#038;w=192" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.thesun.co.uk/wp-content/uploads/2016/04/icon-e1459786005667.png?strip=all&#038;w=180" />
+<meta name="msapplication-TileImage" content="https://www.thesun.co.uk/wp-content/uploads/2016/04/icon-e1459786005667.png?strip=all&#038;w=270" />
+		<meta name="apple-itunes-app" content="app-id=1125991660, affiliate-data=ct=Smart%20App%20Banner&pt=263124"/>
+	</head>
+
+<body class="post-template-default single single-post postid-2734707 single-format-standard">
+
+<div class="mobile-top-cover"></div>
+
+<div class="sun-container theme-football">	<div class="sun-newsuk">
+
+		<div class="close open-newsuk for-mobile"></div>
+
+		<div class="sun-row">
+
+			<div class="col sun-col-6">
+
+				<div class="panel panel--slim">
+					<div class="panel--slim-left">
+						<p>News Corp is a network of leading companies in the worlds of diversified media, news, education, and information services.</p>
+					</div>
+					<div class="panel--slim-right">
+						<h3 class="panel__title">Follow The Sun</h3>
+
+						<div class="follow-sun">
+							<a href="https://www.facebook.com/thesun/" class="follow-facebook"><span class="icon icon-facebook"></span></a>
+							<a href="https://twitter.com/thesun?lang=en-gb" class="follow-twitter"><span class="icon icon-twitter"></span></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel for-mobile">
+					<h3 class="panel__title">Your Sun</h3>
+					<ul class="no-columns">
+						<li class="sign-in">
+							<a href="https://login.thesun.co.uk">Sign in</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="panel for-mobile">
+					<h3 class="panel__title">Editions</h3>
+						<ul class='no-columns'>
+					<li>
+				<a href="https://www.thescottishsun.co.uk/">Scottish Sun</a>
+			</li>
+					<li>
+				<a href="http://www.thesun.ie/">Irish Sun</a>
+			</li>
+			</ul>
+					</div>
+
+				<div class="panel">
+					<h3 class="panel__title">The Sun</h3>
+					<ul id="menu-service-menu" class="menu"><li id="menu-item-1196700" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1196700"><a href="http://www.thescottishsun.co.uk">The Scottish Sun</a></li>
+<li id="menu-item-1196701" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1196701"><a href="http://www.thesun.ie">The Irish Sun</a></li>
+<li id="menu-item-1196685" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1196685"><a href="https://www.dreamteamfc.com/">Dream Team</a></li>
+<li id="menu-item-1542915" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1542915"><a href="https://www.sunbets.co.uk">Sun Bets</a></li>
+<li id="menu-item-1235296" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1235296"><a href="http://www.thesun.co.uk/fabulous">Fabulous</a></li>
+<li id="menu-item-1542920" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1542920"><a href="http://favourite.thesun.co.uk">Sun Favourite</a></li>
+<li id="menu-item-1235284" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1235284"><a href="http://www.sunmotors.co.uk/">Sun Motors</a></li>
+<li id="menu-item-1235283" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1235283"><a href="http://www.sunbingo.co.uk/">Sun Bingo</a></li>
+<li id="menu-item-1235315" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1235315"><a href="http://thesun.inthepaper.co.uk/">Sun Gifts</a></li>
+</ul>				</div>
+
+				<div class="panel panel--half">
+					<h3 class="panel__title">News Corp</h3>
+					<ul id="menu-news-corp-service-menu" class="menu"><li id="menu-item-1196677" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1196677"><a href="http://www.wsj.com/">WSJ.com</a></li>
+<li id="menu-item-1196678" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1196678"><a href="http://nypost.com/">New York Post</a></li>
+<li id="menu-item-1196679" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1196679"><a href="http://www.theaustralian.com.au/">The Australian</a></li>
+<li id="menu-item-1196680" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1196680"><a href="http://www.news.com.au/">News.com.au</a></li>
+<li id="menu-item-1196681" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1196681"><a href="https://storyful.com/">Storyful</a></li>
+<li id="menu-item-1196682" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1196682"><a href="https://www.harpercollins.co.uk/">Harper Collins</a></li>
+<li id="menu-item-1196683" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1196683"><a href="http://www.realtor.com/">Realtor.com</a></li>
+</ul>				</div>
+
+				<div class="panel panel--half panal--services">
+					<h3 class="panel__title">Services</h3>
+		            <ul id="menu-footer" class="menu"><li id="menu-item-1236019" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1236019"><a href="https://www.thesun.co.uk/sign-up-to-the-sun/">Sign Up To The Sun</a></li>
+<li id="menu-item-1235852" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235852"><a href="https://www.thesun.co.uk/terms-and-conditions/">Terms and Conditions</a></li>
+<li id="menu-item-1235452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235452"><a href="https://www.thesun.co.uk/editorial-complaints/">Editorial Complaints</a></li>
+<li id="menu-item-1237807" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1237807"><a href="https://www.thesun.co.uk/admin/clarifications/">Clarifications and Corrections</a></li>
+<li id="menu-item-1235451" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235451"><a href="https://www.thesun.co.uk/syndication/">Syndication</a></li>
+<li id="menu-item-1388523" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1388523"><a href="http://www.newsukadvertising.co.uk">Advertising</a></li>
+<li id="menu-item-1235453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235453"><a href="https://www.thesun.co.uk/contact-us/">Contact Us</a></li>
+<li id="menu-item-2313093" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2313093"><a href="https://www.thesun.co.uk/commissioning-terms/">Commissioning Terms</a></li>
+<li id="menu-item-1235319" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1235319"><a href="http://help.thesun.co.uk/">Help Hub</a></li>
+</ul>				</div>
+
+				<span class="sun-newsuk__button open-newsuk">The Sun, A News UK Company <span class="icon icon-arrow-down icon-arrow-down--dark"></span></span>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="sun-header-bg">
+		<span class="sun-header-bg-color"></span>
+		<div class="back-to-top">
+			<span class="icon icon-back-to-top"></span>
+			<span class="text-top">TOP</span>
+		</div>
+	</div>
+
+	<div class="sun-row sun-header--wrap">
+
+		<div class="col sun-col-2 no-gutters logo">
+			<a href="#" class="mobile-search toggle-mobile-search"><span class="icon icon-search"></span></a>
+
+			<div id="logo"><a href="/"></a></div>
+
+			<div class="mobile-toggles open-newsuk">
+				<div class="mobile-toggle"></div>
+				<div class="mobile-toggle"></div>
+				<div class="mobile-toggle"></div>
+			</div>
+		</div>
+
+		<div class="col sun-col-2 no-gutters weather">
+			<div class="weather-icon"></div>
+
+			<div class="weather-content">
+				<div class="place open-popup-box"><span class="place-inner">London</span> <span class="icon icon-arrow-down"></span></div>
+				<div class="popup-box">
+					<span class="popup-box--close"></span>
+
+					<h3>Set your weather</h3>
+
+					<form action="">
+						<div class="input-text-wrap">
+							<input type="text" placeholder="Search for town" />
+						</div>
+
+						<div class="suggestions"></div>
+					</form>
+				</div>
+
+				<div class="temps">
+					<div class="temp now">
+						<span class="nowTitle">Now</span>
+						<span class="nowTemp">0&deg;C</span>
+					</div>
+					<div class="temp later">
+						<span class="laterTitle">9pm</span>
+						<span class="laterTemp">0&deg;C</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="col sun-col-2 no-gutters follow">
+
+			<div class="sign-in">
+				<a href="https://login.thesun.co.uk">Sign in <span class="icon icon-avatar"></span></a>
+			</div>
+
+			<div class="edition">
+				<a href="#" class="open-popup-box">UK Edition <span class="icon icon-arrow-down"></span></a>
+
+				<div class="popup-box">
+					<span class="popup-box--close"></span>
+
+						<ul class=''>
+					<li>
+				<a href="https://www.thescottishsun.co.uk/">Scottish Sun</a>
+			</li>
+					<li>
+				<a href="http://www.thesun.ie/">Irish Sun</a>
+			</li>
+			</ul>
+					</div>
+			</div>
+
+			<div class="search-bar">
+				<a href="#" class="open-popup-box">Search <span class="icon icon-search"></span></a>
+
+				<div class="popup-box">
+					<span class="popup-box--close"></span>
+
+					<form action="https://www.thesun.co.uk/">
+						<input type="text" placeholder="Search The Sun" name="s" />
+						<input type="submit" value="Search" />
+					</form>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="sun-row sun-header--search">
+
+		<div class="col sun-col-6 no-gutters">
+
+			<a href="#" class="close-search toggle-mobile-search"><span class="icon icon-close"></span></a>
+
+			<form action="https://www.thesun.co.uk/">
+				<input type="text" placeholder="Search The Sun" name="s" />
+			</form>
+
+		</div>
+
+	</div>
+
+	<div class="sun-row sun-header--nav">
+
+		<div class="sun-nav-heavy-rule"></div>
+
+		<div id="logo-mini"><a href="/"></a></div>
+
+		<div class="col sun-col-6 no-gutters swiper-container sun-header--nav-wrap">
+			<ul id="sun-menu" class="sun-menu swiper-wrapper"><li id="menu-item-1196686" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1196686 swiper-slide theme-main"><a href="https://www.thesun.co.uk/">Home</a></li>
+<li id="menu-item-1196675" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1196675 swiper-slide theme-football active"><a href="https://www.thesun.co.uk/sport/football/">Football</a></li>
+<li id="menu-item-1196672" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-1196672 swiper-slide theme-sport"><a href="https://www.thesun.co.uk/sport/">Sport</a></li>
+<li id="menu-item-1196674" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1196674 swiper-slide theme-showbiz"><a href="https://www.thesun.co.uk/tvandshowbiz/">TV &amp; Showbiz</a></li>
+<li id="menu-item-1196673" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1196673 swiper-slide theme-living"><a href="https://www.thesun.co.uk/living/">Living</a></li>
+<li id="menu-item-1196671" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1196671 swiper-slide theme-news"><a href="https://www.thesun.co.uk/news/">News</a></li>
+<li id="menu-item-1196806" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1196806 swiper-slide theme-videos"><a href="https://www.thesun.co.uk/videos">Videos</a></li>
+<li id="menu-item-1926192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1926192 swiper-slide theme-sun-bingo"><a href="https://www.sunbingo.co.uk/">Sun Bingo</a></li>
+<li id="menu-item-1926209" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1926209 swiper-slide theme-sun-bets"><a href="https://www.sunbets.co.uk/">Sun Bets</a></li>
+</ul>
+			<div class="swiper-button-prev swiper-button-disabled">
+				<span class="icon icon-arrow-left"></span>
+			</div>
+			<div class="swiper-button-next swiper-button-disabled">
+				<span class="icon icon-arrow-right"></span>
+			</div>
+		</div>
+
+	</div>
+
+<div class="sub-nav__mobile-head theme__background-color">
+	<span class="sub-nav__mobile-head-text">All Football</span> <span class="icon icon-arrow-circled-down"></span>
+</div>
+
+<section class="sun-container sub-nav__container theme__background-color">
+	<div class="sun-row no-gutters">
+		<div class="col sun-col-6 no-gutters">
+			<div class="sub-nav">
+
+				<div class="swiper-container theme-football-secondary">
+
+					<ul class="swiper-wrapper sub-nav__list">
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">							<a href="https://www.thesun.co.uk/sport/football/" class="theme--secondary__border-color">
+								All Football							</a>
+						</li>
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">								<a href="https://www.thesun.co.uk/sport/football/transfer-news/" class="theme--secondary__border-color">
+									Transfer News								</a>
+							</li>
+						<li class="active sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">								<a href="https://www.thesun.co.uk/sport/football/premierleague/" class="theme--secondary__border-color">
+									Premier League								</a>
+							</li>
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">								<a href="https://www.thesun.co.uk/sport/football/champions-league/" class="theme--secondary__border-color">
+									Champions League								</a>
+							</li>
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">								<a href="https://www.thesun.co.uk/sport/football/world-cup-2018/" class="theme--secondary__border-color">
+									World Cup 2018								</a>
+							</li>
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">								<a href="https://www.thesun.co.uk/sport/football/efl/" class="theme--secondary__border-color">
+									EFL								</a>
+							</li>
+											</ul><!-- .swiper-wrapper .sub-nav__list -->
+
+					<div class="swiper-button-prev theme--secondary__background-before-color theme__background-color swiper-button-disabled">
+						<span class="icon icon-arrow-left icon-arrow-left-white theme__background-color"></span>
+					</div>
+
+					<div class="swiper-button-next theme--secondary__background-before-color theme__background-color swiper-button-disabled">
+						<span class="icon icon-arrow-right icon-arrow-right-white theme__background-color"></span>
+					</div>
+
+				</div><!-- .swiper-container .{theme-slug}-secondary -->
+
+			</div><!-- .sub-nav -->
+		</div><!-- .col .sun-col-6 .no-gutters -->
+	</div><!-- sun-row .no-gutters -->
+</section><!-- .sun-container .sub-nav__container .theme__background-color -->
+
+	<div class="main-content-wrap theme-main has-section-nav">
+
+		
+		
+<div class="billboard">
+	<div class="sun-row">
+		<div class="col sun-col-6">
+							<div class="dfp-ad" id="billboard">
+					<script type="text/javascript">
+						document.addEventListener('DOMContentLoaded', function () {
+							googletag.cmd.push( function() {
+								googletag.display( 'billboard' );
+							} );
+						});
+					</script>
+				</div>
+					</div>
+	</div>
+</div>
+
+		<section class="sun-container__article-section theme-football">
+							<div class="sun-row sun-container__home-section--breaking">
+					<div class="col sun-col-6">
+						<div class="teaser-item teaser__video teaser-item--breaking">
+							<div class="teaser__image-container">
+							</div>
+
+							<div class="teaser__copy-container">
+								
+<header class="article__header">
+	<div class="article__strapline">
+	</div>
+
+	
+<section class="article__headline-section">
+			<span class="article__kicker theme__copy-color">Road to Zel</span>
+		<h1 class="article__headline">Arsenal youngster Gedion Zelalem could not be less happy after being sent on loan to Dutch second tier side VVV-Venlo instead of Rangers</h1></section>
+
+		<div class="article__subdeck theme__border-color">
+		<p>Zelalem helped Mark Warburton's side to promotion last year and gave a very awkward interview on his arrival in Holland</p>
+	</div>
+	</header><!-- .article__header -->
+
+<div class="article__meta">
+			<div class="article-slug article-slug--article-page theme__background-color">
+			<span class="article-slug__copy">Video</span>
+		</div>
+	
+	<div class="article__name-date">
+					<div class="article__author theme__copy-color">
+				<span class="article__author-name theme__copy-color">
+					By SAM STREET				</span>
+			</div>
+		
+		<div class="article__published">
+							<span>29th January 2017, 7:29 pm</span>
+					</div>
+	</div>
+</div><!-- .article__meta -->
+<div id="thesun-ooyala-player-wxdzBhOTE60rfkRbaZx0mijc8tT_XklW" class="sun-video-player ooyala-player" data-content-id="wxdzBhOTE60rfkRbaZx0mijc8tT_XklW" ></div>							</div><!-- .teaser__copy-container -->
+						</div><!-- .teaser-item .teaser__video .teaser-item--breaking -->
+					</div><!-- .col .sun-col-6 -->
+				</div><!-- .sun-row -->
+				
+				<div class="sun-row">
+										<div class="col sun-col-4">
+
+														<article class="article">
+
+																<div class="article__content">
+									<p class="article__content article__content--intro">ARSENAL midfielder Gedion Zelalem has joined Dutch second tier side VVV-Venlo on loan until the end of the season, but he doesn&#8217;t look too pleased about it.</p>
+<p>The 19-year-old claimed he was &#8220;very happy&#8221; on his arrival in Holland, but his body language told a different story.</p>
+<figure class="article__media">
+	<div class="article__media-img-container open-gallery" data-index="0">
+
+		<a href="#"><img class="wp-image-2734870 size-thesun-article-image" alt="Zelalem did not look too excited to be joining VVV-Venlo" src="https://www.thesun.co.uk/wp-content/uploads/2017/01/nintchdbpict000297891875.jpg?strip=all&amp;w=960" width="960" height="539" /></a>
+
+				<div class="article__credit">
+			Array		</div>
+		
+				<div class="article__gallery-count theme__background-color-rgba-80">
+			<a href=""><span class="article__gallery-count-value theme__copy-color">4</span></a>
+		</div>
+			</div>
+
+		<figcaption class="article__media-caption">
+		Zelalem did not look too excited to be joining VVV-Venlo	</figcaption>
+	</figure>
+
+<p>Zelalem looked away from the camera and refused to give anything other than monotone two and three word answers.</p>
+<hr />
+<p><strong>Keep up to date with ALL the <a href="https://www.thesun.co.uk/sport/football/team/1196653/arsenal/" target="_blank">ARSENAL</a> news, gossip, transfers and goals on our club page plus fixtures, results and live match commentary</strong></p>
+<hr />
+<p>The American Under-23 international helped Rangers to promotion last season and looked like he would have been far happier returning to Ibrox for the rest of this campaign.</p>
+<p>When asked when he was signing the contract, he said: &#8220;Soon.&#8221;</p>
+<p>The reporter then asked if he was happy, and he said: &#8220;Yeah, very happy.&#8221;</p>
+<p>And he was told it was a good opportunity, to which he responded: &#8220;Yeah, very good.&#8221;</p>
+<figure class="article__media">
+	<div class="article__media-img-container open-gallery" data-index="1">
+
+		<a href="#"><img class="size-thesun-article-image wp-image-2734874" alt="Arsene Wenger says Zelalem must mature physically before he is ready for the Premier League" src="https://www.thesun.co.uk/wp-content/uploads/2017/01/nintchdbpict0002934757431.jpg?strip=all&amp;w=960" width="960" height="745" /></a>
+
+				<div class="article__credit">
+			Getty Images		</div>
+		
+				<div class="article__gallery-count theme__background-color-rgba-80">
+			<a href=""><span class="article__gallery-count-value theme__copy-color">4</span></a>
+		</div>
+			</div>
+
+		<figcaption class="article__media-caption">
+		Arsene Wenger says Zelalem must mature physically before he is ready for the Premier League	</figcaption>
+	</figure>
+
+<figure class="article__media">
+	<div class="article__media-img-container open-gallery" data-index="2">
+
+		<a href="#"><img class="size-thesun-article-image wp-image-2734876" alt="The midfielder helped Rangers to promotion last season" src="https://www.thesun.co.uk/wp-content/uploads/2017/01/nintchdbpict000228400653.jpg?strip=all&amp;w=960" width="960" height="890" /></a>
+
+				<div class="article__credit">
+			News Group Newspapers Ltd		</div>
+		
+				<div class="article__gallery-count theme__background-color-rgba-80">
+			<a href=""><span class="article__gallery-count-value theme__copy-color">4</span></a>
+		</div>
+			</div>
+
+		<figcaption class="article__media-caption">
+		The midfielder helped Rangers to promotion last season	</figcaption>
+	</figure>
+
+<figure class="article__media">
+	<div class="article__media-img-container open-gallery" data-index="3">
+
+		<a href="#"><img class="size-thesun-article-image wp-image-2734881" alt="Zelalem lines up for the national anthem before the Scottish Cup final" src="https://www.thesun.co.uk/wp-content/uploads/2017/01/nintchdbpict0002372389011.jpg?strip=all&amp;w=388" width="388" height="591" /></a>
+
+				<div class="article__credit">
+			News Group Newspapers Ltd		</div>
+		
+				<div class="article__gallery-count theme__background-color-rgba-80">
+			<a href=""><span class="article__gallery-count-value theme__copy-color">4</span></a>
+		</div>
+			</div>
+
+		<figcaption class="article__media-caption">
+		Zelalem lines up for the national anthem before the Scottish Cup final	</figcaption>
+	</figure>
+
+<p>Wenger has praised Zelalem, who grabbed eight assists for Mark Warburton&#8217;s men last season, but claimed he needs to develop physically before he is ready for the Premier League.</p>
+<p>The Gunners boss said: &#8220;He might be a bit longer to mature because he is a little bit behind on the body structure.</p>
+<p>&#8220;I’m sure he will be a great player who matures maybe a bit slowly physically. But overall, I’m convinced that he’ll have a great career.&#8221;</p>
+<div id="thesun-ooyala-player-c5N2s5OTE65MJUStjZCSmuA-S-uGBinL" class="sun-video-player ooyala-player" data-content-id="c5N2s5OTE65MJUStjZCSmuA-S-uGBinL" ></div><figcaption class="article__video-caption">Southampton 0-5 Arsenal : Walcott bags a hat-trick and Welbeck a brace</figcaption>
+<div class="fb-page social--fb-page-button" data-href="https://www.facebook.com/TheSunFootball/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/TheSunFootball/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/TheSunFootball/">The Sun</a></blockquote></div>								</div><!-- .article__content -->
+																<div class="tags tags--article">
+										<ul class="tags__list">
+					<li class="tags__item">
+				<span class="theme__copy-color">Topics</span>
+			</li>
+							<li class="tags__item theme__after-color">
+				<a href="https://www.thesun.co.uk/sport/football/team/1196653/arsenal/">
+					Arsenal				</a>
+			</li>
+					<li class="tags__item theme__after-color">
+				<a href="https://www.thesun.co.uk/sport/football/team/1332448/rangers/">
+					Rangers				</a>
+			</li>
+			</ul>
+									</div><!-- .tags .tags--article -->
+								
+<div class="social social--article">
+
+		<div class="article-social__meta article-social__meta--comment-count-mobile">
+		<div class="article-social__share-icon">
+			<a href="#comments">
+				<svg class="article-data__svg article-comment" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="886.2 203.6 42.7 40.4" enable-background="new 886.2 203.6 42.7 40.4" xml:space="preserve">
+					<path fill="#EAEEEF" d="M886.2,203.6v40.4h42.7v-40.4H886.2z M926.9,233.7c0,0.9-0.7,1.6-1.6,1.6h-19.5l-5.3,6.4
+					c-0.2,0.3-0.5,0.4-0.9,0.4c-0.3,0-0.7-0.1-0.9-0.4l-5.3-6.4h-3.6c-0.9,0-1.6-0.7-1.6-1.6v-26.4c0-0.9,0.7-1.6,1.6-1.6h35.4
+					c0.9,0,1.6,0.7,1.6,1.6V233.7z"/>
+				</svg>
+
+				<div class="article-social__share-no">
+					<div class="share-no-amount theme__copy-color livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2734707"></div>
+				</div>
+			</a>
+		</div>
+	</div>
+
+			<div class="social-share-buttons">
+		<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2734707" class="share-twitter sd-button share-icon no-text" href="https://www.thesun.co.uk/sport/football/2734707/arsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2734707" class="share-facebook sd-button share-icon no-text" href="https://www.thesun.co.uk/sport/football/2734707/arsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-jetpack-whatsapp"><a rel="nofollow" data-shared="" class="share-jetpack-whatsapp sd-button share-icon no-text" href="whatsapp://send?text=Arsenal%20youngster%20Gedion%20Zelalem%20could%20not%20be%20less%20happy%20after%20being%20sent%20on%20loan%20to%20the%20Dutch%20second%20tier https%3A%2F%2Fwww.thesun.co.uk%2Fsport%2Ffootball%2F2734707%2Farsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers%2F" target="_blank" title="Click to share on WhatsApp"><span></span><span class="sharing-screen-reader-text">Click to share on WhatsApp (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>	</div>
+	
+		<div class="article-social__meta article-social__meta--comment-count">
+		<div class="article-social__share-icon">
+			<a href="#comments">
+				<svg class="article-data__svg article-comment" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5796.3 2189.3 2024.7 1916.8" enable-background="new 5796.3 2189.3 2024.7 1916.8" xml:space="preserve">
+					<path fill="#E92129" d="M7740.1,2189.3H5877.3c-40.5,0-81,40.5-81,81v1390.3c0,40.5,40.5,81,81,81h189l283.5,337.5
+					c13.5,13.5,27,27,40.5,27c13.5,0,40.5-13.5,40.5-27l283.5-337.5H7740c40.5,0,81-40.5,81-81V2270.3
+					C7821,2229.8,7780.5,2189.3,7740.1,2189.3z M7362.1,3377.1H6255.2c-27,0-40.5-27-40.5-54s27-54,40.5-54h1106.9c27,0,40.5,27,40.5,54
+					S7389.1,3377.1,7362.1,3377.1z M7362.1,3026.2H6255.2c-27,0-40.5-27-40.5-54s27-54,40.5-54h1106.9c27,0,40.5,27,40.5,54
+					S7389.1,3026.2,7362.1,3026.2z M7362.1,2675.2H6255.2c-27,0-40.5-27-40.5-54s27-54,40.5-54h1106.9c27,0,40.5,27,40.5,54S7389.1,2675.2,7362.1,2675.2z" />
+				</svg>
+			</a>
+		</div>
+
+		<div class="article-social__share-no">
+			<div class="share-no-amount theme__copy-color livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2734707">
+			</div>
+			<div class="share-no-name">Comments</div>
+		</div>
+	</div>
+
+</div><!-- .social social--article -->
+
+								<div id="sidebar-mobile"></div>
+
+								<div class="OUTBRAIN" data-src="https://www.thesun.co.uk/sport/football/2734707/arsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers/" data-widget-id="AR_3" data-ob-template="TheSun_1"></div>
+<script>
+	(function() {
+		var done = false,
+			ob   = document.createElement("script");ob.type = "text/javascript";ob.async = true;ob.src = "https://widgets.outbrain.com/outbrain.js";
+		//Make sure code is here!!
+		ob.onload = ob.onreadystatechange = function() {
+			if ( !done && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")) {
+				OBR.extern.onOdbReturn("AR_3",function() {
+					// Edit the desktop widget
+					setTimeout(function(){
+						var ob_first       = document.getElementsByClassName('ob-first')[0],
+							rec_containers = ob_first.getElementsByClassName('ob-dynamic-rec-container');
+
+						for (i = 0 ; i < rec_containers.length ; i++) {
+							var text_author = rec_containers[i].getElementsByClassName('ob-rec-author')[0],
+								text_title = rec_containers[i].getElementsByClassName('ob-rec-text')[0],
+								text_full = text_author.textContent + text_title.textContent;
+
+							if(text_full.length >= 100) {
+								text_title.textContent = text_title.textContent.substring(0,60) + '...';
+							}
+						}
+					},300);
+				});
+
+				OBR.extern.onOdbReturn("CRMB_2",function() {
+					//Edit the mobile widget
+					setTimeout(function(){
+						var ob_first = document.getElementsByClassName('ob-first')[0],
+							rec_containers = ob_first.getElementsByClassName('ob-dynamic-rec-container');
+
+						for (i = 0 ; i < rec_containers.length ; i++) {
+							var text_author = rec_containers[i].getElementsByClassName('ob-rec-author')[0],
+								text_title = rec_containers[i].getElementsByClassName('ob-rec-text')[0],
+								text_full = text_author.textContent + text_title.textContent;
+
+							if(text_full.length >= 140) {
+								text_title.textContent = text_title.textContent.substring(0,100) + '...';
+							}
+						}
+					},300);
+				});
+			}
+		};
+
+		//Inject
+		var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ob, s);
+	})();
+</script>
+
+
+																<div class="comments" id="comments">
+									<div class="comments-header-wrap">
+										<h3>Comments</h3>
+									</div>
+
+									<div id="livefyre-comments"></div>								</div>
+								
+							</article><!-- .article -->
+					</div><!-- .col sun-col-4/6 -->
+
+										<div id="sidebar" class="col sun-col-2 article-sidebar">
+						<aside id="thesun_dfp_ad_widget-2" class="widget widget_thesun_dfp_ad_widget"><div class="dfp-ad-container mpu-container">
+	<div class="dfp-ad teaser-item teasermedium teasermedium--mpu mpu" id="mpu">
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function () {
+				var thesun_ad_cmd = thesun_ad_cmd || [];
+				thesun_ad_cmd.push( function() {
+					googletag.display( 'mpu' );
+				} );
+			});
+		</script>
+	</div>
+</div>
+
+</aside><aside class="widget sidebar sidebar__section teaser theme-football"><h3 class="sidebar__title theme__after-color">Most Read in Football</h3><!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-football" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/sport/football/2897561/jose-mourinho-new-manchester-united-contract-antoine-griezmann-victor-lindelof/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/sport-preveiw.jpg?strip=all&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/sport-preveiw.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Exclusive</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/sport/football/2897561/jose-mourinho-new-manchester-united-contract-antoine-griezmann-victor-lindelof/">
+					<h2 class="teaser__headline theme__copy-color">FIVE MOUR YEARS</h2>
+		
+		<p class="teaser__subdeck">
+			Jose Mourinho to be offered new five-year deal at Manchester United to oversee club&#039;s &pound;1billion&hellip;		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/sport/football/2897561/jose-mourinho-new-manchester-united-contract-antoine-griezmann-victor-lindelof/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2897561"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/sport/football/2897561/jose-mourinho-new-manchester-united-contract-antoine-griezmann-victor-lindelof/">
+		<a href="https://www.thesun.co.uk/sport/football/2897561/jose-mourinho-new-manchester-united-contract-antoine-griezmann-victor-lindelof/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/sport/football/2897561/jose-mourinho-new-manchester-united-contract-antoine-griezmann-victor-lindelof/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-football" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/sport/2878980/blackburn-rovers-vs-manchester-united-team-news-rashford-pogba-ibrahimovic/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/01/nintchdbpict0002798154762-e1485514451541.jpg?strip=all&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/01/nintchdbpict0002798154762-e1485514451541.jpg?strip=all&amp;w=150&amp;h=100&amp;crop=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/sport/2878980/blackburn-rovers-vs-manchester-united-team-news-rashford-pogba-ibrahimovic/">
+					<h2 class="teaser__headline theme__copy-color">Team News</h2>
+		
+		<p class="teaser__subdeck">
+			Blackburn vs Man Utd team news and starting line-ups: Marcus Rashford starts up front with Paul Pogba and Zlatan&hellip;		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/sport/2878980/blackburn-rovers-vs-manchester-united-team-news-rashford-pogba-ibrahimovic/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2878980"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/sport/2878980/blackburn-rovers-vs-manchester-united-team-news-rashford-pogba-ibrahimovic/">
+		<a href="https://www.thesun.co.uk/sport/2878980/blackburn-rovers-vs-manchester-united-team-news-rashford-pogba-ibrahimovic/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/sport/2878980/blackburn-rovers-vs-manchester-united-team-news-rashford-pogba-ibrahimovic/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-football" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/sport/football/2898496/teenage-manchester-united-star-marcus-rashford-lands-himself-a-premier-league-pad-after-splashing-out-1-85-million-on-a-mansion/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict000262411179-e1486562042770.jpg?strip=all&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict000262411179-e1486562042770.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Exclusive</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/sport/football/2898496/teenage-manchester-united-star-marcus-rashford-lands-himself-a-premier-league-pad-after-splashing-out-1-85-million-on-a-mansion/">
+					<h2 class="teaser__headline theme__copy-color">BIG SPENDER</h2>
+		
+		<p class="teaser__subdeck">
+			Man U ace Marcus Rashford lands himself a Premier League pad - after splashing out £1.85 million on mansion		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/sport/football/2898496/teenage-manchester-united-star-marcus-rashford-lands-himself-a-premier-league-pad-after-splashing-out-1-85-million-on-a-mansion/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2898496"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/sport/football/2898496/teenage-manchester-united-star-marcus-rashford-lands-himself-a-premier-league-pad-after-splashing-out-1-85-million-on-a-mansion/">
+		<a href="https://www.thesun.co.uk/sport/football/2898496/teenage-manchester-united-star-marcus-rashford-lands-himself-a-premier-league-pad-after-splashing-out-1-85-million-on-a-mansion/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/sport/football/2898496/teenage-manchester-united-star-marcus-rashford-lands-himself-a-premier-league-pad-after-splashing-out-1-85-million-on-a-mansion/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-football" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/sport/football/2896923/liverpool-transfer-news-reds-begin-talks-over-20m-mario-gotze-summer-move-from-borussia-dortmund/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/sport-preview-mario-gotze1.jpg?strip=all&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/sport-preview-mario-gotze1.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Gossip</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/sport/football/2896923/liverpool-transfer-news-reds-begin-talks-over-20m-mario-gotze-summer-move-from-borussia-dortmund/">
+					<h2 class="teaser__headline theme__copy-color">it&#039;s gotz to be</h2>
+		
+		<p class="teaser__subdeck">
+			Liverpool begin talks over £20m Mario Gotze summer move from Borussia Dortmund		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/sport/football/2896923/liverpool-transfer-news-reds-begin-talks-over-20m-mario-gotze-summer-move-from-borussia-dortmund/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2896923"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/sport/football/2896923/liverpool-transfer-news-reds-begin-talks-over-20m-mario-gotze-summer-move-from-borussia-dortmund/">
+		<a href="https://www.thesun.co.uk/sport/football/2896923/liverpool-transfer-news-reds-begin-talks-over-20m-mario-gotze-summer-move-from-borussia-dortmund/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/sport/football/2896923/liverpool-transfer-news-reds-begin-talks-over-20m-mario-gotze-summer-move-from-borussia-dortmund/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-football" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/sport/football/2900642/manchester-city-100million-lionel-messi-barcelona/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/rr-mancity.jpg?strip=all&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/rr-mancity.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Gossip</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/sport/football/2900642/manchester-city-100million-lionel-messi-barcelona/">
+					<h2 class="teaser__headline theme__copy-color">City&#039;s Messi Raid</h2>
+		
+		<p class="teaser__subdeck">
+			Manchester City stepping up £100m bid for Lionel Messi as Barcelona star&#039;s future remains unclear		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/sport/football/2900642/manchester-city-100million-lionel-messi-barcelona/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2900642"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/sport/football/2900642/manchester-city-100million-lionel-messi-barcelona/">
+		<a href="https://www.thesun.co.uk/sport/football/2900642/manchester-city-100million-lionel-messi-barcelona/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/sport/football/2900642/manchester-city-100million-lionel-messi-barcelona/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-football" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/sport/football/2903660/fa-cup-sixth-round-draw-chelsea-manchester-united-arsenal-sutton-lincoln/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/sport-preview-diego-costa.jpg?strip=all&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/sport-preview-diego-costa.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/sport/football/2903660/fa-cup-sixth-round-draw-chelsea-manchester-united-arsenal-sutton-lincoln/">
+					<h2 class="teaser__headline theme__copy-color">sweet fa</h2>
+		
+		<p class="teaser__subdeck">
+			Jose Mourinho faces Stamford Bridge return in FA Cup sixth round as Chelsea land Man United in last eight		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/sport/football/2903660/fa-cup-sixth-round-draw-chelsea-manchester-united-arsenal-sutton-lincoln/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2903660"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/sport/football/2903660/fa-cup-sixth-round-draw-chelsea-manchester-united-arsenal-sutton-lincoln/">
+		<a href="https://www.thesun.co.uk/sport/football/2903660/fa-cup-sixth-round-draw-chelsea-manchester-united-arsenal-sutton-lincoln/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/sport/football/2903660/fa-cup-sixth-round-draw-chelsea-manchester-united-arsenal-sutton-lincoln/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-football" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/sport/football/2851510/fa-cup-sixth-round-draw-numbers-time-bt-sport/">
+					<div class="delayed-image-load-landscape" data-src="https://i0.wp.com/www.thesun.co.uk/wp-content/uploads/2017/01/nintchdbpict000237407521.jpg?crop=316px%2C0px%2C4866px%2C3242px&amp;resize=150%2C100&amp;ssl=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://i0.wp.com/www.thesun.co.uk/wp-content/uploads/2017/01/nintchdbpict000237407521.jpg?crop=316px%2C0px%2C4866px%2C3242px&amp;resize=620%2C413&amp;ssl=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/sport/football/2851510/fa-cup-sixth-round-draw-numbers-time-bt-sport/">
+					<h2 class="teaser__headline theme__copy-color">Last eight</h2>
+		
+		<p class="teaser__subdeck">
+			When is the FA Cup sixth-round draw and when will the ties take place?		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/sport/football/2851510/fa-cup-sixth-round-draw-numbers-time-bt-sport/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2851510"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/sport/football/2851510/fa-cup-sixth-round-draw-numbers-time-bt-sport/">
+		<a href="https://www.thesun.co.uk/sport/football/2851510/fa-cup-sixth-round-draw-numbers-time-bt-sport/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/sport/football/2851510/fa-cup-sixth-round-draw-numbers-time-bt-sport/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-football" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/sport/football/2884363/alexis-sanchez-quit-arsenal-bayern-munich-defeat/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/sport-preview-sanchez1.jpg?strip=all&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/sport-preview-sanchez1.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/sport/football/2884363/alexis-sanchez-quit-arsenal-bayern-munich-defeat/">
+					<h2 class="teaser__headline theme__copy-color">Fight club</h2>
+		
+		<p class="teaser__subdeck">
+			Alexis Sanchez set to quit Arsenal in the summer following dressing room bust up after Bayern Munich defeat		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/sport/football/2884363/alexis-sanchez-quit-arsenal-bayern-munich-defeat/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2884363"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/sport/football/2884363/alexis-sanchez-quit-arsenal-bayern-munich-defeat/">
+		<a href="https://www.thesun.co.uk/sport/football/2884363/alexis-sanchez-quit-arsenal-bayern-munich-defeat/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/sport/football/2884363/alexis-sanchez-quit-arsenal-bayern-munich-defeat/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-football" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/sport/2899850/leicester-ace-danny-simpson-tried-to-hide-valentines-day-date-with-former-miss-great-britain-shelby-tribble-but-she-spilled-the-beans/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/as-comp-v-day-madness-continued.jpg?strip=all&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/as-comp-v-day-madness-continued.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Exclusive</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/sport/2899850/leicester-ace-danny-simpson-tried-to-hide-valentines-day-date-with-former-miss-great-britain-shelby-tribble-but-she-spilled-the-beans/">
+					<h2 class="teaser__headline theme__copy-color">TRIBBLE AHEAD</h2>
+		
+		<p class="teaser__subdeck">
+			Leicester City ace Danny Simpson tried to hide Valentine&#039;s Day date with former Miss Great Britain Shelby&hellip;		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/sport/2899850/leicester-ace-danny-simpson-tried-to-hide-valentines-day-date-with-former-miss-great-britain-shelby-tribble-but-she-spilled-the-beans/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2899850"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/sport/2899850/leicester-ace-danny-simpson-tried-to-hide-valentines-day-date-with-former-miss-great-britain-shelby-tribble-but-she-spilled-the-beans/">
+		<a href="https://www.thesun.co.uk/sport/2899850/leicester-ace-danny-simpson-tried-to-hide-valentines-day-date-with-former-miss-great-britain-shelby-tribble-but-she-spilled-the-beans/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/sport/2899850/leicester-ace-danny-simpson-tried-to-hide-valentines-day-date-with-former-miss-great-britain-shelby-tribble-but-she-spilled-the-beans/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-football" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/sport/football/2903107/fa-cup-sixth-round-draw-live-chelsea-manchester-united-arsenal-lincoln-mourinho/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict0003027845351-e1487430339176.jpg?strip=all&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict0003027845351-e1487430339176.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-enable">Live Blog</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/sport/football/2903107/fa-cup-sixth-round-draw-live-chelsea-manchester-united-arsenal-lincoln-mourinho/">
+					<h2 class="teaser__headline theme__copy-color">ROAD TO WEMBLEY</h2>
+		
+		<p class="teaser__subdeck">
+			FA Cup sixth round draw LIVE: Chelsea, Tottenham, Lincoln and Middlesbrough to discover fate for last eight		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/sport/football/2903107/fa-cup-sixth-round-draw-live-chelsea-manchester-united-arsenal-lincoln-mourinho/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2903107"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/sport/football/2903107/fa-cup-sixth-round-draw-live-chelsea-manchester-united-arsenal-lincoln-mourinho/">
+		<a href="https://www.thesun.co.uk/sport/football/2903107/fa-cup-sixth-round-draw-live-chelsea-manchester-united-arsenal-lincoln-mourinho/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/sport/football/2903107/fa-cup-sixth-round-draw-live-chelsea-manchester-united-arsenal-lincoln-mourinho/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-football" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/sport/football/2900729/chelsea-bernardo-silva-monaco-manchester-united-real-madrid-barcelona/">
+					<div class="delayed-image-load-landscape" data-src="https://i2.wp.com/www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict000297906194.jpg?crop=117px%2C0px%2C2766px%2C1843px&amp;resize=150%2C100&amp;ssl=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://i2.wp.com/www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict000297906194.jpg?crop=117px%2C0px%2C2766px%2C1843px&amp;resize=620%2C413&amp;ssl=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Gossip</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/sport/football/2900729/chelsea-bernardo-silva-monaco-manchester-united-real-madrid-barcelona/">
+					<h2 class="teaser__headline theme__copy-color">SELL THE FAMILY SILVA</h2>
+		
+		<p class="teaser__subdeck">
+			Chelsea do battle for £70m Bernardo Silva with Man Utd, Barca, Real and City interested		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/sport/football/2900729/chelsea-bernardo-silva-monaco-manchester-united-real-madrid-barcelona/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2900729"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/sport/football/2900729/chelsea-bernardo-silva-monaco-manchester-united-real-madrid-barcelona/">
+		<a href="https://www.thesun.co.uk/sport/football/2900729/chelsea-bernardo-silva-monaco-manchester-united-real-madrid-barcelona/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/sport/football/2900729/chelsea-bernardo-silva-monaco-manchester-united-real-madrid-barcelona/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-football" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/sport/football/2887580/mark-clattenburg-to-be-paid-500000-a-year-tax-free-along-with-other-benefits-after-quitting-prem-for-saudi-arabia/">
+					<div class="delayed-image-load-landscape" data-src="https://i1.wp.com/www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict000005385306-e1487328962831.jpg?crop=0px%2C80px%2C2573px%2C1717px&amp;resize=150%2C100&amp;ssl=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://i1.wp.com/www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict000005385306-e1487328962831.jpg?crop=0px%2C80px%2C2573px%2C1717px&amp;resize=620%2C413&amp;ssl=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/sport/football/2887580/mark-clattenburg-to-be-paid-500000-a-year-tax-free-along-with-other-benefits-after-quitting-prem-for-saudi-arabia/">
+					<h2 class="teaser__headline theme__copy-color">DOUBLE BUBBLE</h2>
+		
+		<p class="teaser__subdeck">
+			Mark Clattenburg on £500,000-a-year TAX FREE along with other benefits after quitting Prem for Saudi Arabia		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/sport/football/2887580/mark-clattenburg-to-be-paid-500000-a-year-tax-free-along-with-other-benefits-after-quitting-prem-for-saudi-arabia/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2887580"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/sport/football/2887580/mark-clattenburg-to-be-paid-500000-a-year-tax-free-along-with-other-benefits-after-quitting-prem-for-saudi-arabia/">
+		<a href="https://www.thesun.co.uk/sport/football/2887580/mark-clattenburg-to-be-paid-500000-a-year-tax-free-along-with-other-benefits-after-quitting-prem-for-saudi-arabia/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/sport/football/2887580/mark-clattenburg-to-be-paid-500000-a-year-tax-free-along-with-other-benefits-after-quitting-prem-for-saudi-arabia/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-football" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/sport/2894282/wayne-rooney-china-manchester-united/">
+					<div class="delayed-image-load-landscape" data-src="https://i0.wp.com/www.thesun.co.uk/wp-content/uploads/2017/01/sport-preview-wayne-rooney1.jpg?crop=1px%2C0px%2C938px%2C625px&amp;resize=150%2C100&amp;ssl=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://i0.wp.com/www.thesun.co.uk/wp-content/uploads/2017/01/sport-preview-wayne-rooney1.jpg?crop=1px%2C0px%2C938px%2C625px&amp;resize=620%2C413&amp;ssl=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Gossip</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/sport/2894282/wayne-rooney-china-manchester-united/">
+					<h2 class="teaser__headline theme__copy-color">ROO BETTER BELIEVE IT</h2>
+		
+		<p class="teaser__subdeck">
+			Manchester United could still flog skipper Wayne Rooney this month despite transfer window closing		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/sport/2894282/wayne-rooney-china-manchester-united/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2894282"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/sport/2894282/wayne-rooney-china-manchester-united/">
+		<a href="https://www.thesun.co.uk/sport/2894282/wayne-rooney-china-manchester-united/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/sport/2894282/wayne-rooney-china-manchester-united/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-football" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/sport/football/2898937/adam-lallana-150000-a-week-agreeing-31-2million-liverpool/">
+					<div class="delayed-image-load-landscape" data-src="https://i0.wp.com/www.thesun.co.uk/wp-content/uploads/2017/01/nintchdbpict000267351895.jpg?crop=318px%2C68px%2C1027px%2C685px&amp;resize=150%2C100&amp;ssl=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://i0.wp.com/www.thesun.co.uk/wp-content/uploads/2017/01/nintchdbpict000267351895.jpg?crop=318px%2C68px%2C1027px%2C685px&amp;resize=620%2C413&amp;ssl=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Exclusive</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/sport/football/2898937/adam-lallana-150000-a-week-agreeing-31-2million-liverpool/">
+					<h2 class="teaser__headline theme__copy-color">Ad kops a raise</h2>
+		
+		<p class="teaser__subdeck">
+			Adam Lallana will pocket £150,000-a-week after agreeing new £31.2million deal with Liverpool		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/sport/football/2898937/adam-lallana-150000-a-week-agreeing-31-2million-liverpool/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2898937"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/sport/football/2898937/adam-lallana-150000-a-week-agreeing-31-2million-liverpool/">
+		<a href="https://www.thesun.co.uk/sport/football/2898937/adam-lallana-150000-a-week-agreeing-31-2million-liverpool/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/sport/football/2898937/adam-lallana-150000-a-week-agreeing-31-2million-liverpool/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-football" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/sport/football/2898291/luke-shaw-has-future-at-manchester-united-but-must-adapt-his-style-says-jose-mourinho/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/sport-preview45.jpg?strip=all&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/sport-preview45.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/sport/football/2898291/luke-shaw-has-future-at-manchester-united-but-must-adapt-his-style-says-jose-mourinho/">
+					<h2 class="teaser__headline theme__copy-color">&#039;He needs to adapt&#039;</h2>
+		
+		<p class="teaser__subdeck">
+			Luke Shaw has been promised by boss Jose Mourinho that he still has a future at the club		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/sport/football/2898291/luke-shaw-has-future-at-manchester-united-but-must-adapt-his-style-says-jose-mourinho/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2898291"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/sport/football/2898291/luke-shaw-has-future-at-manchester-united-but-must-adapt-his-style-says-jose-mourinho/">
+		<a href="https://www.thesun.co.uk/sport/football/2898291/luke-shaw-has-future-at-manchester-united-but-must-adapt-his-style-says-jose-mourinho/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/sport/football/2898291/luke-shaw-has-future-at-manchester-united-but-must-adapt-his-style-says-jose-mourinho/"></a>
+
+</div>
+</aside><aside id="thesun_dfp_ad_widget-7" class="widget widget_thesun_dfp_ad_widget"><div class="dfp-ad-container mpu2-container">
+	<div class="dfp-ad teaser-item teasermedium teasermedium--mpu mpu2" id="mpu2">
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function () {
+				var thesun_ad_cmd = thesun_ad_cmd || [];
+				thesun_ad_cmd.push( function() {
+					googletag.display( 'mpu2' );
+				} );
+			});
+		</script>
+	</div>
+</div>
+
+</aside><aside id="thesun_outbrain_widget-2" class="widget widget_thesun_outbrain_widget"><div
+	class="OUTBRAIN"
+	data-src="https://www.thesun.co.uk/sport/football/2734707/arsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers/"
+	data-widget-id="SB_3"
+	data-ob-template="TheSun_1"
+></div>
+</aside><aside class="widget sidebar sidebar__section teaser theme-main"><h3 class="sidebar__title theme__after-color">Most Popular</h3><!-- MEDIUM TEASER - 300PX -->
+<div class="teaser-item teaser__medium theme-main" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/tvandshowbiz/2899760/jeremy-kyles-ex-wife-carla-is-on-the-hunt-for-a-new-nanny-after-the-tv-host-fell-in-love-with-the-last-one/">
+					<div class="delayed-image-load-landscape" data-src="https://i0.wp.com/www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict000189912501.jpg?crop=0px%2C46px%2C2210px%2C1474px&amp;resize=300%2C192&amp;ssl=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://i0.wp.com/www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict000189912501.jpg?crop=0px%2C46px%2C2210px%2C1474px&amp;resize=620%2C413&amp;ssl=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/tvandshowbiz/2899760/jeremy-kyles-ex-wife-carla-is-on-the-hunt-for-a-new-nanny-after-the-tv-host-fell-in-love-with-the-last-one/">
+					<h2 class="teaser__headline theme__copy-color">NEW NANNY NEEDED</h2>
+		
+		<p class="teaser__subdeck">
+			Jeremy Kyle&#039;s ex-wife Carla is on the hunt for a new nanny after the TV host fell in love with the last one		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/tvandshowbiz/" class="theme__copy-color">
+				TV &amp; Showbiz				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2899760/jeremy-kyles-ex-wife-carla-is-on-the-hunt-for-a-new-nanny-after-the-tv-host-fell-in-love-with-the-last-one/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2899760"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/tvandshowbiz/2899760/jeremy-kyles-ex-wife-carla-is-on-the-hunt-for-a-new-nanny-after-the-tv-host-fell-in-love-with-the-last-one/">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2899760/jeremy-kyles-ex-wife-carla-is-on-the-hunt-for-a-new-nanny-after-the-tv-host-fell-in-love-with-the-last-one/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/tvandshowbiz/2899760/jeremy-kyles-ex-wife-carla-is-on-the-hunt-for-a-new-nanny-after-the-tv-host-fell-in-love-with-the-last-one/"></a>
+
+</div>
+<!-- MEDIUM TEASER - 300PX -->
+<div class="teaser-item teaser__medium theme-main" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/tvandshowbiz/2898681/george-michaels-funeral-postponed-to-at-least-march-so-further-tests-can-be-carried-out-on-his-body-as-fadis-nephew-hits-out-over-funeral-ban/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/as-comp-georgem-v2.jpg?strip=all&amp;w=300&amp;h=192&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/as-comp-georgem-v2.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Exclusive</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/tvandshowbiz/2898681/george-michaels-funeral-postponed-to-at-least-march-so-further-tests-can-be-carried-out-on-his-body-as-fadis-nephew-hits-out-over-funeral-ban/">
+					<h2 class="teaser__headline theme__copy-color">DRUG TEST HOLD-UP</h2>
+		
+		<p class="teaser__subdeck">
+			George Michael&#039;s funeral postponed for another FOUR weeks so drugs tests can be carried out on his body		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/tvandshowbiz/" class="theme__copy-color">
+				TV &amp; Showbiz				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2898681/george-michaels-funeral-postponed-to-at-least-march-so-further-tests-can-be-carried-out-on-his-body-as-fadis-nephew-hits-out-over-funeral-ban/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2898681"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/tvandshowbiz/2898681/george-michaels-funeral-postponed-to-at-least-march-so-further-tests-can-be-carried-out-on-his-body-as-fadis-nephew-hits-out-over-funeral-ban/">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2898681/george-michaels-funeral-postponed-to-at-least-march-so-further-tests-can-be-carried-out-on-his-body-as-fadis-nephew-hits-out-over-funeral-ban/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/tvandshowbiz/2898681/george-michaels-funeral-postponed-to-at-least-march-so-further-tests-can-be-carried-out-on-his-body-as-fadis-nephew-hits-out-over-funeral-ban/"></a>
+
+</div>
+<!-- MEDIUM TEASER - 300PX -->
+<div class="teaser-item teaser__medium theme-main" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/tvandshowbiz/2898976/olympic-star-tom-daley-had-secret-18-month-affair-with-hunky-6ft-6in-male-model-while-fiance-dustin-lance-black-was-away/">
+					<div class="delayed-image-load-landscape" data-src="https://i2.wp.com/www.thesun.co.uk/wp-content/uploads/2017/02/as-comp-tom.jpg?crop=0px%2C0px%2C750px%2C500px&amp;resize=300%2C192&amp;ssl=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://i2.wp.com/www.thesun.co.uk/wp-content/uploads/2017/02/as-comp-tom.jpg?crop=0px%2C0px%2C750px%2C500px&amp;resize=620%2C413&amp;ssl=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Exclusive</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/tvandshowbiz/2898976/olympic-star-tom-daley-had-secret-18-month-affair-with-hunky-6ft-6in-male-model-while-fiance-dustin-lance-black-was-away/">
+					<h2 class="teaser__headline theme__copy-color">DIVE ACE AT IT AGAIN</h2>
+		
+		<p class="teaser__subdeck">
+			Tom Daley had secret 18-month affair with hunky 6ft 6in male model while fianc&eacute; Dustin Lance&hellip;		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/tvandshowbiz/" class="theme__copy-color">
+				TV &amp; Showbiz				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2898976/olympic-star-tom-daley-had-secret-18-month-affair-with-hunky-6ft-6in-male-model-while-fiance-dustin-lance-black-was-away/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2898976"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/tvandshowbiz/2898976/olympic-star-tom-daley-had-secret-18-month-affair-with-hunky-6ft-6in-male-model-while-fiance-dustin-lance-black-was-away/">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2898976/olympic-star-tom-daley-had-secret-18-month-affair-with-hunky-6ft-6in-male-model-while-fiance-dustin-lance-black-was-away/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/tvandshowbiz/2898976/olympic-star-tom-daley-had-secret-18-month-affair-with-hunky-6ft-6in-male-model-while-fiance-dustin-lance-black-was-away/"></a>
+
+</div>
+<!-- MEDIUM TEASER - 300PX -->
+<div class="teaser-item teaser__medium theme-main" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/tvandshowbiz/2903156/gemma-collins-continues-to-show-off-dramatic-weight-loss-in-skinny-jeans-but-fans-notice-something-very-odd/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/sd-gemma-composite1.jpg?strip=all&amp;w=300&amp;h=192&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/sd-gemma-composite1.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/tvandshowbiz/2903156/gemma-collins-continues-to-show-off-dramatic-weight-loss-in-skinny-jeans-but-fans-notice-something-very-odd/">
+					<h2 class="teaser__headline theme__copy-color">Photoshop fail?</h2>
+		
+		<p class="teaser__subdeck">
+			Gemma Collins continues to show off weight loss in skinny jeans, but fans notice something very odd		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/tvandshowbiz/" class="theme__copy-color">
+				TV &amp; Showbiz				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2903156/gemma-collins-continues-to-show-off-dramatic-weight-loss-in-skinny-jeans-but-fans-notice-something-very-odd/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2903156"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/tvandshowbiz/2903156/gemma-collins-continues-to-show-off-dramatic-weight-loss-in-skinny-jeans-but-fans-notice-something-very-odd/">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2903156/gemma-collins-continues-to-show-off-dramatic-weight-loss-in-skinny-jeans-but-fans-notice-something-very-odd/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/tvandshowbiz/2903156/gemma-collins-continues-to-show-off-dramatic-weight-loss-in-skinny-jeans-but-fans-notice-something-very-odd/"></a>
+
+</div>
+<!-- MEDIUM TEASER - 300PX -->
+<div class="teaser-item teaser__medium theme-main" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/living/2881731/suffer-with-white-marks-on-your-fingernails-this-is-what-they-mean-and-when-you-should-go-to-the-doctor/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict000302336739-e1487260618760.jpg?strip=all&amp;w=300&amp;h=192&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict000302336739-e1487260618760.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Revealed</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/living/2881731/suffer-with-white-marks-on-your-fingernails-this-is-what-they-mean-and-when-you-should-go-to-the-doctor/">
+					<h2 class="teaser__headline theme__copy-color">Nailed it</h2>
+		
+		<p class="teaser__subdeck">
+			Suffer with white marks on your fingernails? This is what they mean… and when you should go to the doctor		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/living/" class="theme__copy-color">
+				Living				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/living/2881731/suffer-with-white-marks-on-your-fingernails-this-is-what-they-mean-and-when-you-should-go-to-the-doctor/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2881731"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/living/2881731/suffer-with-white-marks-on-your-fingernails-this-is-what-they-mean-and-when-you-should-go-to-the-doctor/">
+		<a href="https://www.thesun.co.uk/living/2881731/suffer-with-white-marks-on-your-fingernails-this-is-what-they-mean-and-when-you-should-go-to-the-doctor/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/living/2881731/suffer-with-white-marks-on-your-fingernails-this-is-what-they-mean-and-when-you-should-go-to-the-doctor/"></a>
+
+</div>
+<!-- MEDIUM TEASER - 300PX -->
+<div class="teaser-item teaser__medium theme-main" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/tvandshowbiz/2876066/eastenders-fans-face-more-disappointment-as-show-dropped-from-the-schedule-again-to-make-way-for-an-arsenal-match/">
+					<div class="delayed-image-load-landscape" data-src="https://i1.wp.com/www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict000302032116.jpg?crop=122px%2C0px%2C4056px%2C2704px&amp;resize=300%2C192&amp;ssl=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://i1.wp.com/www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict000302032116.jpg?crop=122px%2C0px%2C4056px%2C2704px&amp;resize=620%2C413&amp;ssl=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/tvandshowbiz/2876066/eastenders-fans-face-more-disappointment-as-show-dropped-from-the-schedule-again-to-make-way-for-an-arsenal-match/">
+					<h2 class="teaser__headline theme__copy-color">FOOTIE RULES AGAIN</h2>
+		
+		<p class="teaser__subdeck">
+			EastEnders fans face more disappointment as show dropped from the schedule AGAIN		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/tvandshowbiz/" class="theme__copy-color">
+				TV &amp; Showbiz				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2876066/eastenders-fans-face-more-disappointment-as-show-dropped-from-the-schedule-again-to-make-way-for-an-arsenal-match/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2876066"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/tvandshowbiz/2876066/eastenders-fans-face-more-disappointment-as-show-dropped-from-the-schedule-again-to-make-way-for-an-arsenal-match/">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2876066/eastenders-fans-face-more-disappointment-as-show-dropped-from-the-schedule-again-to-make-way-for-an-arsenal-match/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/tvandshowbiz/2876066/eastenders-fans-face-more-disappointment-as-show-dropped-from-the-schedule-again-to-make-way-for-an-arsenal-match/"></a>
+
+</div>
+<!-- MEDIUM TEASER - 300PX -->
+<div class="teaser-item teaser__medium theme-main" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/tvandshowbiz/2898532/the-voice-uk-viewers-furious-after-former-hollyoaks-star-abi-phillips-fails-to-get-any-of-the-coaches-to-turn-around-for-her/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/dk-composite-the-voice.jpg?strip=all&amp;w=300&amp;h=192&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/dk-composite-the-voice.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+				<!-- Add video indicator if article has feature video. -->
+		<div class="teaser__item-play theme__background-color-rgba-80">
+			<span></span>
+		</div>
+	</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/tvandshowbiz/2898532/the-voice-uk-viewers-furious-after-former-hollyoaks-star-abi-phillips-fails-to-get-any-of-the-coaches-to-turn-around-for-her/">
+					<h2 class="teaser__headline theme__copy-color">‘BAD DECISION’</h2>
+		
+		<p class="teaser__subdeck">
+			The Voice UK viewers furious after former Hollyoaks star Abi Phillips fails to get through		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/tvandshowbiz/" class="theme__copy-color">
+				TV &amp; Showbiz				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2898532/the-voice-uk-viewers-furious-after-former-hollyoaks-star-abi-phillips-fails-to-get-any-of-the-coaches-to-turn-around-for-her/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2898532"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/tvandshowbiz/2898532/the-voice-uk-viewers-furious-after-former-hollyoaks-star-abi-phillips-fails-to-get-any-of-the-coaches-to-turn-around-for-her/">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2898532/the-voice-uk-viewers-furious-after-former-hollyoaks-star-abi-phillips-fails-to-get-any-of-the-coaches-to-turn-around-for-her/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/tvandshowbiz/2898532/the-voice-uk-viewers-furious-after-former-hollyoaks-star-abi-phillips-fails-to-get-any-of-the-coaches-to-turn-around-for-her/"></a>
+
+</div>
+<!-- MEDIUM TEASER - 300PX -->
+<div class="teaser-item teaser__medium theme-main" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/living/2898628/these-are-the-most-common-sexual-fetishes-and-some-are-sure-to-surprise-you/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict0002965257102.jpg?strip=all&amp;w=300&amp;h=192&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict0002965257102.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Revealed</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/living/2898628/these-are-the-most-common-sexual-fetishes-and-some-are-sure-to-surprise-you/">
+					<h2 class="teaser__headline theme__copy-color">How normal is your kink?</h2>
+		
+		<p class="teaser__subdeck">
+			These are the most common sexual fetishes... and some are sure to surprise you		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/living/" class="theme__copy-color">
+				Living				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/living/2898628/these-are-the-most-common-sexual-fetishes-and-some-are-sure-to-surprise-you/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2898628"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/living/2898628/these-are-the-most-common-sexual-fetishes-and-some-are-sure-to-surprise-you/">
+		<a href="https://www.thesun.co.uk/living/2898628/these-are-the-most-common-sexual-fetishes-and-some-are-sure-to-surprise-you/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/living/2898628/these-are-the-most-common-sexual-fetishes-and-some-are-sure-to-surprise-you/"></a>
+
+</div>
+<!-- MEDIUM TEASER - 300PX -->
+<div class="teaser-item teaser__medium theme-main" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/tvandshowbiz/2898397/coleen-rooney-axed-by-fashion-giant-littlewoods-in-favour-of-down-to-earth-myleene-klass/">
+					<div class="delayed-image-load-landscape" data-src="https://i0.wp.com/www.thesun.co.uk/wp-content/uploads/2017/02/as-comp-coleen1.jpg?crop=0px%2C0px%2C750px%2C500px&amp;resize=300%2C192&amp;ssl=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://i0.wp.com/www.thesun.co.uk/wp-content/uploads/2017/02/as-comp-coleen1.jpg?crop=0px%2C0px%2C750px%2C500px&amp;resize=620%2C413&amp;ssl=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/tvandshowbiz/2898397/coleen-rooney-axed-by-fashion-giant-littlewoods-in-favour-of-down-to-earth-myleene-klass/">
+					<h2 class="teaser__headline theme__copy-color">COLEEN BREAK</h2>
+		
+		<p class="teaser__subdeck">
+			Coleen Rooney axed by fashion giant Littlewoods in favour of &#039;down to earth&#039; Myleene Klass		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/tvandshowbiz/" class="theme__copy-color">
+				TV &amp; Showbiz				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2898397/coleen-rooney-axed-by-fashion-giant-littlewoods-in-favour-of-down-to-earth-myleene-klass/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2898397"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/tvandshowbiz/2898397/coleen-rooney-axed-by-fashion-giant-littlewoods-in-favour-of-down-to-earth-myleene-klass/">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2898397/coleen-rooney-axed-by-fashion-giant-littlewoods-in-favour-of-down-to-earth-myleene-klass/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/tvandshowbiz/2898397/coleen-rooney-axed-by-fashion-giant-littlewoods-in-favour-of-down-to-earth-myleene-klass/"></a>
+
+</div>
+<!-- MEDIUM TEASER - 300PX -->
+<div class="teaser-item teaser__medium theme-main" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/tvandshowbiz/2898999/bosses-forced-danny-dyer-to-take-eastenders-break-after-months-of-violent-mood-swings-on-set-with-cast-complaining-he-walks-around-like-he-owns-albert-square/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/as-comp-dyer.jpg?strip=all&amp;w=300&amp;h=192&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/as-comp-dyer.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Exclusive</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/tvandshowbiz/2898999/bosses-forced-danny-dyer-to-take-eastenders-break-after-months-of-violent-mood-swings-on-set-with-cast-complaining-he-walks-around-like-he-owns-albert-square/">
+					<h2 class="teaser__headline theme__copy-color">&#039;I’m God here&#039;</h2>
+		
+		<p class="teaser__subdeck">
+			EastEnders bosses forced Danny Dyer to take break from the soap after months of violent mood-swings on set&hellip;		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/tvandshowbiz/" class="theme__copy-color">
+				TV &amp; Showbiz				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2898999/bosses-forced-danny-dyer-to-take-eastenders-break-after-months-of-violent-mood-swings-on-set-with-cast-complaining-he-walks-around-like-he-owns-albert-square/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2898999"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/tvandshowbiz/2898999/bosses-forced-danny-dyer-to-take-eastenders-break-after-months-of-violent-mood-swings-on-set-with-cast-complaining-he-walks-around-like-he-owns-albert-square/">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2898999/bosses-forced-danny-dyer-to-take-eastenders-break-after-months-of-violent-mood-swings-on-set-with-cast-complaining-he-walks-around-like-he-owns-albert-square/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/tvandshowbiz/2898999/bosses-forced-danny-dyer-to-take-eastenders-break-after-months-of-violent-mood-swings-on-set-with-cast-complaining-he-walks-around-like-he-owns-albert-square/"></a>
+
+</div>
+<!-- MEDIUM TEASER - 300PX -->
+<div class="teaser-item teaser__medium theme-main" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/tvandshowbiz/2898932/simon-cowell-drops-his-make-up-artist-after-16-years-and-shes-a-dead-ringer-for-his-partner-lauren-silverman/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/as-comp-cowell.jpg?strip=all&amp;w=300&amp;h=192&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/as-comp-cowell.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Exclusive</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/tvandshowbiz/2898932/simon-cowell-drops-his-make-up-artist-after-16-years-and-shes-a-dead-ringer-for-his-partner-lauren-silverman/">
+					<h2 class="teaser__headline theme__copy-color">SI&#039;S BRUSH OFF</h2>
+		
+		<p class="teaser__subdeck">
+			Simon Cowell drops his make-up artist after 16 years - and she&#039;s a dead ringer for his partner Lauren		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/tvandshowbiz/" class="theme__copy-color">
+				TV &amp; Showbiz				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2898932/simon-cowell-drops-his-make-up-artist-after-16-years-and-shes-a-dead-ringer-for-his-partner-lauren-silverman/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2898932"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/tvandshowbiz/2898932/simon-cowell-drops-his-make-up-artist-after-16-years-and-shes-a-dead-ringer-for-his-partner-lauren-silverman/">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2898932/simon-cowell-drops-his-make-up-artist-after-16-years-and-shes-a-dead-ringer-for-his-partner-lauren-silverman/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/tvandshowbiz/2898932/simon-cowell-drops-his-make-up-artist-after-16-years-and-shes-a-dead-ringer-for-his-partner-lauren-silverman/"></a>
+
+</div>
+<!-- MEDIUM TEASER - 300PX -->
+<div class="teaser-item teaser__medium theme-main" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/tvandshowbiz/2898962/keith-lemon-and-dennis-rodman-have-the-most-awkward-interview-ever-on-through-the-keyhole/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/as-comp-keith.jpg?strip=all&amp;w=300&amp;h=192&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/as-comp-keith.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+				<!-- Add video indicator if article has feature video. -->
+		<div class="teaser__item-play theme__background-color-rgba-80">
+			<span></span>
+		</div>
+	</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/tvandshowbiz/2898962/keith-lemon-and-dennis-rodman-have-the-most-awkward-interview-ever-on-through-the-keyhole/">
+					<h2 class="teaser__headline theme__copy-color">&#039;ARE YOU ALWAYS LIKE THIS?!&#039;</h2>
+		
+		<p class="teaser__subdeck">
+			Keith Lemon and Dennis Rodman in VERY awkward interview on Through the Keyhole		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/tvandshowbiz/" class="theme__copy-color">
+				TV &amp; Showbiz				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2898962/keith-lemon-and-dennis-rodman-have-the-most-awkward-interview-ever-on-through-the-keyhole/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2898962"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/tvandshowbiz/2898962/keith-lemon-and-dennis-rodman-have-the-most-awkward-interview-ever-on-through-the-keyhole/">
+		<a href="https://www.thesun.co.uk/tvandshowbiz/2898962/keith-lemon-and-dennis-rodman-have-the-most-awkward-interview-ever-on-through-the-keyhole/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/tvandshowbiz/2898962/keith-lemon-and-dennis-rodman-have-the-most-awkward-interview-ever-on-through-the-keyhole/"></a>
+
+</div>
+<!-- MEDIUM TEASER - 300PX -->
+<div class="teaser-item teaser__medium theme-main" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/living/2895010/bisexual-actress-paula-williamson-who-is-marrying-charles-bronson-reveals-white-wedding-plans-and-insists-hes-a-joker-with-soft-artists-hands/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/sd-bronson-composite.jpg?strip=all&amp;w=300&amp;h=192&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/sd-bronson-composite.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/living/2895010/bisexual-actress-paula-williamson-who-is-marrying-charles-bronson-reveals-white-wedding-plans-and-insists-hes-a-joker-with-soft-artists-hands/">
+					<h2 class="teaser__headline theme__copy-color">&#039;Charlie&#039;s a changed man&#039;</h2>
+		
+		<p class="teaser__subdeck">
+			Bisexual actress who is marrying Charles Bronson reveals he&#039;s a joker with &#039;soft artist&#039;s hands&#039;		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/living/" class="theme__copy-color">
+				Living				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/living/2895010/bisexual-actress-paula-williamson-who-is-marrying-charles-bronson-reveals-white-wedding-plans-and-insists-hes-a-joker-with-soft-artists-hands/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2895010"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/living/2895010/bisexual-actress-paula-williamson-who-is-marrying-charles-bronson-reveals-white-wedding-plans-and-insists-hes-a-joker-with-soft-artists-hands/">
+		<a href="https://www.thesun.co.uk/living/2895010/bisexual-actress-paula-williamson-who-is-marrying-charles-bronson-reveals-white-wedding-plans-and-insists-hes-a-joker-with-soft-artists-hands/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/living/2895010/bisexual-actress-paula-williamson-who-is-marrying-charles-bronson-reveals-white-wedding-plans-and-insists-hes-a-joker-with-soft-artists-hands/"></a>
+
+</div>
+<!-- MEDIUM TEASER - 300PX -->
+<div class="teaser-item teaser__medium theme-main" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/sport/2899204/two-cleaners-blast-20m-man-utd-ace-phil-jones-as-skinflint-after-he-sacks-them-right-before-christmas-in-row-over-300-bill/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/as-comp-jones.jpg?strip=all&amp;w=300&amp;h=192&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.co.uk/wp-content/uploads/2017/02/as-comp-jones.jpg?strip=all&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Exclusive</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/sport/2899204/two-cleaners-blast-20m-man-utd-ace-phil-jones-as-skinflint-after-he-sacks-them-right-before-christmas-in-row-over-300-bill/">
+					<h2 class="teaser__headline theme__copy-color">CLEANED OUT!</h2>
+		
+		<p class="teaser__subdeck">
+			£20m Man Utd ace Phil Jones blasted as &#039;skinflint&#039; after he sacks two cleaners in row over £300 expenses bill		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/sport/2899204/two-cleaners-blast-20m-man-utd-ace-phil-jones-as-skinflint-after-he-sacks-them-right-before-christmas-in-row-over-300-bill/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2899204"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/sport/2899204/two-cleaners-blast-20m-man-utd-ace-phil-jones-as-skinflint-after-he-sacks-them-right-before-christmas-in-row-over-300-bill/">
+		<a href="https://www.thesun.co.uk/sport/2899204/two-cleaners-blast-20m-man-utd-ace-phil-jones-as-skinflint-after-he-sacks-them-right-before-christmas-in-row-over-300-bill/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/sport/2899204/two-cleaners-blast-20m-man-utd-ace-phil-jones-as-skinflint-after-he-sacks-them-right-before-christmas-in-row-over-300-bill/"></a>
+
+</div>
+<!-- MEDIUM TEASER - 300PX -->
+<div class="teaser-item teaser__medium theme-main" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.co.uk/living/2902583/woman-who-thought-she-was-pregnant-devastated-to-discover-her-baby-was-cancerous-tissue/">
+					<div class="delayed-image-load-landscape" data-src="https://i0.wp.com/www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict000303007746.jpg?crop=0px%2C146px%2C960px%2C640px&amp;resize=300%2C192&amp;ssl=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://i0.wp.com/www.thesun.co.uk/wp-content/uploads/2017/02/nintchdbpict000303007746.jpg?crop=0px%2C146px%2C960px%2C640px&amp;resize=620%2C413&amp;ssl=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.co.uk/living/2902583/woman-who-thought-she-was-pregnant-devastated-to-discover-her-baby-was-cancerous-tissue/">
+					<h2 class="teaser__headline theme__copy-color">‘I gave birth to my tumour’</h2>
+		
+		<p class="teaser__subdeck">
+			Woman who thought she was pregnant devastated to discover her &#039;baby&#039; was cancerous tissue		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.co.uk/living/" class="theme__copy-color">
+				Living				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.co.uk/living/2902583/woman-who-thought-she-was-pregnant-devastated-to-discover-her-baby-was-cancerous-tissue/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="289969" data-lf-article-id="2902583"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.co.uk/living/2902583/woman-who-thought-she-was-pregnant-devastated-to-discover-her-baby-was-cancerous-tissue/">
+		<a href="https://www.thesun.co.uk/living/2902583/woman-who-thought-she-was-pregnant-devastated-to-discover-her-baby-was-cancerous-tissue/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.co.uk/living/2902583/woman-who-thought-she-was-pregnant-devastated-to-discover-her-baby-was-cancerous-tissue/"></a>
+
+</div>
+</aside>					</div><!-- .col sun-col-2 -->
+					
+				</div><!-- .sun-row -->
+			
+			
+		</section><!--. sun-container__article-section theme-sport -->
+
+	</div><!-- .main-content-wrap -->
+
+		<div class="gallery-popup">
+		<a href="#" class="close-gallery"><span class="icon icon-close"></span></a>
+
+		<div class="gallery-image-load-cover"></div>
+		<div class="gallery-container">
+			<div class="swiper-container">
+				<div class="swiper-wrapper"></div>
+
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div><!-- .swiper-container -->
+		</div><!-- .gallery-container -->
+
+		<div class="swiper-caption">
+			<div class="swiper-caption-toggle"><span class="arrow"></span></div>
+
+			<div class="swiper-pagination"></div>
+
+			<span class="swiper-caption-list"></span>
+
+			<div class="sharingButtons social social--gallery">
+					<div class="social-share-buttons">
+		<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2734707" class="share-twitter sd-button share-icon no-text" href="https://www.thesun.co.uk/sport/football/2734707/arsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2734707" class="share-facebook sd-button share-icon no-text" href="https://www.thesun.co.uk/sport/football/2734707/arsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-jetpack-whatsapp"><a rel="nofollow" data-shared="" class="share-jetpack-whatsapp sd-button share-icon no-text" href="whatsapp://send?text=Arsenal%20youngster%20Gedion%20Zelalem%20could%20not%20be%20less%20happy%20after%20being%20sent%20on%20loan%20to%20the%20Dutch%20second%20tier https%3A%2F%2Fwww.thesun.co.uk%2Fsport%2Ffootball%2F2734707%2Farsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers%2F" target="_blank" title="Click to share on WhatsApp"><span></span><span class="sharing-screen-reader-text">Click to share on WhatsApp (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>	</div>
+				</div>
+		</div><!-- .swiper-caption -->
+	</div><!-- .gallery-popup -->
+
+<div id="cookie-bar">
+    <div class="sun-row">
+        <div class="col sun-col-6">
+            <p>By continuing to use the site, you agree to the use of cookies. You can change this and find out more by following <a href="http://www.newsprivacy.co.uk/single/">this link</a></p>
+            <a class="accept-cookies">Close</a>
+        </div>
+    </div>
+</div>
+
+</div><!-- .sun-container .theme -->
+
+<div class="dfp-ad" id="pixel">
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function () {
+			var thesun_ad_cmd = thesun_ad_cmd || [];
+			thesun_ad_cmd.push( function() {
+				googletag.display( 'pixel' );
+			} );
+		});
+	</script>
+</div>
+<div class="dfp-ad" id="pixelSkin">
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function () {
+			var thesun_ad_cmd = thesun_ad_cmd || [];
+			thesun_ad_cmd.push( function() {
+				googletag.display( 'pixelSkin' );
+			} );
+		});
+	</script>
+</div>
+<div class="dfp-ad" id="pixelTeads">
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function () {
+			var thesun_ad_cmd = thesun_ad_cmd || [];
+			thesun_ad_cmd.push( function() {
+				googletag.display( 'pixelTeads' );
+			} );
+		});
+	</script>
+</div>
+
+<footer>
+
+	<div class="sun-row">
+		<div class="col sun-col-2 footer-follow">
+			<h3 class="footer-title-follow">Follow The Sun</h3>
+
+			<div class="follow-sun">
+				<a href="https://www.facebook.com/thesun/" class="follow-facebook"><span class="icon icon-facebook"></span></a>
+				<a href="https://twitter.com/thesun?lang=en-gb" class="follow-twitter"><span class="icon icon-twitter"></span></a>
+			</div>
+		</div>
+
+		<div class="col sun-col-4 footer-nav">
+			<h3 class="footer-title-services">Services</h3>
+			<ul id="menu-footer" class="menu"><li id="menu-item-1236019" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1236019"><a href="https://www.thesun.co.uk/sign-up-to-the-sun/">Sign Up To The Sun</a></li>
+<li id="menu-item-1235852" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235852"><a href="https://www.thesun.co.uk/terms-and-conditions/">Terms and Conditions</a></li>
+<li id="menu-item-1235452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235452"><a href="https://www.thesun.co.uk/editorial-complaints/">Editorial Complaints</a></li>
+<li id="menu-item-1237807" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1237807"><a href="https://www.thesun.co.uk/admin/clarifications/">Clarifications and Corrections</a></li>
+<li id="menu-item-1235451" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235451"><a href="https://www.thesun.co.uk/syndication/">Syndication</a></li>
+<li id="menu-item-1388523" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1388523"><a href="http://www.newsukadvertising.co.uk">Advertising</a></li>
+<li id="menu-item-1235453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235453"><a href="https://www.thesun.co.uk/contact-us/">Contact Us</a></li>
+<li id="menu-item-2313093" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2313093"><a href="https://www.thesun.co.uk/commissioning-terms/">Commissioning Terms</a></li>
+<li id="menu-item-1235319" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1235319"><a href="http://help.thesun.co.uk/">Help Hub</a></li>
+</ul>		</div>
+
+		<div class="col sun-col-2 footer-col-dummy"></div>
+
+		<div class="col sun-col-4">
+			<div class="terms">
+				<p>&copy;News Group Newspapers Limited in England No. 679215 Registered office: 1 London Bridge Street, London, SE1 9GF. "The Sun", "Sun", "Sun Online" are registered trademarks or trade names of News Group Newspapers Limited. This service is provided on News Group Newspapers' Limited's <a href="https://www.thesun.co.uk/terms-and-conditions/">Standard Terms and Conditions</a> in accordance with our <a href="http://www.newsprivacy.co.uk/">Privacy &amp; Cookie Policy</a>. To inquire about a licence to reproduce material, visit our <a href="https://www.thesun.co.uk/syndication/">Syndication</a> site. View our online Press Pack. For other inquiries, <a href="https://www.thesun.co.uk/contact-us/">Contact Us</a>. To see all content on The Sun, please use the Site Map. The Sun website is regulated by the <a href="https://www.thesun.co.uk/editorial-complaints/">Independent Press Standards Organisation (IPSO)</a></p>
+<p>Our journalists strive for accuracy but on occasion we make mistakes. For further details of our complaints policy and to make a complaint please click <a href="https://www.thesun.co.uk/editorial-complaints/">here</a>.</p>
+			</div>
+		</div>
+	</div><!-- .sun-row -->
+
+</footer>
+
+	<div style="display:none">
+	</div>
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="thesun.co.uk"></div>
+</div>
+<script data-cfasync="false">
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.setAttribute('data-cfasync', 'false'); e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+		<script type="application/ld+json">
+		{"@context":"http:\/\/schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.thesun.co.uk\/sport\/football\/2734707\/arsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers\/"},"headline":"Arsenal youngster Gedion Zelalem could not be less happy after being sent on loan to Dutch second tier side VVV-Venlo instead of Rangers","url":"http:\/\/www.thesun.co.uk\/sport\/football\/2734707\/arsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers\/","thumbnailUrl":"https:\/\/www.thesun.co.uk\/wp-content\/uploads\/2017\/01\/sport-preview-zelalem.jpg?strip=all&w=620&h=413&crop=1","image":{"@type":"ImageObject","url":"https:\/\/www.thesun.co.uk\/wp-content\/uploads\/2017\/01\/sport-preview-zelalem.jpg?strip=all&#038;w=620&#038;h=413&#038;crop=1","width":620,"height":413},"dateCreated":"2017-01-29T19:29:09Z","datePublished":"2017-01-29T19:29:09+00:00","dateModified":"2017-01-29T21:52:34+00:00","articleSection":"Sport","author":{"@type":"Person","name":"sstreet"},"creator":["sstreet"],"publisher":{"@type":"Organization","name":"The Sun","logo":{"@type":"ImageObject","url":"https:\/\/www.thesun.co.uk\/wp-content\/themes\/thesun\/images\/the-sun-structured-data-logo.jpg","width":139,"height":60}},"keywords":["Section: Sport:Football","Section: Sport:Football:Premier League","Arsenal","Rangers"],"description":"Zelalem helped Mark Warburton's side\u00a0to promotion last year and gave a very awkward interview on his arrival in Holland","name":"Arsenal youngster Gedion Zelalem could not be less happy after being sent on loan to Dutch second tier side VVV-Venlo instead of Rangers"}		</script>
+		<div id="fb-root"></div>	<script>
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+			n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+			document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '752905198150451');
+		fbq('track', "PageView");
+	</script>
+
+	<noscript>
+		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=752905198150451&ev=PageView&noscript=1" />
+	</noscript>
+
+	<script type="text/javascript">
+    var livefyre_auth_loaded = false;
+</script>
+    <script type="text/javascript">
+        var load_livefyre_auth = function() {};
+    </script>
+
+<script type="text/javascript">
+    var networkConfigComments = {
+        network: "thesun.fyre.co"    };
+    var convConfigComments2734707 = {
+        siteId: "289969",
+        articleId: 2734707,
+        el: "livefyre-comments",
+        collectionMeta: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczpcL1wvd3d3LnRoZXN1bi5jby51a1wvc3BvcnRcL2Zvb3RiYWxsXC8yNzM0NzA3XC9hcnNlbmFsLXlvdW5nc3Rlci1nZWRpb24temVsYWxlbS1jb3VsZC1ub3QtYmUtbGVzcy1oYXBweS1hZnRlci1iZWluZy1zZW50LW9uLWxvYW4tdG8tZHV0Y2gtc2Vjb25kLXRpZXItc2lkZS12dnYtdmVubG8taW5zdGVhZC1vZi1yYW5nZXJzXC8iLCJ0aXRsZSI6IkFyc2VuYWwgeW91bmdzdGVyIEdlZGlvbiBaZWxhbGVtIGNvdWxkIG5vdCBiZSBsZXNzIGhhcHB5IGFmdGVyIGJlaW5nIHNlbnQgb24gbG9hbiB0byBEdXRjaCBzZWNvbmQgdGllciBzaWRlIFZWVi1WZW5sbyBpbnN0ZWFkIG9mIFJhbmdlcnMiLCJhcnRpY2xlSWQiOjI3MzQ3MDcsInRhZ3MiOltdLCJ0eXBlIjoibGl2ZWNvbW1lbnRzIn0.ihbLD6sDur2KY4L5yQwEjiEJwAtx0JYf3rU79yOqOvI",
+        checksum: "3c9125bdff7300ba6b5a1dc68c96601c"    };
+    if (typeof (liveCommentsConfig) !== 'undefined') {
+        convConfigComments2734707 = Livefyre.LFAPPS.lfExtend(liveCommentsConfig, convConfigComments2734707);
+    }
+
+    Livefyre.require(["fyre.conv#3"], function (ConvComments) {
+        load_livefyre_auth();
+        new ConvComments(networkConfigComments,
+                [convConfigComments2734707],
+                function (commentsWidget) {
+                    var livecommentsListeners = Livefyre.LFAPPS.getAppEventListeners('livecomments');
+                    if (livecommentsListeners.length > 0) {
+                        for (var i = 0; i<livecommentsListeners.length; i++) {
+                            var livecommentsListener = livecommentsListeners[i];
+                            commentsWidget.on(livecommentsListener.eventName, livecommentsListener.callback);
+                        }
+                    }
+                }
+        );
+    });
+</script><script type="text/javascript" data-lf-domain="thesun.fyre.co" id="ncomments_js" src="https://cdn.livefyre.com/libs/commentcount/v1.0/commentcount.js"></script>
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/www.thesun.co.uk\/sport\/football\/2734707\/arsenal-youngster-gedion-zelalem-could-not-be-less-happy-after-being-sent-on-loan-to-dutch-second-tier-side-vvv-venlo-instead-of-rangers\/":2734707};
+	</script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201707'></script>
+<script type='text/javascript' src='//player.ooyala.com/static/v4/stable/latest/core.min.js?ver=v4'></script>
+<script type='text/javascript' src='//player.ooyala.com/static/v4/stable/latest/skin-plugin/html5-skin.min.js?ver=v4'></script>
+<script type='text/javascript' src='//player.ooyala.com/static/v4/stable/latest/video-plugin/main_html5.min.js?ver=v4'></script>
+<script type='text/javascript' src='//player.ooyala.com/static/v4/stable/latest/ad-plugin/google_ima.min.js?ver=v4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thesun_main_settings = {"wunderground":{"city":"London","countryCode":"GB","defaultCoords":{"lat":"51.505276","long":"0.055277"}}};
+var galleryData = [{"img":"https:\/\/www.thesun.co.uk\/wp-content\/uploads\/2017\/01\/nintchdbpict000297891875.jpg?strip=all&w=960","caption":"Zelalem did not look too excited to be joining VVV-Venlo","credit":"Array"},{"img":"https:\/\/www.thesun.co.uk\/wp-content\/uploads\/2017\/01\/nintchdbpict0002934757431.jpg?strip=all&w=960","caption":"Arsene Wenger says Zelalem must mature physically before he is ready for the Premier League","credit":"Getty Images"},{"img":"https:\/\/www.thesun.co.uk\/wp-content\/uploads\/2017\/01\/nintchdbpict000228400653.jpg?strip=all&w=960","caption":"The midfielder helped Rangers to promotion last season","credit":"News Group Newspapers Ltd"},{"img":"https:\/\/www.thesun.co.uk\/wp-content\/uploads\/2017\/01\/nintchdbpict0002372389011.jpg?strip=all&w=388","caption":"Zelalem lines up for the national anthem before the Scottish Cup final","credit":"News Group Newspapers Ltd"}];
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thesunOoyalaSettings = {"pcode":"5nbWk6UPHAPHIpkunRhFyQE8fR1e","playerBrandingId":"NDcyOWI0M2YyMDdkN2YwODU5Mzc5MDUz","skinUrl":"\/\/player.ooyala.com\/static\/v4\/stable\/latest\/skin-plugin\/skin.json"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.thesun.co.uk/_static/??-eJzTLy/QTc7PK0nNK9EvyUjNTS0GUcWlefpZxfq5iZl5elnFOvr4FJVlpqTmE1SVmpuUmlIMVGafa2toYmFqbmlkZmqSBQDgui3o'></script>
+<script type='text/javascript' async="async" defer src='//s.skimresources.com/js/34784X1028065.skimlinks.js?ver=4.7.2'></script>
+<script type='text/javascript' src='https://www.thesun.co.uk/_static/??/wp-content/themes/thesun/js/swiper.min.js,/wp-content/themes/thesun/js/gsa.js?m=1484907980j'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _optaParams = {"custID":"6b7abd03b9bef15d0461b05b0cc5d8a4","language":"en_GB","timezone":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s3-eu-west-1.amazonaws.com/widget.cloud.opta.net/2.0/js/widgets.opta.js?ver=4.7.2'></script>
+<script type='text/javascript' src='https://www.thesun.co.uk/wp-content/themes/thesun/js/football.js?m=1478011641g'></script>
+<script type='text/javascript'>
+_optaParams["callbacks"] = [generalOptaOverwrites]
+</script>
+<script type='text/javascript' async="async" src='https://prod-sunbets-widgets.s3-eu-west-1.amazonaws.com/static/sunbet/betsense.min.js?ver=4.7.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.thesun.co.uk/_static/??/wp-includes/js/wp-embed.min.js,/wp-content/mu-plugins/jetpack/modules/sharedaddy/sharing.js?m=1485460937j'></script>
+<script type='text/javascript'>
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+</script>
+<script type='text/javascript' src='https://stats.wp.com/e-201707.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.6',blog:'111602770',post:'2734707',tz:'0',srv:'www.thesun.co.uk'} ]);
+	_stq.push([ 'clickTrackerInit', '111602770', '2734707' ]);
+</script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3aaf38205d","applicationID":"44435850","transactionName":"NlJSYUIEXhdTBkUPXQ8YcVZEDF8KHRZYCFUUW1FH","queueTime":0,"applicationTime":644,"atts":"GhVFFwoeTUgQBBNcSRxK","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
