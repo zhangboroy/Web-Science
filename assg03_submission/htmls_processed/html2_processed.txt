@@ -1,0 +1,582 @@
+
+
+
+
+
+
+
+       
+
+
+
+
+ClickZ
+ClickZ Intelligence
+ClickZ Learn
+ClickZ Live
+
+
+header-ad-slot 
+
+
+ 
+February 19, 2017 
+Search Engine Watch
+
+
+
+
+
+
+Home
+
+Industry
+SEO
+PPC
+Analytics
+Social
+Local
+Mobile
+Video
+Content
+Development
+Reports
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+Toggle navigation
+
+
+
+
+
+
+Home
+
+
+
+Industry
+SEO
+PPC
+Analytics
+Social
+Local
+Mobile
+Video
+Content
+Development
+Reports
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+  >  
+            
+
+
+
+
+PPC  >  
+                    				
+
+
+
+
+						Is It Time to Add Click-to-Call Campaigns to Your AdWords Arsenal?									
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Is It Time to Add Click-to-Call Campaigns to Your AdWords Arsenal?
+
+
+
+PPC
+
+04 Sep 15
+                                | Howard Jacobson 
+
+
+Facebook0Linkedin246Google+3Twitter249
+
+
+
+
+
+
+
+When pay-per-click (PPC) advertising first appeared during the final years of the last millennium, those of us who jumped in early were enchanted by the elegance of the process.
+E-commerce is a natural fit for PPC because they both occur in a single online ecosystem. The challenge has always been greater for lead-based and service businesses, since the communication channel had to jump from online to offline.
+First we must get the prospect to our website, and then we have to convince them to either call us, fill out a form, or sign up for a newsletter or free report. Of course, phone calls are the best because we’re in an interactive discussion. This allows us to begin customizing our approach for best addressing our prospect’s specific needs.
+In addition to the behavioral hurdle required to turn a click into a call, it’s often both complicated and expensive to track which keywords, ads, and landing pages generate the calls. Consequently we lose one of the biggest benefits of PPC: accurate and granular feedback that enables us to improve results over time.
+Enter Google’s click-to-call (CTC) campaign type. With CTC, you can seamlessly transition prospects searching with their smartphones from online search to live conversation. Also you can track these conversions with the same accuracy and granularity as the online purchases and lead submission forms you are accustomed to.
+Aside from these advantages, there are other good reasons to jump on the CTC bandwagon. More and more searches are originating from mobile devices – even the types of searches that just a couple of years ago would have been unthinkable from someone not at their desk or propped up in bed with a laptop or tablet.
+First, let’s have a quick screenshot tutorial for setting up your first CTC campaign.
+Click-to-Call Campaign Setup
+The easiest and quickest way to set up a CTC campaign is simply to copy an existing search campaign and replace the ads. You can copy a campaign from the “all campaigns” tab. Just click the campaign you want to copy, click the “edit” button, and select copy from the drop-down menu.
+When the campaign is copied, click the “edit” button again and select paste from the drop-down menu. Then select “pause new campaigns after pasting.” After that, delete all existing ads.
+Go to the “settings” tab for that new campaign and switch its type to “call-only.”
+To set up a call-only conversion so you can track how well your campaign turns eyeballs into phone calls. Click the “tools” tab at the top of the AdWords interface and select “conversions” from the drop-down menu.
+Select “phone calls” from the choices given.
+Then specify the type by clicking the radio button next to “calls from ads using call extensions or call-only ads.”
+Now, specify the details of your conversion. Most of the fields will be familiar: conversion name, monetary value, and so on. The new one here is “call length.”
+Google can actually filter out short calls that don’t indicate real interest. The default length is 60 seconds. You may want to shorten it to 30, depending on your experience on the phone.
+Once you’ve set up conversion tracking for your call-only campaign, your next step is to create call-only ads. From the “ads” tab, click the red “+ Ad” button and write the ad text. If you want to track conversions – and you do if you’re in a country where it’s possible – then keep the radio button checked next to “show my ad with a Google forwarding phone number and use call reporting.”
+Once you’re done creating ads – and split testing works as well here as everywhere else in AdWords – unpause your campaign, sit back, and see what happens.
+A Click-to-Call Case Study
+While clicks still vastly overshadow calls as the primary search action, calls tend to be much more valuable. We set up CTC campaigns with a local service-business client at the beginning of April, 2015. The first thing we noticed was a drop in the ad position, based on a much more aggressive bidding strategy by our client’s competition.
+Using the mobile bid adjustment feature, we were able to increase the bids by 20 to 30 percent. This was a quick way to increase the volume of impressions across all keywords without having to manually adjust each keyword.
+In your new campaign, click the “settings” tab and click the “devices” button. Check the box next to “mobile devices with full browsers” and click the two hyphens in the “bid adj.” column. This will increase your bids on mobile devices – which is the only device that will be active in this campaign as computers and tablets can’t make phone calls.
+
+
+
+Share this article
+Facebook0Linkedin246Google+3Twitter249 
+
+Related articles
+
+
+                            How to target high-income consumers with AdWords                        
+
+
+
+                            How digital marketers can take advantage of Valentine's Day                        
+
+
+
+                            What exactly is PPC keyword management anyway?                        
+
+
+
+                            Top three programmatic trends in 2017                        
+
+
+
+
+
+
+Results
+Here are the numbers as of August 17, 2015, representing about four and half months of action.
+
+You’ll notice that the CTC campaigns achieved a 61 percent lower cost per conversion than paid search, and 51 percent lower cost per conversion than the display remarketing campaigns. The CTC conversion rate was a staggering 24.6 percent, compared to the already fairly good paid search conversion rate of 5.92 percent.
+Since we don’t live in a perfect world, there’s a trade-off for all that CTC goodness – the raw numbers. CTC gets less than one-tenth the impressions of paid search. But considering the trend toward more mobile searches and taking into account the much higher efficiency of selling on the phone versus online, CTC should be considered a must-add to any lead-based or service-based business.
+Big thanks to ace account manager Jay Nash for running the CTC campaign and providing me with the raw data and analysis for this article.
+Homepage image via Shutterstock. 
+
+
+Want to stay on top of the latest search trends?Get top insights and news from our search experts. 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Subscribe                
+
+
+
+
+
+
+
+Related reading
+
+
+
+
+
+Nine crazy predictions for SEO in 2017
+
+            It's January, which means you've probably read about 200 expert predictions on the future of SEO in 2017 by now. But if you stick with me, I promise this post won't be like any of the other SEO predictions posts you've seen so far.        
+
+
+PPC
+SEO
+
+12 Jan 17
+                           | Larry Kim
+
+
+
+
+
+
+
+
+
+How to keep Q4 paying off in 2017
+
+            Retailers love the influx of revenue in Q4, but there’s another, more last gift from the spike in digital traffic: data that you can use to your advantage in 2017.        
+
+
+PPC
+
+12 Jan 17
+                           | Sana Ansari
+
+
+
+
+
+
+
+
+
+10 online marketing strategies to make you a unicorn [infographic]
+
+            Everyone who knows me knows I’m obsessed with unicorns – not just the magical beasts you’ll often find hanging out near rainbows but marketing unicorns.        
+
+
+Development
+PPC
+SEO
+Social
+
+05 Jan 17
+                           | Larry Kim
+
+
+
+
+
+
+
+
+
+The 10 Best & Biggest New PPC Features of the Year
+
+            Some new PPC features stuck out more than the rest this year. This article will separate the unicorns from the donkeys!        
+
+
+PPC
+
+20 Dec 16
+                           | Larry Kim
+
+
+
+
+
+
+
+
+
+Tags
+AdWords | Click | click to call | clickable | Google 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+                Sign up for SEW Daily            
+
+                Daily news and insights about search engine marketing, SEO and paid search.            
+
+
+
+
+
+
+
+
+
+
+
+
+                    Subscribe                
+
+
+
+ Visit us on:
+
+
+
+
+
+
+
+rhc-mpu-ad-slot1 
+
+
+Comments 
+
+
+
+
+rhc-mpu-ad-slot2 
+
+
+Most Popular 
+
+
+Say goodbye to Google: 14 alternative search engines
+Say goodbye to Google with these 14 alternative search engines, covering everything from information, images, videos, facts and stats. Oh and Gifs.
+
+
+
+
+ 
+
+
+Going over to the duck side: a week using DuckDuckGo
+I’ve heard about DuckDuckGo a few times over the years, mostly as a name uttered in hushed whispers behind closed doors – “You don’t have to use Google. There is another way.”
+
+
+
+
+ 
+
+
+How to write meta title tags for SEO (with good and bad examples)
+What is a title tag? How do you write one? Why are title tags important? Do they actually help with search engine optimisation?
+
+
+
+
+ 
+
+
+How to write meta descriptions for SEO (with good and bad examples)
+What is a meta description? How do you write one? Why are meta descriptions important? Do they actually help with search engine optimisation? Can I see some good and bad examples?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Want to stay on top of the latest search trends?Get top insights and news from our search experts. 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Subscribe                
+
+
+
+
+
+
+                Click here to advertise with us            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Powered By
+
+
+
+
+		 		            ClickZ Group LimitedAll rights reserved1 Hammersmith BroadwayLondon, W6 9DL		 		       
+
+editorial@clickz.com
+
+
+
+CATEGORIES
+
+Industry
+SEO
+PPC
+Analytics
+Social
+
+
+Local
+Mobile
+Video
+Content
+Development
+
+
+
+Home
+
+About SEW
+Contact SEW
+Advertise on SEW
+Site Map
+Website Terms of Use
+Copyright & Licensing
+Privacy policy
+
+
+
+
+
+
+
+
+Cookie & Privacy Policy
+
+
+
+
+
+
+
+Friend's email
+
+
+
+Message
+ https://searchenginewatch.com/sew/how-to/2424558/is-it-time-to-add-click-to-call-campaigns-to-your-adwords-arsenal
+
+
+Send
+
+ 
+
+
+
+×
+
+
+
+Want to stay on top of PPC trends?Get top insights and news from our PPC experts.Delivered to you daily, straight to your inbox. 
+
+
+
+
+
+
+
+
+
+
+
+                    Subscribe                
+
+
+
+
+No thanks, I am not interested
+No thanks. Ask me later please
+
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

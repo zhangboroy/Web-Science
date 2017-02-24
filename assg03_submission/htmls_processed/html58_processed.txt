@@ -1,0 +1,537 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3/4 Free Articles leftRemaining 
+
+
+
+Register for more
+
+ | 
+
+
+Subscribe + Save!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MENU
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+SUGGESTED TOPICS
+
+
+
+
+
+
+
+
+ 
+
+
+SUBSCRIBE 
+
+ 
+
+
+
+  Hi, 
+
+
+ SIGN IN
+
+
+
+
+
+Items added to cart
+
+Your Shopping Cart is empty.
+Visit our store
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+MY LIBRARY
+TOPIC FEEDS
+PURCHASES
+ACTIVITY
+ACCOUNT SETTINGS
+LOG OUT
+
+
+
+
+
+
+
+
+
+
+SUGGESTED TOPICS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										Loading...
+									
+
+
+
+
+
+Business history
+
+The New Arsenal of Risk Management
+
+
+Kevin BuehlerAndrew FreemanRon Hulme
+
+
+From the September 2008 Issue
+					
+
+
+
+
+
+
+
+
+
+SUMMARYFULL TEXT
+SAVE
+SHARE
+COMMENT
+TEXT SIZE
+PRINT
+PDF
+8.95BUY COPIES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							The New Arsenal of Risk Management
+						
+
+
+
+
+
+
+
+
+
+
+
+View more from the
+
+September 2008 Issue
+
+
+
+
+
+
+Explore the Archive
+
+
+
+
+
+
+
+
+
+
+
+
+										Loading...
+									
+
+
+
+
+
+Executive Summary
+Reprint: R0809G
+The global banking system is facing a severe liquidity crisis: In the first half of 2008, major financial institutions wrote off nearly $400 billion, causing banks around the world to initiate emergency measures. Similar crises have occurred within recent memory: Think of S&Ls, the dot-com bust, and Enron. Risk is, quite simply, a fact of corporate life—but because risk-management research has increasingly emphasized mathematical modeling, managers may find it incomprehensible and thus shy away from powerful tools and markets for creating value.
+Buehler, Freeman, and Hulme, all with McKinsey, describe the evolution of risk management since the 1970s, show how new markets have changed the landscape in both financial services and the energy sector, and explain what it takes to compete in the current environment. To demonstrate how significant a factor risk can be when incorporated into strategy and organization, they take the case of Goldman Sachs—which, despite its reliance on highly volatile trading revenues, has so far avoided the big write-offs that have afflicted its leading competitors. The authors believe that this is because Goldman takes the antithesis of the typical corporate approach—its culture embraces rather than avoids risk. And, they say, Goldman very efficiently employs all four of the following factors: quantitative professionals, strong oversight, partnership investment, and a clear statement of business principles, with emphasis on preserving the company’s reputation.
+Staying on the sidelines of risk management may have shielded some companies from crisis, but it has also prevented them from growing as quickly as they might have. In their companion article, “Owning the Right Risks,” the authors outline a process that will enable executives in any company to incorporate risk into their strategic decision making.
+
+
+Discussions of risk usually come to the forefront in times of crisis but then recede as normalcy returns. As we write, the global banking system is facing a major credit and liquidity crisis. Losses from subprime mortgages, structured investment vehicles, and “covenant lite” loans are creating a credit crunch that may in turn trigger a global slowdown. In the past year major financial institutions have written off nearly $400 billion, and central banks around the world have initiated emergency measures to restore liquidity. Several other crises have occurred within memory: the U.S. savings-and-loan collapse in the 1980s and 1990s, Black Monday in 1987, the Russian debt default and the related dive of Long-Term Capital Management in 1998, the dot-com bust of 2000, and the Enron-led merchant-power collapse of 2001.
+The resounding message is that risk is always with us. Executives need to wake up to that fact. Unfortunately, a growing emphasis on mathematical modeling has rendered much of the risk-management debate and research incomprehensible to those outside the finance function and the financial services industry. As a result, many corporate managers have shied away from the powerful risk-management tools and markets created over the past three decades—and thus have forgone considerable opportunities to create value.
+Our aim here is to help managers understand both the advantages and the limitations of the markets and tools that are implicated in the credit and liquidity crisis. We will describe the evolution of risk management in recent decades, show how new markets have changed the landscape in both financial services and the energy sector, and explain what it takes to compete in the current environment. These analyses will help readers make sense of the crisis and will illustrate just how powerful a lens risk can be when applied to corporate strategy and organization. In the companion article published in this issue, we describe a process whereby executives in all companies can incorporate risk into their strategic decision making.
+The Idea That Changed the World
+For the first 70 years of the twentieth century, corporate risk management was largely about buying insurance. Risk management in the financial sector was also rudimentary: Bank regulators lacked tools for measuring risk in the system, so constructive intervention was difficult. Banks themselves had no way to control the interest-rate risk in their loan portfolios or to quantify and manage credit risk—in part because few alternatives to insurance existed. To be sure, some futures and options contracts were written and sold, but reliable tools for pricing them were rare, and the markets for these securities were thin and characterized by wide bid-ask spreads.
+The low level of interest in risk management was also to some extent a product of prevailing thought in finance, originating with Franco Modigliani and Merton Miller’s “indifference theory,” which argued that a company’s value was not (in most cases) affected by capital structure or hedging, and the capital asset pricing model (CAPM), developed by William Sharpe and others, which argued that risk should be managed primarily through portfolio diversification by investors. (For a summary of the main theories relating to the field, see the exhibit “The Evolution of Risk Management.”) 
+
+The Evolution of Risk Management
+
+This timeline describes milestones in the development of risk management and their relevance today. 
+1952: Mean variance (aka modern portfolio theory)
+Harry Markowitz 
+Essence: Investors can analyze risk as well as their expected return 
+Relevance: Provides the basis for portfolio choices to achieve the optimal level of risk for a given return 
+Late 1950s, early 1960s: State preference theory
+Kenneth Arrow, Gérard Debreu 
+Essence: An efficient allocation of resources and risks requires a “complete” set of securities that permits agents to hedge all risks 
+Relevance: Underpins derivatives and shows that the ultimate role of securities markets is to efficiently allocate risk across society 
+1958: “Indifference theory”
+Franco Modigliani, Merton Miller 
+Essence: In a perfect market (no taxes, bankruptcy costs, or asymmetric information), the value of a company is independent of its capital structure 
+Relevance: Doesn’t hold true in the real world, suggesting the need for efficient capital structure and risk mitigation through hedging 
+1960s: Capital asset pricing model (CAPM)
+William Sharpe et al. 
+Essence: Markets compensate investors for accepting systematic—or market—risk, but do not discount for idiosyncratic risk, which is specific to an individual asset and can be eliminated through diversification 
+Relevance: Affects decisions about hedging—which should be left to investors—and about whether or not to mitigate specific risks 
+1973: Options-pricing model
+Fischer Black, Myron Scholes, Robert C. Merton 
+Essence: The volatility of a security is a key factor in options prices 
+Relevance: Allows major new risk transfer, while the related field of real options means companies can put a value on waiting 
+1976: Arbitrage pricing theory
+Stephen Ross 
+Essence: The price of a security is driven by a number of factors, which are either macroeconomic or market indices 
+Relevance: Permits segmentation of CAPM systematic risk into factors or components. If prices diverge from expected returns, investors can use arbitrage to bring them back into line 
+1977: Underinvestment problem
+Stewart Myers, Clifford Smith, René M. Stulz 
+Essence: Stockholders refuse to invest in low-risk/low-return assets to avoid shifting wealth from themselves to debt holders (mirror image of the asset substitution problem) 
+Relevance: Suggests there is potential shareholder value in better risk management through better investment decisions 
+1979: Binomial option pricing model
+John Cox, Stephen Ross, Mark Rubinstein 
+Essence: Taking into account variations over time in the price of the underlying financial instrument leads to more-accurate pricing of some options 
+Relevance: Allows much deeper markets for long-dated options and options on securities paying dividends 
+1993: A framework for risk management including hedging
+Kenneth Froot, David Scharfstein, Jeremy Stein 
+Essence: The goal of risk management is to ensure that a company has cash available for value-enhancing investments 
+Relevance: Theoretically supports managers trying to manage risk as a strategic set of choices
+
+
+All this began to change in 1973, with the publication of the options-pricing model developed by Fischer Black and Myron Scholes and expanded on by Robert C. Merton. The new model enabled more-effective pricing and mitigation of risk. It could calculate the value of an option to buy a security as long as the user could supply five pieces of data: the risk-free rate of return (usually defined as the return on a three-month U.S. Treasury bill), the price at which the security would be purchased (usually given), the current price at which the security was traded (to be observed in the market), the remaining time during which the option could be exercised (given), and the security’s price volatility (which could be estimated from historical data and is now more commonly inferred from the prices of options themselves if they are traded). The equations in the model assume that the underlying security’s price mimics the random way in which air molecules move in space, familiar to engineers as Brownian motion.
+The core idea addressed by Black-Scholes was optionality: Embedded in all instruments, capital structures, and business portfolios are options that can expire, be exercised, or be sold. In many cases an option is both obvious and bounded—as is, for example, an option to buy General Electric stock at a given price for a given period. Other options are subtler. In their 1973 paper Black and Scholes pointed out that the holders of equity in a company with debt in its capital structure have an option to buy back the firm from the debt holders at a strike price equal to the company’s debt. Similarly, the emerging field of real options identified those implicit in a company’s operations—for example, the option to cancel or defer a project based on information from a pilot. The theory of real options put a value on managerial flexibility—something overlooked in straightforward NPV calculations, which assume an all-or-nothing attitude toward projects.
+The new model could hardly have come at a more propitious time, coinciding as it did with the spread of the handheld electronic calculator. Texas Instruments marketed an early version to financial professionals with the tagline “Now you can find the Black-Scholes value using our calculator.” The calculator’s rapid acceptance by options traders fueled the growth in derivatives markets and the broad development of standard pricing models. Other technological advances quickly followed: In 1975 the first personal computers were launched. In 1979 Dan Bricklin and Bob Frankston released VisiCalc, the first spreadsheet designed to work on a personal computer, giving managers a simple tool with which to run what-if scenarios. The financial sector rapidly developed new instruments for managing different types of risk and began trading them on exchanges—notably the Chicago Board Options Exchange—and in over-the-counter derivatives markets. 
+  
+By the 1980s, with calculating muscle inexorably increasing on the trading desk, it had become far easier to identify, price, and trade different kinds of options. Among the most influential machines were workstations developed by Sun Microsystems and Digital Equipment and the Bloomberg Terminal, which revolutionized price calculation in derivatives and fixed-income markets respectively. Crystal Ball and other firms developed software that allowed traders to run Monte Carlo simulations in a matter of minutes on laptops, rather than overnight on mainframe computers. By the beginning of the 1990s it was possible to buy contracts that covered a wide variety of risks using derivatives of various kinds—options, futures, and swaps, often in combination. Derivatives markets began with currencies, equities, and interest rates and quickly expanded to include energy, metals, and other commodities. In a second wave of innovation, instruments emerged that allowed the hedging or transfer of credit risk, at that time the major remaining category of financial risk and a subject of concern among bank regulators. By the end of the decade derivatives markets were exploding; the notional value of the securities involved rose from $72 trillion in 1998 to $370 trillion in 2006. By the end of 2007 the total had reached almost $600 trillion. The market was so sophisticated that “synthetic CDOs”—derivatives of derivatives of derivatives—soon appeared and in fact were the fastest-growing sector of the multitrillion-dollar market for collateralized debt obligations until the credit crunch began in late 2007.
+But optionality goes well beyond financial services. It implies that a company’s equity is a basket option in which its various risks are pooled: Each shareholder is exposed to a tiny fraction of the risk to which the company is subject. A simple but useful way to think about a company’s balance sheet, therefore, is to see its equity as a cushion against the risk of performing badly. The risk that its market value will go down is borne by the shareholders. No such cushion is provided by debt, on which the interest must be paid no matter how the company performs.
+Two conclusions follow: First, any company has an appropriate debt-to-equity ratio, geared to the probability that it will suffer losses. Too large a cushion—more equity capital than is required—means that the company is using capital inefficiently. (If it has issued shares to raise “excess” equity capital, profits will have to increase if it is to maintain the previous rate of return.) Too small a cushion means the company is not just courting default or financial distress but also may be ignoring or deferring growth opportunities in response to smaller-than-expected operating cash flows.
+Second, because the optimal debt level is determined by a company’s key market, financial, and operating risks, it is directly affected by actions that mitigate those risks. Managers can therefore add value by separately and more cheaply hedging some of the risks ordinarily managed by the equity cushion. As Robert Merton pointed out in “You Have More Capital than You Think” (HBR November 2005), some companies are better than others at managing particular risks. If risks can be priced and traded, it makes sense for companies to try to lay off the categories of risk in which they have no comparative advantage. This approach allows them to reserve their (expensive) equity capital for risks that would cost more to transfer than to manage directly.
+
+
+
+
+
+
+
+The work of Merton and other leading academics validated the growing field of risk management and counterbalanced indifference theory. Let’s now look at how risk management has developed in the financial sector.
+The Revolution in Financial Services
+Many important innovations in risk management originated in the banking and securities industries. The reasons are obvious but worth stating. First, financial institutions are in effect risk-intermediation businesses; as the most sophisticated of them came to realize, the ability to describe, price, and manage risk should be among their core competencies. Second, these industries are rich in data, and thus a natural locus for efforts to quantify risk using new technologies. Third, and perhaps most important, they are typically highly leveraged and are monitored by regulators who, concerned about the potential impact of failures, pushed for improved risk management. That concern went back at least to 1974, when Herstatt, a German bank, failed and a lot of international banks were badly hurt because of the time lag involved in cross-border settlements. Foreign-exchange transactions executed in Germany had not yet cleared in New York when the bank was declared insolvent, creating enormous exposures.
+In the following decades banks faced several comparable crises involving interest-rate and credit risk, among them the infamous S&L collapse. In the early 1990s an economic slowdown and listless real estate markets caused an unexpected surge in defaults among commercial banks’ borrowers. A number of leading financial institutions were in grave danger of going bust; one survived in significant part owing to an enormous investment by a private individual. Bank of New England, among others, did actually go under.
+At bottom, poor risk management was to blame. Banks had only a limited understanding of the credit risks in their loan portfolios; their assets and liabilities were typically mismatched; and they retained loss-making exposures on their balance sheets. Even in the early 1990s most commercial banks lacked now commonplace tools such as VaR (value at risk), credit risk portfolio models, and RAROC (risk-adjusted return on capital). 
+  
+In contrast, securities firms and investment banks had become quite sophisticated in their use of risk-management tools. They recognized that much of traditional commercial banking could emulate the trading of shares and bonds. Bank loans could be marked to market (that is, priced as if they must be sold immediately, even though they might not mature for years to come), turned into securities, and traded. Loan portfolios could be packaged in tranches. Interest-rate risk could be separated from credit risk. And so on. Because securities firms and investment banks were skilled at packaging and trading risks, and commercial banks were skilled at originating credit, a wave of mergers began; eventually distinctions between the two kinds of organizations blurred and regulatory barriers diminished.
+Beginning in the mid-1980s the financial sector became a gigantic risk clearinghouse, as highly liquid markets for the transfer of all sorts of risk evolved. Because companies could transfer risk that had previously been cushioned by equity, more equity was available to generate new business where they had a natural competitive advantage. Commercial banks, for example, could lay off interest-rate risk and seek out additional depositors and creditors. More recently they have laid off credit risk as well, further increasing their ability to grow. As of this writing, of course, liquidity in the securitization and credit-transfer markets has dried up, dramatically diminishing the origination of credit. It remains to be seen how events will unfold; but even if a backlash occurs against some complex structured instruments, financial innovators are extremely unlikely to stop repackaging and trading risks. 
+
+
+Despite the recent subprime crisis, financial innovators are extremely unlikely to stop repackaging and trading risks.
+
+
+Let’s look now at the markets and institutions most deeply involved in both the growth of risk transfer and the current risk-management crisis.
+Mortgages.
+The mortgage market perhaps best illustrates how risk instruments can transform the scope and nature of a business and also what the limitations are of relying too heavily on markets for risk management. Traditionally, banks held their mortgages in a single portfolio. In the early 1980s, especially in the United States, they started to securitize these portfolios: They pooled their mortgages, divided the pools into tranches, and sold them to third-party investors—other banks, pension funds, or insurance companies. In this way the risks of mortgage default were taken off the books of the original banks, which went on to make further mortgage loans (and to collect the associated fees), which were also pooled. This growth in business led to unprecedented profitability in the banking sector. But by early 2007 it was clear that both the underwriting and the rating of mortgages had become far too lax, so when subprime default rates rose, a major financial crisis ensued. Its ramifications are still spreading. The higher default rates rapidly depressed the prices of mortgage securitizations, first of the lower-rated tranches and then of the higher-rated ones. Some global banks, though they were not direct U.S. mortgage lenders, held portfolios of highly rated mortgage-backed securities or CDOs of mortgage-backed securities. As the ratings of those securities dropped, the banks’ equity cushions thinned; they had to write off billions of dollars in asset values, seek out huge infusions of capital, and sharply reduce lending. The resulting credit crunch has changed the policy landscape, creating pressure for interest-rate cuts and giving rise to special lending facilities for liquidity-starved financial institutions. But risk can still be sliced and diced into discrete elements. The lesson here is not that the banks were wrong to take advantage of the markets but that even the largest and most liquid derivatives markets depend on the quality of the underlying assets. Transferring risk does not mean eliminating risk. 
+
+
+Transferring risk does not mean eliminating risk.
+
+
+Wholesale credit.
+Financial innovation has influenced corporate credit as well, triggering a boom in commercial lending. Commercial banks can now refine their portfolios to retain only those risk categories in which they have a comparative advantage—perhaps an information advantage in the middle market, where customers are more idiosyncratic. They can modify exposure with credit-default swaps—derivative instruments that protect against a given company’s financial distress. They can also use index derivative products to raise or lower their overall exposure to credit as an asset class if they believe that credit is too cheap or too expensive. Thus they can lend more to a particular customer without increasing their overall exposure to that customer’s sector or increase their exposure to a sector without necessarily having to make fresh loans. Once again, transferring risk in these ways can free up capital for growth, enabling banks to offer more and more credit.
+The main buyers of transferred risk have been pension and hedge funds, insurers, and others seeking the diversification provided by assets whose returns aren’t directly correlated to stock and bond markets. But the liquidity of wholesale credit markets, like that of mortgages, cannot be taken for granted. The mortgage crisis has made investors less willing to participate in the securitization and credit-transfer markets. What’s more, the ability to estimate credit-risk exposure has not kept pace with the growth in credit-risk instruments; during 2007 it became evident that banks were struggling to cope with the complexity of their portfolios. Although companies can separate out and trade individual risks, counterparty credit risk is often created as a result, and this needs to be monitored and managed. If a company has a credit exposure to an institution with which it has laid off some other risk, it still may be indirectly exposed to that underlying risk.
+Hedge funds and private equity.
+The creation and growth of risk-transfer markets enabled fundamental changes in the investment management industry. Professional investors took advantage of their newfound ability to transfer different kinds of risk by creating investment vehicles not subject to some of the regulations on traditional funds (typically, those open to the public). Hedge funds are one such vehicle; they have rapidly evolved to allow investors to be extremely precise about their exposure across different asset classes, time horizons, and so on. In addition, as investors in CDOs and other asset-backed securities, they can help absorb credit risk from the banking system. Hedge funds are controversial: Do they introduce new risks into financial markets by using leverage to boost their returns? Do they really control the risks they run, or are they vulnerable to liquidity shocks and gaming by their competitors? These questions arose after Long-Term Capital Management’s failure and again in 2006, when in a single week Amaranth Advisors, a commodity hedge fund, lost $6 billion of its $9 billion of assets under management by betting on natural-gas futures. More-recent hedge-fund failures have occurred, most publicly at Bear Stearns. Nevertheless, the sector has continued its strong growth, even during the market ructions of 2007–2008.
+
+
+
+
+
+
+
+Private equity has been equally dynamic: Aggressive, capital-rich firms now stalk the world’s markets looking to profit from taking listed companies into private ownership. Although private equity is not often described in terms of risk management (most PE firms stress their financial and governance skills), it can be regarded as applying cutting-edge risk-management techniques. PE deals have often relied on complex structured finance tools to lower capital costs through debt and hedging. It remains unclear how much private equity will suffer from the reduced liquidity of late 2007, but strong growth continues in this sector as well. 
+  
+Risk as Culture: The Case of Goldman Sachs
+As the markets for risk have evolved, it has become clear that a company’s success is closely linked to the role risk plays in its culture. In the financial sector there is no better model than Goldman Sachs, arguably the world’s leading investment banking, securities, and investment management firm. Today Goldman is essentially in the business of managing risk: Trading and principal investments account for 68% of its net revenues, whereas only 17% come from the traditional investment-banking and advisory business for which it was once best known.
+Yet despite its reliance on highly volatile trading revenues (and the company’s trading revenues are more volatile than any of its peers’), Goldman has so far avoided the large losses that have afflicted its leading competitors. In our view, this is because the firm’s culture embraces rather than avoids risk—the antithesis of the typical corporate approach. Goldman makes money by being willing to risk losing it. When securities markets become more volatile, options rise in value; naturally, the value of experienced risk management rises also. Goldman ensures that its managers are familiar and comfortable with risk, can debate it freely without fear of sanctions, and are willing to make decisions quickly when necessary. The company’s aggressive hedging in 2007 in markets related to subprime mortgages was a striking example of this. Goldman was both skillful and lucky. It was skillful in sensing that trouble was brewing and deciding to move quickly to reposition itself. It was lucky in getting both the decision and the timing correct.
+Creating a culture so contrary to people’s instincts and fears isn’t easy. In our view, Goldman’s success stems from four factors. None is unique to the company, but Goldman very effectively employs all four.
+Quantitative professionals.
+Beginning in the early 1980s, Goldman recruited experts in mathematical modeling, who came to be called quants. Perhaps the most notable hire was Fischer Black, brought over from MIT in 1984 by Robert Rubin, who was then a general partner. Black led the firm’s Quantitative Strategies group, working on, among other things, modern portfolio management and modeling interest-rate movements in order to value fixed-income options. Goldman also hired Emanuel Derman, a PhD in theoretical physics and one of Black’s successors as head of Quantitative Strategies; and Bob Litterman, a PhD in economics and a codeveloper of the Black-Litterman global asset allocation model. People like these provided the quantitative and intellectual rigor needed to support Goldman’s complex trading and derivatives businesses.
+Strong oversight.
+In 1994, when an unexpected rise in global interest rates caused severe losses on many bond-trading desks, Goldman’s large proprietary positions led to a substantial decline in profitability and a crisis in morale. In response, Jon Corzine, who had just assumed leadership of the company, restructured Goldman’s risk-control systems, establishing the Firmwide Risk Committee to oversee market and credit risk worldwide. The committee, which meets weekly, aims to ensure that certain risk-return standards are applied consistently across the firm. Daily risk reports detail the firm’s exposure with, for example, summary sheets showing the potential impact of changes in various macro risk factors and stress tests showing potential losses under a variety of scenarios, such as a widening of credit spreads, as happened in the autumn of 1998. Some Goldman executives claim they can fairly accurately estimate the firm’s daily P&L just by looking at the risk reports and knowing the market’s movements that day. Other forms of risk are taken equally seriously: Operational and reputational risks are addressed by the Business Practices Committee, loan and underwriting risks are addressed by the Capital and Commitments committees, and liquidity risk is managed by the Finance Committee.
+Partnership heritage.
+From its earliest days in 1869 to its IPO in 1999, Goldman was funded largely by its own partners. But while Lazard Frères and other private firms distributed more than 80% of their earnings each year, Goldman’s partners usually left as much as 80% of their after-tax earnings in the firm, withdrawing substantial amounts of capital only at retirement. The partners were careful stewards of the firm’s capital because it was their own. Goldman’s most senior executives continue this heritage, and the fact that employees still own a significant portion of equity helps reinforce the partnership culture.
+Business principles.
+Finally, Goldman’s values reinforce many of these risk-management lessons. The company’s reputation is prized most of all. New hires are taught that although no single individual can make the firm successful, anyone can harm its reputation. They are encouraged to solicit independent views from risk, compliance, legal, and other powerful control functions when potentially controversial choices arise. The fastest way to get fired at Goldman is not to lose money but to make a unilateral decision that endangers the reputation of the firm.
+The Revolution in Energy
+As the success of markets for transferring financial risk became evident, companies in other sectors began to consider creating similar mechanisms. Commodity businesses that already had highly liquid spot markets were obvious candidates. The energy sector clearly had an enormous latent demand for risk transfer: Oil and gas producers would benefit hugely if they could lay off price risk in order to facilitate debt financing and concentrate on exploration and extraction. Oil refineries and other energy processors face even greater margin volatility from both crude oil and refined products. Deregulated power generators, which produce electricity—a commodity that must be sold as it is made, forcing prices up or down whenever it is under- or overproduced—face the greatest volatility of all. Moreover, all these companies must commit very large investments (several billion dollars for a single refinery, oil platform, or power plant) over 30 to 50 years, with all the industry ups and downs and technological advances that period may encompass. 
+  
+Thus the rapid growth of energy futures markets like the NYMEX and ICE, along with over-the-counter derivatives markets, is unsurprising. In the 1990s major oil companies such as BP; electric utilities such as Duke Energy, Sempra, and RWE; and natural-gas companies such as Dynegy, El Paso, and Williams invested heavily to build large commodity-trading and risk-intermediation businesses. The most notable player, of course, was Enron, which had more than 1,000 energy traders and—even after post-scandal income restatements—more than $2 billion in annual trading profits. Enron also provided risk-management services and structured finance to oil and gas producers and service companies. Immediately prior to the company’s collapse, Enron Online was regularly settling transactions in excess of $4 billion a day.
+Following Enron’s bankruptcy, energy commodity markets briefly dried up. Several other trading-oriented companies, including Dynegy, El Paso, Reliant, and Mirant, suffered big losses; some narrowly avoided their own bankruptcies. Credit concerns and the loss of liquidity formerly provided by Enron greatly reduced potential trading profits. Wanting to distance themselves from trading and derivatives, many industrial participants shut down their trading floors.
+But retrenchment was short-lived, because the fundamental need for financing and volatility reduction persisted. Investment banks (and, later, hedge funds) quickly stepped in, hiring the talent formerly employed by Enron and other industrial players. Over the past two years two leading investment banks alone have reported more than $3 billion in profits from energy and commodity trading and risk management. Merrill Lynch, UBS, Royal Bank of Scotland, and Lehman each acquired trading operations from industry players. By the end of 2007 liquidity was approaching the levels of 2001.
+Despite the availability of these liquid risk-transfer markets, however, only a few energy companies—those with an insatiable need for risk capital—have fully embraced strategic risk management. The scandals and stigma associated with complex derivatives are no doubt partly to blame, but the unprecedented surge in earnings in virtually all segments of the industry is probably more so. From 1999 to 2005 the 64 companies in Standard & Poor’s energy and utilities sectors saw annual operating cash flows increase from $95 billion to $245 billion.
+The companies that have embraced strategic risk management are among the most successful. The start-up Flores & Rucks (later Ocean Energy and now merged into Devon Energy) grew into a leading independent producer using volumetric production payments—loans secured by underlying oil and gas assets—and other structured finance vehicles. Chesapeake Energy has become an industry leader in U.S. exploration and production with a business model based on fully hedging its natural-gas price exposure. Refiners such as Valero, Tosco, and Premcor have used hedging strategies to support dramatic acquisition-based growth. Suncor, a pioneer in Canadian oil sands, used hedging to sustain its capital-intensive program through industry down cycles. Anadarko used bridge financing and hedging to enable two largely debt-funded acquisitions whose total cost exceeded its own market capitalization.
+As these companies demonstrate, transferring risk can confer enormous strategic benefits. Because they are focusing their human and financial capital where they enjoy a comparative advantage, they can create more value than competitors that waste equity capital on risks that others will quite willingly assume.• • •
+Over the past three decades all kinds of tools and techniques for risk management have emerged. They have revolutionized financial services and energy, creating gigantic markets for the transfer of specific kinds of risk and generating billions of dollars in profit. They have freed up huge amounts of equity capital, enabling those industries to grow much faster than other sectors; by some estimates, the contribution of the finance sector alone to U.S. GDP has doubled in the past 30 years, from around 4% to 8%—at a time when the economy overall grew from roughly $1.6 trillion to more than $14 trillion.
+Of course, risk-management tools carry dangers, as the crises in both finance and energy demonstrate. But it would be a big mistake for mainstream corporate executives to conclude that trying to manage risk is too dangerous. Staying on the sidelines may have shielded some companies from crisis, but it has also prevented them from growing as quickly as they might have. And continuing to avoid the game, now that we’re coming to understand the limitations of risk-management markets and instruments, will only compound the mistake. The time has come to take stock of what we know and to learn how and when these incredibly powerful instruments should be used in “ordinary” corporations. That is what we address in “Owning the Right Risks.” 
+ 
+
+A version of this article appeared in the September 2008 issue of Harvard Business Review.
+
+
+
+
+
+
+
+
+ Kevin Buehler (kevin_buehler@mckinsey.com) is a director at McKinsey and is based in New York.
+
+
+
+Andrew Freeman (andrew_freeman@mckinsey.com) is a senior expert on risk at McKinsey and is based in London.
+
+
+
+ Ron Hulme (ron_hulme@mckinsey.com) is a director at McKinsey and is based in Houston.
+
+
+
+
+
+
+
+
+This article is about BUSINESS HISTORY
+
+
+
+
+ Follow this topic
+
+
+
+ Following
+
+
+
+
+
+Related Topics:
+
+Risk management
+Financial Services
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						Loading...
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Partner Center
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+THE LATEST
+MOST POPULAR
+ALL TOPICS
+VIDEO
+MAGAZINE ARCHIVE
+STORE
+SUBSCRIBER EXCLUSIVES
+MY LIBRARY
+
+
+
+
+
+Subscribe + Save!
+
+
+
+
+                      EXPLORE HBR    The Latest Most Popular All Topics Magazine Archive Video Audio Webinars Subscriber Exclusives My Library Newsletters     HBR STORE    Article Reprints Books Cases Collections Magazine Issues HBR Guide Series HBR 20-Minute Managers HBR Must Reads Tools     ABOUT HBR    Contact Us Advertise with Us Subscribe Information for Booksellers/Retailers Masthead Global Editions Media Inquiries Guidelines for Authors HBR Analytic Services     HBR SUBSCRIBER ASSISTANCE    U.S./Canada: 800.274.3214  harvard@cdsfulfillment.com  hbr.org/subscriberservices International: +44.1858.438.412  hbr@subscription.co.uk  subscription.co.uk/hbr/help  Asia Pacific: +612.8296.5401 India Today Group: +0120.2479945  hbrcare@intoday.com  hbrsasia.org      HBR.ORG CUSTOMER ASSISTANCE     U.S./Canada: 800.988.0886  International: 617.783.7500 Email: customerservice@harvardbusiness.org Customer Service Help & FAQs Copyright Permissions     FOLLOW HBR    Facebook  Twitter  LinkedIn  Google+  Your Newsreader              About Us Careers Privacy Policy Copyright Information Trademark Policy  Harvard Business Publishing:  Higher Education Corporate Learning Harvard Business Review  Copyright © 2017 Harvard Business School Publishing. All rights reserved. Harvard Business Publishing is an affiliate of Harvard Business School.      
+
+
+
+
+
+
+
+
+
+
+
+
+

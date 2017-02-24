@@ -1,0 +1,525 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fĂştbol
+bĂĄsquetbol
+tenis
+motor
+estadĂ­sticas
+adlp
+opiniĂłn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Âżencontraste un error?
+avĂ­sanos
+
+
+
+EnvĂ­anos tu correcciĂłn
+
+
+Nombre
+
+
+
+Correo electrĂłnico
+
+
+
+TelĂŠfono
+
+
+
+Ciudad
+
+
+
+CorrecciĂłn o comentario
+
+
+
+enviar
+×
+
+
+
+
+
+  Arsenal estarĂ­a dispuesto a desembolsar cerca de 60 millones de euros por Marco Reus
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
+
+
+0
+
+
+
+0
+
+
+
+0
+
+
+0
+Visitas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Javier Soriano / AFP
+
+
+
+
+
+Sigue el Fanpage de Bio Bio Deportes
+
+
+
+
+
+Publicado por
+
+Juan Carlos PĂŠrez
+
+
+
+
+
+
+
+
+
+En Arsenal no quieren quedarse sin una figura de renombre para pelear campeonatos y ante una eventual salida del chileno Alexis SĂĄnchez, la opciĂłn que mĂĄs seduce a la dirigencia ‘Gunner’ es la del alemĂĄn Marco Reus.
+El delantero del Borussia Dortmund ha sido vinculado con el cuadro del norte de Londres desde hace varias semanas, sin embargo de momento no hay una oferta concreta debido a que la situaciĂłn con el tocopillano todavĂ­a estĂĄ en desarrollo con la instituciĂłn.
+No obstante aquello, esta jornada trascendiĂł una nueva informaciĂłn referente a la intenciĂłn de Arsenal por querer fichar al atacante germano de 27 aĂąos.
+El sitio TMW informĂł que la dirigencia estarĂ­a dispuesta a desembolsar una cifra cercana a los 60 millones de euros para convencer a los germanos de que el futbolista, que lleva 7 goles en ocho partidos disputados esta temporada, cambie la Bundesliga por la Premier League de Inglaterra.
+La prensa britĂĄnica asegura que ArsĂ¨ne Wenger y compaĂąĂ­a no quieren perder la carrera por contar con los servicios de Reus, por lo que incluso ya habrĂ­an comenzado las gestiones para asegurar su fichaje.
+“Arsenal ha comenzado conversaciones tempranas con el Borussia Dortmund sobre el fichaje de Marco Reus (…) Reus es el candidato principal del Arsenal, por quien el club prepara una oferta de ÂŁ51 millones”, remarca Metro.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tweet
+
+
+
+
+URL Corta: 
+
+      http://rbb.cl/fsnj
+    
+
+
+
+
+
+
+
+
+
+
+
+
+Tendencias Ahora
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Comentarios
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADLP
+
+
+
+
+
+
+El golazo de media tijera de NicolĂĄs Castillo ante Xolos en fenomenal remontada de Pumas
+
+
+
+Ricardo La Volpe fue expulsado por cometer una "falta" a jugador de Chivas
+
+
+
+Ver MĂĄs
+
+
+
+
+
+
+
+
+
+bbcl | fĂştbol
+
+
+
+
+Medio inglĂŠs asegura que Mauricio Pochettino es candidato para dirigir al FC Barcelona
+
+
+Marcelo DĂ­az jugĂł los 90 minutos en goleada del Celta de Vigo ante Osasuna por la Liga
+
+
+DT de Argentina Edgardo Bauza anticipa duelo por Clasificatorias: "Chile es el partido clave"
+
+
+
+
+
++ FĂştbol
+
+
+
+
+
+
+
+
+Columnnas Deportivas
+
+
+              {foreach $columnistas->data as $v}
+              
+
+nombre
+El tremendo derechazo de Mauricio Isla para marcar en igualdad del Cagliari ante Sampdoria
+
+
+Comentarista Deportivo
+
+              {/foreach}
+          
+
+
+
+
+
+
+
+
+
+
+EstadĂ­sticas
+
+
+
+
+
+
+
+
+Primera A
+Primera B
+Segunda
+Rusia 2018
+
+
+
+
+
+POSClubPTSPJPGPEPP1 Colo Colo933009182 Deportes Iquique933008353 Everton622004134 Huachipato632015415 Audax Italiano632014406 U. de ConcepciĂłn6320136-37 Santiago Wanderers321013128 Deportes Antofagasta331026519 OâHiggins3210132110 Deportes Temuco3210111011 Cobresal3310246-212 Universidad de Chile3310224-213 Universidad CatĂłlica3310225-314 San Luis0200224-215 Palestino0300337-416 UniĂłn EspaĂąola0200205-5
+
+
+
+
+POSClubPTSPJPGPEPP1 CuricĂł Unido421812603413212 San Marcos de Arica36191063241773 Rangers2819775212014 Santiago Morning2617755221575 Coquimbo Unido2618756202006 Magallanes2517674221847 Deportes La Serena23176561921-28 Deportes CopiapĂł2218576161339 Deportes Iberia22185762730-310 UniĂłn San Felipe21185672019111 Ăublense21194961821-312 Cobreloa19184772123-213 Puerto Montt18183961115-414 Deportes Valdivia13172781325-1215 *    UniĂłn La Calera101927101432-18
+
+
+
+
+POSClubPTSPJPGPEPP1 Barnechea 381912254122192 Deportes Melipilla371911442714133 Deportes Santa Cruz341810444025154 Naval3019937292365 *    Deportes La Pintana28181017302466 San Antonio Unido28189182022-27 Colchagua CD2618756211838 Independiente de Cauquenes19166192836-89 Malleco Unido191954101526-1110 *    Lota Schwager15174671625-911 Trasandino151943122036-1612 *    Deportes Vallenar101834111430-16
+
+
+
+
+POSClubPTSPJPGPEPP1 Brasil2712831289192 Uruguay23127232411133 Ecuador2012624221664 Chile2012624211745 Argentina1912543141226 Colombia1812534151507 Paraguay15124351117-68 PerĂş14124261820-29 Bolivia7122191031-2110 Venezuela5121291429-15
+
+
+
+
+
+
+VER MĂS ESTADĂSTICAS
+
+
+
+
+
+
+
+
+
+
+
++ Deporte
+
+
+
+
+1
+25.265 Visitas· Para retomar confianza: las tres atajadas de Claudio Bravo en empate ante Huddersfield Town
+
+
+
+
+
+2
+24.960 Visitas· El tremendo derechazo de Mauricio Isla para marcar en igualdad del Cagliari ante Sampdoria
+
+
+
+
+
+3
+20.689 Visitas· Mario GĂśtze: el desplome del Ăşltimo hĂŠroe alemĂĄn
+
+
+
+
+
+4
+18.131 Visitas· La irĂłnica reacciĂłn de NicolĂĄs Peric en entrevista tras ser elegido como el mejor del partido
+
+
+
+
+
+5
+16.354 Visitas· Medios ingleses valoraron actuaciĂłn de Bravo en su retorno a la titularidad en M. City
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FĂştbol
+
+FĂştbol Internacional
+La Roja
+Colo - Colo
+Universidad CatĂłlica
+Universidad de Chile
+
+
+
+Polideportivo
+
+BĂĄsquetbol
+Tenis
+Rugby
+
+
+
+
+EstadĂ­sticas
+
+
+ADLP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BioBioChile 2009-2016 | ConcepciĂłn, Chile | Contenidos bajo Creative Commons (CC-BY-NC) salvo
+donde indique lo contrario | Basado en sistema WordPress
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
