@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="id" class="no-js" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<style>
+/* css reset */	
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* bolabanget style */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+html {font-size: 62.5%;min-height:100%;position:relative;}
+body {font-size:1.6rem;font-family:sans-serif;color:#3e454c;background-color:#ffffff;margin-bottom:95px;}
+body::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+a {
+  color: #1784c7;
+  text-decoration: none;
+}
+input {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+.cd-main-content .content-wrapper {
+  padding-top:45px;
+}
+.cd-main-content .content-wrapper h1 {
+  font-size: 2rem;
+}
+.cd-main-content::before {
+  /* never visible - used to check MQ in jQuery */
+  display: none;
+  content: 'mobile';
+}
+.cd-main-header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  background: #993333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  /* added by Sony AK */
+  background:#e52d27;background:-webkit-linear-gradient(to left, #e52d27, #b31217);background:linear-gradient(to left, #e52d27, #b31217);
+}
+.cd-main-header::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.cd-logo {
+  float: left;
+  display: block;
+  margin: 13px 0 0 10px;
+}
+.cd-logo img {
+  display: block;
+  width: 100px;
+}
+.cd-nav-refresh {margin-top:11px;color:#fff;position:relative;display:block;float:right;margin-right:5px;}
+.cd-nav-trigger {
+  /* navigation trigger - visible on mobile devices only */
+  float: right;
+  position: relative;
+  display: block;
+  width: 34px;
+  height: 44px;
+  margin-right: 5px;
+  /* hide text */
+  overflow: hidden;
+  white-space: nowrap;
+  color: transparent;
+}
+.cd-nav-trigger span, .cd-nav-trigger span::before, .cd-nav-trigger span::after {
+  /* hamburger icon in CSS */
+  position: absolute;
+  display: inline-block;
+  height: 3px;
+  width: 24px;
+  background: #ffffff;
+}
+.cd-nav-trigger span {
+  /* line in the center */
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-top: -2px;
+  /*
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  transition: background 0.2s;
+  */
+}
+.cd-nav-trigger span::before, .cd-nav-trigger span::after {
+  /* other 2 lines */
+  content: '';
+  right: 0;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  /*
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+  */
+}
+.cd-nav-trigger span::before {
+  /* menu icon top line */
+  top: -6px;
+}
+.cd-nav-trigger span::after {
+  /* menu icon bottom line */
+  top: 6px;
+}
+.cd-nav-trigger.nav-is-visible span {
+  /* hide line in the center */
+  background: rgba(255, 255, 255, 0);
+}
+.cd-nav-trigger.nav-is-visible span::before, .cd-nav-trigger.nav-is-visible span::after {
+  /* keep visible other 2 lines */
+  background: white;
+}
+.cd-nav-trigger.nav-is-visible span::before {
+  -webkit-transform: translateX(4px) translateY(-3px) rotate(45deg);
+  -moz-transform: translateX(4px) translateY(-3px) rotate(45deg);
+  -ms-transform: translateX(4px) translateY(-3px) rotate(45deg);
+  -o-transform: translateX(4px) translateY(-3px) rotate(45deg);
+  transform: translateX(4px) translateY(-3px) rotate(45deg);
+}
+.cd-nav-trigger.nav-is-visible span::after {
+  -webkit-transform: translateX(4px) translateY(2px) rotate(-45deg);
+  -moz-transform: translateX(4px) translateY(2px) rotate(-45deg);
+  -ms-transform: translateX(4px) translateY(2px) rotate(-45deg);
+  -o-transform: translateX(4px) translateY(2px) rotate(-45deg);
+  transform: translateX(4px) translateY(2px) rotate(-45deg);
+}
+.cd-search {
+  position: relative;
+  margin: 1.2em 10px 0.6em;
+}
+.cd-search.is-hidden {
+  opacity: 0;
+}
+.cd-search::before {
+  /* lens icon */
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 16px;
+  width: 16px;
+  background: url(/img/cd-search.svg) no-repeat 0 0;
+}
+.cd-search input {
+  padding-left: 32px;
+  width: 100%;
+  height: 36px;
+  border: none;
+  border-radius: .25em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.cd-search input:focus {
+  outline: none;
+}
+.cd-nav {
+  /* top nav - not visible on mobile devices */
+  display: none;
+}
+.cd-top-nav > li > a::before {
+  /* reset style */
+  display: none;
+}
+.cd-top-nav > li a {
+  padding: 1em 5% !important;
+}
+.cd-top-nav img {
+  /* avatar image */
+  position: absolute;
+  left: 1.8em;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: none;
+}
+.cd-side-nav {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 45px 0 0;
+  background-color: #2c3136;
+  visibility: hidden;
+  opacity: 0;
+  max-height: 100vh;
+  overflow: hidden;
+  /*
+  -webkit-transition: opacity 0s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0s 0s, visibility 0s 0s;
+  transition: opacity 0s 0s, visibility 0s 0s;
+  */
+}
+.cd-side-nav.nav-is-visible {
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+  -webkit-overflow-scrolling: touch;
+  /*
+  -webkit-transition: opacity 0s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0s 0s, visibility 0s 0s;
+  transition: opacity 0s 0s, visibility 0s 0s;
+  */
+  max-height: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.cd-side-nav > ul {
+  padding: 0.6em 0;
+}
+.cd-side-nav > ul:last-of-type {
+  padding-bottom: 0;
+}
+.cd-side-nav .cd-label, .cd-side-nav a {
+  display: block;
+  padding: 1em 10px;
+}
+.cd-side-nav .cd-label {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #646a6f;
+  font-size: 1rem;
+  letter-spacing: .1em;
+}
+.cd-side-nav a {
+  position: relative;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+.cd-side-nav ul.cd-top-nav > li:last-of-type > a {
+  border-bottom: none;
+}
+.cd-side-nav > ul > li > a {
+  padding-left: calc(10px + 24px);
+  border-bottom: 1px solid #373d44;
+}
+.cd-side-nav > ul > li > a::before {
+  /* icon before item name */
+  position: absolute;
+  content: '';
+  left: 10px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 16px;
+  width: 16px;
+  background: url(/img/cd-nav-icons-bb.svg?201609220103) no-repeat 0 0;
+}
+.cd-side-nav > ul > li.live-score > a::before {
+  background-position: -64px 0;
+}
+.cd-side-nav > ul > li.match-prediction > a::before {
+  background-position: -80px 0;
+}
+.cd-side-nav > ul > li.match-result > a::before {
+  background-position: -48px 0;
+}
+.cd-side-nav > ul > li.television > a::before {
+  background-position: -32px 0;
+}
+.cd-side-nav > ul > li.latest-news > a::before {
+  background-position: 0 0;
+}
+.cd-side-nav > ul > li.league-table > a::before {
+  background-position: -16px 0;
+}
+.cd-side-nav > ul > li.match-videos > a::before {
+  background-position: -96px 0;
+}
+.cd-side-nav > ul > li.bolasiana > a::before {
+  background-position: -112px 0;
+}
+.cd-side-nav > ul > li.people-chat > a::before {
+  background-position: -128px 0;
+}
+.cd-side-nav > ul > li.play-games > a::before {
+  background-position: -144px 0;
+}
+.cd-side-nav > ul > li.calendar > a::before {
+  background-position: -160px 0;
+}
+.cd-side-nav > ul > li.trophy > a::before {
+  background-position: -176px 0;
+}
+.cd-side-nav > ul > li.sport-place > a::before {
+  background-position: -192px 0;
+}
+.cd-side-nav > ul > li.education-book > a::before {
+  background-position: -208px 0;
+}
+.cd-side-nav > ul > li.group-people > a::before {
+  background-position: -224px 0;
+}
+.cd-side-nav > ul > li.user-account > a::before {
+  background-position: -240px 0;
+}
+.cd-side-nav > ul > li.world-rank > a::before {
+  background-position: -256px 0;
+}
+.cd-side-nav > ul > li.badge > a::before {
+  background-position: -272px 0;
+}
+.cd-side-nav > ul > li.team-people > a::before {
+  background-position: -288px 0;
+}
+.cd-side-nav > ul > li.people-gathering > a::before {
+  background-position: -304px 0;
+}
+.cd-side-nav > ul > li.product-cart > a::before {
+  background-position: -320px 0;
+}
+.cd-side-nav > ul > li.product-store > a::before {
+  background-position: -336px 0;
+}
+.cd-side-nav > ul > li.company-info > a::before {
+  background-position: -352px 0;
+}
+.cd-side-nav > ul > li.company-contact > a::before {
+  background-position: -368px 0;
+}
+.cd-side-nav > ul > li.ads-image > a::before {
+  background-position: -384px 0;
+}
+.cd-side-nav > ul > li.world-logo > a::before {
+  background-position: -400px 0;
+}
+.cd-side-nav > ul > li.guidance > a::before {
+  background-position: -416px 0;
+}
+.cd-side-nav .count {
+  /* notification badge */
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: calc(5% + 16px + 0.4em);
+  padding: 0.2em 0.4em;
+  background-color: #ff7e66;
+  border-radius: .25em;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.cd-side-nav .action-btn a {
+  display: block;
+  margin: 0 5%;
+  padding: 1em 0;
+  background-color: #1784c7;
+  border-radius: .25em;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+.cd-side-nav .action-btn a::before {
+  display: none;
+}
+.has-children ul {
+  position: relative;
+  width: 100%;
+  display: none;
+  background-color: #1c1f22;
+}
+.has-children > a::after {
+  /* arrow icon */
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  right: 5%;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: url(/img/cd-arrow.svg);
+}
+.has-children.selected > ul {
+  display: block;
+}
+.has-children.selected > a::after {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  -moz-transform: translateY(-50%) rotate(180deg);
+  -ms-transform: translateY(-50%) rotate(180deg);
+  -o-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+.menu-opened {
+  overflow: hidden;
+}
+.footer {background-color:#000;color:#aaa;padding:10px 10px;bottom:0;position:absolute;width:100%;}
+.footer_item {color:#aaa;font-size:small;text-transform:uppercase;}
+.footer_item_sep {height:5px;}
+.footer_line_sep {border-top:1px solid #444;margin-top:10px;margin-bottom:10px;}
+.footer_copyright_container {font-size:small;}
+.footer_copyright_logo {display:table-cell;vertical-align:middle;line-height:1.1em;}
+.footer_copyright_text {display:table-cell;vertical-align:middle;padding-left:5px;line-height:1.1em;}
+.page_title {background-color:#2a2f32;margin-bottom:10px;height:60px;display:table;width:100%;background:#948E99;background:-webkit-linear-gradient(to left, #948E99 , #2E1437);background:linear-gradient(to left, #948E99, #2E1437);}
+.page_title .page_title_h1 {display:table-cell;vertical-align:middle;color:#fff;text-shadow:1px 1px 1px #000, 0 0 0.1em #000, 0 0 0.1em #000}
+.bb_reborn {background-color:#e9dd7c;color:#000;padding-left:4px;padding-right:4px;padding-bottom:3px;padding-top:5px;margin-top:14px;display:inline-block;text-transform:uppercase;margin-left:6px;font-size:0.65em;font-weight:bold;border-radius:4px;pointer-events:none;cursor:default;}
+.sep_global_bottom {width:100%;height:150px;display:block;}.s_header {border-bottom:1px solid #00919e;margin:15px 10px 0;}
+.s_header_title {background-color:#00919e;color:#fff;display:table;font-size:smaller;padding:6px 6px 4px;text-transform:uppercase;}
+.s_title {margin-left:10px;margin-right:10px;line-height:1.2em;margin-top:10px;font-weight:bold;}
+.s_title > a {color:#444;}
+.s_title_topic {line-height:1;font-size:0.8em;margin-bottom:2px;color:#ff6600;font-weight:normal;}
+.s_source {line-height:1;margin-left:10px;font-size:small;color:#4a993e;margin-top:3px;}
+.s_source > span {color:#bbb;}
+.s_separator {border-bottom:1px solid #eee;margin-top:10px;margin-left:10px;margin-right:10px;}
+.home_image {position:relative;}
+.home_image_img {width:100%;display:block;}
+.home_image_title {position:absolute;left:0px;bottom:5px;color:#fff;margin-left:10px;margin-right:10px;line-height:1.22em;font-size:x-large;font-weight:bold;text-shadow: 1px 1px 1px #000, 0 0 0.1em #000, 0 0 0.1em #000;}
+#home_image_container {background-color:#000;}
+.home_image_text {color:#eee;margin-left:10px;margin-right:10px;font-weight:bold;font-size:1.2em;padding-top:5px;padding-bottom:5px;line-height:1.2em;}
+.read_full {margin:0 auto;margin-top:20px;text-align:center;background-color:#4d90fe;display:table;padding:10px;color:#fff;padding-top:12px;border-radius:4px;}
+.short_content {margin-top:10px;margin-left:10px;margin-right:10px;line-height:1.25em;}
+.c_card_item {margin-left:10px;margin-right:10px;}
+.top_margin {margin-top:10px;}
+.date {font-size:small;color:#808080;}
+.source_name {font-size:small;color:#808080;text-transform:lowercase;}
+.date_item {display:table;background-image: url('/img/time.svg');background-position:left center;background-repeat:no-repeat;background-size:16px auto;height:20px;}
+.date_item_data {padding-left:20px;display:table-cell;vertical-align:middle;}
+.source_item {display:table;background-image: url('/img/news.svg');background-position:left center;background-repeat:no-repeat;background-size:16px auto;height:20px;}
+.source_item_data {padding-left:20px;display:table-cell;vertical-align:middle;}
+.sep_2 {border-top:1px solid #eee;margin-top:10px;}
+.content_bg {background-color:#fff;}
+body {background-color:#eee;}
+.sep {height:10px;}
+.c_card {background-color:#fff;box-shadow: 0 2px 2px -2px #aaa;}
+.ads_container {background-color:#fff;padding-top:20px;box-shadow:0 2px 2px -2px #aaa;padding-bottom:20px;}
+.ads_item {margin:0 auto;text-align:center;}
+.card_separator {display:block;height:10px;width:100%;}
+.c_card_item_title {color:#ed561b;font-weight:bold;text-transform:uppercase;}
+.c_card_pad_top {display:block;height:10px;width:100%;}
+.c_card_pad_bottom {display:block;height:10px;width:100%;}
+.story_detail_pad_bottom {display:block;height:20px;width:100%;}
+.c_src {height:20px;vertical-align:middle;line-height:20px;display:inline-table;font-size:small;margin-top:5px;}
+.src_name_icon {background-image:url('/img/news.svg');background-position:left center;background-repeat:no-repeat;background-size:16px auto;padding-left:20px;}
+.src_time_icon {background-image:url('/img/time.svg');background-position:left center;background-repeat:no-repeat;background-size:16px auto;padding-left:20px;}
+.src_name {margin-left:10px;color:#4a993e;}
+.src_time {margin-left:5px;color:#bbb;}
+</style>
+<title>Allegri Kencang Dirumorkan Bakal Latih Arsenal, Ini Komentar Bos Juventus - BolaBanget</title>
+<meta name="description" content="Allegri semakin dekat latih Arsenal, ini tanggapan bos Juventus.">
+<meta name="keywords" content="allegri,kencang,dirumorkan,bakal,latih,arsenal,ini,komentar,bos,juventus">
+<meta name="news_keywords" content="allegri,kencang,dirumorkan,bakal,latih,arsenal,ini,komentar,bos,juventus">
+<link rel="amphtml" href="http://bolabanget.id/amp/teaser/243773/allegri-kencang-dirumorkan-bakal-latih-arsenal-ini-komentar-bos-juventus">
+<link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/img/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/img/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/img/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/img/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+<link rel="manifest" href="/img/icons/manifest.json?v=20160918">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","url":"http://bolabanget.id","email":"info@bolabanget.id","brand":"BolaBanget","legalName":"BolaBanget Sports Group","url":"http://bolabanget.id","logo": "http://bolabanget.com/img/icons/android-icon-192x192.png","sameAs":[ "http://www.facebook.com/BolaBangetID","http://www.twitter.com/BolaBanget","http://www.instagram.com/BolaBanget","https://plus.google.com/113418810935242572834","https://www.youtube.com/channel/UC4DItgm-F29Ci92JZ4zyF7g"],"contactPoint":[{"@type":"ContactPoint","telephone":"+62-819-0525-8602","contactType":"customer service"}]}</script><meta property="og:type" content="article">
+<meta property="og:title" content="Allegri Kencang Dirumorkan Bakal Latih Arsenal, Ini Komentar Bos Juventus">
+<meta property="og:url" content="http://bolabanget.id/teaser/243773/allegri-kencang-dirumorkan-bakal-latih-arsenal-ini-komentar-bos-juventus">
+<meta property="og:image" content="https://img.okezone.com/dynamic/content/2017/01/30/51/1604226/allegri-kencang-dirumorkan-bakal-latih-arsenal-ini-komentar-bos-juventus-i9lZlnR491.jpg?w=640">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="480">
+<meta property="og:description" content="Allegri semakin dekat latih Arsenal, ini tanggapan bos Juventus.">
+<meta property="article:author" content="okezone.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@BolaBanget">
+<meta name="twitter:title" content="Allegri Kencang Dirumorkan Bakal Latih Arsenal, Ini Komentar Bos Juventus">
+<meta name="twitter:image" content="https://img.okezone.com/dynamic/content/2017/01/30/51/1604226/allegri-kencang-dirumorkan-bakal-latih-arsenal-ini-komentar-bos-juventus-i9lZlnR491.jpg?w=640">
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"NewsArticle","isBasedOn":"http://bola.okezone.com/read/2017/01/30/51/1604226/allegri-kencang-dirumorkan-bakal-latih-arsenal-ini-komentar-bos-juventus","mainEntityOfPage":"http://bolabanget.id/teaser/243773/allegri-kencang-dirumorkan-bakal-latih-arsenal-ini-komentar-bos-juventus","headline":"Allegri Kencang Dirumorkan Bakal Latih Arsenal, Ini Komentar Bos Juventus","url":"http://bolabanget.id/teaser/243773/allegri-kencang-dirumorkan-bakal-latih-arsenal-ini-komentar-bos-juventus","thumbnailUrl":"https://img.okezone.com/dynamic/content/2017/01/30/51/1604226/allegri-kencang-dirumorkan-bakal-latih-arsenal-ini-komentar-bos-juventus-i9lZlnR491.jpg?w=640","dateCreated":"2017-01-30WIB04:16:3725200","datePublished":"2017-01-30WIB04:16:3725200","dateModified":"2017-01-30WIB04:16:3725200","articleSection":"News","creator":["okezone.com"],"author":["okezone.com"],"keywords":["Berita","okezone.com","Allegri Kencang Dirumorkan Bakal Latih Arsenal, Ini Komentar Bos Juventus"],"image":{"@type":"ImageObject","url":"https://img.okezone.com/dynamic/content/2017/01/30/51/1604226/allegri-kencang-dirumorkan-bakal-latih-arsenal-ini-komentar-bos-juventus-i9lZlnR491.jpg?w=640","width":"640","height":"480"},"publisher":{"@type":"Organization","name":"okezone.com","logo":{"@type":"ImageObject","url":"http://bolabanget.id/img/icons/android-icon-192x192.png","width":"192","height":"192"}}}</script>
+</head>
+<body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87270931-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<header class="cd-main-header">
+<a href="/" class="cd-logo"><img width="100" height="22" src="/img/bb_mobile.png" alt=""></a>
+<a class="bb_reborn" href="#">beta</a>
+<a href="/" class="cd-nav-trigger"><span></span></a>
+<a href="/teaser/243773/allegri-kencang-dirumorkan-bakal-latih-arsenal-ini-komentar-bos-juventus" class="cd-nav-refresh"><img width="20" height="20" alt="" src="/img/refresh.svg"></a>
+</header><main class="cd-main-content">
+<nav class="cd-side-nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+<!--
+<div class="cd-search">
+<form action="/">
+<input type="search" placeholder="Cari...">
+</form>
+</div>
+-->
+<!-- <ul>
+<li class="cd-label">Akun</li>
+<li class="user-account"><a href="/">Daftar atau Login</a></li>        
+</ul> -->
+<ul>
+<li class="cd-label">Menu Utama</li>
+<li class="latest-news"><a href="/">Beranda</a></li>
+<li class="television"><a itemprop="url" href="/jadwal-tv">Jadwal TV</a></li>
+<li class="league-table"><a itemprop="url" href="/klasemen">Klasemen</a></li>
+<li class="match-result"><a itemprop="url" href="/hasil-pertandingan">Hasil Pertandingan</a></li>
+<li class="live-score"><a itemprop="url" href="/live-score">Live Score</a></li>
+<!-- <li class="match-prediction"><a href="/">Prediksi</a></li> -->
+<li class="match-videos"><a href="/video">Video</a></li>
+</ul>
+<!-- <ul>
+<li class="cd-label">Kompetisi</li>
+<li class="trophy"><a href="/">Liga Champions</a></li>
+<li class="trophy"><a href="/">Liga Europa</a></li>
+<li class="trophy"><a href="/">Selengkapnya...</a></li>
+</ul> -->
+<!-- <ul>
+<li class="cd-label">Komunitas</li>
+<li class="bolasiana"><a href="/">Bolasiana</a></li>
+<li class="people-chat"><a href="/">Chat</a></li>				
+<li class="has-children play-games">
+<a href="/">Permainan</a>
+<ul>
+<li><a href="/">Tebak Skor</a></li>
+<li><a href="/">Biji Bola</a></li>
+<li><a href="/">Kuis Bola</a></li>
+</ul>
+</li>
+<li class="has-children calendar">
+<a href="/">Agenda Olahraga</a>
+<ul>
+<li><a href="/">Kompetisi Futsal</a></li>
+</ul>
+</li>
+<li class="team-people"><a href="/">Fans Klub</a></li>
+<li class="group-people"><a href="/">Nonton Bareng</a></li>
+<li class="people-gathering"><a href="/">Gathering</a></li>
+</ul> -->
+<!-- <ul>
+<li class="cd-label">Jual Beli</li>
+<li class="product-cart"><a href="/">Promo Produk</a></li>
+<li class="product-store"><a href="/">Merchandize</a></li>
+</ul> -->
+<!-- <ul>
+<li class="cd-label">Data</li>
+<li class="has-children sport-place">
+<a href="/">Tempat Olahraga</a>
+<ul>
+<li><a href="/">Lapangan Futsal</a></li>
+<li><a href="/">Stadion Sepakbola</a></li>
+</ul>
+</li>
+<li class="has-children education-book">
+<a href="/">Pendidikan Olahraga</a>
+<ul>
+<li><a href="/">Sekolah Sepakbola</a></li>
+<li><a href="/">Sekolah Bulutangkis</a></li>
+</ul>
+</li>
+<li class="has-children group-people">
+<a href="/">Pemain &amp; Pelatih</a>
+<ul>
+<li><a href="/">Pemain</a></li>
+<li><a href="/">Pelatih</a></li>
+</ul>
+</li>
+<li class="has-children badge">
+<a href="/">Klub</a>
+<ul>
+<li><a href="/">Sepakbola</a></li>
+</ul>
+</li>
+<li class="sport-place"><a href="/">Tempat Nonton Bareng</a></li>
+<li class="world-rank"><a href="/">FIFA World Ranking</a></li>
+</ul> -->
+<ul>
+<li class="cd-label">BolaBanget</li>
+<li class="company-info"><a itemprop="url" href="/tentang">Tentang</a></li>
+<li class="company-contact"><a itemprop="url" href="/kontak">Kontak</a></li>
+<li class="ads-image"><a itemprop="url" href="/iklan">Iklan</a></li>
+<li class="guidance"><a itemprop="url" href="/ketentuan-penggunaan">Ketentuan Penggunaan</a></li>
+<li class="world-logo"><a itemprop="url" href="/pedoman-media-siber">Pedoman Media Siber</a></li>
+</ul>
+</nav><div class="content-wrapper">
+<div class="home_image">
+<a href="/kabar/243773/allegri-kencang-dirumorkan-bakal-latih-arsenal-ini-komentar-bos-juventus" target="_blank"><img class="home_image_img" src="https://img.okezone.com/dynamic/content/2017/01/30/51/1604226/allegri-kencang-dirumorkan-bakal-latih-arsenal-ini-komentar-bos-juventus-i9lZlnR491.jpg?w=640" alt=""></a>
+<div style="padding-left:10px;padding-right:10px;padding-top:10px;background-color:#fff;font-weight:bold;font-size:x-large;line-height:1.20em"><a href="/kabar/243773/allegri-kencang-dirumorkan-bakal-latih-arsenal-ini-komentar-bos-juventus" style="color:#444;display:block;" target="_blank">Allegri Kencang Dirumorkan Bakal Latih Arsenal, Ini Komentar Bos Juventus</a></div>
+</div>
+<div class="c_card">
+<div class="sep"></div>
+<div class="c_card_item date_item"><div class="date date_item_data">Senin, 30 Januari 2017 04:16 WIB</div></div>
+<div class="c_card_item source_item"><div class="source_name source_item_data">okezone.com</div></div>
+<div class="sep_2"></div>
+<div class="short_content">Allegri semakin dekat latih Arsenal, ini tanggapan bos Juventus.</div>
+<div class="read_full"><a style="color:#fff;" target="_blank" href="/kabar/243773/allegri-kencang-dirumorkan-bakal-latih-arsenal-ini-komentar-bos-juventus">baca ceritanya di okezone.com</a></div>
+<div class="story_detail_pad_bottom"></div>
+</div>
+<div class="sep"></div>
+<div class="ads_container">
+<div class="ads_item">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Mobile Web Mobile Banner 3 (Top) -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-2410702554753526"
+     data-ad-slot="8422143802"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		</div>
+</div>
+<div class="sep"></div>
+<div class="c_card">
+<div class="c_card_pad_top"></div>
+<div class="c_card_item c_card_item_title">Berita Seru Lainnya</div>
+<div style="height:15px;display:block;width:100%;"></div>
+<div class="c_card_item" style="font-weight:bold;line-height:1.25em;"><a style="color:#444;display:block;" href="/teaser/286094/jurgen-klopp-masuk-daftar-penerus-luis-enrique-di-barcelona">Jurgen Klopp Masuk Daftar Penerus Luis Enrique di Barcelona</a></div>
+<div class="c_src src_name_icon src_name"><div class="c_src_content">tempo.co</div></div>
+<div class="c_src src_time_icon src_time"><div class="c_src_content">2 menit lalu</div></div>
+<div class="c_card_item" style="border-top:1px solid #eee;margin-top:10px;margin-bottom:10px;"></div>
+<div class="c_card_item" style="font-weight:bold;line-height:1.25em;"><a style="color:#444;display:block;" href="/teaser/286099/klasemen-liga-italia-2017-juventus-63-poin-tujuh-angka-dari-roma">Klasemen Liga Italia 2017: Juventus 63 Poin, Tujuh Angka Dari Roma</a></div>
+<div class="c_src src_name_icon src_name"><div class="c_src_content">sidomi.com</div></div>
+<div class="c_src src_time_icon src_time"><div class="c_src_content">5 menit lalu</div></div>
+<div class="c_card_item" style="border-top:1px solid #eee;margin-top:10px;margin-bottom:10px;"></div>
+<div class="c_card_item" style="font-weight:bold;line-height:1.25em;"><a style="color:#444;display:block;" href="/teaser/286100/penalti-messi-di-ujung-laga-selamatkan-barcelona-dari-hasil-imbang">Penalti Messi di ujung laga selamatkan Barcelona dari hasil imbang</a></div>
+<div class="c_src src_name_icon src_name"><div class="c_src_content">antaranews.com</div></div>
+<div class="c_src src_time_icon src_time"><div class="c_src_content">8 menit lalu</div></div>
+<div class="c_card_item" style="border-top:1px solid #eee;margin-top:10px;margin-bottom:10px;"></div>
+<div class="c_card_item" style="font-weight:bold;line-height:1.25em;"><a style="color:#444;display:block;" href="/teaser/286098/gol-perdana-gerard-deulofeu-kunci-kemenangan-milan-atas-fiorentina">Gol Perdana Gerard Deulofeu Kunci Kemenangan Milan atas Fiorentina</a></div>
+<div class="c_src src_name_icon src_name"><div class="c_src_content">sindonews.com</div></div>
+<div class="c_src src_time_icon src_time"><div class="c_src_content">9 menit lalu</div></div>
+<div class="c_card_item" style="border-top:1px solid #eee;margin-top:10px;margin-bottom:10px;"></div>
+<div class="c_card_item" style="font-weight:bold;line-height:1.25em;"><a style="color:#444;display:block;" href="/teaser/286101/kalahkan-fiorentina-2-1-ac-milan-jaga-asa">Kalahkan Fiorentina 2-1, AC Milan Jaga Asa</a></div>
+<div class="c_src src_name_icon src_name"><div class="c_src_content">cnnindonesia.com</div></div>
+<div class="c_src src_time_icon src_time"><div class="c_src_content">11 menit lalu</div></div>
+<div class="c_card_pad_bottom"></div>
+</div>
+</div> 
+</main>
+<div class="sep_global_bottom"></div>
+<footer class="footer">
+<div>
+<a class="footer_item" href="/jadwal-tv">Jadwal TV</a>
+<div class="footer_item_sep"></div>
+<a class="footer_item" href="/klasemen">Klasemen</a>
+<div class="footer_item_sep"></div>
+<a class="footer_item" href="/hasil-pertandingan">Hasil Pertandingan</a>
+<div class="footer_item_sep"></div>
+<a class="footer_item" href="/live-score">Live Score</a>
+<div class="footer_item_sep"></div>
+<a class="footer_item" href="/video">Video</a>
+</div>
+<div class="footer_line_sep"></div>
+<div class="footer_copyright_container"><div class="footer_copyright_logo"><amp-img src="/img/icons/android-icon-192x192.png" alt="" width="40" height="40"></amp-img></div><div class="footer_copyright_text">&copy; 2011-2017 BolaBanget Sports Group</div></div>
+</footer><script src="/js/jquery-3.1.0.min.js"></script>
+<script src="/js/main.min.js?201609220103"></script>
+</body>
+</html>

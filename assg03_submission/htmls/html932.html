@@ -1,0 +1,422 @@
+<!DOCTYPE html><html
+lang="en"><head><meta
+charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Uw4AUVJXGwYBXVdRBAk="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script><title>Looks like we're all about to be Liverpool and Arsenal fans this week | FootballFanCast.com</title><meta
+name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><link
+rel="stylesheet" type="text/css" href="https://cdn.footballfancast.com/wp-content/themes/ffc-2016/dist/css/style.min.css?v=2017021001"> <script type="text/javascript" src="https://cdn.footballfancast.com/wp-content/themes/ffc-2016/dist/js/scripts.min.js?v=2017021001"></script> <script>/*<![CDATA[*/var associations = {};
+//footballfancast_billboard
+	associations['5597357'] = 'cc56f99fb3c2e6d50631';
+
+//footballfancast_doubleMPU
+	associations['5597354'] = 'a0345362a5008bd90287';
+
+//footballfancast_MPU
+	associations['5606948'] = '7d4caabc771476da6cde';
+
+//footballfancast_skyscraper
+	associations['5597344'] = 'a6faf6ef12ec92a37b10';
+
+//footballfancast_mobile_leaderboard
+	associations['5597351'] = '92d33e27ff9553dd428e';
+
+//footballfancast_mobile_stickyleaderboard
+	associations['5716644'] = '0a75feee7b9c4f4b5e9c';
+
+//footballfancast_mobile_MPU
+	associations['5597352'] = '4d2f4c9685820da01156';
+
+	document.write('<scr'+'ipt id="sonobi" src="http://apex.go.sonobi.com/trinity.js?key_maker=' + encodeURI(JSON.stringify(associations)) + '&s=' + Math.floor(Math.random()* 1000)+'"></scr'+'ipt>');/*]]>*/</script> <script>var kv_string = {};
+for(var id in sbi_trinity){
+  kv_string[id]='';
+  for(var key in sbi_trinity[id]){
+    kv_string[id] += 'kv'+key+'='+sbi_trinity[id][key]+';';
+  }
+}</script> <meta
+name="description"  content="Liverpool are the only team standing in the way of Chelsea winning the title at a canter." /><meta
+name="keywords"  content="antonio conte,jurgen klopp,stamford bridge,anfield,arsenal,chelsea,features,liverpool,opinion,premier league,reactive blogs" /><link
+rel="canonical" href="http://www.footballfancast.com/opinion-2/were-all-liverpool-and-arsenal-fans-now" /><meta
+property="og:title" content="Looks like we&#039;re all about to be Liverpool and Arsenal fans this week | FootballFanCast.com" /><meta
+property="og:type" content="article" /><meta
+property="og:url" content="http://www.footballfancast.com/opinion-2/were-all-liverpool-and-arsenal-fans-now" /><meta
+property="og:image" content="https://cdn.footballfancast.com/wp-content/uploads/2017/01/2016-09-16T205359Z_117060839_MT1ACI14613052_RTRMADP_3_SOCCER-ENGLAND-CHE-LIV-600x399.jpg" /><meta
+property="og:site_name" content="FootballFanCast.com" /><meta
+property="og:description" content="Liverpool are the only team standing in the way of Chelsea winning the title at a canter." /><meta
+property="article:tag" content="antonio conte" /><meta
+property="article:tag" content="jurgen klopp" /><meta
+property="article:tag" content="stamford bridge" /><meta
+property="article:tag" content="anfield" /><meta
+property="article:tag" content="arsenal" /><meta
+property="article:tag" content="chelsea" /><meta
+property="article:tag" content="features" /><meta
+property="article:tag" content="liverpool" /><meta
+property="article:tag" content="opinion" /><meta
+property="article:tag" content="premier league" /><meta
+property="article:tag" content="reactive blogs" /><meta
+property="article:published_time" content="2017-01-29T19:25:39Z" /><meta
+property="article:modified_time" content="2017-01-27T15:46:56Z" /><meta
+name="twitter:card" content="summary_large_image" /><meta
+name="twitter:site" content="@FootballFanCast" /><meta
+name="twitter:domain" content="www.footballfancast.com" /><meta
+name="twitter:title" content="Looks like we&#039;re all about to be Liverpool and Arsenal fans this week | FootballFanCast.com" /><meta
+name="twitter:description" content="Liverpool are the only team standing in the way of Chelsea winning the title at a canter." /><meta
+name="twitter:image" content="https://cdn.footballfancast.com/wp-content/uploads/2017/01/2016-09-16T205359Z_117060839_MT1ACI14613052_RTRMADP_3_SOCCER-ENGLAND-CHE-LIV-600x399.jpg" /><meta
+itemprop="image" content="https://cdn.footballfancast.com/wp-content/uploads/2017/01/2016-09-16T205359Z_117060839_MT1ACI14613052_RTRMADP_3_SOCCER-ENGLAND-CHE-LIV-600x399.jpg" /><link
+rel='dns-prefetch' href='//s.w.org' /><link
+rel='stylesheet' id='basecss-css'  href='https://cdn.footballfancast.com/wp-content/plugins/latest_news_ticker_pro-fanduel-version/themes/sdj_lnt_pro_main.css?ver=4.7.2' type='text/css' media='all' /><link
+rel='stylesheet' id='theme-css'  href='https://cdn.footballfancast.com/wp-content/plugins/latest_news_ticker_pro-fanduel-version/themes/sky.css?v=2017012601&#038;ver=4.7.2' type='text/css' media='all' /><link
+rel='stylesheet' id='contact-form-7-css'  href='https://cdn.footballfancast.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.6.1' type='text/css' media='all' /><link
+rel='stylesheet' id='snack_cookie_css-css'  href='https://cdn.footballfancast.com/wp-content/plugins/snack-cookie-consent/css/dark-top.css?ver=4.7.2' type='text/css' media='all' /><link
+rel='stylesheet' id='math-captcha-frontend-css'  href='https://cdn.footballfancast.com/wp-content/plugins/wp-math-captcha/css/frontend.css?ver=4.7.2' type='text/css' media='all' /> <script type='text/javascript' src='https://cdn.footballfancast.com/wp-content/plugins/wp-words-links-change/include/../js/jquery.js?ver=1.11.1'></script> <script type='text/javascript' src='https://cdn.footballfancast.com/wp-content/plugins/latest_news_ticker_pro-fanduel-version/jquery.webticker.js?v=20161222&#038;ver=1.5'></script> <script type='text/javascript' src='https://cdn.footballfancast.com/wp-content/plugins/snack-cookie-consent/js/cookie.consent.latest.min.js?ver=4.7.2'></script> <link
+rel='shortlink' href='http://www.footballfancast.com/?p=349612' /><meta
+property="fb:pages" content="70499083898" /> <script type="text/javascript">var ajaxurl = 'http://www.footballfancast.com/wp-admin/admin-ajax.php';</script>  <script type="text/javascript">window.cookieconsent_options = {"message":"We use cookies to give you the best experience on our website.","dismiss":"Got it!","learnMore":"More info","link":"/privacy-policy","theme":"https://cdn.footballfancast.com/wp-content/plugins/snack-cookie-consent/css/dark-top.css"};</script> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','tw_ga');
+    
+      tw_ga('create', 'UA-1313722-1', 'auto');
+      tw_ga('send', 'pageview', {
+          'dimension1': 'Sam Cox',
+          'dimension3': '19 - 20'
+      });</script> <link
+rel="amphtml" href="http://www.footballfancast.com/opinion-2/were-all-liverpool-and-arsenal-fans-now/amp" /><link
+rel="icon" href="https://cdn.footballfancast.com/wp-content/uploads/2017/01/tofavicon-100x100.png" sizes="32x32" /><link
+rel="icon" href="https://cdn.footballfancast.com/wp-content/uploads/2017/01/tofavicon-300x300.png" sizes="192x192" /><link
+rel="apple-touch-icon-precomposed" href="https://cdn.footballfancast.com/wp-content/uploads/2017/01/tofavicon-300x300.png" /><meta
+name="msapplication-TileImage" content="https://cdn.footballfancast.com/wp-content/uploads/2017/01/tofavicon-300x300.png" /> <script type="text/javascript" src="http://ad.crwdcntrl.net/5/c=7666/pe=y/to=y/var=adtechccauds"></script> <script type="text/javascript">/*<![CDATA[*/var adtechCCfullstring = "";
+    if (typeof(adtechccauds) != 'undefined') {
+      for (var cci = 0; cci < adtechccauds.Profile.Audiences.Audience.length; cci++){
+        if (cci > 0) adtechCCfullstring += ":";
+        adtechCCfullstring +=adtechccauds.Profile.Audiences.Audience[cci].abbr;
+      }
+    }/*]]>*/</script> <script src="http://tags.crwdcntrl.net/c/7678/cc_af.js"></script>  <script>var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "12294186" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();</script> <noscript>
+<img
+src="http://b.scorecardresearch.com/p?c1=2&c2=12294186&cv=2.0&cj=1" />
+</noscript> <script type="text/javascript">var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-PMcfgk8BkkkCD"
+});</script> <noscript><div
+style="display:none;">
+<img
+src="//pixel.quantserve.com/pixel/p-PMcfgk8BkkkCD.gif" border="0" height="1" width="1" alt="Quantcast"/></div>
+</noscript>
+ <script type="text/javascript" src="http://a.postrelease.com/serve/load.js?async=true"></script> <script type="text/javascript" src="//native.sharethrough.com/assets/sfp.js" async></script> <style>.full-width .promo h2 {
+    padding: 10px 40% 10px 10px;
+}</style> <script>var unruly = window.unruly || {};
+unruly.native = unruly.native || {};
+unruly.native.siteId = 901815;</script> <script src="//video.unrulymedia.com/native/native-loader.js"></script> <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script> <script>var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];</script> <script>googletag.cmd.push(function() {
+    googletag.defineSlot('/6428571/Unruly', [1, 1], 'div-gpt-ad-1481817321535-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });</script> <script type="text/javascript" async="true" src="//fo-api.omnitagjs.com/fo-api/ot.js"></script> </head><body
+class="post-template-default single single-post postid-349612 single-format-standard"><div
+class="wrapper main"><div
+class="billboard"> <script language="javascript">/*<![CDATA[*/if (window.adgroupid == undefined) {
+	          window.adgroupid = Math.round(Math.random() * 1000);
+	        }
+	        document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtech.de/addyn/3.0/1639/5597357/0/2466/ADTECH;loc=100;target=_blank;kvpageID=349612;kvcats=85:103:1761:129:18256:5:3;kvext_inv_code=113540;KVabbr='+ adtechCCfullstring +';'+kv_string[5597357]+';grp='+window.adgroupid+';misc='+new Date().getTime()+'"></scri'+'pt>');/*]]>*/</script> <noscript>
+<a
+href="http://adserver.adtech.de/adlink/3.0/1639/5597357/0/2466/ADTECH;loc=300;kvpageID=349612;kvcats=85:103:1761:129:18256:5:3;kvext_inv_code=113540" target="_blank">
+<img
+src="http://adserver.adtech.de/adserv/3.0/1639/5597357/0/2466/ADTECH;loc=300;kvpageID=349612;kvcats=85:103:1761:129:18256:5:3;kvext_inv_code=113540" border="0" width="970" height="250">
+</a>
+</noscript></div><div
+class="header"><div
+class="header-inner"><div
+class="top-row"><div
+class="logo">
+<a
+href="/"><img
+src="https://cdn.footballfancast.com/wp-content/themes/ffc-2016/dist/images/FFC-NEWLOGO.svg" /></a></div><div
+class="social">
+<a
+href="https://www.facebook.com/FootballFanCast"><span
+class="icon icon-facebook"></span></a>
+<a
+href="https://twitter.com/FootballFanCast"><span
+class="icon icon-twitter"></span></a>
+<a
+href="https://www.instagram.com/footballfancast/"><span
+class="icon icon-instagram"></span></a></div></div><div
+class="bottom-row"><div
+class="ffc-now" id="ffc-now">
+<img
+src="https://cdn.footballfancast.com/wp-content/themes/ffc-2016/dist/images/logo-wo-triangle.svg" /></a></div><div
+class="section-1"><div
+class="nav"><ul><li
+class=" menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-336964 menu-item-has-children">
+<a
+href="http://www.footballfancast.com/category/opinion-2" data-id="336964">Opinion</a></li><li
+class=" menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-344666 menu-item-has-children">
+<a
+href="http://www.footballfancast.com/category/features" data-id="344666">Features</a></li><li
+class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-336424 menu-item-has-children">
+<a
+href="/fixtures" data-id="336424">Live</a></li><li
+class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-334945 menu-item-has-children">
+<a
+href="http://www.footballfancast.com/category/social-media" data-id="334945">Social Media</a></li><li
+class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-334950 menu-item-has-children">
+<a
+href="http://www.footballfancast.com/category/debate" data-id="334950">Debate</a></li><li
+class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-334958 menu-item-has-children">
+<a
+href="http://www.footballfancast.com/category/gaming" data-id="334958">Gaming</a></li><li
+class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-334960">
+<a
+href="http://www.footballfancast.com/category/football-videos" data-id="334960">FFC TV</a></li><li
+class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-334910">
+<a
+href="http://www.footballfancast.com/write-for-footballfancast-com" data-id="334910">Write for Us</a></li></ul></div><div
+class="search">
+<span
+class="icon icon-search"></span></div></div><div
+class="section-2"><div
+class="logo">
+<a
+href="/"><img
+src="https://cdn.footballfancast.com/wp-content/themes/ffc-2016/dist/images/FFC-NEWLOGO.svg" /></a></div><div
+class="menu-button"><div
+class="nav-icon">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span></div>
+Menu</div></div></div></div><div
+class="subnav"><div
+class="subnav-inner"><div
+class="subnav-top-row"><div
+class="nav"></div><div
+class="triangle"></div><div
+class="social"></div><div
+class="search"></div></div><div
+class="navcont"></div></div></div></div></div><div
+class="featured-image parallax">
+<img
+src="https://cdn.footballfancast.com/wp-content/uploads/2017/01/2016-09-16T205359Z_117060839_MT1ACI14613052_RTRMADP_3_SOCCER-ENGLAND-CHE-LIV.jpg" alt="We&#039;re all Liverpool and Arsenal fans now!" /></div><div
+class="wrapper"><div
+class="article"><div
+class="article-inner"><h1 class="animated">We&#8217;re all Liverpool and Arsenal fans now!</h1><div
+class="article-meta"><div
+class="meta-top-row">
+<span
+class="author-name">by <a
+href="http://www.footballfancast.com/author/sam-cox-2">Sam Cox</a></span>
+<span
+class="author-twitter"><a
+href="https://twitter.com/SamRCox_"><span
+class="icon icon-twitter"></span> @SamRCox_</a></span>
+<span
+class="article-share">share<div
+class="share-bar">
+<a
+data-network="facebook" href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=http%3A%2F%2Fwww.footballfancast.com%2Fopinion-2%2Fwere-all-liverpool-and-arsenal-fans-now&amp;pubid=ra-54be43657d95c368&amp;ct=1&amp;title=We%27re%20all%20Liverpool%20and%20Arsenal%20fans%20now%21&amp;pco=tbxnj-1.0" target="_blank"><img
+src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/facebook.png" border="0" alt="Facebook"></a>
+<a
+data-network="twitter" href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=http%3A%2F%2Fwww.footballfancast.com%2Fopinion-2%2Fwere-all-liverpool-and-arsenal-fans-now&amp;pubid=ra-54be43657d95c368&amp;ct=1&amp;title=We%27re%20all%20Liverpool%20and%20Arsenal%20fans%20now%21&amp;pco=tbxnj-1.0" target="_blank"><img
+src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/twitter.png" border="0" alt="Twitter"></a>
+<a
+data-network="reddit" href="https://api.addthis.com/oexchange/0.8/forward/reddit/offer?url=http%3A%2F%2Fwww.footballfancast.com%2Fopinion-2%2Fwere-all-liverpool-and-arsenal-fans-now&amp;pubid=ra-54be43657d95c368&amp;ct=1&amp;title=We%27re%20all%20Liverpool%20and%20Arsenal%20fans%20now%21&amp;pco=tbxnj-1.0" target="_blank"><img
+src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/reddit.png" border="0" alt="Pocket"></a>
+<a
+data-network="whatsapp" href="https://api.addthis.com/oexchange/0.8/forward/whatsapp/offer?url=http%3A%2F%2Fwww.footballfancast.com%2Fopinion-2%2Fwere-all-liverpool-and-arsenal-fans-now&amp;pubid=ra-54be43657d95c368&amp;ct=1&amp;title=We%27re%20all%20Liverpool%20and%20Arsenal%20fans%20now%21&amp;pco=tbxnj-1.0" target="_blank"><img
+src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/whatsapp.png" border="0" alt="Pocket"></a>
+<a
+data-network="flipboard" href="https://api.addthis.com/oexchange/0.8/forward/flipboard/offer?url=http%3A%2F%2Fwww.footballfancast.com%2Fopinion-2%2Fwere-all-liverpool-and-arsenal-fans-now&amp;pubid=ra-54be43657d95c368&amp;ct=1&amp;title=We%27re%20all%20Liverpool%20and%20Arsenal%20fans%20now%21&amp;pco=tbxnj-1.0" target="_blank"><img
+src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/flipboard.png" border="0" alt="Pocket"></a>
+<a
+data-network="addthis" href="https://www.addthis.com/bookmark.php?source=tbx32nj-1.0&amp;v=300&amp;http%3A%2F%2Fwww.footballfancast.com%2Fopinion-2%2Fwere-all-liverpool-and-arsenal-fans-now&amp;pubid=ra-54be43657d95c368&amp;ct=1&amp;title=We%27re%20all%20Liverpool%20and%20Arsenal%20fans%20now%21&amp;pco=tbxnj-1.0" target="_blank"><img
+src="https://cache.addthiscdn.com/icons/v3/thumbs/32x32/addthis.png" border="0" alt="Addthis"></a></div></span></div><div
+class="meta-bottom-row">
+<span
+class="read-duration"><span>4</span> minute read</span>
+<span
+class="publish-date"><i
+class="icon icon-clock"></i> 29/1/2017 | <span>07:25pm</span></span></div></div><p>Chelsea visit Anfield on Tuesday night with the Premier League title on the line. Antonio Conte’s side are eight points clear at the top of the table, with Arsenal occupying second place. Only a few days after their trip to Anfield, the Blues host Arsenal – who can be expected to pick up three points in their midweek fixture at home to Watford.</p><p>There are 16 matches left for each club in the Premier League season, including the two next week, but it is hard to see Chelsea relinquishing a lead if they remain undefeated over their next two games.</p><div
+style="margin: 10px 0;"><p
+style="text-align: center;"><a
+href="http://bit.ly/nowtvcontent" target="_blank"  rel="nofollow" ><img
+class="alignnone wp-image-346273 size-full" src="https://cdn.footballfancast.com/wp-content/uploads/2016/12/587_301133_C03_NOWTV_SPORTS_QUAKE_GIFS_WK26_-MASTER_970X250_GENERIC.gif" width="970" height="250" /></a><script language='JavaScript1.1' SRC="https://ad.doubleclick.net/ddm/trackimpj/N4892.2038504SNACKMEDIA/B10712683.142918688;dc_trk_aid=314983743;dc_trk_cid=69972537;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?"></script></p><div
+class="inblog_ad"><div
+id='div-gpt-ad-1481817321535-0' style='height:1px; width:1px;'> <script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1481817321535-0'); });</script> </div></div></div><div
+style="clear:both;"></div><p>In fact, in the Premier League era only one team has blown an eight point after 22 matches. That team was Newcastle and the chasing team was Manchester United. It will take quite some choke for the Blues to miss out on the trophy this May, but two more victories against Liverpool and Arsenal would put the title beyond reasonable doubt.</p><p>There is a role reversal coming up in these two fixtures. Chelsea last faced Liverpool and Arsenal in a different formation. The humiliation of defeats to their two rivals saw Antonio Conte change system and led to the Blues going on a long winning streak. Those two defeats defined Chelsea’s season as much as any of their victories, it made Conte change his methods and led to their charge up the table. Now they face the same two opponents, within the space of only a few days, and it could confirm their status as champions-elect.</p><p>Victory over Liverpool would guarantee that Chelsea are at least eight points clear of second place ahead of their clash with Arsenal. They could, quite reasonably, afford to lose to the Gunners in that scenario. Having played their three nearest challengers twice, the Blues would be five points ahead at the top of the table without the hassle of European football around the corner, something the two Manchester clubs, Arsenal and Spurs will have to contend with. Simply put, Chelsea must fail to win both of these matches if the title race is to remain alive. Liverpool, as their first challengers, must banish their poor start to 2017 and produce a performance like the one that saw them leave Stamford Bridge victorious earlier this season.</p><p><a
+href="http://starnextspin.com" target="_blank"  rel="nofollow" ><img
+src="https://cdn.footballfancast.com/wp-content/uploads/2017/01/Antonio-Conte-24.jpg" alt="" width="1686" height="1165" class="alignnone size-full wp-image-348857" srcset="https://cdn.footballfancast.com/wp-content/uploads/2017/01/Antonio-Conte-24.jpg 1686w, https://cdn.footballfancast.com/wp-content/uploads/2017/01/Antonio-Conte-24-300x207.jpg 300w, https://cdn.footballfancast.com/wp-content/uploads/2017/01/Antonio-Conte-24-768x531.jpg 768w, https://cdn.footballfancast.com/wp-content/uploads/2017/01/Antonio-Conte-24-600x415.jpg 600w" sizes="(max-width: 1686px) 100vw, 1686px" /></a></p><p>The return of a dominant top six is bemoaned in some corners. It has actually made for a fascinating contest in their own cordoned off part of the league. Liverpool, Arsenal and Spurs deserve praise for keeping even an inkling of a race alive to catch Conte’s Blues. We could, however, be left with no more than a tussle for Champions League qualification after the next two rounds of fixtures.</p><p>This Premier League season has been a brilliant one to date. The arrival of wonderful managers, a competitive relegation battle and some stellar individual performances have seen the quality at the top of the league improve. Chelsea are leading the way and they could be symbolic of the Premier League’s return to the pinnacle of European football. Conte’s side have overcome several tests over the last few months, but these two games in such close proximity are the greatest of the lot.</p><p>Win them, and it would take a 1995/96 Newcastle style collapse to bring them down. Those hoping for late season drama at the top of the table must be supporting Liverpool and Arsenal over the next two Premier League games, and will love it if they beat Chelsea.</p><p><div
+style="float: left; margin: 10px 20px 10px 0;"><p
+style="text-align: center;"><a
+href="https://www.surveymonkey.co.uk/r/QKQK79R" target="_blank" rel="nofollow"><strong>Click here to take our survey and for a chance to win £100...</strong></a></p>
+<a
+href="https://www.surveymonkey.co.uk/r/QKQK79R" target="_blank"  rel="nofollow" ><img
+class="alignnone wp-image-346270 size-full" src="https://cdn.footballfancast.com/wp-content/uploads/2016/12/Shoot-Blog-Code-Image-1.jpg?admin" width="1920" height="400" /></a></div><br
+/><div
+style="text-align:center; margin: 10px auto;" class="no_float"> <script language="javascript">/*<![CDATA[*/if (window.adgroupid == undefined) {
+	window.adgroupid = Math.round(Math.random() * 1000);
+}
+document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtech.de/addyn/3.0/1639/6275398/0/16/ADTECH;loc=100;target=_blank;KVabbr='+ adtechCCfullstring +';grp='+window.adgroupid+';misc='+new Date().getTime()+'"></scri'+'pt>');/*]]>*/</script><noscript><a
+href="http://adserver.adtech.de/adlink/3.0/1639/6275398/0/16/ADTECH;loc=300" target="_blank" rel="nofollow" ><img
+src="http://adserver.adtech.de/adserv/3.0/1639/6275398/0/16/ADTECH;loc=300" border="0" width="1" height="1"></a></noscript></div><div
+style="clear:both;"></div></p> <script language="javascript">/*<![CDATA[*/if (window.adgroupid == undefined) {
+	window.adgroupid = Math.round(Math.random() * 1000);
+}
+document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtech.de/addyn/3.0/1639/5703925/0/16/ADTECH;loc=100;target=_blank;grp='+window.adgroupid+';misc='+new Date().getTime()+'"></scri'+'pt>');/*]]>*/</script><noscript><a
+href="http://adserver.adtech.de/adlink/3.0/1639/5703925/0/16/ADTECH;loc=300" target="_blank"><img
+src="http://adserver.adtech.de/adserv/3.0/1639/5703925/0/16/ADTECH;loc=300" border="0" width="1" height="1"></a></noscript></div><div
+class="content-recco"><div
+class="OUTBRAIN" data-src="http://www.footballfancast.com/opinion-2/were-all-liverpool-and-arsenal-fans-now" data-widget-id="AR_2" data-ob-template="SnackMedia" ></div> <script type="text/javascript" src="http://widgets.outbrain.com/outbrain.js"></script> </div><div
+class="comments">
+<a
+name="comments" id="comments"></a><div
+id="mccomments"></div> <script type="text/javascript">/*  */
+		var matchchatPostID = 349612;
+		(function() {
+			var mc = document.createElement('script'); mc.type = 'text/javascript';
+			mc.async = true;
+			mc.src = '//api.matchchat.co.uk/comments/js/wordpress.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mc);
+		})();
+		/*  */</script> </div><div
+class="inf-scroll" data-category-id="85" data-post-id="349612"></div><div
+class="inf-scroll-trigger">&nbsp;</div>
+<br><br></div><div
+class="sidebar"><div
+class="newsnow"><div
+id="newsnowlogo" title="Click here for more Football news from NewsNow" style="width: 280px; margin: 0px auto 8px; padding: 0px; border: 1px solid rgb(204, 204, 204); color: rgb(255, 255, 255); font-size: 11px; line-height: 14px; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; cursor: pointer; background: rgb(85, 85, 85);"><div
+style="margin:0;padding:0;border:1px solid #fff;background:#555;"><div
+style="margin:0;padding:0;border:0;width:160px;height:50px;float:left;"><img
+src="https://cdn.footballfancast.com/wp-content/themes/ffc-2016/dist/images/newsnow_f_ab.gif" alt="As featured on NewsNow: Football news" style="display:block;margin:0;padding:0;border:0;width:160px;height:50px;"></div><div
+style="padding:0;border:0;margin:0 0 0 140px;text-align:center;"><span
+style="margin:0;padding:0;border:0;display:inline-block;vertical-align:middle;text-align:center;width:100px;"><a
+rel="nofollow" id="newsnowlogo_a" href="http://www.newsnow.co.uk/h/Sport/Football" target="newsnow" style="color: rgb(255, 255, 255); text-decoration: none; border-bottom: 0px none;">Football</a> News 24/7</span><span
+style="margin:0;padding:0;border:0;display:inline-block;height:50px;width:1px;vertical-align:middle;line-height:50px;font-size:1px;">&nbsp;</span></div></div></div></div><div
+class="mpu"> <script language="javascript">/*<![CDATA[*/if (window.adgroupid == undefined) {
+	          window.adgroupid = Math.round(Math.random() * 1000);
+	        }
+	        document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtech.de/addyn/3.0/1639/5606948/0/170/ADTECH;loc=100;target=_blank;kvpageID=349612;kvcats=85:103:1761:129:18256:5:3;kvext_inv_code=113540;KVabbr='+ adtechCCfullstring +';'+kv_string[5606948]+';grp='+window.adgroupid+';misc='+new Date().getTime()+'"></scri'+'pt>');/*]]>*/</script> <noscript>
+<a
+href="http://adserver.adtech.de/adlink/3.0/1639/5606948/0/170/ADTECH;loc=300;kvpageID=349612;kvcats=85:103:1761:129:18256:5:3;kvext_inv_code=113540" target="_blank">
+<img
+src="http://adserver.adtech.de/adserv/3.0/1639/5606948/0/170/ADTECH;loc=300;kvpageID=349612;kvcats=85:103:1761:129:18256:5:3;kvext_inv_code=113540" border="0" width="300" height="250">
+</a>
+</noscript></div><div
+class="dmpu"> <script language="javascript">/*<![CDATA[*/if (window.adgroupid == undefined) {
+	          window.adgroupid = Math.round(Math.random() * 1000);
+	        }
+	        document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtech.de/addyn/3.0/1639/5597354/0/529/ADTECH;loc=100;target=_blank;kvpageID=349612;kvcats=85:103:1761:129:18256:5:3;kvext_inv_code=113540;KVabbr='+ adtechCCfullstring +';'+kv_string[5597354]+';grp='+window.adgroupid+';misc='+new Date().getTime()+'"></scri'+'pt>');/*]]>*/</script> <noscript>
+<a
+href="http://adserver.adtech.de/adlink/3.0/1639/5597354/0/529/ADTECH;loc=300;kvpageID=349612;kvcats=85:103:1761:129:18256:5:3;kvext_inv_code=113540" target="_blank">
+<img
+src="http://adserver.adtech.de/adserv/3.0/1639/5597354/0/529/ADTECH;loc=300;kvpageID=349612;kvcats=85:103:1761:129:18256:5:3;kvext_inv_code=113540" border="0" width="300" height="600">
+</a>
+</noscript></div><div
+class="sky"> <script language="javascript">/*<![CDATA[*/if (window.adgroupid == undefined) {
+	          window.adgroupid = Math.round(Math.random() * 1000);
+	        }
+	        document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtech.de/addyn/3.0/1639/5597344/0/154/ADTECH;loc=100;target=_blank;kvpageID=349612;kvcats=85:103:1761:129:18256:5:3;kvext_inv_code=113540;KVabbr='+ adtechCCfullstring +';'+kv_string[5597344]+';grp='+window.adgroupid+';misc='+new Date().getTime()+'"></scri'+'pt>');/*]]>*/</script> <noscript>
+<a
+href="http://adserver.adtech.de/adlink/3.0/1639/5597344/0/154/ADTECH;loc=300;kvpageID=349612;kvcats=85:103:1761:129:18256:5:3;kvext_inv_code=113540" target="_blank">
+<img
+src="http://adserver.adtech.de/adserv/3.0/1639/5597344/0/154/ADTECH;loc=300;kvpageID=349612;kvcats=85:103:1761:129:18256:5:3;kvext_inv_code=113540" border="0" width="160" height="600">
+</a>
+</noscript></div></div> <script type='text/javascript' src='https://cdn.footballfancast.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script> <script type='text/javascript'>/*  */
+var _wpcf7 = {"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
+/*  */</script> <script type='text/javascript' src='https://cdn.footballfancast.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.6.1'></script> <script type='text/javascript'>/*  */
+var kkkk = {"link_a":"http:\/\/starnextspin.com","link":"http:\/\/starnextspin.com","change_link_order":"on"};
+/*  */</script> <script type='text/javascript' src='https://cdn.footballfancast.com/wp-content/plugins/wp-words-links-change/include/../js/main.js?ver=4.7.2'></script> <script type='text/javascript' src='https://cdn.footballfancast.com/wp-includes/js/wp-embed.min.js?ver=4.7.2'></script> <link
+href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> <script type="text/javascript">jQuery(function ($) {
+            $("#webticker").webTicker({travelocity: 0.05});
+        });</script> <div
+id="sdj_ticker_script_bottom" class="fanduel-ticker-wrap"><ul
+id="webticker" class=""><li><a
+class="trackable ticker_europcar_logo" data-track-object="ticker_titanbet_logo" style="display:inline-block;" target="_blank" href="http://bit.ly/nowtvticker"><img
+src="https://cdn.footballfancast.com/wp-content/plugins/latest_news_ticker_pro-fanduel-version/themes/nowday.png?v=2" style="display:inline-block;"  width="auto" height="24px" /></a></li><li><a
+href="http://bit.ly/nowtvticker" target="_blank" class="trackable ticker_sponsored_link" style="display:inline-block;padding-top:2px;" data-track-object="ticker_sponsored_link">Watch Tottenham Hotspur v Stoke City at 12pm</a></li><li><a
+class="trackable ticker_europcar_logo logo2" data-track-object="ticker_titanbet_logo"
+style="display:inline-block;" target="_blank" href="http://bit.ly/nowtvticker"><img
+src="https://cdn.footballfancast.com/wp-content/plugins/latest_news_ticker_pro-fanduel-version/themes/lion.png" style="margin-top:-5px;" width="24px" height="35px" /></a></li><li><a
+href="http://bit.ly/nowtvticker" target="_blank" class="trackable ticker_sponsored_link" style="display:inline-block;padding-top:2px;" data-track-object="ticker_sponsored_link">Sky Sports for 24 hours, all for £6.99</a></li><li><a
+class="trackable ticker_europcar_logo" data-track-object="ticker_titanbet_logo" style="display:inline-block;" target="_blank" href="http://bit.ly/nowtvticker"><img
+src="https://cdn.footballfancast.com/wp-content/plugins/latest_news_ticker_pro-fanduel-version/themes/nowday.png?v=2" style="display:inline-block;"  width="auto" height="24px" /></a></li><li><a
+href="http://bit.ly/nowtvticker" target="_blank" class="trackable ticker_sponsored_link" style="display:inline-block;padding-top:2px;" data-track-object="ticker_sponsored_link">Watch Tottenham Hotspur v Stoke City at 12pm</a></li><li><a
+class="trackable ticker_europcar_logo logo2" data-track-object="ticker_titanbet_logo"
+style="display:inline-block;" target="_blank" href="http://bit.ly/nowtvticker"><img
+src="https://cdn.footballfancast.com/wp-content/plugins/latest_news_ticker_pro-fanduel-version/themes/lion.png" style="margin-top:-5px;" width="24px" height="35px" /></a></li><li><a
+href="http://bit.ly/nowtvticker" target="_blank" class="trackable ticker_sponsored_link" style="display:inline-block;padding-top:2px;" data-track-object="ticker_sponsored_link">Sky Sports for 24 hours, all for £6.99</a></li><li><a
+class="trackable ticker_europcar_logo" data-track-object="ticker_titanbet_logo" style="display:inline-block;" target="_blank" href="http://bit.ly/nowtvticker"><img
+src="https://cdn.footballfancast.com/wp-content/plugins/latest_news_ticker_pro-fanduel-version/themes/nowday.png?v=2" style="display:inline-block;"  width="auto" height="24px" /></a></li><li><a
+href="http://bit.ly/nowtvticker" target="_blank" class="trackable ticker_sponsored_link" style="display:inline-block;padding-top:2px;" data-track-object="ticker_sponsored_link">Watch Tottenham Hotspur v Stoke City at 12pm</a></li><li><a
+class="trackable ticker_europcar_logo logo2" data-track-object="ticker_titanbet_logo"
+style="display:inline-block;" target="_blank" href="http://bit.ly/nowtvticker"><img
+src="https://cdn.footballfancast.com/wp-content/plugins/latest_news_ticker_pro-fanduel-version/themes/lion.png" style="margin-top:-5px;" width="24px" height="35px" /></a></li><li><a
+href="http://bit.ly/nowtvticker" target="_blank" class="trackable ticker_sponsored_link" style="display:inline-block;padding-top:2px;" data-track-object="ticker_sponsored_link">Sky Sports for 24 hours, all for £6.99</a></li><li><a
+class="trackable ticker_europcar_logo" data-track-object="ticker_titanbet_logo" style="display:inline-block;" target="_blank" href="http://bit.ly/nowtvticker"><img
+src="https://cdn.footballfancast.com/wp-content/plugins/latest_news_ticker_pro-fanduel-version/themes/nowday.png?v=2" style="display:inline-block;"  width="auto" height="24px" /></a></li><li><a
+href="" target="_blank" class="trackable ticker_sponsored_link" style="display:inline-block;padding-top:2px;" data-track-object="ticker_sponsored_link"></a></li></ul></div> <script language='JavaScript1.1' src='https://ad.doubleclick.net/ddm/trackimpj/N4892.2038504SNACKMEDIA/B10712683.142918689;dc_trk_aid=314983735;dc_trk_cid=69972537;ord=1487543346;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?'></script> <div
+class="sf_unit" id="sf_unit"><div
+class="sf_close" id="sf_close"><span
+class="icon icon-left-open"></span></div><div
+class="sf_iframe_holder" id="sf_unit_iframe"></div></div><div
+class="sf_tab" id="sf_tab"></div><div
+id="ffc-now-tooltip">Switch to Snack Football to browse all blogs, videos and new featured content<div
+class="green-tick"><img
+src="http://images.footballfancast.com/ffc/close-grey.svg" class="green-tick-bottom" alt="snack football unit grey close" /><img
+src="http://images.footballfancast.com/ffc/check-green.svg"  class="green-tick-top" alt="snack football unit green-tick" /></div></div> <script language="javascript">/*<![CDATA[*/if (window.adgroupid == undefined) {
+	          window.adgroupid = Math.round(Math.random() * 1000);
+	        }
+	        document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtech.de/addyn/3.0/1639/5597355/0/16/ADTECH;loc=100;target=_blank;kvpageID=349612;kvcats=85:103:1761:129:18256:5:3;kvext_inv_code=113540;KVabbr='+ adtechCCfullstring +';'+kv_string[5597355]+';grp='+window.adgroupid+';misc='+new Date().getTime()+'"></scri'+'pt>');/*]]>*/</script> <noscript>
+<a
+href="http://adserver.adtech.de/adlink/3.0/1639/5597355/0/16/ADTECH;loc=300;kvpageID=349612;kvcats=85:103:1761:129:18256:5:3;kvext_inv_code=113540" target="_blank">
+<img
+src="http://adserver.adtech.de/adserv/3.0/1639/5597355/0/16/ADTECH;loc=300;kvpageID=349612;kvcats=85:103:1761:129:18256:5:3;kvext_inv_code=113540" border="0" width="1" height="1">
+</a>
+</noscript><div
+id="bottomAd" style="font-size: 2px;">&nbsp;</div> <script>jQuery(document).ready( function() {
+  window.setTimeout( function() 
+  {
+    var bottomad = $('#bottomAd');
+    
+    if (bottomad.length == 1) 
+    {
+      if (bottomad.height() == 0) 
+      {
+        //alert('adBlock detected');
+        tw_ga('send',{
+           'hitType': 'event',
+           'eventCategory': 'adBlock',
+           'eventAction': 'view',
+           'eventLabel': 'on',
+           'eventValue': 1,
+           'nonInteraction': true
+        });
+      } 
+      else 
+      {
+        //alert('adBlock not detected');
+        tw_ga('send',{
+           'hitType': 'event',
+           'eventCategory': 'adBlock',
+           'eventAction': 'view',
+           'eventLabel': 'off',
+           'eventValue': 1,
+           'nonInteraction': true
+        });
+      }
+    }      
+  }, 1);
+});</script> <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"37801a907f","applicationID":"5196338","transactionName":"NVJSNUZXWUpUVxcIWgwYcQJAX1hXGkcKD1IOUg==","queueTime":0,"applicationTime":446,"atts":"GRVRQw5NSkQ=","errorBeacon":"bam.nr-data.net","agent":""}</script></body></html>
