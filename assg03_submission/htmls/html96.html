@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<meta charset="utf-8" />
+<meta name="apple-itunes-app" content="app-id=515902300" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="icon" href="http://cdn.caughtoffside.com/favicon.ico" />
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://www.caughtoffside.com/xmlrpc.php" />
+<meta property="fb:app_id" content="100810056717426" />
+<meta property="fb:pages" content="86922614981" />
+<link rel="alternate" href="http://www.caughtoffside.com/2017/01/30/arsene-wenger-talks-arsenal-deadline-plans-and-concedes-two-first-team-stars-could-leave/" hreflang="en-gb" />
+
+
+<script type="text/javascript">
+//setup our object which our library will load in to later
+var fanatix = {
+	params:{},//stuff that'll come down from wordpress' built in "pass stuff from php to js" mechanisms will live here
+	runtime:{
+		redirecting:false
+	}
+};
+
+fanatix.lib = {
+	debug:function(message) {
+			},
+	loadScriptFromURL:function(url, run_when_loaded) {
+		var script = document.createElement('script');
+		script.async = true;
+		script.type = 'text/javascript';
+		if(run_when_loaded) {
+			if(script.readyState) {
+				script.onreadystatechange = function() {
+					if(script.readyState==='loaded' || script.readyState==='complete') {
+						script.onreadystatechange = null;
+						run_when_loaded();
+					}
+				};
+			}
+			else
+				script.onload = function() {
+					run_when_loaded();
+				};
+		}
+		script.src = url;
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(script, node);
+	},
+	detectDevice:function() {
+		var type = '';
+		var force = fanatix.fragment.parse('device');
+		if(force)
+			type = force;
+		else {
+			if(navigator.userAgent.indexOf('Opera Mini')>-1)
+				type = 'serverside';
+			else if(/iPhone|iPod/i.test(navigator.userAgent))
+				type = 'iphone';
+			else if(navigator.userAgent.indexOf('Android')>-1)
+				type = 'android';
+			else if((/Blackberry/i.test(navigator.userAgent) && (/Version\/6/i.test(navigator.userAgent) || /Version\/7/i.test(navigator.userAgent))) || navigator.userAgent.indexOf('Opera Mobi')>-1)
+				type = 'blackberry';
+			else {
+				type = 'other';
+//android's default browser, which has no actual name, doesn't say "android" in its UA, and can only be IDd by AppleWebKit being <=534
+				if(navigator.userAgent.indexOf('Macintosh')==-1 && navigator.userAgent.indexOf('Windows')==-1 && navigator.userAgent.indexOf('iPad')==-1) {
+					var android_stock = /applewebkit\/([0-9]+)/gi.exec(navigator.userAgent);
+					if(android_stock && parseInt(android_stock[1])<=534)
+						type = 'android';
+				}
+			}
+		}
+		return type;
+	},
+	getAppSession:function() {
+		var vars = document.cookie.split(';');
+		var cookies = {};
+		for(var i in vars) {
+			vars[i] = vars[i].replace(/^\s+|\s+$/g, '').trim();
+			if(vars[i].indexOf('fanatix_')==0) {
+				vars[i] = vars[i].substr(8);
+				var eq = vars[i].indexOf('=');
+				cookies[vars[i].substr(0, eq)] = unescape(vars[i].substr(eq+1));
+			}
+		}
+		return cookies;
+	}
+};
+
+fanatix.fragment = {
+	parse:function(return_only_param) {
+		var hash = window.location.hash;
+		if(hash)
+			hash = hash.replace('#', '');
+
+		var params = {};
+		var hash = hash.split('&');
+		for(var i in hash) {
+			if(hash[i].indexOf('=')==-1) {
+				var match = /^article\/([^\/]+)$/.exec(hash[i]);
+				if(match)
+					params.article = match[1];
+			}
+			else {
+				var param = hash[i].split('=');
+				params[param[0]] = param[1];
+			}
+		}
+		fanatix.runtime.fragment = params;
+		return return_only_param?params[return_only_param]:params;
+	}
+};
+
+fanatix.cookie = {
+	get:function(name) {
+		var nameEQ = name + "=";
+		var ca = document.cookie.split(';');
+		for(var i=0;i < ca.length;i++) {
+			var c = ca[i];
+			while(c.charAt(0)==' ')
+				c = c.substring(1,c.length);
+			if(c.indexOf(nameEQ) == 0)
+				return c.substring(nameEQ.length,c.length);
+		}
+		return null;
+	},
+	set:function(name, value, expires) {
+		document.cookie = name+'='+value+(expires?'; expires='+expires:'')+'; path=/';
+	},
+	remove:function(name) {
+		document.cookie = name+'=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/';
+	},
+	test:function() {
+		var rng = Math.random();
+		fanatix.cookie.set('fanatix-test-'+rng, 'true');
+		if(fanatix.cookie.get('fanatix-test-'+rng)) {
+			fanatix.cookie.allowed = true;
+			fanatix.cookie.remove('fanatix-test-'+rng);
+		}
+	},
+	allowed:false
+};
+
+fanatix.geo = {
+	callbacks:[],
+	push:function(func) {
+		fanatix.geo.callbacks.push(func);
+	},
+	checkCountryFromCookieForDocumentWriteScripts:function(country) {
+		var cookie = fanatix.cookie.get('country-code');
+		if(!cookie || cookie=='')
+			return false;
+		if(country) {
+			if(country==cookie)
+				return true;
+			return false;
+		}
+		return true;
+	}
+};
+
+fanatix.ads = {};
+
+fanatix.ads.dfp = {
+	enabled:true,
+	slots:{},
+	split_tests:{
+		'dfp-latest-feed-mpu':{
+			slot:null
+		}
+	},
+	init:function() {
+		window.googletag = window.googletag || {};
+		window.googletag.cmd = window.googletag.cmd || [];
+
+		fanatix.lib.debug('DFP: Creating the initial gpt.js <script> element');
+		(function() {
+			var gads = document.createElement('script');
+			gads.async = true;
+			gads.type = 'text/javascript';
+			var useSSL = 'https:' == document.location.protocol;
+			gads.src = (useSSL ? 'https:' : 'http:') +
+			'//www.googletagservices.com/tag/js/gpt.js';
+			var node = document.getElementsByTagName('script')[0];
+			node.parentNode.insertBefore(gads, node);
+		})();
+	}
+};
+fanatix.ads.fb = {
+	enabled:false,
+	placements:{'100810056717426_852379978227093':'fb-latest-native','100810056717426_852380051560419':'fb-latest-native','100810056717426_852380084893749':'fb-latest-native','100810056717426_852380131560411':'fb-latest-native'},
+	split_tests:{
+		'fb-latest-native':{
+			placement_ids:['100810056717426_852379978227093','100810056717426_852380051560419','100810056717426_852380084893749','100810056717426_852380131560411'],
+			test:'false',
+			slot:null
+		}
+	},
+	init:function() {
+		fanatix.lib.debug('FB: fanatix.ads.fb.init(): Setting window.fbAsyncInit callback');
+		window.fbAsyncInit = function() {
+			fanatix.lib.debug('FB: window.fbAsyncInit() called [100810056717426]');
+			FB.init({
+				appId      : '100810056717426',
+				xfbml      : true,
+				version    : 'v2.7'
+			});
+			if(fanatix.ads.fb.enabled) {
+				FB.Event.subscribe('ad.loaded', function(placementId) {
+					fanatix.lib.debug('FB: Audience Network ad loaded');
+					var e = document.getElementById(fanatix.ads.fb.placements[placementId]);
+					if(e)
+						e.style.display = 'block';
+				});
+				FB.Event.subscribe('ad.error', function(errorCode, errorMessage, placementId) {
+					fanatix.lib.debug('FB: Audience Network error (' + errorCode + ') ' + errorMessage+' ['+placementId+']');
+					if(fanatix.ads.fb.placements[placementId]=='fb-latest-native') {
+						fanatix.lib.debug('FB/DFP: Loading DFP fallback due to FB ad fail to load');
+						$('#dfp-latest-feed-mpu').removeClass('hide');
+											}
+				});
+			}
+		};
+
+		fanatix.lib.debug('FB: fanatix.ads.fb.init(): Loading jssdk');
+		(function(d, s, id){
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {return;}
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk/xfbml.ad.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	}
+};
+
+//so anything that depends on local cookies for freq capping can know whether it can set cookies or not
+fanatix.cookie.test();
+
+
+fanatix.runtime.device = fanatix.lib.detectDevice();
+fanatix.lib.debug('Device: '+fanatix.runtime.device);
+if(fanatix.cookie.allowed && true && (fanatix.runtime.device=='android' || fanatix.runtime.device=='iphone')) {
+	fanatix.lib.debug('Interstitial: checking session...');
+	var session = fanatix.lib.getAppSession();
+	var referrer_domain = document.referrer?document.referrer.split('/')[2]:'';
+	if(referrer_domain.indexOf('caughtoffside.com')>-1) {
+		if(!session.seen_download_app_interstitial_modern || true==='force') {
+			fanatix.lib.debug('Interstitial: redirecting!');
+			fanatix.runtime.redirecting = true;
+			window.location = 'http://www.caughtoffside.com/interstitial-downloadapp-modern.php#device='+fanatix.runtime.device+'&referrer='+encodeURIComponent(document.location.href);
+		}
+		else {
+			fanatix.lib.debug('Interstitial: NOT redirecting!');
+		}
+	}
+	else {
+		fanatix.lib.debug('Interstitial: NOT checking due to non-self referrer!');
+	}
+}
+</script>
+
+<title>
+Arsene Wenger talks Arsenal deadline plans two could leave</title>
+
+
+<!-- This site is optimized with the Yoast SEO plugin v2.3.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Arsenal boss Arsene Wenger was speaking to the media on Monday morning ahead of his side&#039;s clash with Watford at the Emirates on Tuesday night."/>
+<link rel="canonical" href="http://www.caughtoffside.com/2017/01/30/arsene-wenger-talks-arsenal-deadline-plans-and-concedes-two-first-team-stars-could-leave/" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="CaughtOffside &raquo; Feed" href="http://www.caughtoffside.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="CaughtOffside &raquo; Comments Feed" href="http://www.caughtoffside.com/comments/feed/" />
+<!-- This site is powered by Shareaholic - https://shareaholic.com -->
+<script type='text/javascript' data-cfasync='false'>
+  //<![CDATA[
+    _SHR_SETTINGS = {"endpoints":{"local_recs_url":"http:\/\/www.caughtoffside.com\/wp-admin\/admin-ajax.php?action=shareaholic_permalink_related","share_counts_url":"http:\/\/www.caughtoffside.com\/wp-admin\/admin-ajax.php?action=shareaholic_share_counts_api"}};
+
+    (function() {
+      var shr = document.createElement('script');
+      shr.setAttribute('data-cfasync', 'false');
+      shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
+      shr.type = 'text/javascript'; shr.async = 'true';
+      shr.onload = shr.onreadystatechange = function() {
+        var rs = this.readyState;
+        if (rs && rs != 'complete' && rs != 'loaded') return;
+        var site_id = '00da940b834d3c0f8608a9d1cccbe331';
+        var page_config = {};
+        try { Shareaholic.init(site_id, page_config); } catch (e) {}
+      };
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(shr, s);
+    })();
+  //]]>
+</script>
+
+<!-- Shareaholic Content Tags -->
+<meta name='shareaholic:site_name' content='CaughtOffside' />
+<meta name='shareaholic:language' content='en-US' />
+<meta name='shareaholic:url' content='http://www.caughtoffside.com/2017/01/30/arsene-wenger-talks-arsenal-deadline-plans-and-concedes-two-first-team-stars-could-leave/' />
+<meta name='shareaholic:keywords' content='arsene wenger, carl jenkinson, mathieu debuchy, arsenal, arsenal fc, extra time, features - newsnow, football and soccer, mobile app stories, premier league, transfer rumours' />
+<meta name='shareaholic:article_published_time' content='2017-01-30T10:16:12+00:00' />
+<meta name='shareaholic:article_modified_time' content='2017-02-19T17:41:52+00:00' />
+<meta name='shareaholic:shareable_page' content='true' />
+<meta name='shareaholic:article_author_name' content='Ron Carne' />
+<meta name='shareaholic:site_id' content='00da940b834d3c0f8608a9d1cccbe331' />
+<meta name='shareaholic:wp_version' content='7.6.1.4' />
+<meta name='shareaholic:image' content='http://cdn.caughtoffside.com/wp-content/uploads/2017/01/Wenger.jpg' />
+<!-- Shareaholic Content Tags End -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/cdn.caughtoffside.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.2"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='toc-screen-css'  href='http://cdn.caughtoffside.com/wp-content/plugins/table-of-contents-plus/screen.css?ver=1404' type='text/css' media='all' />
+<link rel='stylesheet' id='wpProQuiz_front_style-css'  href='http://cdn.caughtoffside.com/wp-content/plugins/wp-pro-quiz/css/wpProQuiz_front.min.css?ver=0.34' type='text/css' media='all' />
+<link rel='stylesheet' id='published-css'  href='http://cdn.caughtoffside.com/wp-content/themes/cos-2-0/static/css/style.55.min.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://cdn.caughtoffside.com/wp-content/plugins/jetpack/css/jetpack.css?ver=3.3' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.5 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-60715907-1', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('send','pageview',{'dimension1':'roncarne'});
+
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type='text/javascript' src='http://cdn.caughtoffside.com/wp-content/themes/cos-2-0/static/js/modernizr.js'></script>
+<link rel='https://api.w.org/' href='http://www.caughtoffside.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.caughtoffside.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.caughtoffside.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.5.2" />
+<link rel='shortlink' href='http://wp.me/peFS8-5w3O' />
+<link rel="alternate" type="application/json+oembed" href="http://www.caughtoffside.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.caughtoffside.com%2F2017%2F01%2F30%2Farsene-wenger-talks-arsenal-deadline-plans-and-concedes-two-first-team-stars-could-leave%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.caughtoffside.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.caughtoffside.com%2F2017%2F01%2F30%2Farsene-wenger-talks-arsenal-deadline-plans-and-concedes-two-first-team-stars-could-leave%2F&#038;format=xml" />
+			<meta property="fb:pages" content="86922614981" />
+			<style type='text/css'>img#wpstats{display:none}</style><link rel="amphtml" href="http://www.caughtoffside.com/2017/01/30/arsene-wenger-talks-arsenal-deadline-plans-and-concedes-two-first-team-stars-could-leave/amp/" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Arsene Wenger talks Arsenal deadline plans and concedes two first-team stars could leave" />
+<meta property="og:url" content="http://www.caughtoffside.com/2017/01/30/arsene-wenger-talks-arsenal-deadline-plans-and-concedes-two-first-team-stars-could-leave/" />
+<meta property="og:description" content="Arsenal boss Arsene Wenger was speaking to the media on Monday morning ahead of his side&#039;s clash with Watford at the Emirates on Tuesday night. However, as entirely expected, with the January trans..." />
+<meta property="article:published_time" content="2017-01-30T10:16:12+00:00" />
+<meta property="article:modified_time" content="2017-01-30T10:17:47+00:00" />
+<meta property="article:author" content="http://www.caughtoffside.com/author/roncarne/" />
+<meta property="og:site_name" content="CaughtOffside" />
+<meta property="og:image" content="http://cdn.caughtoffside.com/wp-content/uploads/2017/01/Wenger.jpg" />
+<meta name="twitter:site" content="@jetpack" />
+<meta name="twitter:image:src" content="http://cdn.caughtoffside.com/wp-content/uploads/2017/01/Wenger.jpg?w=640" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+window.cookieconsent_options = {
+	"message":"We use cookies to ensure you get the best experience on our website",
+	"dismiss":"Got it!",
+	"learnMore":"More info",
+	"link":"http://www.caughtoffside.com/privacy-policy/#cookies",
+	"theme":"dark-bottom"
+};
+</script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js" async></script>
+<!-- End Cookie Consent plugin -->
+
+<script type="text/javascript" src="//s.ntv.io/serve/load.js" async></script>
+
+</head>
+
+<body class="single single-post postid-1314884 single-format-standard group-blog">
+
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap clearfix"  >
+    <nav class="tab-bar hide-for-large-up">
+      <section class="left-small"> <a class="left-off-canvas-toggle ico-hamburger" href="#"><span></span></a> </section>
+      <section class="middle tab-bar-section">
+        <a title="fanatix Sports News" class="logo-link" href="/"> <div class="logo logo-mobile" title="fanatix Sports News"></div> </a>        <nav class="control-nav show-for-medium-up">
+          <ul class="follow">
+            <li><a href="https://www.facebook.com/caughtoffside" target="_blank"><i class="ss-icon">&#xF610;</i></a></li>
+            <li><a href="https://twitter.com/CaughtOffside" target="_blank"><i class="ss-icon">&#xF611;</i></a></li>
+            <li><a href="https://plus.google.com/103417226441297340644/posts" target="_blank"><i class="ss-icon">&#xF613;</i></a></li>
+			<li><a href="http://www.caughtoffside.com/feed/" target="_blank"><i class="ss-icon">&#xE310;</i></a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="right-small"> <a class="right-off-canvas-toggle ico-search" href="#"><span></span></a> </section>
+    </nav>
+    <header class="site-header show-for-large-up">
+      <div class="row">
+        <div class="large-4 columns"><a title="fanatix Sports News" class="logo-link" href="/"><div class="logo logo-desktop" title="fanatix Sports News"></div></a></div>
+        <div class="large-5 columns">
+			<div class="social-follow-widgets right">
+				<div class="social-widget social-rss">
+					<a href="http://www.caughtoffside.com/feed/" target="_blank"><i class="ss-icon">&#xE310;</i></a>
+				</div>
+				<div class="social-widget social-follow-gplus">
+					<tal:block xmlns:g="http://base.google.com/ns/1.0">
+						<g:plusone size="medium" href="http://www.caughtoffside.com/"></g:plusone>
+					</tal:block>
+				</div>
+				<div class="social-widget social-follow-twitter">
+					<a href="https://twitter.com/CaughtOffside" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" data-size="small" data-width="150px" data lang="en">Follow @CaughtOffside</a>
+				</div>
+				<div class="social-widget social-follow-facebook">
+					<div class="fb-like" data-href="https://www.facebook.com/caughtoffside" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false"></div>
+				</div>
+			</div>
+          <ul class="addon-links right">
+
+<li><a href="https://itunes.apple.com/app/apple-store/id515902300?pt=627006&ct=Interstitial%20-%20caughtoffside.com&mt=8" target="_blank">iPhone App</a></li>
+<li><a href="http://itunes.apple.com/us/app/caught-offside-for-ipad/id532519014?mt=8" target="_blank">iPad App</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.caught.offsidetwo" target="_blank">Android App</a></li>
+          </ul>
+          <nav class="control-nav">
+          </nav>
+        </div>
+      </div>
+    </header><!-- #masthead -->
+
+    <nav class="top-bar show-for-large-up" data-topbar>
+      <section class="top-bar-section">
+<!-- C-MENU BEGINS -->
+<ul id="menu-main-menu" class="left">
+    <li class="divider"></li>
+    <li id="menu-item-423444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-423444"><a href="/">Home</a></li>
+    <li class="divider"></li>
+    <li id="menu-item-423454" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423454"><a href="/tags/transfer-rumours/">Transfer Rumours</a></li>
+    <li class="divider"></li>
+    <li id="menu-item-423464" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children has-dropdown menu-item-423464"><a href="/tags/premier-league/">Premier League</a>
+        <ul class="sub-menu dropdown two-col">
+            <li id="menu-item-423474" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423474"><a href="/tags/premier-league/arsenal/">Arsenal FC</a></li>
+            <li id="menu-item-423564" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423564"><a href="/tags/premier-league/aston-villa/">Aston Villa FC</a></li>
+            <li id="menu-item-423574" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423574"><a href="/tags/premier-league/bournemouth/">Bournemouth AFC</a></li>
+            <li id="menu-item-423584" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423584"><a href="/tags/premier-league/chelsea/">Chelsea FC</a></li>
+            <li id="menu-item-423594" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423594"><a href="/tags/premier-league/crystal-palace/">Crystal Palace FC</a></li>
+            <li id="menu-item-423604" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423604"><a href="/tags/premier-league/everton/">Everton FC</a></li>
+            <li id="menu-item-423504" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423504"><a href="/tags/premier-league/leicester-city/">Leicester City FC</a></li>
+            <li id="menu-item-423514" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423514"><a href="/tags/premier-league/liverpool/">Liverpool FC</a></li>
+            <li id="menu-item-423524" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423524"><a href="/tags/premier-league/manchester-city/">Manchester City FC</a></li>
+            <li id="menu-item-423534" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423534"><a href="/tags/premier-league/manchester-united/">Manchester United FC</a></li>
+            <li id="menu-item-423544" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423544"><a href="/tags/premier-league/newcastle-united/">Newcastle United FC</a></li>
+            <li id="menu-item-423554" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423554"><a href="/tags/premier-league/norwich-city/">Norwich FC</a></li>
+            <li id="menu-item-423614" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423614"><a href="/tags/premier-league/southampton/">Southampton FC</a></li>
+            <li id="menu-item-423624" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423624"><a href="/tags/premier-league/stoke-city/">Stoke City FC</a></li>
+            <li id="menu-item-423634" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423634"><a href="/tags/premier-league/sunderland/">Sunderland AFC</a></li>
+            <li id="menu-item-423644" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423644"><a href="/tags/premier-league/swansea-city/">Swansea City AFC</a></li>
+            <li id="menu-item-423654" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423654"><a href="/tags/premier-league/tottenham-hotspur/">Tottenham FC</a></li>
+            <li id="menu-item-423660" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423660"><a href="/tags/premier-league/watford/">Watford FC</a></li>
+            <li id="menu-item-423664" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423664"><a href="/tags/premier-league/west-bromwich-albion/">West Bromwich Albion FC</a></li>
+            <li id="menu-item-423674" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423674"><a href="/tags/premier-league/west-ham/">West Ham FC</a></li>
+        </ul>
+    </li>
+    <li class="divider"></li>
+    <li id="menu-item-523684" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-523684"><a href="/tags/football-manager/">Football Manager</a></li>
+    <li class="divider"></li>
+    <!-- Football Section no PL --> 
+    <li id="menu-item-x1234" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-dropdown menu-item-x1234"><a href="#">Football</a>
+        <ul class="sub-menu dropdown">
+            <li id="menu-item-111" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children has-dropdown menu-item-111"><a href="/tags/championship/">Championship</a>
+                <ul class="sub-menu dropdown two-col">
+                    <li id="menu-item-134110" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134110"><a href="/tags/championship/birmingham/" >Birmingham City FC</a></li>
+                    <li id="menu-item-134120" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134120"><a href="/tags/championship/blackburn/" >Blackburn Rovers FC</a></li>
+                    <li id="menu-item-134130" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134130"><a href="/tags/championship/bolton/" >Bolton Wanderers FC</a></li>
+                    <li id="menu-item-134140" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134140"><a href="/tags/championship/brentford/" >Brentford FC</a></li>
+                    <li id="menu-item-134150" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134150"><a href="/tags/championship/brighton/">Brighton and Hove Albion FC</a></li>
+                    <li id="menu-item-134160" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134160"><a href="/tags/championship/bristol-city/" >Bristol City FC</a></li>
+                    <li id="menu-item-134170" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134170"><a href="/tags/championship/burnley/" >Burnley FC</a></li>
+                    <li id="menu-item-134180" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134180"><a href="/tags/championship/cardiff-city/">Cardiff City FC</a></li>
+                    <li id="menu-item-134190" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134190"><a href="/tags/championship/charlton/">Charlton Athletic FC</a></li>
+                    <li id="menu-item-134200" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134200"><a href="/tags/championship/derby-county/">Derby County FC</a></li>
+                    <li id="menu-item-134210" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134210"><a href="/tags/championship/fulham/">Fulham FC</a></li>
+                    <li id="menu-item-134220" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134220"><a href="/tags/championship/huddersfield/">Huddersfield Town AFC</a></li>
+                    <li id="menu-item-134230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134230"><a href="/tags/championship/hull-city/">Hull City AFC</a></li>
+                    <li id="menu-item-134240" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134240"><a href="/tags/championship/ipswich-town/">Ipswich Town FC</a></li>
+                    <li id="menu-item-134250" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134250"><a href="/tags/championship/leeds/">Leeds United FC</a></li>
+                    <li id="menu-item-134260" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134260"><a href="/tags/championship/mk-dons/" >MK Dons FC</a></li>
+                    <li id="menu-item-134270" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134270"><a href="/tags/championship/middlesbrough/">Middlesbrough FC</a></li>
+                    <li id="menu-item-134280" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134280"><a href="/tags/championship/nottingham-forest/">Nottingham Forest FC</a></li>
+                    <li id="menu-item-134290" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134290"><a href="/tags/championship/preston-north-end/">Preston North End FC</a></li>
+                    <li id="menu-item-134300" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134300"><a href="/tags/championship/queens-park-rangers/">Queens Park Rangers FC</a></li>
+                    <li id="menu-item-134310" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134310"><a href="/tags/championship/reading/">Reading FC</a></li>
+                    <li id="menu-item-134320" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134320"><a href="/tags/championship/rotherham/">Rotherham United FC</a></li>
+                    <li id="menu-item-134330" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134330"><a href="/tags/championship/sheffield-wednesday/">Sheffield Wednesday FC</a></li>
+                    <li id="menu-item-134340" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134340"><a href="/tags/championship/wolverhampton-wanderers/">Wolverhampton Wanderers FC</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-103611" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children has-dropdown menu-item-103611"><a href="/tags/german-bundesliga/">German Bundesliga</a>
+                <ul class="sub-menu dropdown">
+                    <li id="menu-item-143610" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-143610"><a href="/tags/german-bundesliga/bayern-munich/" >Bayern Munich</a></li>
+                    <li id="menu-item-143620" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-143620"><a href="/tags/german-bundesliga/borussia-dortmund/" >Borussia Dortmund</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-103608" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children has-dropdown menu-item-103608"><a href="/tags/la-liga/" >La Liga</a>
+                <ul class="sub-menu dropdown">
+                    <li id="menu-item-152000" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-152000"><a href="/tags/la-liga/atletico-madrid/" >Atletico Madrid</a></li>
+                    <li id="menu-item-152010" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-152010"><a href="/tags/la-liga/barcelona/" >Barcelona</a></li>
+                    <li id="menu-item-152020" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-152020"><a href="/tags/la-liga/real-madrid/" >Real Madrid</a></li>
+                    <li id="menu-item-152030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-152030"><a href="/tags/la-liga/valencia/" >Valencia</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-103614" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children has-dropdown menu-item-103614"><a href="/tags/serie-a/" >Serie A</a>
+                <ul class="sub-menu dropdown two-col">
+                    <li id="menu-item-161010" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161010"><a href="/tags/serie-a/ac-milan/" >AC Milan</a></li>
+                    <li id="menu-item-161020" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161020"><a href="/tags/serie-a/atalanta/" >Atalanta</a></li>
+                    <li id="menu-item-161030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161030"><a href="/tags/serie-a/bologna/" >Bologna</a></li>
+                    <li id="menu-item-161040" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161040"><a href="/tags/serie-a/carpi/" >Carpi</a></li>
+                    <li id="menu-item-161050" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161050"><a href="/tags/serie-a/chievo/" >Chievo</a></li>
+                    <li id="menu-item-161060" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161060"><a href="/tags/serie-a/empoli/" >Empoli</a></li>
+                    <li id="menu-item-161070" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161070"><a href="/tags/serie-a/fiorentina/" >Fiorentina</a></li>
+                    <li id="menu-item-161080" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161080"><a href="/tags/serie-a/frosinone/" >Frosinone Calcio</a></li>
+                    <li id="menu-item-161090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161090"><a href="/tags/serie-a/genoa/" >Genoa</a></li>
+                    <li id="menu-item-161100" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161100"><a href="/tags/serie-a/inter-milan/" >Inter Milan</a></li>
+                    <li id="menu-item-161110" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161110"><a href="/tags/serie-a/juventus/" >Juventus</a></li>
+                    <li id="menu-item-161120" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161120"><a href="/tags/serie-a/lazio/" >Lazio</a></li>
+                    <li id="menu-item-161130" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161130"><a href="/tags/serie-a/napoli/" >Napoli</a></li>
+                    <li id="menu-item-161140" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161140"><a href="/tags/serie-a/palermo/" >Palermo</a></li>
+                    <li id="menu-item-161150" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161150"><a href="/tags/serie-a/roma/" >Roma</a></li>
+                    <li id="menu-item-161160" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161160"><a href="/tags/serie-a/sampdoria/" >Sampdoria</a></li>
+                    <li id="menu-item-161170" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161170"><a href="/tags/serie-a/sassuolo/" >Sassuolo</a></li>
+                    <li id="menu-item-161180" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161180"><a href="/tags/serie-a/torino/" >Torino</a></li>
+                    <li id="menu-item-161190" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161190"><a href="/tags/serie-a/udinese/" >Udinese</a></li>
+                    <li id="menu-item-161200" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161200"><a href="/tags/serie-a/verona/" >Verona</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-103620" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children has-dropdown menu-item-103620"><a href="/tags/french-ligue-1/" >French Ligue 1</a>
+                <ul class="sub-menu dropdown">
+                    <li id="menu-item-171010" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171010"><a href="/tags/french-ligue-1/ajaccio/" >Ajaccio</a></li>
+                    <li id="menu-item-171020" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171020"><a href="/tags/french-ligue-1/angers/" >Angers</a></li>
+                    <li id="menu-item-171030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171030"><a href="/tags/french-ligue-1/bastia/" >Bastia</a></li>
+                    <li id="menu-item-171040" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171040"><a href="/tags/french-ligue-1/bordeaux/" >Bordeaux</a></li>
+                    <li id="menu-item-171050" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171050"><a href="/tags/french-ligue-1/caen/" >Caen</a></li>
+                    <li id="menu-item-171060" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171060"><a href="/tags/french-ligue-1/guingamp/" >Guingamp</a></li>
+                    <li id="menu-item-171070" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171070"><a href="/tags/french-ligue-1/lille/" >Lille</a></li>
+                    <li id="menu-item-171080" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171080"><a href="/tags/french-ligue-1/lorient/" >Lorient</a></li>
+                    <li id="menu-item-171090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171090"><a href="/tags/french-ligue-1/lyon/" >Lyon</a></li>
+                    <li id="menu-item-171100" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171100"><a href="/tags/french-ligue-1/marseille/" >Marseille</a></li>
+                    <li id="menu-item-171110" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171110"><a href="/tags/french-ligue-1/monaco/" >Monaco</a></li>
+                    <li id="menu-item-171120" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171120"><a href="/tags/french-ligue-1/montpellier/" >Montpellier</a></li>
+                    <li id="menu-item-171130" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171130"><a href="/tags/french-ligue-1/nantes/" >Nantes</a></li>
+                    <li id="menu-item-171140" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171140"><a href="/tags/french-ligue-1/nice/" >Nice</a></li>
+                    <li id="menu-item-171150" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171150"><a href="/tags/french-ligue-1/psg/" >Paris Saint-Germain</a></li>
+                    <li id="menu-item-171160" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171160"><a href="/tags/french-ligue-1/reims/" >Reims</a></li>
+                    <li id="menu-item-171170" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171170"><a href="/tags/french-ligue-1/rennais/" >Rennes</a></li>
+                    <li id="menu-item-171180" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171180"><a href="/tags/french-ligue-1/saint-etienne/" >Saint-Etienne</a></li>
+                    <li id="menu-item-171190" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171190"><a href="/tags/french-ligue-1/toulouse/" >Toulouse</a></li>
+                    <li id="menu-item-171200" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171200"><a href="/tags/french-ligue-1/troyes/" >Troyes</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-x1212" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children has-dropdown menu-item-x1212"><a href="/tags/scottish-football/" >Scottish Football</a>
+                <ul class="sub-menu dropdown">
+					<li id="menu-item-182" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-182"><a href="/tags/scottish-football/celtic/">Celtic FC</a></li>
+					<li id="menu-item-185" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-185"><a href="/tags/scottish-football/rangers/">Rangers FC</a></li>
+                </ul>
+            </li>
+            <li><a href="/tags/general-football-and-soccer/champions-league/">Champions League</a></li>
+            <li><a href="/tags/concacaf/">CONCACAF</a></li>
+            <li><a href="/tags/conmebol/">CONMEBOL</a></li>
+        </ul>
+    </li>
+    <!-- end -->
+    <li class="divider"></li>
+    <li id="menu-item-423684" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423684"><a href="/tags/video-loving/">Video</a></li>
+    <li class="divider"></li>
+    <li id="menu-item-423894" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423894"><a href="/tags/nutmegs/">Nutmegs</a></li>
+    <li class="divider"></li>
+    <li id="menu-item-423694" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423694"><a href="/tags/wags/">WAGS</a></li>
+    <li class="divider"></li>
+    <li id="menu-item-423834" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-dropdown menu-item-423834"><a href="#">About</a>
+        <ul class="sub-menu dropdown">
+            <li id="menu-item-423844" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423844"><a href="/give-us-a-shout/">About CaughtOffside</a></li>
+            <li id="menu-item-423854" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423854"><a href="/give-us-a-shout/contact-us/">Contact us</a></li>
+            <li id="menu-item-423904" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423904"><a href="/authors/">Authors</a></li>
+            <li id="menu-item-833324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-833324"><a href="/terms-of-service/">Terms of service</a></li>
+            <li id="menu-item-423864" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423864"><a href="/privacy-policy/">Privacy Policy &#038; Cookies</a></li>
+            <li id="menu-item-423874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423874"><a href="/the-team/">Write For Us</a></li>
+        </ul>
+    </li>
+</ul>
+
+<!-- MENU ENDS -->           <div class="search-wrap">
+            <div id="sb-search" class="sb-search">
+<!-- Google CSE Search Box Begins  -->
+<!-- Use of this code assumes agreement with the Google Custom Search Terms of Service. -->
+<!-- The terms of service are available at https://www.google.com/cse/docs/tos.html -->
+<form id="cref" action="http://www.google.com">
+<input type="hidden" value="partner-pub-4479294530161578:3576312279" name="cx">
+<input class="sb-search-input" name="q" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+<input class="sb-search-submit" type="submit" value="" name="sa">
+<span class="sb-icon-search"><div class="ico-search" title="google search"></div></span>
+<input type="hidden" name="siteurl" value="www.caughtoffside.com/">
+<input type="hidden" name="ref"><input type="hidden" name="ss">
+</form>
+<!-- Google CSE Search Box Ends -->
+
+
+
+             </div>
+          </div>
+
+      </section>
+    </nav><!-- #site-navigation -->
+
+<!-- OFF CANVAS  NAVIGATION -->
+
+<aside class="left-off-canvas-menu">
+
+<!-- C-MENU BEGINS -->
+<ul id="menu-main-menu-1" class="off-can-nav off-canvas-list"><li><label><div class="logo logo-mobile-nav" title="fanatix"></div></label></li>
+    <li class="divider"></li>
+    <li id="menu-item-423444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-423444"><a href="/">Home</a></li>
+    <li class="divider"></li>
+    <li id="menu-item-423454" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423454"><a href="/tags/transfer-rumours/">Transfer Rumours</a></li>
+    <li class="divider"></li>
+    <li id="menu-item-423464" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children has-dropdown menu-item-423464"><a href="/tags/premier-league/">Premier League</a>
+        <ul class="sub-menu dropdown two-col">
+            <li id="menu-item-423474" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423474"><a href="/tags/premier-league/arsenal/">Arsenal FC</a></li>
+            <li id="menu-item-423564" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423564"><a href="/tags/premier-league/aston-villa/">Aston Villa FC</a></li>
+            <li id="menu-item-423574" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423574"><a href="/tags/premier-league/bournemouth/">Bournemouth AFC</a></li>
+            <li id="menu-item-423584" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423584"><a href="/tags/premier-league/chelsea/">Chelsea FC</a></li>
+            <li id="menu-item-423594" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423594"><a href="/tags/premier-league/crystal-palace/">Crystal Palace FC</a></li>
+            <li id="menu-item-423604" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423604"><a href="/tags/premier-league/everton/">Everton FC</a></li>
+            <li id="menu-item-423504" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423504"><a href="/tags/premier-league/leicester-city/">Leicester City FC</a></li>
+            <li id="menu-item-423514" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423514"><a href="/tags/premier-league/liverpool/">Liverpool FC</a></li>
+            <li id="menu-item-423524" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423524"><a href="/tags/premier-league/manchester-city/">Manchester City FC</a></li>
+            <li id="menu-item-423534" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423534"><a href="/tags/premier-league/manchester-united/">Manchester United FC</a></li>
+            <li id="menu-item-423544" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423544"><a href="/tags/premier-league/newcastle-united/">Newcastle United FC</a></li>
+            <li id="menu-item-423554" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423554"><a href="/tags/premier-league/norwich-city/">Norwich FC</a></li>
+            <li id="menu-item-423614" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423614"><a href="/tags/premier-league/southampton/">Southampton FC</a></li>
+            <li id="menu-item-423624" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423624"><a href="/tags/premier-league/stoke-city/">Stoke City FC</a></li>
+            <li id="menu-item-423634" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423634"><a href="/tags/premier-league/sunderland/">Sunderland AFC</a></li>
+            <li id="menu-item-423644" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423644"><a href="/tags/premier-league/swansea-city/">Swansea City AFC</a></li>
+            <li id="menu-item-423654" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423654"><a href="/tags/premier-league/tottenham-hotspur/">Tottenham FC</a></li>
+            <li id="menu-item-423660" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423660"><a href="/tags/premier-league/watford/">Watford FC</a></li>
+            <li id="menu-item-423664" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423664"><a href="/tags/premier-league/west-bromwich-albion/">West Bromwich Albion FC</a></li>
+            <li id="menu-item-423674" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423674"><a href="/tags/premier-league/west-ham/">West Ham FC</a></li>
+        </ul>
+    </li>
+    <li class="divider"></li>
+    <li id="menu-item-523684" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-523684"><a href="/tags/football-manager/">Football Manager</a></li>
+    <li class="divider"></li>
+    <!-- Football Section no PL --> 
+    <li id="menu-item-x1234" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-dropdown menu-item-x1234"><a href="#">Football</a>
+        <ul class="sub-menu dropdown">
+            <li id="menu-item-111" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children has-dropdown menu-item-111"><a href="/tags/championship/">Championship</a>
+                <ul class="sub-menu dropdown two-col">
+                    <li id="menu-item-134110" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134110"><a href="/tags/championship/birmingham/" >Birmingham City FC</a></li>
+                    <li id="menu-item-134120" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134120"><a href="/tags/championship/blackburn/" >Blackburn Rovers FC</a></li>
+                    <li id="menu-item-134130" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134130"><a href="/tags/championship/bolton/" >Bolton Wanderers FC</a></li>
+                    <li id="menu-item-134140" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134140"><a href="/tags/championship/brentford/" >Brentford FC</a></li>
+                    <li id="menu-item-134150" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134150"><a href="/tags/championship/brighton/">Brighton and Hove Albion FC</a></li>
+                    <li id="menu-item-134160" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134160"><a href="/tags/championship/bristol-city/" >Bristol City FC</a></li>
+                    <li id="menu-item-134170" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134170"><a href="/tags/championship/burnley/" >Burnley FC</a></li>
+                    <li id="menu-item-134180" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134180"><a href="/tags/championship/cardiff-city/">Cardiff City FC</a></li>
+                    <li id="menu-item-134190" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134190"><a href="/tags/championship/charlton/">Charlton Athletic FC</a></li>
+                    <li id="menu-item-134200" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134200"><a href="/tags/championship/derby-county/">Derby County FC</a></li>
+                    <li id="menu-item-134210" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134210"><a href="/tags/championship/fulham/">Fulham FC</a></li>
+                    <li id="menu-item-134220" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134220"><a href="/tags/championship/huddersfield/">Huddersfield Town AFC</a></li>
+                    <li id="menu-item-134230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134230"><a href="/tags/championship/hull-city/">Hull City AFC</a></li>
+                    <li id="menu-item-134240" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134240"><a href="/tags/championship/ipswich-town/">Ipswich Town FC</a></li>
+                    <li id="menu-item-134250" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134250"><a href="/tags/championship/leeds/">Leeds United FC</a></li>
+                    <li id="menu-item-134260" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134260"><a href="/tags/championship/mk-dons/" >MK Dons FC</a></li>
+                    <li id="menu-item-134270" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134270"><a href="/tags/championship/middlesbrough/">Middlesbrough FC</a></li>
+                    <li id="menu-item-134280" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134280"><a href="/tags/championship/nottingham-forest/">Nottingham Forest FC</a></li>
+                    <li id="menu-item-134290" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134290"><a href="/tags/championship/preston-north-end/">Preston North End FC</a></li>
+                    <li id="menu-item-134300" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134300"><a href="/tags/championship/queens-park-rangers/">Queens Park Rangers FC</a></li>
+                    <li id="menu-item-134310" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134310"><a href="/tags/championship/reading/">Reading FC</a></li>
+                    <li id="menu-item-134320" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134320"><a href="/tags/championship/rotherham/">Rotherham United FC</a></li>
+                    <li id="menu-item-134330" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134330"><a href="/tags/championship/sheffield-wednesday/">Sheffield Wednesday FC</a></li>
+                    <li id="menu-item-134340" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134340"><a href="/tags/championship/wolverhampton-wanderers/">Wolverhampton Wanderers FC</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-103611" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children has-dropdown menu-item-103611"><a href="/tags/german-bundesliga/">German Bundesliga</a>
+                <ul class="sub-menu dropdown">
+                    <li id="menu-item-143610" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-143610"><a href="/tags/german-bundesliga/bayern-munich/" >Bayern Munich</a></li>
+                    <li id="menu-item-143620" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-143620"><a href="/tags/german-bundesliga/borussia-dortmund/" >Borussia Dortmund</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-103608" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children has-dropdown menu-item-103608"><a href="/tags/la-liga/" >La Liga</a>
+                <ul class="sub-menu dropdown">
+                    <li id="menu-item-152000" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-152000"><a href="/tags/la-liga/atletico-madrid/" >Atletico Madrid</a></li>
+                    <li id="menu-item-152010" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-152010"><a href="/tags/la-liga/barcelona/" >Barcelona</a></li>
+                    <li id="menu-item-152020" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-152020"><a href="/tags/la-liga/real-madrid/" >Real Madrid</a></li>
+                    <li id="menu-item-152030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-152030"><a href="/tags/la-liga/valencia/" >Valencia</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-103614" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children has-dropdown menu-item-103614"><a href="/tags/serie-a/" >Serie A</a>
+                <ul class="sub-menu dropdown two-col">
+                    <li id="menu-item-161010" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161010"><a href="/tags/serie-a/ac-milan/" >AC Milan</a></li>
+                    <li id="menu-item-161020" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161020"><a href="/tags/serie-a/atalanta/" >Atalanta</a></li>
+                    <li id="menu-item-161030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161030"><a href="/tags/serie-a/bologna/" >Bologna</a></li>
+                    <li id="menu-item-161040" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161040"><a href="/tags/serie-a/carpi/" >Carpi</a></li>
+                    <li id="menu-item-161050" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161050"><a href="/tags/serie-a/chievo/" >Chievo</a></li>
+                    <li id="menu-item-161060" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161060"><a href="/tags/serie-a/empoli/" >Empoli</a></li>
+                    <li id="menu-item-161070" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161070"><a href="/tags/serie-a/fiorentina/" >Fiorentina</a></li>
+                    <li id="menu-item-161080" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161080"><a href="/tags/serie-a/frosinone/" >Frosinone Calcio</a></li>
+                    <li id="menu-item-161090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161090"><a href="/tags/serie-a/genoa/" >Genoa</a></li>
+                    <li id="menu-item-161100" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161100"><a href="/tags/serie-a/inter-milan/" >Inter Milan</a></li>
+                    <li id="menu-item-161110" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161110"><a href="/tags/serie-a/juventus/" >Juventus</a></li>
+                    <li id="menu-item-161120" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161120"><a href="/tags/serie-a/lazio/" >Lazio</a></li>
+                    <li id="menu-item-161130" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161130"><a href="/tags/serie-a/napoli/" >Napoli</a></li>
+                    <li id="menu-item-161140" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161140"><a href="/tags/serie-a/palermo/" >Palermo</a></li>
+                    <li id="menu-item-161150" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161150"><a href="/tags/serie-a/roma/" >Roma</a></li>
+                    <li id="menu-item-161160" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161160"><a href="/tags/serie-a/sampdoria/" >Sampdoria</a></li>
+                    <li id="menu-item-161170" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161170"><a href="/tags/serie-a/sassuolo/" >Sassuolo</a></li>
+                    <li id="menu-item-161180" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161180"><a href="/tags/serie-a/torino/" >Torino</a></li>
+                    <li id="menu-item-161190" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161190"><a href="/tags/serie-a/udinese/" >Udinese</a></li>
+                    <li id="menu-item-161200" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161200"><a href="/tags/serie-a/verona/" >Verona</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-103620" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children has-dropdown menu-item-103620"><a href="/tags/french-ligue-1/" >French Ligue 1</a>
+                <ul class="sub-menu dropdown">
+                    <li id="menu-item-171010" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171010"><a href="/tags/french-ligue-1/ajaccio/" >Ajaccio</a></li>
+                    <li id="menu-item-171020" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171020"><a href="/tags/french-ligue-1/angers/" >Angers</a></li>
+                    <li id="menu-item-171030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171030"><a href="/tags/french-ligue-1/bastia/" >Bastia</a></li>
+                    <li id="menu-item-171040" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171040"><a href="/tags/french-ligue-1/bordeaux/" >Bordeaux</a></li>
+                    <li id="menu-item-171050" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171050"><a href="/tags/french-ligue-1/caen/" >Caen</a></li>
+                    <li id="menu-item-171060" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171060"><a href="/tags/french-ligue-1/guingamp/" >Guingamp</a></li>
+                    <li id="menu-item-171070" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171070"><a href="/tags/french-ligue-1/lille/" >Lille</a></li>
+                    <li id="menu-item-171080" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171080"><a href="/tags/french-ligue-1/lorient/" >Lorient</a></li>
+                    <li id="menu-item-171090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171090"><a href="/tags/french-ligue-1/lyon/" >Lyon</a></li>
+                    <li id="menu-item-171100" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171100"><a href="/tags/french-ligue-1/marseille/" >Marseille</a></li>
+                    <li id="menu-item-171110" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171110"><a href="/tags/french-ligue-1/monaco/" >Monaco</a></li>
+                    <li id="menu-item-171120" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171120"><a href="/tags/french-ligue-1/montpellier/" >Montpellier</a></li>
+                    <li id="menu-item-171130" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171130"><a href="/tags/french-ligue-1/nantes/" >Nantes</a></li>
+                    <li id="menu-item-171140" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171140"><a href="/tags/french-ligue-1/nice/" >Nice</a></li>
+                    <li id="menu-item-171150" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171150"><a href="/tags/french-ligue-1/psg/" >Paris Saint-Germain</a></li>
+                    <li id="menu-item-171160" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171160"><a href="/tags/french-ligue-1/reims/" >Reims</a></li>
+                    <li id="menu-item-171170" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171170"><a href="/tags/french-ligue-1/rennais/" >Rennes</a></li>
+                    <li id="menu-item-171180" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171180"><a href="/tags/french-ligue-1/saint-etienne/" >Saint-Etienne</a></li>
+                    <li id="menu-item-171190" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171190"><a href="/tags/french-ligue-1/toulouse/" >Toulouse</a></li>
+                    <li id="menu-item-171200" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-171200"><a href="/tags/french-ligue-1/troyes/" >Troyes</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-x1212" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children has-dropdown menu-item-x1212"><a href="/tags/scottish-football/" >Scottish Football</a>
+                <ul class="sub-menu dropdown">
+					<li id="menu-item-182" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-182"><a href="/tags/scottish-football/celtic/">Celtic FC</a></li>
+					<li id="menu-item-185" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-185"><a href="/tags/scottish-football/rangers/">Rangers FC</a></li>
+                </ul>
+            </li>
+            <li><a href="/tags/general-football-and-soccer/champions-league/">Champions League</a></li>
+            <li><a href="/tags/concacaf/">CONCACAF</a></li>
+            <li><a href="/tags/conmebol/">CONMEBOL</a></li>
+        </ul>
+    </li>
+    <!-- end -->
+    <li class="divider"></li>
+    <li id="menu-item-423684" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423684"><a href="/tags/video-loving/">Video</a></li>
+    <li class="divider"></li>
+    <li id="menu-item-423894" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423894"><a href="/tags/nutmegs/">Nutmegs</a></li>
+    <li class="divider"></li>
+    <li id="menu-item-423694" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-423694"><a href="/tags/wags/">WAGS</a></li>
+    <li class="divider"></li>
+    <li id="menu-item-423834" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-dropdown menu-item-423834"><a href="#">About</a>
+        <ul class="sub-menu dropdown">
+            <li id="menu-item-423844" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423844"><a href="/give-us-a-shout/">About CaughtOffside</a></li>
+            <li id="menu-item-423854" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423854"><a href="/give-us-a-shout/contact-us/">Contact us</a></li>
+            <li id="menu-item-423904" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423904"><a href="/authors/">Authors</a></li>
+            <li id="menu-item-833324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-833324"><a href="/terms-of-service/">Terms of service</a></li>
+            <li id="menu-item-423864" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423864"><a href="/privacy-policy/">Privacy Policy &#038; Cookies</a></li>
+            <li id="menu-item-423874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423874"><a href="/the-team/">Write For Us</a></li>
+        </ul>
+    </li>
+</ul>
+
+<!-- MENU ENDS -->
+    <div class="extras">
+        <ul class="ext-app">
+            <li><a href="https://itunes.apple.com/app/apple-store/id515902300?pt=627006&ct=Interstitial%20-%20caughtoffside.com&mt=8" target="_blank">iPhone App</a></li>
+<li><a href="http://itunes.apple.com/us/app/caught-offside-for-ipad/id532519014?mt=8" target="_blank">iPad App</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.caught.offsidetwo" target="_blank">Android App</a></li>
+        </ul>
+        <ul class="follow sub-menu">
+          <li><a href="https://www.facebook.com/caughtoffside" target="_blank"><i class="ss-icon">&#xF610;</i></a></li>
+          <li><a href="https://twitter.com/CaughtOffside" target="_blank"><i class="ss-icon">&#xF611;</i></a></li>
+          <li><a href="https://plus.google.com/103417226441297340644/posts" target="_blank"><i class="ss-icon">&#xF613;</i></a></li>
+          <li><a href="http://www.caughtoffside.com/feed/" target="_blank"><i class="ss-icon">&#xE310;</i></a></li>
+        </ul>
+     </div>
+
+
+</aside>
+
+<aside class="right-off-canvas-menu">
+
+  <div id="side-search">
+    <h3 class="side-search-title">Google Search</h3>
+
+     <!-- Google CSE Search Box Begins  -->
+<!-- Use of this code assumes agreement with the Google Custom Search Terms of Service. -->
+<!-- The terms of service are available at https://www.google.com/cse/docs/tos.html -->
+<form id="cref" action="http://www.google.com">
+<input type="hidden" value="partner-pub-4479294530161578:3576312279" name="cx">
+<input class="sb-search-input" name="q" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+<input class="sb-search-submit" type="submit" value="" name="sa">
+<span class="sb-icon-search"><div class="ico-search" title="google search"></div></span>
+<input type="hidden" name="siteurl" value="www.caughtoffside.com/">
+<input type="hidden" name="ref"><input type="hidden" name="ss">
+</form>
+<!-- Google CSE Search Box Ends -->
+
+
+
+
+  </div>
+</aside>
+
+<section class="hero-section">
+	<div class="row">
+<div class="large-12 columns de-pad-small">
+	<div class="adcontainer">
+		<div id="dfp-ros-res-header" style="width:320px;height:50px;margin-left:auto;margin-right:auto;"></div>
+	</div>
+</div>
+	</div>
+</section>
+
+<section class="main-section">
+<div id="sidebar-skyscrapers-container">
+	<div id="sidebar-skyscrapers">
+    			<div id="dfp-ros-skyscraper1"></div>
+		<div id="dfp-ros-skyscraper2" style="margin-top:20px;"></div>
+	</div>
+</div>
+	<div class="row">
+		<hr class="section-divi show-for-large-up">
+		<div class="large-9 medium-12 columns" id="sidebar-content">
+			<div class="breadcrumb show-for-large-up">
+			</div>
+			<div id="post-content">
+				<div id="post-slider">
+<article id="post-1314884" class="full">
+	<header class="article-header">
+<h1 class="title">Arsene Wenger talks Arsenal deadline plans and concedes two first-team stars could leave</h1>
+<div class="article-info">
+	<div class="author-and-date">
+		<span class="author_name">Posted by <address class="author vcard"><a rel="author" class="url fn n" href="http://www.caughtoffside.com/author/roncarne/">Ron Carne</a></address></span>
+		<time datetime="2017-01-30T11:16:12+00:00">January 30, 2017</time>
+	</div>
+</div>
+					<aside class="article-surround-nav shares social clearfix">
+						<div class="share-links">
+<div class='shareaholic-canvas' data-app-id='17627092' data-app='share_buttons' data-title='Arsene Wenger talks Arsenal deadline plans and concedes two first-team stars could leave' data-link='http://www.caughtoffside.com/2017/01/30/arsene-wenger-talks-arsenal-deadline-plans-and-concedes-two-first-team-stars-could-leave/' data-summary=''></div>			</div>
+		</aside>
+		<figure class="article-image">
+			<div class="microcontent-wrapper">
+				<img alt="Arsene Wenger talks Arsenal deadline plans and concedes two first-team stars could leave" src="http://cdn.caughtoffside.com/wp-content/uploads/2017/01/Wenger.jpg" data-interchange="[http://cdn.caughtoffside.com/wp-content/uploads/2017/01/Wenger-640x400.jpg, (small)],[http://cdn.caughtoffside.com/wp-content/uploads/2017/01/Wenger.jpg, (large)][http://cdn.caughtoffside.com/wp-content/uploads/2017/01/Wenger-150x150.jpg, (thumbnail)],[http://cdn.caughtoffside.com/wp-content/uploads/2017/01/Wenger-300x188.jpg, (shareaholic-thumbnail)]," width="640" height="400" class="img-responsive" /><noscript><img src="http://cdn.caughtoffside.com/wp-content/uploads/2017/01/Wenger-640x400.jpg"></noscript>			</div>
+		</figure>
+
+	</header>
+
+	<section class="article-content clearfix">
+		<hr class="drop-arrow">
+<p><p>Arsenal boss Arsene Wenger was speaking to the media on Monday morning ahead of his side&#8217;s clash with Watford at the Emirates on Tuesday night.</p>
+<p>However, as entirely expected, with the January transfer window deadline looming, the French tactician&#8217;s possible work in the market was the focus of questioning.</p>
+<p>Unfortunately for Arsenal supporters though, it appears as though there could be a few departures and no new faces in north London before Tuesday&#8217;s deadline.</p>
+<p>&#8220;On our front we have a big squad. We do not need to buy. All the teams in England, especially the big teams, have big squads that’s why not a lot happened,&#8221; he said, as reported by <a href="http://www.skysports.com/football/live-blog/11095/10748320/premier-league-daily-live" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.skysports.com/football/live-blog/11095/10748320/premier-league-daily-live', 'Sky Sports');" target="_blank" rel="nofollow">Sky Sports</a>.</p>
+<p><div id="dfp-article-mpu"></div></p>
+<p>&#8220;I believe we have what is required to do well, now it’s down to us.&#8221;</p>
+<p>Meanwhile, Wenger went on to rule out a move for Real Madrid striker Karim Benzema, a transfer rumour that is seemingly set to never go away, as he doesn&#8217;t believe he needs another striker and is not thinking ahead to the summer.</p>
+<p>In terms of players leaving the club, the French tactician left the door open for both Carl Jenkinson and Mathieu Debuchy to secure exits with the former still being linked with a move to Crystal Palace.</p>
+<p>&#8220;For us no [the deal is not over]. For him I don’t know. Yes [it would be a permanent move]. Jenkinson is a great player with a great attitude but he must find happiness where he goes.</p>
+<p>&#8220;It’s still possible yes [that Debuchy could leave]. He’s completely fit now and back in training.&#8221;</p>
+<p>While the Jenkinson exit makes a lot of sense, it&#8217;s questionable as to whether or not Wenger would be making a mistake letting Debuchy go at this stage.</p>
+<p>Although Gabriel has done a commendable job filling in at right back at times when Hector Bellerin has been out injured, having a back-up option in that position could be useful between now and the end of the season.</p>
+<p>Nevertheless, there shouldn&#8217;t be too much criticism of his decision not to buy, as Arsenal look to have a well-rounded squad with depth to cope with absences and continue to compete for the Premier League title.</p>
+</p>	</section>
+
+	<div class="article-surround-nav bottom clearfix">
+				<div class="share-links">
+<div class='shareaholic-canvas' data-app-id='17627092' data-app='share_buttons' data-title='Arsene Wenger talks Arsenal deadline plans and concedes two first-team stars could leave' data-link='http://www.caughtoffside.com/2017/01/30/arsene-wenger-talks-arsenal-deadline-plans-and-concedes-two-first-team-stars-could-leave/' data-summary=''></div>		</div>
+	</div>
+
+	<footer class="article-topics">
+<strong>More Stories:</strong> <a href="http://www.caughtoffside.com/tag/arsene-wenger/" rel="tag">arsene wenger</a>, <a href="http://www.caughtoffside.com/tag/carl-jenkinson/" rel="tag">Carl Jenkinson</a>, <a href="http://www.caughtoffside.com/tag/mathieu-debuchy/" rel="tag">mathieu debuchy</a>	</footer>
+
+
+	<section class="advert under-content">		<div class="adcontainer">
+			<div id="taboola-bottom-main-column"></div>		</div>
+	</section>
+
+
+	<div class="comments-area">
+		<h3 class="comment-title">COMMENTS</h3>
+		<div class="fb-comments" data-href="http://www.caughtoffside.com/2017/01/30/arsene-wenger-talks-arsenal-deadline-plans-and-concedes-two-first-team-stars-could-leave/" data-num-posts="5" data-width="100%"></div>
+	</div>
+
+</article>
+
+				</div>
+			</div>
+		</div>
+<div class="large-3 columns show-for-large-up" id="sidebar-related">
+	<aside class="sidebar">
+<article class="post ad-holder">
+	<div id="newsnowlogo" title="Click here for more Football news from NewsNow" style="width:300px;margin:0;padding:0;border:1px solid #ccc;background:#555;color:#fff;font-size:11px;line-height:14px;font-family:Verdana,Arial,Helvetica,Sans-serif;font-weight:bold;">
+             <div style="margin:0;padding:0;border:1px solid #fff;background:#555;">
+                 <div style="margin:0;padding:0;border:0;width:160px;height:50px;float:left;">
+                     <img src="http://cdn.caughtoffside.com/wp-content/themes/cos-2-0/static/img/newsnow_f_ab.gif" alt="As featured on NewsNow: Football news" style="display:block;margin:0;padding:0;border:0;width:160px;height:50px;"/>
+                 </div>
+                 <div style="padding:0;border:0;margin:0 0 0 160px;text-align:center;">
+                     <span style="margin:0;padding:0;border:0;display:inline-block;vertical-align:middle;text-align:center;width:120px;">
+                         <a id="newsnowlogo_a" rel="nofollow" href="http://www.newsnow.co.uk/h/Sport/Football" target="newsnow" style="color:#fff;text-decoration:underline;">Football News</a> 24/7</span>
+                     <span style="margin:0;padding:0;border:0;display:inline-block;height:50px;width:1px;vertical-align:middle;line-height:50px;font-size:1px;">&nbsp;</span>
+                 </div>
+             </div>
+        </div>
+<script type="text/javascript">
+document.getElementById('newsnowlogo').onclick=function(){ window.open('http://www.newsnow.co.uk/h/Sport/Football','newsnow'); };
+document.getElementById('newsnowlogo').style.cursor='pointer';
+document.getElementById('newsnowlogo_a').style.textDecoration='none';
+document.getElementById('newsnowlogo_a').style.borderBottom='0 none';
+</script>
+
+
+    <div id="cos-transfer">
+        <h2 title="fanatix Network"><span></span></h2>
+        <ul>
+			<li><a href="http://www.empireofthekop.com/" title="Liverpool News"><span></span>Liverpool Blog</a></li>
+			<li><a href="http://www.chelsea-news.co/" title="Chelsea News"><span></span>Chelsea News</a></li>
+        </ul>
+    </div>
+</article>
+		<h2 class="related drop-arrow">Related Stories</h2>
+		<div class="related-stories">
+			<div class="article-container">
+<article class="post short">
+	<div class="article-img-container">
+		<a href="http://www.caughtoffside.com/2017/02/19/under-fire-arsenal-ace-missing-at-training-ahead-of-sutton-clash/" title="Under-fire Arsenal ace missing at training ahead of Sutton clash">
+			<img src="http://cdn.caughtoffside.com/wp-content/uploads/2017/02/Ozil.jpg" alt="Under-fire Arsenal ace missing at training ahead of Sutton clash" width="640" height="400">
+		</a>
+	</div>
+	<div class="article-content-wrapper panel">
+		<div class="article-content">
+			<h2 class="article-title">
+				<a href="http://www.caughtoffside.com/2017/02/19/under-fire-arsenal-ace-missing-at-training-ahead-of-sutton-clash/">Under-fire Arsenal ace missing at training ahead of Sutton clash</a>
+			</h2>
+		</div>
+		<footer>
+			<span class="article-category"><a href="http://www.caughtoffside.com/tags/premier-league/arsenal/" >Arsenal FC</a></span>
+			<a href="http://www.caughtoffside.com/2017/02/19/under-fire-arsenal-ace-missing-at-training-ahead-of-sutton-clash/" rel="bookmark"><span class="article-date">Posted <time class="timeago" datetime="2017-02-19T14:41:30+00:00">February 19, 2017 15:41</time></span></a>
+		</footer>
+	</div>
+</article>
+<div class="panel" style="padding:0 0 1.25rem 0;"><div id="taboola-right-rail-thumbnails"></div>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: 'thumbnails-e',
+    container: 'taboola-right-rail-thumbnails',
+    placement: 'Right Rail Thumbnails',
+    target_type: 'mix'
+  });
+</script>
+</div><article class="post short">
+	<div class="article-img-container">
+		<a href="http://www.caughtoffside.com/2017/02/19/warring-arsenal-chiefs-split-over-direction-of-post-arsene-wenger-era/" title="Warring Arsenal chiefs split over direction of post-Arsene Wenger era">
+			<img src="http://cdn.caughtoffside.com/wp-content/uploads/2016/07/Arsene-Wenger-at-Wembley.jpg" alt="Warring Arsenal chiefs split over direction of post-Arsene Wenger era" width="640" height="400">
+		</a>
+	</div>
+	<div class="article-content-wrapper panel">
+		<div class="article-content">
+			<h2 class="article-title">
+				<a href="http://www.caughtoffside.com/2017/02/19/warring-arsenal-chiefs-split-over-direction-of-post-arsene-wenger-era/">Warring Arsenal chiefs split over direction of post-Arsene Wenger era</a>
+			</h2>
+		</div>
+		<footer>
+			<span class="article-category"><a href="http://www.caughtoffside.com/tags/premier-league/arsenal/" >Arsenal FC</a></span>
+			<a href="http://www.caughtoffside.com/2017/02/19/warring-arsenal-chiefs-split-over-direction-of-post-arsene-wenger-era/" rel="bookmark"><span class="article-date">Posted <time class="timeago" datetime="2017-02-19T10:24:16+00:00">February 19, 2017 11:24</time></span></a>
+		</footer>
+	</div>
+</article>
+<article class="post short">
+	<div class="article-content-wrapper panel">
+		<div id="dfp-article-related-mpu" style="width:300px;height:250px;margin:0 auto;"></div>
+	</div>
+</article>
+<article class="post short">
+	<div class="article-img-container">
+		<a href="http://www.caughtoffside.com/2017/02/19/arsene-wenger-risks-infuriating-section-of-arsenal-faithful-with-latest-talk-over-future/" title="Arsene Wenger risks infuriating section of Arsenal faithful with latest talk over future">
+			<img src="http://cdn.caughtoffside.com/wp-content/uploads/2017/02/Wenger-1.jpg" alt="Arsene Wenger risks infuriating section of Arsenal faithful with latest talk over future" width="640" height="400">
+		</a>
+	</div>
+	<div class="article-content-wrapper panel">
+		<div class="article-content">
+			<h2 class="article-title">
+				<a href="http://www.caughtoffside.com/2017/02/19/arsene-wenger-risks-infuriating-section-of-arsenal-faithful-with-latest-talk-over-future/">Arsene Wenger risks infuriating section of Arsenal faithful with latest talk over future</a>
+			</h2>
+		</div>
+		<footer>
+			<span class="article-category"><a href="http://www.caughtoffside.com/tags/premier-league/arsenal/" >Arsenal FC</a></span>
+			<a href="http://www.caughtoffside.com/2017/02/19/arsene-wenger-risks-infuriating-section-of-arsenal-faithful-with-latest-talk-over-future/" rel="bookmark"><span class="article-date">Posted <time class="timeago" datetime="2017-02-19T07:24:15+00:00">February 19, 2017 8:24</time></span></a>
+		</footer>
+	</div>
+</article>
+<article class="post short">
+	<div class="article-img-container">
+		<a href="http://www.caughtoffside.com/2017/02/18/antonio-conte-delivers-poignant-chelsea-statement-that-arsene-wenger-could-learn-from/" title="Antonio Conte delivers poignant Chelsea statement that Arsene Wenger could learn from">
+			<img src="http://cdn.caughtoffside.com/wp-content/uploads/2017/02/Conte.jpg" alt="Antonio Conte delivers poignant Chelsea statement that Arsene Wenger could learn from" width="640" height="400">
+		</a>
+	</div>
+	<div class="article-content-wrapper panel">
+		<div class="article-content">
+			<h2 class="article-title">
+				<a href="http://www.caughtoffside.com/2017/02/18/antonio-conte-delivers-poignant-chelsea-statement-that-arsene-wenger-could-learn-from/">Antonio Conte delivers poignant Chelsea statement that Arsene Wenger could learn from</a>
+			</h2>
+		</div>
+		<footer>
+			<span class="article-category"><a href="http://www.caughtoffside.com/tags/premier-league/arsenal/" >Arsenal FC</a></span>
+			<a href="http://www.caughtoffside.com/2017/02/18/antonio-conte-delivers-poignant-chelsea-statement-that-arsene-wenger-could-learn-from/" rel="bookmark"><span class="article-date">Posted <time class="timeago" datetime="2017-02-18T11:36:40+00:00">February 18, 2017 12:36</time></span></a>
+		</footer>
+	</div>
+</article>
+<article class="post short">
+	<div class="article-img-container">
+		<a href="http://www.caughtoffside.com/2017/02/17/spanish-football-expert-panics-tottenham-fans-warns-arsenal-over-possible-e100m-war-chest-claims-potential-gunners-boss-is-terrible-candidate/" title="Spanish football expert panics Tottenham fans, warns Arsenal over possible €100m kitty, argues Gunners candidate is wrong choice">
+			<img src="http://cdn.caughtoffside.com/wp-content/uploads/2015/10/Diego-Simeone-Atletico-Madrid-1.jpg" alt="Spanish football expert panics Tottenham fans, warns Arsenal over possible €100m kitty, argues Gunners candidate is wrong choice" width="640" height="400">
+		</a>
+	</div>
+	<div class="article-content-wrapper panel">
+		<div class="article-content">
+			<h2 class="article-title">
+				<a href="http://www.caughtoffside.com/2017/02/17/spanish-football-expert-panics-tottenham-fans-warns-arsenal-over-possible-e100m-war-chest-claims-potential-gunners-boss-is-terrible-candidate/">Spanish football expert panics Tottenham fans, warns Arsenal over possible €100m kitty, argues Gunners candidate is wrong choice</a>
+			</h2>
+		</div>
+		<footer>
+			<span class="article-category"><a href="http://www.caughtoffside.com/tags/premier-league/arsenal/" >Arsenal FC</a></span>
+			<a href="http://www.caughtoffside.com/2017/02/17/spanish-football-expert-panics-tottenham-fans-warns-arsenal-over-possible-e100m-war-chest-claims-potential-gunners-boss-is-terrible-candidate/" rel="bookmark"><span class="article-date">Posted <time class="timeago" datetime="2017-02-17T14:47:57+00:00">February 17, 2017 15:47</time></span></a>
+		</footer>
+	</div>
+</article>
+			</div>
+		</div>
+	</aside>
+</div>	</div>
+</section>
+
+
+<div class="row" id="col-all">
+	<div class="large-12 columns content-wrap">
+	  <ul class="tabs hide-for-large-up" data-tab>
+		<li class="tab-title"><a href="#col-1">Featured</a></li>
+		<li class="tab-title active"><a href="#col-2">Latest</a></li>
+		<li class="tab-title"><a href="#col-3">Most Read</a></li>
+	  </ul>
+
+	  <div class="tabs-content clearfix" id="waypoint-wrap" data-category-id="" data-tag-id="">
+		<div class="content small-12 large-4 columns clearfix" id="col-1">
+		  <h2 class="semantic drop-arrow show-for-large-up">Featured</h2>
+		  <div class="article-container featured clearfix" id="article-container-featured">
+
+			<div id="feedfooter-featured" class="feed-footer">
+				<div id="loading-featured" class="loading-spinner">
+					<img src="http://cdn.caughtoffside.com/wp-content/themes/cos-2-0/static/source/img/non-sprite/loading.gif" />
+				</div>
+				<div id="no-more-posts-featured" class="no-more-posts">
+					<img src="http://cdn.caughtoffside.com/wp-content/themes/cos-2-0/static/source/img/non-sprite/no-more-posts.png" />
+				</div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="content small-12 large-4 columns medium-6 clearfix active" id="col-2">
+		  <h2 class="semantic drop-arrow show-for-large-up">Latest</h2>
+		  <div class="article-container latest clearfix" id="article-container-latest">
+
+
+			<div id="feedfooter-latest" class="feed-footer">
+				<div id="loading-latest" class="loading-spinner">
+					<img src="http://cdn.caughtoffside.com/wp-content/themes/cos-2-0/static/source/img/non-sprite/loading.gif" />
+				</div>
+				<div id="no-more-posts-latest" class="no-more-posts">
+					<img src="http://cdn.caughtoffside.com/wp-content/themes/cos-2-0/static/source/img/non-sprite/no-more-posts.png" />
+				</div>
+			</div>
+		  </div>
+		</div>
+		<div class="content small-12 large-4 columns clearfix" id="col-3">
+		  <h2 class="semantic drop-arrow show-for-large-up">Most Read</h2>
+		  <aside class="sidebar-container mostread clearfix" id="article-container-mostread">
+<article id="sidebar-halfpage" class="post ad-holder show-for-large-up">
+	<div id="dfp-ros-halfpage" style="width:300px;height:600px;margin:0 auto;"></div>
+</article>
+
+			<div id="feedfooter-mostread" class="feed-footer">
+				<div id="loading-mostread" class="loading-spinner">
+					<img src="http://cdn.caughtoffside.com/wp-content/themes/cos-2-0/static/source/img/non-sprite/loading.gif" />
+				</div>
+				<div id="no-more-posts-mostread" class="no-more-posts">
+					<img src="http://cdn.caughtoffside.com/wp-content/themes/cos-2-0/static/source/img/non-sprite/no-more-posts.png" />
+				</div>
+			</div>
+		  </aside>
+		</div>
+	  </div>
+	</div>
+  </div>
+		<a class="exit-off-canvas"></a>
+	</div><!-- class="inner-wrap clearfix" -->
+</div><!-- class="off-canvas-wrap" -->
+<a href="#" class="back-to-top">Back to Top</a>
+<div id="dfp-ros-fullscreen"></div>
+	<div style="display:none">
+	</div>
+  <script type="text/javascript">
+   (function(d, s, id, or) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = or + "/assets/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+    }(document,'script','fnmb-jssdk','https://www.fanmob.us/'));
+  </script>
+<script type='text/javascript' src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"visibility_show":"show","visibility_hide":"hide","width":"Auto"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://cdn.caughtoffside.com/wp-content/plugins/table-of-contents-plus/front.js?ver=1404'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201707'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fanatix_params = {"news_posts_per_page":"10","featured_posts_per_page":"10","latest_posts_per_page":"10","col1_mode":"featured","col2_mode":"latest","col3_mode":"mostread","fanatixfeed_posts_per_page":"26","replayfeed_posts_per_page":"9","mostread_posts_per_page":"26","site_url":"http:\/\/www.caughtoffside.com","template_url":"http:\/\/www.caughtoffside.com\/wp-content\/themes\/cos-2-0","dfp_adunit_identifier":"CaughtOffside","replayfeed_url":"http:\/\/video.fanatix.com\/","fanatixfeed_api_fetch_direct":"1","fanatixfeed_api_path":"http:\/\/api.fanatix.com\/app-api\/1.5\/news\/all","fanatixfeed_api_news_config":"caughtoffside-news-web","fanatixfeed_api_app_id":"caughtoffside-news-web","fanatixfeed_api_app_version":"1.0","replayfeed_api_fetch_direct":"1","replayfeed_api_path":"http:\/\/api.fanatix.com\/app-api\/1.6\/news\/replay","replayfeed_api_app_id":"caughtoffside-news-web","replayfeed_api_app_version":"8.3","replayfeed_autoplay":"visible","replayfeed_api_order":"latest","replayfeed_attraction_id":"","display_slider_categories":"1","config_infinite_scroll_enabled":"1","page_post_id":"1314884","page_post_title":"Arsene Wenger talks Arsenal deadline plans and concedes two first-team stars could leave"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://cdn.caughtoffside.com/wp-content/themes/cos-2-0/static/js/script.55.min.js'></script>
+<script type='text/javascript' src='http://cdn.caughtoffside.com/wp-includes/js/wp-embed.min.js?ver=4.5.2'></script>
+
+	<script src="http://stats.wp.com/e-201707.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:3.3',blog:'3497552',post:'1314884',tz:'1'});
+	var load_cmc = function(){linktracker_init(3497552,1314884,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script><script type="text/javascript">
+//makes sure we don't log an imps if we're redirecting off to the interstitial as they won't have seen the page yet
+if(!fanatix.runtime.redirecting) {
+
+	if(fanatix.ads.dfp.enabled) {
+		fanatix.ads.dfp.init();
+
+		fanatix.lib.debug('DFP: Pushing initial on-page code on to googletag.cmd');
+		googletag.cmd.push(function() {
+			fanatix.lib.debug('DFP: Calling initial on-page pushed code');
+//this breaks responsive ads, so disabling for now
+//			googletag.pubads().collapseEmptyDivs();
+
+			googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+				fanatix.lib.debug('DFP: slotRenderEnded(\''+event.slot.D+'\', isEmpty='+(event.isEmpty?'true':'false')+') fired');
+				if(event.slot==fanatix.ads.dfp.slots['dfp-ros-res-header']) {
+					if(!event.isEmpty && (event.size[0]!=320 || event.size[1]!=50))
+						$('#dfp-ros-res-header').css({width:event.size[0], height:event.size[1]});
+				}
+
+
+				else if(event.slot==fanatix.ads.dfp.slots['dfp-ros-fullscreen']) {
+					if(!event.isEmpty && (event.creativeId==123212461841 || event.creativeId==123069970721 || event.creativeId==128226049241 || event.creativeId==128226860681)) {//Unruly In-Article Slidedown, Adludio NowTV Party Popper
+						fanatix.lib.debug('DFP: Removing dfp-article-mpu due to presence of known-conflicting 1x1 ad');
+						$('#dfp-article-mpu').remove();
+					}
+					else {
+						var ad_unit = '/1101651/Web-All-CaughtOffside-Article-MPU';
+if(fanatix.ads.dfp.split_tests['dfp-article-mpu'])
+	ad_unit = ad_unit.replace('{slot}', fanatix.ads.dfp.split_tests['dfp-article-mpu'].slot);
+fanatix.lib.debug('DFP: googletag.defineSlot(dfp-article-mpu, '+ad_unit+')');
+fanatix.ads.dfp.slots['dfp-article-mpu'] = googletag.defineSlot(ad_unit, [300, 250], 'dfp-article-mpu').
+	addService(googletag.pubads());
+		fanatix.lib.debug('DFP: googletag.display(dfp-article-mpu)');
+		googletag.display('dfp-article-mpu');
+					}
+				}
+
+
+			});//googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+
+			fanatix.lib.debug('DFP: Starting all the initial on-page defineSlot()s');
+			var ad_unit = '/1101651/Web-All-CaughtOffside-ROS-ResHeader';
+if(fanatix.ads.dfp.split_tests['dfp-ros-res-header'])
+	ad_unit = ad_unit.replace('{slot}', fanatix.ads.dfp.split_tests['dfp-ros-res-header'].slot);
+fanatix.lib.debug('DFP: googletag.defineSlot(dfp-ros-res-header, '+ad_unit+')');
+fanatix.ads.dfp.slots['dfp-ros-res-header'] = googletag.defineSlot(ad_unit, [320, 50], 'dfp-ros-res-header').
+	defineSizeMapping(googletag.sizeMapping().addSize([320, 400], [300, 250]).addSize([480, 200], [468, 60]).addSize([768, 200], [728, 90]).addSize([1000, 200], [[728, 90], [970, 250], [970, 66], [970, 90]]).build()).addService(googletag.pubads());
+
+var ad_unit = '/1101651/Web-All-CaughtOffside-ROS-FullScreen';
+if(fanatix.ads.dfp.split_tests['dfp-ros-fullscreen'])
+	ad_unit = ad_unit.replace('{slot}', fanatix.ads.dfp.split_tests['dfp-ros-fullscreen'].slot);
+fanatix.lib.debug('DFP: googletag.defineSlot(dfp-ros-fullscreen, '+ad_unit+')');
+fanatix.ads.dfp.slots['dfp-ros-fullscreen'] = googletag.defineSlot(ad_unit, [1, 1], 'dfp-ros-fullscreen').
+	addService(googletag.pubads());
+
+			fanatix.lib.debug('DFP: googletag.pubads().enableSingleRequest()');
+			googletag.pubads().enableSingleRequest();
+			googletag.enableServices();
+			fanatix.lib.debug('DFP: googletag.display(~initial trigger~)');
+//apparently googletag.display() *needs* a div id passed in to it or it won't do anything, so we need to force one even for the initial 'SingleRequest' request
+			googletag.display('dfp-ros-res-header');
+//note that now we've called this any subsequent .display() calls will just do themselves, so they're still needed for any dynamic slots
+
+			jQuery(document).ready(function($) {
+				if($('#sidebar-related').is(':visible')) {
+					var ad_unit = '/1101651/Web-All-CaughtOffside-Article-MPURelated';
+if(fanatix.ads.dfp.split_tests['dfp-article-related-mpu'])
+	ad_unit = ad_unit.replace('{slot}', fanatix.ads.dfp.split_tests['dfp-article-related-mpu'].slot);
+fanatix.lib.debug('DFP: googletag.defineSlot(dfp-article-related-mpu, '+ad_unit+')');
+fanatix.ads.dfp.slots['dfp-article-related-mpu'] = googletag.defineSlot(ad_unit, [300, 250], 'dfp-article-related-mpu').
+	addService(googletag.pubads());
+		fanatix.lib.debug('DFP: googletag.display(dfp-article-related-mpu)');
+		googletag.display('dfp-article-related-mpu');
+				}
+				else
+					fanatix.lib.debug('DFP: #sidebar-related is NOT :visible so NOT calling googletag.defineSlot(dfp-article-related-mpu).display()');
+
+//this is a proxy for determining if we're on the "desktop" layout - this element has "show-for-large-up" on it so will only be :visible
+//at that breakpoint, regardless of what it is. So this'll still work if we change the CSS without needing modifying itself
+				$('#sidebar-mpu').remove();
+//				$('#sidebar-halfpage').remove();
+			});//jQuery(document).ready(function($) {
+
+		});//googletag.cmd.push(function() {
+	}//if(fanatix.ads.dfp.enabled) {
+	else
+		fanatix.lib.debug('DFP: disabled');
+
+window._taboola = window._taboola || [];
+_taboola.push({mode:'autosized-generated-2r', container:'taboola-bottom-main-column', placement:'bottom-main-column'});
+_taboola.push({article:'auto'});
+_taboola.push({flush: true});
+fanatix.lib.loadScriptFromURL('http://cdn.taboolasyndication.com/libtrc/caughtoffside-network/loader.js');
+
+	fanatix.lib.debug('FB: fanatix.ads.fb.init() (also inits all the other fb widgets on the page)');
+	fanatix.ads.fb.init();//this also inits all the other fb widgets on the page, btw
+
+//twitter widgets
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.async=true;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+
+
+//g+ widgets
+	(function() {
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	})();
+
+
+
+//actually check what the GEO is if needs be
+	if(fanatix.geo.callbacks.length)
+		document.write('<scr'+'ipt type="text/javascript" src="http://cdn.fanatix.com/resource/fanatix-geo/fanatix_geo-2.0.js" async></scr'+'ipt>');
+
+}//if(!fanatix.runtime.redirecting)
+</script>
+</body>
