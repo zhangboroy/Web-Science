@@ -1,0 +1,1500 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>FOOTBALL BETTING - Betfair™</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="robots" content="index,nofollow" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="version" content="octo-blockhead-base, v-1.0, date-07-11-2014">
+
+<link rel="stylesheet" href="https://cache.promotions.betfair.com/media/english_uk/files/sbk/css/global.css?_20141201">
+
+    <!--[if (lt IE 9)&(!IEMobile)]>
+    <style type="text/css" media="all">
+        @import url("https://cache.promotions.betfair.com/media/english_uk/files/sbk/css/default.css?_20141201");
+        @import url("https://cache.promotions.betfair.com/media/english_uk/files/sbk/css/default-normal.css?_20141201");
+    </style>
+    <![endif]-->
+
+    <!--[if gte IE 9]><!-->
+    <style type="text/css" media="all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)">
+        @import url("https://cache.promotions.betfair.com/media/english_uk/files/sbk/css/default.css?_20141201");
+        @import url("https://cache.promotions.betfair.com/media/english_uk/files/sbk/css/default-narrow.css?_20141201");
+    </style>
+    <!--<![endif]-->
+
+    <!--[if gte IE 9]><!-->
+    <style type="text/css" media="all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)">
+        @import url("https://cache.promotions.betfair.com/media/english_uk/files/sbk/css/default.css?_20141201");
+        @import url("https://cache.promotions.betfair.com/media/english_uk/files/sbk/css/default-normal.css?_20141201");
+    </style>
+    <!--<![endif]-->
+
+    <!--[if gte IE 9]><!-->
+    <style type="text/css" media="all and (min-width: 1220px)">
+        @import url("https://cache.promotions.betfair.com/media/english_uk/files/sbk/css/default.css?_20141201");
+        @import url("https://cache.promotions.betfair.com/media/english_uk/files/sbk/css/default-wide.css?_20141201");
+    </style>
+    <!--<![endif]-->
+
+    <link rel="stylesheet" href="https://cache.promotions.betfair.com/media/english_uk/files/uk_sport_master_octo_blockhead_oct14_refactored/css/lp-v2-b.css?_20141218"/>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://promotions.cdnbf.net/media/english_uk/files/js/stately_1.13.js"></script>
+<script type="text/javascript" src="https://promotions.cdnbf.net/media/english_uk/files/js/bflp_1.14e.js"></script>
+<script type="text/javascript">
+    var page = {
+        ctaAction: "same",
+        currencyDefault: "GBP",
+        currencyAllowed: "GBP,EUR",
+        backgroundImage: "{{BACKGROUND-IMAGE}}",
+        bounce: "",
+        bounceCustomer: "",
+        bounceProspect: "",
+        bounceReturningVisitor: "",
+        promoCode: "",
+        placebet: "{{PLACEBET}}",
+        wmid: "{{WMID}}"
+    };
+
+    (function () {
+        window.page = page || {};
+        for (var i in page) {
+            if (/^{{.+}}$/.test(page[i])) page[i] = "";
+        }
+        if (page.currencyAllowed === '') page.currencyAllowed = "GBP,EUR,USD,DKK,AUD,CAD,HKD,NOK,SGD,SEK";
+        if (page.backgroundImage) LP.addCSS('body { background-image: url("' + page.backgroundImage + '") !important;}');
+
+        STATELY.group('payments-y,n');
+        if (page.wmid !== "") LP.set('wmid', page.wmid);
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.length > 0 && c.charAt(0) == ' ') c = c.substring(1, c.length - 1);
+                if (c.indexOf(nameEQ) == 0) return unescape(c.substring(nameEQ.length, c.length));
+            }
+            return null;
+        }
+
+        function hasHistory() {
+            var h = getCookie('userhistory');
+            return (/\|Y\|/.test(h) || /\|Y$/.test(h));
+        }
+
+        function hasLoginCount() {
+            var c = getCookie("pref_md_pers_0");
+            return (/loginCount/.test(c));
+        }
+
+        function isCustomer() {
+            return (getCookie('ssoid') || getCookie('UIVIEW') || getCookie('bspLP') || getCookie('clog') || getCookie('xguserhistory') || hasHistory() || hasLoginCount());
+        }
+
+        function isReturningVisitor() {
+            return (getCookie('betexPtk') || getCookie('exp') || getCookie('xsrftoken') || getCookie('bfj') || getCookie('vid') || getCookie('wsid'));
+        }
+
+        function redirect(url) {
+
+
+            var h = url.split('?'),
+                pp = params,
+                np = {};
+            if (h.length == 2) np = parseParameters(h[1]);
+            for (var p in pp) {
+                np[p] = pp[p];
+            }
+            np = $.map(np, function (e, f) {
+                return f + '=' + e;
+            }).join('&');
+            url = h[0] + (np !== '' ? '?' + np : '');
+
+            if (params['test']) {
+                alert(url);
+                return;
+            }
+
+
+            try {
+                top.window.location.replace(url);
+            } catch (e) {
+                window.location.replace(url);
+            }
+        };
+
+        function parseParameters(q) {
+            var p, t, i;
+            q = q ? q : window.location.search.substring(1);
+            q = q.split('&');
+            p = {};
+
+            for (i = 0; i < q.length; i++) {
+                if (q[i].length === 0) continue;
+                t = q[i].split('=');
+                p[t[0]] = t.length > 1 ? unescape(t.slice(1).join('=')).replace('+', ' ') : '';
+            }
+            return p;
+        };
+
+        window.mergeOverrides=function(url, o) {
+o=o||'';
+ //           if (o) {
+                var r=/^(.*?)\?(.*)$/;
+                var m=r.exec(url);
+//console.log(m);
+                if (m) {
+                    o=parseParameters(o);
+                    var p=parseParameters(m[2]);
+                    for (var t in o) {
+                        p[t]=o[t];
+                    }
+                    var returnURL='';
+                    if (p.returnURL) {
+                    	returnURL=escape(p.returnURL);
+                    	delete p.returnURL;
+                    }
+                    url=m[1]+'?'+$.map(p, function (e, f) {
+                        return f + '=' + escape(e);
+                    }).join('&');
+//console.log(1,url,returnURL);
+url=url.replace(/[?&]$|/,'');
+                    if (returnURL) {
+while (returnURL!=unescape(returnURL)) {returnURL=unescape(returnURL);}
+returnURL=escape(returnURL);
+url+=(url.split('?').length>1?'&':'?')+'returnURL='+returnURL;
+}
+//console.log(2,url,returnURL);
+                }
+  //          }
+
+            return url;
+        }
+
+        var params = parseParameters();
+        if (page.bounce) redirect(page.bounce);
+        if (page.bounceCustomer !== "" && isCustomer()) redirect(page.bounceCustomer);
+        if (page.bounceReturningVisitor !== "" && isReturningVisitor()) redirect(page.bounceReturningVisitor);
+        if (page.bounceProspect !== "" && isCustomer() === false) redirect(page.bounceProspect);
+
+
+        if (params.promotionCode) page.promoCode = params.promotionCode;
+        if (params['app'] == 'ios') STATELY.set('app', 'ios');
+        var adx_params = $.map(params, function (e, f) {
+            if (f.substring(0, 3) === "adx") return f + '=' + e;
+        }).join('&');
+
+        $(function () {
+            var q = window.location.search.substring(1);
+
+            $('[data-text]').each(function (i, e) {
+                var t = $(e).attr('data-text');
+                if (/^{{.+}}$/.test(t)) t = '';
+                if (t == '') $(e).remove();
+                else $(e).text(t);
+            });
+
+            if (!('promotionCode' in params)) {
+                $('a.btn-primary[data-promocode]').each(function (i, e) {
+                    params['promotionCode'] = $(e).attr('data-promocode');
+                });
+            }
+
+
+            //if (q === '' && !('promotionCode' in params)) return;
+
+            $('a[href],area[href]').each(function (i, e) {
+if ($(e).hasClass('ignore')) return;
+                var np = {},
+                    h = $(e).attr('href').split('?');
+                if (  (/^\/[a-zA-Z]|\/\/[a-zA-Z]+\.betfair\.[a-zA-Z]+(\.[a-zA-Z]+)?(\/|\?|#|$)/.test(h[0]) == false && /\/\/adfarm.mediaplex.com\/ad\/ck\//.test(h[0])==false) ) return;
+
+                if (h.length >= 2) np = parseParameters(h.slice(1).join('?'));
+                for (var p in params) {
+                    if ( $.inArray(p, ['app', 'soft', 'optin']) < 0 || /\/promotions\.betfair/.test(h[0]) || /\/\/adfarm.mediaplex.com\/ad\/ck\//.test(h[0]) ) np[p] = params[p];
+                }
+                np = $.map(np, function (e, f) {
+                    return f + '=' + escape(e);
+                }).join('&');
+                $(e).attr('href', mergeOverrides( h[0] + '?' + np, $(e).attr('data-override') ) );
+            });
+
+
+
+            return false;
+        });
+    })();
+
+    LP.start();
+
+
+    STATELY.group('currency-' + page.currencyAllowed);
+
+    $(function () {
+        var currencies = {
+            'GBP': {
+                pre: '£',
+                post: ''
+            },
+            'EUR': {
+                pre: '€',
+                post: ''
+            },
+            'USD': {
+                pre: '$',
+                post: ''
+            },
+            'DKK': {
+                pre: '',
+                post: 'kr'
+            },
+            'AUD': {
+                pre: '$',
+                post: ''
+            },
+            'HKD': {
+                pre: 'HK$',
+                post: ''
+            },
+            'CAD': {
+                pre: '$',
+                post: ''
+            },
+            'NOK': {
+                pre: '',
+                post: 'kr'
+            },
+            'SGD': {
+                pre: '$',
+                post: ''
+            },
+            'SEK': {
+                pre: '',
+                post: 'kr'
+            }
+        };
+        var both='', currencyArray=page.currencyAllowed.split(',');
+        if (currencyArray.length==2) {
+            currencies['BOTH']={ pre: currencies[currencyArray[0]].pre+'/'+currencies[currencyArray[1]].pre, post:currencies[currencyArray[0]].post+'/'+currencies[currencyArray[1]].post};
+            if (currencies.BOTH.pre=='/') currencies.BOTH.pre='';
+            if (currencies.BOTH.post=='/') currencies.BOTH.post='';
+            both='BOTH';
+            currencyArray.push('BOTH');
+        }
+var browserLocale=(navigator.language || navigator.browserLanguage  || navigator.systemLanguage || navigator.userLanguage || '').replace('_','-').toLowerCase();
+var browserCurrency=(browserLocale==='en-gb'?'GBP':(browserLocale==='en-ie'?'EUR':''));
+        var c = LP.get('params').currency || LP.getCookie('betexPtk', 'betexCurrency', '~') || LP.getCookie('betexPtkSess', 'betexCurrencySessionCookie', '~') || page.currencyDefault || browserCurrency || both || STATELY.get('currency');
+try{c = c.toUpperCase();} catch(eee) {
+c=page.currencyDefault || STATELY.get('currency');}
+
+        if ($.inArray(c, currencyArray) > -1) {
+            STATELY.set('currency', c);
+
+            $(document.body).html(
+                $(document.body).html().replace(/£([0-9]+)/g, function ($0, $1) {
+
+                    return currencies[c].pre + $1 + currencies[c].post ;
+                }));
+        }
+
+
+
+        $(".btn-primary, .lp-primary > article, #headline, #subhead, #subhead2, .lp-secondary article").on('click', function (ev) {
+   if ( ev.target && $.contains( $('.cta-terms-login')[0],ev.target) ) return ;
+var dest;
+
+if ($(ev.target).hasClass('ignore') && $(ev.target).attr('href')) dest=$(ev.target).attr('href');
+else dest = $('.btn-primary[href]:visible').attr('href');
+dest=mergeOverrides( dest , $(ev.target).attr('data-override') );
+            var action = $('a.btn-primary[data-cta-action]').attr('data-cta-action');
+
+            if (action === 'same' || action === 'self') {
+                $(document.body).append('<a id="selfclick" href="' + dest + '"></a>');
+
+                $('#selfclick')[0].click();
+                //window.location.replace(dest);
+                return false;
+            } else if (action === 'blank') {
+                var w = window.open(dest, '_blank');
+                w.focus();
+                return false;
+            }
+            ev.preventDefault();
+            var w = window.open(dest, 'mywin', 'left=20,top=20,width=1100,height=700,toolbar=1,resizable=yes,scrollbars=yes');
+            w.focus();
+        }).addClass('clickable');
+    });
+</script>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://promotions.cdnbf.net/media/english_uk/files/js/stately_1.14.js"></script>
+<script type="text/javascript" src="https://promotions.cdnbf.net/media/english_uk/files/js/bflp_1.14f.js"></script>
+<!--START PAGE_GTM_ON v2.00 2016-05-20 -->
+<script>
+    window.ga=function(){};
+    window.GTM = {
+        use: true
+    };
+    if (window.LP && LP.get) {
+        LP.get('params').gtm = 'true';
+        if (LP.get('wmid') === null) LP.set('wmid', 9602);
+    }
+    if (window.CTRL && CTRL.set) CTRL.set('report_errors', false);
+window.dataLayer=window.dataLayer||[];
+</script>
+<!--END PAGE_GTM_ON -->
+<!-- START GLOBAL_IN_HEAD v2.10 2016-09-14 -->
+
+<!-- Maxymiser script start -->
+<script type='text/javascript' src='//service.maxymiser.net/api/eu/new_betfair.com/7bb08d/mmapi.js'> </script>
+<!-- Maxymiser script end -->
+
+
+<script>
+window.browserLanguage = ((window.navigator && window.navigator.languages && window.navigator.languages.length) ? (window.navigator.languages[0]) : (window.navigator && window.navigator.userLanguage) || (window.navigator && window.navigator.language) || 'en').substr(0, 2);
+
+
+window.mobileOrTablet = function() {
+    var check = false;
+    (function(a) {
+        if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) check = true;
+    })(navigator.userAgent || navigator.vendor || window.opera);
+    return check;
+};
+
+if (typeof window.device_is_mobile === "undefined") window.device_is_mobile = mobileOrTablet();
+
+window.GTM = window.GTM || {
+    use: false
+};
+GTM.desktop = {
+    it: 'UA-43334570-4',
+    es: 'UA-43334570-5',
+    com: 'UA-43334570-1',
+    ro: 'UA-43334570-40',
+    us: 'UA-43334570-42'
+};
+GTM.mobile = {
+    it: 'UA-43334570-7',
+    es: 'UA-43334570-10',
+    com: 'UA-43334570-2',
+    ro: 'UA-43334570-41',
+    us: 'UA-43334570-43'
+};
+GTM.domain = window.location.hostname.split('.').slice(-1).join('');
+GTM.cookie = function(name, subcookie, sep) {
+    var result = null,
+        i, c;
+    subcookie = subcookie || '';
+    sep = sep || '~';
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (i = 0; i < ca.length; i++) {
+        c = ca[i];
+        while (c.length > 0 && c.charAt(0) == ' ') c = c.substring(1);
+        if (c.indexOf(nameEQ) === 0) {
+            result = unescape(c.substring(nameEQ.length, c.length));
+            break;
+        }
+    }
+    if (result !== null && subcookie !== '') {
+
+        result = result.split(sep);
+        for (i = 0; i < result.length; i++) {
+            c = result[i].split('=');
+            if (c.length > 1 && c[0] === subcookie) {
+                result = c[1];
+                break;
+            }
+        }
+    }
+
+    return result;
+};
+GTM.device = 'desktop';
+var ua;
+if (mobileOrTablet()) {
+    GTM.device = 'other';
+    ua = navigator.userAgent.toLowerCase();
+    if (ua.indexOf('ipad') >= 0) GTM.device = 'ipad';
+    else if (ua.indexOf('iphone') >= 0) GTM.device = 'iphone';
+    else if (ua.indexOf('android') >= 0 && ua.indexOf('mobile') >= 0) GTM.device = 'androidphone';
+    else if (ua.indexOf('android') >= 0) GTM.device = 'androidtablet';
+}
+
+GTM.start = function(data) {
+    data = data || {};
+    $(function() {
+        window.page = window.page || {};
+        page.promoCode = page.promoCode || ''.replace(/^#.*#$/, '') || $('[data-promocode]:eq(0)').data('promocode');
+        promoCode = p.promotioncode || p.promo_code || page.promoCode /*|| LP.cookie('promotioncode') || LP.cookie('promo_code') || LP.cookie('promotionCode') */ ;
+
+        var accountID = '123456',
+            session = false,
+            jurisdiction = '',
+            locale = '';
+
+        if (promoCode) {
+            $(function() {
+
+                $('a[data-promocode]').data('promocode', promoCode);
+
+                $('a[href*="promotionCode="]').each(function(i, e) {
+                    var h = $(e).attr('href').replace(/promotionCode=[^&]*/, 'promotionCode=' + promoCode);
+                    $(e).attr('href', h);
+                });
+
+            });
+        }
+        if (data.account) {
+            accountID = data.account.accountID || accountID;
+            if (data.account.accountID && data.account.accountID !== '') session = true;
+            locale = data.account.localeCode.split('_')[0];
+            jurisdiction = data.account.jurisdictionalCode;
+        }
+        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+        var iframed = true;
+        //            if ((LP && LP.get && LP.get('params').frametest == 'true' || (document.referrer !== '' && (/[?&]frametest=true(&|$)/.test(document.referrer))))) {
+        try {
+            if (window == parent) iframed = false;
+        } catch (e) {}
+        //            } else iframed = false;
+
+        var reg = /(^|;)\s*(ssoid|UIVIEW|bspLP|clog|xguserhistory)=|(^|;)\suserhistory=[^;]*\|Y|(^|;)\s*bfsd\s*=[^;]*\|st=reg/.test(document.cookie);
+        var d = {
+            event: iframed ? 'ga_iframe' : 'ga_pageLoad',
+            ga_target_property: GTM[(device_is_mobile ? 'mobile' : 'desktop')][GTM.domain],
+            acc_id: accountID,
+            vertical: 'promotions',
+            product: 'promotions',
+            'device model': GTM.device || '',
+            country: 'US',
+            locale: locale || window.browserLanguage || '',
+            reg_status: reg ? 'registered' : 'unregistered',
+            login_status: session ? 'logged in' : 'logged out',
+            jurisdiction: jurisdiction,
+            orientation: device_is_mobile ? (h > w ? 'portrait' : 'landscape') : 'desktop',
+            app_ID: '',
+            promotion_name: window.location.pathname.substring(1),
+            rfr: p.rfr || GTM.cookie('rfr') || '',
+            sid: p.sid || GTM.cookie('sid') || '',
+            efid: p.efid || GTM.cookie('efid') || '',
+            mpch: p.mpch || GTM.cookie('mpch') || '',
+            pla: p.pla || GTM.cookie('pla') || '',
+            clkid: p.clkid || GTM.cookie('clkid') || GTM.cookie('clkID') || '',
+            bid: p.bid || GTM.cookie('bid') || '',
+            pid: p.pid || GTM.cookie('pid') || '',
+            ttp: p.ttp || GTM.cookie('ttp') || ''
+        };
+        try {
+            if (iframed) d.parent_page = document.referrer || top.location.href;
+        } catch (e) {
+            d.parent_page = '';
+        }
+        if (promoCode) d.promo_code = promoCode;
+        if (window.dataLayer) {
+            if (window.console && console.log) console.log('dataLayer', d);
+            dataLayer.push(d);
+        }
+    });
+};
+
+if (GTM.domain === 'com' && window.location.hostname.split('.').slice(-3, -2).join('') === 'us') GTM.domain = 'us';
+if (!(GTM.domain in GTM.desktop)) GTM.domain = 'com';
+
+var promoCode, params = window.LP && LP.get ? LP.get('params') : {},
+    p = {};
+var COUNTDOWN = (function() {
+    var timer, fmt = '%hh:%mm:%ss';
+
+    function update() {
+        $('[data-countdown-to]').each(function(i, e) {
+            var d, days = 0,
+                t = new Date($(e).data('countdown-to')),
+                f = $(e).data('countdown-format') || fmt,
+                l = Math.floor((t - SERVERCLOCK) / 1000),
+                hh = Math.floor(l / 60 / 60),
+                mm = Math.floor((l - hh * 3600) / 60),
+                ss = l - mm * 60 - hh * 3600;
+            if (typeof f === 'function') {
+                f.call(e, hh, mm, ss)
+            } else if (f.indexOf('%') >= 0) {
+                d = f;
+                if (d.indexOf('%d') >= 0) {
+                    days = Math.floor(hh / 24);
+                    hh = hh % 24;
+
+                }
+                d = d.replace(/{%(.*?)%}/g, function(x, e) {
+                    return (new Function("d", "h", "m", "s", "return (" + e + ")"))(days, hh, mm, ss);
+                });
+                d = d.replace('%ddd', ('000' + days).substr(-3)).replace('%dd', ('00' + days).substr(-2)).replace('%d', days);
+                d = d.replace('%hh', hh < 10 ? '0' + hh : hh).replace('%h', hh).replace('%h', hh).replace('%mm', mm < 10 ? '0' + mm : mm).replace('%m', mm).replace('%ss', ss < 10 ? '0' + ss : ss).replace('%s', ss);
+
+                $(e).text(d);
+            } else if (window[f] && typeof window[f] === 'function') window[f].call(e, hh, mm, ss);
+        });
+    }
+
+    function format(f) {
+        fmt = f || '%hh:%mm:%ss';
+    }
+
+    function start(interval) {
+        interval = interval || 1000;
+        if (timer) window.clearInterval(timer);
+        timer = setInterval(update, interval);
+    }
+    return {
+        start: start,
+        format: format
+    };
+})();
+
+(function(name) {
+    var server = null,
+        offset = null;
+
+    Object.defineProperty(window, name, {
+        'get': function() {
+            return new Date((new Date()).valueOf() - offset);
+        },
+        'set': function(e) {
+            clock = e;
+            offset = (new Date()) - clock;
+        }
+    });
+})('SERVERCLOCK');
+
+if (window.LP && LP.get) {
+    if (LP.get('params').ga2 === 'true' || LP.get('params').gtm === 'true') {
+        window.ga = function() {};
+        GTM.use = true;
+    }
+
+    // If this page isn't expecting to get a real optin status let's not worry it unduly
+    if (window.LP && LP.on && LP.get && window.STATELY) LP.on('gotOptinStatus', function() {
+        var wmid = null;
+if (window.LP && LP.get) wmid=LP.get('wmid');
+        if (wmid === null || wmid == 9602 || wmid == 0) {
+            STATELY.set('optin', 'n');
+        }
+    });
+    // Piggyback start to ensure we always have a wmid
+    (function() {
+        var start = LP.start;
+        LP.start = function(cb) {
+            var wmid=null;
+            if (window.LP && LP.get) wmid=LP.get('wmid');
+            if (wmid === null || wmid === 0) LP.set('wmid', 9602);
+            start(cb);
+        };
+    })();
+
+    for (var i in params) p[i.toLowerCase()] = params[i];
+
+    if (window.LP && LP.on && GTM.use && GTM.start) LP.on('gotOptinStatus', GTM.start);
+}
+</script>
+<!-- END GLOBAL_IN_HEAD -->
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+
+<script type="text/javascript">
+// Production steps of ECMA-262, Edition 5, 15.4.4.14
+// Reference: http://es5.github.io/#x15.4.4.14
+if(!Array.prototype.indexOf){Array.prototype.indexOf=function(e,t){var n;if(this==null){throw new TypeError('"this" is null or not defined')}var r=Object(this);var i=r.length>>>0;if(i===0){return-1}var s=+t||0;if(Math.abs(s)===Infinity){s=0}if(s>=i){return-1}n=Math.max(s>=0?s:i-Math.abs(s),0);while(n<i){if(n in r&&r[n]===e){return n}n++}return-1}}
+
+// Array filter polyfill
+if(!Array.prototype.filter){Array.prototype.filter=function(e){"use strict";if(this===void 0||this===null){throw new TypeError}var t=Object(this);var n=t.length>>>0;if(typeof e!=="function"){throw new TypeError}var r=[];var i=arguments.length>=2?arguments[1]:void 0;for(var s=0;s<n;s++){if(s in t){var o=t[s];if(e.call(i,o,s,t)){r.push(o)}}}return r}}
+
+// location.origin polyfill
+if (!window.location.origin) window.location.origin = window.location.protocol + "//" + window.location.hostname;
+
+var parentDomain=window.location.origin.split('.').slice(1).join('.');
+
+window.jQuery || document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"><\/script>')
+
+</script>
+
+<!-- jQuery hosted 
+   <script src="https://promotions.cdnbf.net/media/english_uk/files/jquery/jquery.1.9.1.min.js"></script>
+-->
+
+<!-- Fittext.js hosted
+  <script type="text/javascript" src="https://promotions.cdnbf.net/media/english_uk/js/section_bc79f8.js"></script>
+-->
+
+<!--
+<script>
+function showAppData(token, start, end) {
+    var timestamp_ = (getServerTime() * 1000);
+    var r = getAppData(token);
+    for (i = 0; i < r.all; i++) {
+        date_from = utcTimestamp(r.data[i][start]); // DATA POCZATKU
+        date_to = utcTimestamp(r.data[i][end]); // DATA KONCA
+        if (timestamp_ > date_from && timestamp_ < date_to) {
+            match = r.data[i];
+            return match;
+        }
+    }
+}
+
+
+$(function() {
+
+    var modules = showAppData('efd6c76f9c', '1', '2');
+
+    if (modules) {
+
+        $('.scheduled-img').css("background-image", 'url(' + modules[4] + ')');
+        $('.scheduled-img').attr('src', modules[4]);
+        $('img.scheduled-img').css("background-image", 'none');
+
+        $('#module2').html(modules[5]);
+        $('#module3').html(modules[6]);
+        //$('#module4').html(modules[7]);
+        //$('#module5').html(modules[8]);
+        //$('#module8').html(modules[9]);
+        //$('#module9').html(modules[10]);
+    }
+
+
+    $('.module').each(function() {
+        var data = $(this).html().length;
+        if (data == 0) {
+            $(this).hide();
+        }
+    });
+
+});
+</script>
+-->
+<script type="text/javascript">
+/*!
+ * FitText.js 1.1
+ *
+ * Copyright 2011, Dave Rupert http://daverupert.com
+ * Released under the WTFPL license
+ * http://sam.zoy.org/wtfpl/
+ *
+ * Date: Thu May 05 14:23:00 2011 -0600
+ */
+(function(e){e.fn.fitText=function(t,n){var r=t||1,i=e.extend({minFontSize:Number.NEGATIVE_INFINITY,maxFontSize:Number.POSITIVE_INFINITY},n);return this.each(function(){var t=e(this);var n=function(){t.css("font-size",Math.max(Math.min(t.width()/(r*10),parseFloat(i.maxFontSize)),parseFloat(i.minFontSize)))};n();e(window).on("resize.fittext orientationchange.fittext",n)})}})(jQuery)
+</script>
+<style type="text/css">
+<!--
+
+@font-face {font-family: 'block_regular'; src: url('https://promotions.cdnbf.net/media/english_uk/fonts/block-en.eot'); src: url('https://promotions.cdnbf.net/media/english_uk/fonts/block-en.eot?#iefix') format('embedded-opentype'), url('https://promotions.cdnbf.net/media/english_uk/fonts/block-en.woff') format('woff'), url('https://promotions.cdnbf.net/media/english_uk/fonts/block-en.ttf') format('truetype'); font-weight: normal; font-style: normal; } h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;} h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;} 
+@font-face {font-family: 'informa_regular'; src: url('https://promotions.cdnbf.net/media/english_uk/fonts/informaproregular-en.eot'); src: url('https://promotions.cdnbf.net/media/english_uk/fonts/informaproregular-en.eot?#iefix') format('embedded-opentype'), url('https://promotions.cdnbf.net/media/english_uk/fonts/informaproregular-en.woff') format('woff'), url('https://promotions.cdnbf.net/media/english_uk/fonts/informaproregular-en.ttf') format('truetype'); font-weight: normal; font-style: normal; } h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;}
+@font-face {font-family: 'informa_medium'; src: url('https://promotions.cdnbf.net/media/english_uk/fonts/informapromedium-en.eot'); src: url('https://promotions.cdnbf.net/media/english_uk/fonts/informapromedium-en.eot?#iefix') format('embedded-opentype'), url('https://promotions.cdnbf.net/media/english_uk/fonts/informapromedium-en.woff') format('woff'), url('https://promotions.cdnbf.net/media/english_uk/fonts/informapromedium-en.ttf') format('truetype'); font-weight: normal; font-style: normal; } h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;}
+@font-face {font-family: 'informa_bold'; src: url('https://promotions.cdnbf.net/media/english_uk/fonts/informaprobold-en.eot'); src: url('https://promotions.cdnbf.net/media/english_uk/fonts/informaprobold-en.eot?#iefix') format('embedded-opentype'), url('https://promotions.cdnbf.net/media/english_uk/fonts/informaprobold-en.woff') format('woff'), url('https://promotions.cdnbf.net/media/english_uk/fonts/informaprobold-en.ttf') format('truetype'); font-weight: normal; font-style: normal; } h1, h2, h3, h4, h5, h6, h7, h8 {font-weight: normal; font-style: normal;}
+-->
+</style>
+<script type="text/javascript"> var device_is_mobile = false; </script>
+<script type="text/javascript" src="https://promotions.cdnbf.net/media/english_uk/js/general.js?14032014"></script>
+<script type="text/javascript">
+<!-- 
+// !!! PLACE IN Javascript SECTION
+
+// equal collumns
+
+STATELY.onload(function () {
+    var equaliseColumnHeights = function (container) {
+
+        var currentTallest = 0,
+            currentRowStart = 0,
+            rowDivs = [],
+            $el,
+            topPosition = 0;
+
+        $(container).each(function () {
+            $el = $(this);
+            $($el).height('auto');
+            topPosition = $el.position().top;
+            if (currentRowStart != topPosition) {
+                for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+                    rowDivs[currentDiv].height(currentTallest);
+                }
+                rowDivs.length = 0; // empty the array
+                currentRowStart = topPosition;
+                currentTallest = $el.height();
+                rowDivs.push($el);
+            } else {
+                rowDivs.push($el);
+                currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+            }
+            for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+                rowDivs[currentDiv].height(currentTallest);
+            }
+        });
+    };
+
+    var id = 0,
+        // set related elements
+        instructionBoxes = '#lp-tert-box2, #lp-tert-box1, #lp-tert-box3, .pod1, .pod2, .pod3';
+
+    $(window).resize(function () {
+        clearTimeout(id);
+        id = setTimeout(function () {
+            equaliseColumnHeights(instructionBoxes);
+        }, 100);
+    });
+    equaliseColumnHeights(instructionBoxes);
+});
+
+
+$('p.cta-terms-login').click(function (ev) {
+     ev.stopPropagation();
+});
+
+
+// -->
+</script>
+	
+<style type="text/css">
+<!-- 
+#subhead2 {
+font-family: Block_Regular;
+text-transform: uppercase;
+font-size: 28px;
+}
+.informa-med{
+font-family:informa_medium;
+}
+body {
+background-image: url(https://cache.promotions.betfair.com/media/english_uk/images/cheltenham/taptap/bg1.jpg);
+}
+.container > .lp-tertiary.lp-article-wrap {
+margin-bottom: 20px;
+}
+.mainsection .auto p.block.margin-top {
+margin-top:10px;
+}
+.tclink-bottom{
+background: #000;
+
+color: #fff;
+padding:20px;
+font-size:11px;
+line-height:13px;
+}
+
+
+/*
+.roundle:after{
+content:"";
+position:absolute;
+background:url(https://promotions.cdnbf.net/media/english_uk/images/Roundle5.png) no-repeat;
+height: 150px;
+width: 150px;
+right: -143px;
+bottom: -10px;
+}
+*/
+.roundle {
+position:relative;
+}
+.cta-wrap {
+bottom: 55px;
+right: 10px;
+position:absolute;
+}
+.octoi {
+position: fixed;
+bottom: 0;
+left: 0;
+/* background: url(https://cache.promotions.betfair.com/media/english_uk/images/cheltenham/taptap/rch1.png) top left no-repeat; */
+width: 355px;
+height: 181px;
+z-index: -1;
+background:none;
+}
+.octoi2 {
+
+/* background: url(https://cache.promotions.betfair.com/media/english_uk/images/cheltenham/taptap/rch1.png) no-repeat 0 0; */
+width: 97%;
+height: 30%;
+z-index: 101;
+background-size: auto 100%;
+background:none;
+}
+
+.responsive-br{
+display:none;
+}
+.lp-secondary article {
+background:#000;
+}
+.lp-secondary article:before {
+color:#fff;
+background-image: url(https://cache.promotions.betfair.com/media/english_uk/images/cheltenham/taptap/steps-bg2.png);
+
+}
+.yellow-expand{
+font-size:1.35em;
+}
+.yellow{
+font-size:28px;
+}
+.yellow2 {color:#ffb80c}
+.black{
+color:transparent;
+}
+.nav-bar-secondary
+{
+    width: 50%;
+    min-width: 0;
+    margin: 0 -2px;
+
+    text-align: right!important;
+}
+.mainsection-subheadline p:nth-of-type(2)
+{
+    line-height: 1em;
+padding-top:6px;
+
+    margin: 0;
+font-family:informa_bold;
+
+    color: #fff;
+}
+.mainsection-subheadline p:first-of-type{
+padding-bottom:4px;
+}
+.mainsection-subheadline p:nth-of-type(3){
+  line-height: 1em;
+
+
+    margin: 0;
+font-family:informa_bold;
+color: #ffb80c;
+}
+.mainsection .auto > p:first-of-type
+{
+    
+
+    margin: 0;
+}
+
+
+.mainsection
+{
+    box-sizing: border-box;
+    width: 370px;
+    padding: 20px;
+
+    text-align: center;
+
+    color: #000;
+    background: linear-gradient(45deg, #ff9600, #ffc400);
+}
+.lp-primary .content:before
+{
+    background: transparent;
+}
+#mainsection-subheadline .gold.block:before
+{
+    font-family: FontAwesome;
+    font-size: 18px;
+    font-size: 20px;
+
+    position: absolute;
+    top: 2px;
+    left: -13px;
+
+    width: 60px;
+    height: 49px;
+
+    content: '\f067';
+
+    color: black;
+}
+#mainsection-subheadline:before
+{
+    font-family: FontAwesome;
+
+    position: absolute;
+    left: 0;
+
+    width: 25px;
+    width: 33px;
+    height: 25px;
+    height: 89px;
+
+    content: '\f067';
+    transform: rotate(-315deg) translate(-36px, -29px);
+
+    color: black;
+    background: white;
+}
+.justify0 {
+width:60%;
+margin:0 auto;
+margin-top:20px;
+}
+.justify0 p {
+line-height:0.8em;
+margin:0;
+}
+.mainsection-subheadline .gold
+{
+    
+    line-height: 0.8em;
+
+    margin: 1px auto;
+}
+.mainsection-subheadline .white.block
+{
+     /*font-size: 35px;*/
+    line-height: 19px;
+
+    margin: 1px 0;
+}
+.mainsection-subheadline .informa
+{
+    font-size: 18px;
+
+    margin: 1px 0;
+}
+
+.informa
+{
+    font-size: 24px;
+
+    margin: 5px 0;
+}
+.mainsection .auto > .block
+{
+    font-size: 83px;
+    line-height: .7em;
+
+    margin: 5px 0;
+}
+.block
+{
+    font-family: block_regular;
+}
+.informa
+{
+    font-family: informa_medium;
+}
+.white
+{
+    color: #fff;
+}
+.gold
+{
+    color: #ffb80c;
+}
+
+.mainsection-subheadline
+{
+    line-height: 20px;
+
+    position: relative;
+
+    overflow: hidden;
+border-radius: 5px;
+    margin-top: 20px;
+    padding: 14px;
+background-image:url(https://promotions.cdnbf.net/media/english_uk/images/plus.png);
+background-repeat:no-repeat;
+background-size:14%;
+
+    background-color: #000;
+}
+.navbar .logo
+{
+    width: 50%;
+    max-width: none;
+    margin-right: -2px;
+    margin-left: -2px;
+}
+
+@media (min-width: 781px) {
+.mainsection {
+  padding-bottom: 30px;
+  padding-top: 35px;
+}
+}
+
+@media(max-width:780px)
+{
+
+.cta-wrap {
+position:static;
+}
+
+.mainsection
+    {
+        margin: 0 auto;
+    }    
+.lp-primary .copy
+    {
+        width: 100%;
+    }
+.lp-primary .cta-wrap{
+float:right;
+position:static;
+}
+    body
+    {
+        background: transparent;
+    }
+    .yellow
+    {
+        color: #000;
+    }
+    .copy
+    {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+    .btn-primary
+    {
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…IgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+        background-color: #cccfd2;
+        background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0, #fafafa), color-stop(100%, #c4c4c4));
+        background-image: -webkit-linear-gradient(top, #fafafa 0, #c4c4c4 100%);
+        background-image:    -moz-linear-gradient(top, #fafafa 0, #c4c4c4 100%);
+        background-image:      -o-linear-gradient(top, #fafafa 0, #c4c4c4 100%);
+        background-image:         linear-gradient(#fafafa, #c4c4c4);
+    }
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+  background-color: #cccfd2;
+  *zoom:1;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjBmMGYwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2I0YjViMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0, #f0f0f0), color-stop(100%, #b4b5b0));
+  background-image: -webkit-linear-gradient(top, #f0f0f0 0, #b4b5b0 100%);
+  background-image: -moz-linear-gradient(top, #f0f0f0 0, #b4b5b0 100%);
+  background-image: -o-linear-gradient(top, #f0f0f0 0, #b4b5b0 100%);
+  background-image: linear-gradient(#f0f0f0, #b4b5b0);
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  filter:progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#F0F0F0', endColorstr='#B4B5B0');
+}
+    .container > .lp-primary,
+    .lp-primary .article.clickable
+    {
+        background: linear-gradient(45deg, #ff9600, #ffc400);
+    }
+    .mainsection
+    {
+        width: 100%;
+
+        background: transparent;
+    }
+
+    .lp-primary > article
+    {
+        background-image: none !important;
+    }
+    .mainsection-subheadline .informa.gold
+    {
+        line-height: 1.3em;
+    }
+
+    .mainsection-subheadline .block.gold
+    {
+        line-height: .8em;
+    }
+    .mainsection-subheadline .block.white
+    {
+        line-height: .7em;
+    }
+.roundle:after{
+height: 120px;
+background-size: 90%;
+width: 120px;
+right: -103px;
+}
+}
+@media (max-width:580px)
+{
+    .copy
+    {
+        padding: 0;
+    }
+.responsive-br{
+display:block;
+}
+.roundle:after{
+left: 0;
+bottom: -125px;
+}
+}
+
+
+
+@media (max-width:959px) and (min-width:781px)
+{
+.lp-secondary article h1 {
+font-size:40px;
+}
+    .mainsection
+    {
+        margin-left: 0;
+    }
+}
+@media (max-width:360px) {
+.mainsection {
+padding:5px;
+}
+.roundle:after {
+height: 100px;
+background-size: 89%;
+width: 100px;
+
+left: 0;
+bottom: -83px;
+}
+}
+// -->
+</style>
+	
+
+		
+			<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-43334570-1', 'betfair.com');
+
+			// create the dataLayer array
+			window.dataLayer = window.dataLayer || []
+
+			// start additional code. ensure dataLayer code is above this
+			ga(function(tracker) {
+
+			  // Grab a reference to the default sendHitTask function.
+			  var originalSendHitTask = tracker.get('sendHitTask');
+
+			function getPayloadObject(payload) {
+				var match,
+					pl     = /\+/g,  // Regex for replacing addition symbol with a space
+					search = /([^&=]+)=?([^&]*)/g,
+					decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+					query  = payload;
+
+				var urlParams = {};
+				while (match = search.exec(query))
+				   urlParams[decode(match[1])] = decode(match[2]);
+
+				return urlParams;
+			};
+
+			  // Modifies sendHitTask to send a copy of the request to window.dataLayer
+
+			  tracker.set('sendHitTask', function(model) {
+				// sending the normal request to www.google-analytics.com/collect.
+				originalSendHitTask(model); 
+
+				// sending the payload to the datalayer
+				var payload = model.get('hitPayload');
+				var payloadObject = getPayloadObject(payload)
+
+				payloadObject.event = payloadObject.t == 'event' ? 'googleAnalyticsEvent' : 'googleAnalyticsPageview';
+				window.dataLayer.push(payloadObject);
+			  });
+			});
+
+			// send pageview
+			ga('send', 'pageview');
+			</script>
+
+		
+</head>
+<body>
+    <!-- START GLOBAL_BODY_START v2.00 2016-05-20 -->
+
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-P32JX6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+// REMEMBER to put back the noscriupt stuff!!
+
+
+if (window.GTM && (!window.ga || GTM.use)) {
+    if (window.ga) delete window.ga;
+    if (window.console && console.log) console.log('Using GTM.');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        window.node = f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', GTM.domain === 'us' ? 'GTM-PC8D6W' : 'GTM-P32JX6');
+
+    if (!window.LP || !window.jQuery) {
+        GTM.start();
+    }
+
+} else {
+    if (window.console && console.log) console.log('Using GA.');
+}
+
+
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- END GLOBAL_BODY_START -->
+<!-- body start -->
+<!-- Template base Nov14 1.1 -->
+
+<style type="text/css"><!--
+    .lp-primary > article {
+    background-image: url(https://cache.promotions.betfair.com/media/english_uk/images/sportsbookops/new_lp_football/exploding-ballBG.jpg);
+}
+--></style>
+
+<script type="text/javascript">// <![CDATA[
+document.body.className=$.map(STATELY.get(),function(i,e) {if (/^(test|testmode)$/.test(e)==false) return e+'-'+i}).join(' ');
+// ]]></script>
+<!-- ie class helper wrapper -->
+<!--[if lt IE 9]>
+<div class="soft-n lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<div class="soft-n">
+<!--<![endif]-->
+
+
+ <div class="navbar navbar-inverse navbar-fixed-top app-not-ios">
+    <div class="navbar-inner">
+      <a class="logo" href="http://www.betfair.com/sport" target="_same" title="Betfair">
+      <img alt="Betfair Sportsbook" src="https://promotions.cdnbf.net/media/english_uk/images/sbk/betfair-logo.png" />
+      </a>
+      <div class="nav-bar-secondary">
+    <font size=4><strong>FOOTBALL BETTING</strong></font>
+</div>
+    </div>
+  </div>
+
+<div class="container">
+    <section class="lp-primary">
+        <article>
+            <div class="content">
+                <div class="copy loaded-y">
+                    
+               <div class="mainsection">
+	<div class="auto">
+		<!--  The three headlines. To edit, change the text between the <p></p> tags -->
+		<p class="informa-med">FOOTBALL BETTING</p>
+		<p class="block">Bet £10</p>
+                <p class="block">Get £30</p>
+<p class="block margin-top">In free bets</p>
+</div>
+<div class="justify0">
+<p class="informa-med">New customers only</p>
+</div>
+	<!-- The box with the black background -->
+	<!-- <div class="mainsection-subheadline">     
+	<p class="gold block">
+<span class="black">/</span>
+
+2 free £25 bets</p>
+        <p>When you back any winner</p>
+        <p class="white block">At 3/1 or more</p>
+</div> -->
+</div>
+ 
+                  
+                </div>
+
+
+               <div class="cta-wrap">
+            <div class="cta-wrap-inner">
+              <a data-promocode="" data-cta-action="same" class="app-not-ios mobile-n btn btn-primary btn-large arrows loaded-y" href="https://register.betfair.com/account/registration?returnURL=http://btfr.co/braned">Join now</a>
+              <a data-promocode="" class="app-not-ios mobile-y btn btn-primary btn-large arrows loaded-y" href="https://register.betfair.com/account/registration?returnURL=https://www.betfair.com/sport/">Join now</a>
+              <a data-promocode="" class="app-ios btn btn-primary btn-large arrows loaded-y" href="https://register.betfair.com/account/registration/native?returnURL=http://btfr.co/braned">Join now</a>
+              
+              <p class="cta-terms-login">
+                <a href="https://promotions.betfair.com/sports-bet10get30-tc-rae" target="_same">Terms & Conditions</a>  
+                <a href="https://www.betfair.com/sport/" target="_same"> | Already a customer?</a>
+              </p>
+<p class="cta-terms-login loaded-n"> </p>
+              <div>
+              </div>
+ 
+
+            </div>
+
+          </div>
+<div class="copy"><p id="subhead2" class="clickable">IT'S AS SIMPLE AS <br class="responsive-br" /> <span class="yellow">TAP TAP <span class="yellow-expand">BOOM</span></span></p></div>
+        </div>
+        </article>
+<iframe src="https://betfair.gp-cloud.com/clients/betfair/webticker/" frameborder="0" height="35px" scrolling="no" width="100%"></iframe>     
+    </section>
+
+    <section class="lp-secondary lp-article-wrap">
+      <article class="pod1">
+        <h1 class="yellow2">JOIN</h1>
+        <p class="white">Open your new account using your friend's referral code.</p>
+      </article>
+      <article class="pod2">
+        <h1 class="yellow2">WIN</h1>
+        <p class="white">Place a Sportsbook bet on any market. Min stake £10. </p>
+      </article>
+      <article class="pod3">
+        <h1 class="white wide-box">FREE BET</h1>
+        <p class="white">And get a £30 free bet today. Paid as three £10 increment. Free Bet stakes not returned. New users only.</p>
+      </article>
+    </section>
+
+
+    <div class="morefrombf octoi2 lp-secondary mobilecontent"><h1>MORE FROM BETFAIR</h1></div>
+
+    <section class="lp-tertiary lp-article-wrap">
+      <article id="lp-tert-box1">
+        <h1>TRY CASH OUT</h1>
+       
+        <div class="contentWrap">
+          <p>Take your winnings early or cut losses<br>
+Cash Out on singles and accumulators<br>
+You're in control - you decide
+</p>
+<div class="fullWidthLine">
+ <div id="fb-offline">
+  <p>
+   <img class="thumbsup" src="https://cache.promotions.betfair.com/media/english_uk/images/templates/sports/v3/thumbsup.png" alt="Facebook like" width="30" />
+   <span>
+    <strong>Over 450k Likes </strong> - We're confident you'll like Betfair
+   </span>
+  </p>
+ </div>
+</div>
+        </div>
+      </article>
+      <article id="lp-tert-box2">
+        <h1>PRICE RUSH</h1>
+        <!-- <img style="max-width: 230px;" src="https://cache.promotions.betfair.com/media/english_uk/images/sbk/_2_price_rush.png?345643" class="boxes6right"> -->
+        <div class="contentWrap">
+         <p class="boxes2left">
+<!-- comment out this span container to exclude the scheduler -->
+<!--<span class="module" id="module2">
+Try Cash Out for the first time on your Multiple bets and get a 50% Bonus, up to £/€25.
+<br><br>
+ <small><a href="http://www.betfair.com/sport/football" target="_blank">Sportsbook</a> bets only. T&C's apply. Free bets will not qualify.</small>
+</span>-->
+
+<!-- OLD TEXT 
+Join today for many more great offers. Check daily for Free Bet refunds, Acca Insurances, mobile and In-Play offers, and cash bonuses. <br /><br />
+<small>Sportsbook offers only</small>-->
+
+Automatically get the best prices from The Exchange the moment you place your Sportsbook bets. Over 450,000 people have felt the Price Rush. Will you be next?</p>
+        </div>
+      </article>
+      <article id="lp-tert-box3" class="app-not-ios">
+        <h1>BET ON MOBILE</h1>
+         <img alt="Smartphone" src="https://cache.promotions.betfair.com/media/english_uk/images/cheltenham/taptap/phone3.png" class="boxes6right" style="max-width: 230px;" />
+        <div class="contentWrap">
+          <p class="boxes2left btmImgContent">
+  <a href="https://promotions.betfair.com/download-free-app" target="_blank">Download</a> the Betfair apps with ALL the features to bet on-the-go.
+<br>
+<img class="appicons" style="z-index:10;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAAAcCAYAAAA6PsAUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFMDk2NjVGRUYxREQxMUUyOEE5OUE2RkNEMDQ2Mzc1QiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFMDk2NjVGRkYxREQxMUUyOEE5OUE2RkNEMDQ2Mzc1QiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkUwOTY2NUZDRjFERDExRTI4QTk5QTZGQ0QwNDYzNzVCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkUwOTY2NUZERjFERDExRTI4QTk5QTZGQ0QwNDYzNzVCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+HVjn2QAAEfNJREFUeNrsXAlc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"  xsrc="https://cache.promotions.betfair.com/media/english_uk/images/templates/sports/v3/appicons.png?01" usemap="#mobile" alt="App icons"> 
+</p>
+
+<map name="mobile" id="mobile">
+  <area shape="rect" coords="-6,-14,98,31" href="https://itunes.apple.com/gb/app/sports-betting-from-betfair/id552024276?mt=8" target="_blank" alt="iOS" />
+  <area shape="rect" coords="102,-14,277,81" href="https://promotions.betfair.com/sports-android-download" target="_blank" alt="Android" />
+</map>
+
+
+        </div>
+      </article>
+    </section>
+
+    <footer>
+        <div class="payments-y loaded-y footbox">
+            <ul class="logoList">
+                <li><a class="logo9"></a>
+                </li>
+                <li><a class="logo1"></a>
+                </li>
+                <li><a class="logo2"></a>
+                </li>
+                <li><a class="logo3"></a>
+                </li>
+                <li><a class="logo4"></a>
+                </li>
+                <li><a class="logo5"></a>
+                </li>
+                <li><a class="logo6"></a>
+                </li>
+                <li><a class="logo7"></a>
+                </li>
+                <li><a class="logo8"></a>
+                </li>
+            </ul>
+        </div>
+        <p><!-- <img src="https://promotions.cdnbf.net/media/english_uk/images/sport_ac/lock.png" alt="Secure icon" /> -->
+<p class="copy">
+WE ARE A SECURE OPERATOR | 18+ <a href="http://www.gambleaware.co.uk" target="_blank">Gambleaware.co.uk</a> | Please play responsibly BETFAIR ® and the BETFAIR logo are registered trade marks of The Sporting Exchange Limited. © The Sporting Exchange Limited. All rights reserved. For customers in the UK, TSE (Gibraltar) LP is licensed and regulated by the Gambling Commission, Licence Number: <a href="https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39561" target="_blank">000-039561-R-319411-002</a>. Address: Units 2/4 and 2/5 Waterport Place, Gibraltar. Betfair International Plc is licensed and regulated by the <a href="http://www.mga.org.mt/" target="_blank">Malta Gaming Authority</a>. Licence Number: MGA/CL3/454/2008 17th March 2015, Triq il-Kappillan Mifsud, St. Venera, SVR 1851, MALTA. Fixed Odds & Multiples bets are placed with PPB Counterparty Services Limited which is licensed and regulated by the <a href="http://www.mga.org.mt/" target="_blank">Malta Gaming Authority</a>. Licence Number: MGA/CL2/294/2006 12 March 2013, and for customers in the UK, licensed and regulated by the Gambling Commission, Licence Number: <a href="https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39439" target="_blank">000-039439-R-319330-003</a>.
+</p>
+<!--
+
+WE ARE A SECURE OPERATOR | 18+ <a target="_blank" href="http://www.gambleaware.co.uk">Gambleaware.co.uk</a> | <a href="http://responsiblegambling.betfair.com/" target="_blank">Please play responsibly</a><br />
+
+    BETFAIR ® and the BETFAIR logo are registered trade marks of The Sporting Exchange Limited. ©The Sporting Exchange Limited. All rights reserved. For customers in the UK, TSE (Gibraltar) LP is licensed and regulated by the Gambling Commission, Licence Number: 000-039561-R-319411-001. Address: Units 2/4 and 2/5 Waterport Place, Gibraltar.  Betfair Pty Ltd is licensed and regulated to offer Australian Markets by the Tasmanian Gaming Commission, and for customers in the UK, by the Gambling Commission, Licence Number: 000-039365-R-319337-001. Betfair International Plc is licensed and regulated by the Malta Gaming Authority. Licence Number: MGA/CL3/454/2008 17th March 2015, Betfair International Plc, Triq il-Kappillan Mifsud, St. Venera, SVR 1851, MALTA. Fixed Odds & Multiples bets are placed with Betfair Counterparty Services Limited which is licensed and regulated by the Malta Gaming Authority. Licence Number: MGA/CL2/294/2006 12 March 2013, and for customers in the UK, licensed and regulated by the Gambling Commission, Licence Number: 000-039439-R-319330-001.
+-->
+
+<!-- Mediaplex -->
+<iframe src="https://secure.img-cdn.mediaplex.com/0/16689/universal.html?page_name=promo_pages_eu&promo_pages_eu=1&product=sports&status=prospect&mpuid=" height="1" width="1" frameborder="0"></iframe>
+
+    </p></footer>
+</div>
+<!-- /container -->
+<div id="fb-root"></div>
+<div class="octoi desktopcontent"></div>
+</div>
+<script src="https://cache.promotions.betfair.com/media/english_uk/files/ci_various/font1/bigtext.js"></script>
+
+<script type="text/javascript">// <![CDATA[
+window.WebFontConfig = {
+    custom: {
+		families: ['block_regular', 'informa_regular', 'informa_medium', 'informa_bold']
+	},
+active: function(){
+$('.mainsection .auto, .mainsection-subheadline, .justify0').bigtext();
+
+}
+};
+
+(function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+})();
+// ]]></script>
+<!-- body end -->
+
+
+<!-- GLOBAL_BODY_END START -->
+<!-- GLOBAL_BODY_END END -->
+
+
+</body>
+
+</html>
