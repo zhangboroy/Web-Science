@@ -1,0 +1,454 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+Menu
+
+
+Blog
+About
+
+About Me
+Press
+
+
+Hire Me
+Testimonials
+Speaking
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+10 Time-Saving Content Marketing Tools to Add to Your Arsenal 
+
+
+
+
+
+January 18, 2016 June 11, 2016 
+
+
+
+
+
+							Author Sujan Patel
+ | 
+							2 comment.
+						
+
+
+
+
+
+
+FREE ECOURSE: Want To Create A Content Strategy To Grow Your Business Within Two Weeks? Join My Free Ecourse Now!
+There are few better ways of building brand buzz than content marketing. In short: done well, it works. But that’s easier said than done. Great content takes time and is hard work. Thankfully, there’s no shortage of tools that can help you create better content and get better results, faster.
+Here are 10 of them:
+
+1. easel.ly
+
+I’m not really an infographic man myself, so I have to admit that I’ve never actually used this tool. That aside, I do know that infographics are a key weapon in many marketers’ arsenals. I also know that they’re not usually particularly quick or easy to create.
+Until easel.ly.
+Easel.ly is a really easy (no pun intended) to use tool that allows you to create infographics from a huge selection of templates.
+How much does it cost?
+It’s free to get access to 60 images and 10 fonts, or just $3 a month for a pro account and access to “1000s” of images and more than 50 fonts.
+How does it work?
+
+Choose a template: 
+Click on the images and text within the template to move or remove them, and use the menu at the top of the screen to change backgrounds or add in charts, images, or text. 
+
+2. Thinglink
+Thinglink is a nifty little tool that allows you to add an extra dimension to imagery and video by making it interactive – no coding knowledge needed. It’s quick and easy to use making it a great time and money-saver.
+How much does it cost?
+A free account gives you access to most key features. Pro accounts will cost between $8 and $250 monthly, depending on how many additional features you want to use, how quickly you want to access support, and whether you want to pay monthly or yearly (pay annually and you get an extra discount).
+How does it work?
+
+Once you’ve created an account, upload an image by clicking on or dragging an image over the blue box. 
+Click anywhere on your uploaded image to begin editing it.
+Add icons, which you can connect to text or a link, using the menu on the left-hand side. 
+
+Once finished, users will be able to interact with your image by hovering over the icons to view more information, watch a video, or explore another link.
+3. ifttt.com
+IFTTT (short for “If this then that”) should be a must-have in any marketer’s toolbox. In short, it allows you to automate a huge range of tasks. The longer explanation is that it connects two services together, and uses formulas (known as “recipes”) to trigger a particular action, when a corresponding action occurs.
+For example, you could use it to:
+
+Receive a notification each time a competitor makes a change to their website
+Receive a notification when a new site links to one of your competitors
+Set up alerts for relevant PR opportunities
+Monitor SERP positions
+Automatically retweet a chosen account
+
+The possibilities are pretty much endless. Seer Interactive has lots of awesome ideas here, and Buffer has a big list of recipes to help you streamline your social media efforts here. It makes sense however, that your first port of call would be IFTTT’s own site.
+How much does it cost?
+IFTTT is completely free, although the services you connect with it might not be.
+How does it work?
+
+Sign up: 
+Head over to the “Channels” section: 
+Start selecting and connecting the channels you want to use with the tool: 
+Once you have two or more channels connected to IFTTT you can begin setting up recipes. The best way to do that is to click on “My Recipes” then “Create a Recipe”. Click on the blue “this”.
+Choose your “Trigger Channel” (the channel you want to trigger an action). You can either search for a channel or browse through the list.
+Select a trigger (the “this” that you want to trigger the “that”): 
+Click the blue “that” to repeat the process and set up the action (“that”) you want to occur when the “this” is triggered.
+
+4. StayFocused
+
+If you’re anything like me, you’ll know that one of the biggest time-suckers of them all is your own attention span. I get it. We have so much information and media available at our fingertips that it can be pretty tough to resist the urge to check our email, take a “quick” look at Twitter, or see what’s happening over on Facebook.
+One solution I’ve found is to block distracting websites, or literally put my computer into lock-down, meaning I can’t do anything else except type until I’ve hit my own target. There are lots of tools that can help you achieve this. I use StayFocusd, a Chrome app.
+I like it because it’s so flexible. I can choose to block the websites I find most distracting, or I can block every single website. This is useful because a lot of what I do requires research, and blocking everything makes that a little difficult.
+However, if you’re a pro at procrastinating and need to go all-or-nothing in order to get shit done, I have a workaround for you…
+Do your research before you begin writing. Collect all the information you think you’re likely to need. And print it out.
+Then put your computer into lockdown, and start working. You’ll be amazed at how much you get done, and how quickly. Trust me, I speak from experience!
+How much does it cost?
+It’s completely free, though if you find it useful (and you will) they kindly ask for you to make a $10 donation.
+How does it work?
+
+Install the plugin and click on the blue clock icon.
+Click “settings”.
+
+From here you have a couple of options. “Normal” mode entails adding the sites you find most distracting to your “blocked” list. You can do that by clicking on “Blocked Sites”, entering the sites you want blocked into the box, and clicking “Add Blocked Site(s)”. 
+The other options, which you can see on the left-hand side of the page, allow you to change the days and hours during which the sites will be blocked (so you can block them only during your normal working hours). You can also increase or decrease the amount of time (per day) that you’re allowed to browse the blocked sites by clicking on “Max Time Allowed”.
+Alternatively, you can choose “The Nuclear Option”. This enables you to block every site on the web. Alternatively, you can add some websites to an “Allowed” list and block every site except those.
+Use this feature cautiously – once you’ve hit “Nuke ‘Em”, the setting can’t be undone until the timer runs out.
+5. Trello
+Trello is a simple task management system that makes it really easy to collaborate on projects. It’s ideal for managing a content marketing strategy, but I’ve found it to be just as useful for collaborating with my team (and clients) on projects of pretty much any description.
+Trello’s a great time-saver because it negates the need for back-and-forth emails, phone calls, and meetings. As many people as needed can have access to a Trello “board” (a board is organized into lists and cards). 
+They are then able to dip in and and out of the tool as and when it suits them. They’ll be able to check on the progress of a project, or confirm what progress they’ve made themselves. They can also leave notes on cards, enabling everyone involved in a project to discuss it in a manner that’s easy to follow and track. Much more so than would be possible via, say, a conference call.
+Best of all it’s really easy to use. The more advanced the task management tool, the more training that’s likely to be needed in order to use it properly. Trello, on the other hand, is pretty much self-explanatory.
+How much does it cost?
+The standard account is free and should suffice for most marketers. This allows you to:
+
+Create unlimited boards and add unlimited members
+Customize boards with a selection of backgrounds and stickers
+Download and use the Trello mobile app
+Attach files up to 10MB in size
+
+The upgrade to “Trello Gold” will cost you $5 a month (or $45 a year). You can also get free access by referring new members. Trello Gold allows you to:
+
+Get access to “premium” backgrounds and stickers
+Upload your own backgrounds and stickers
+Attach files up to 250MB in size
+
+How does it work?
+Trello can be used to manage most types of projects, but since this is about using the tool to save time on your content marketing, I’m going to give you a quick overview on using it specifically to manage a content strategy.
+
+Create a board – we’ll call this one “Content Marketing”. 
+Create your first list. I’m going to call this “Content Ideas”. 
+Create additional lists that will be used to track the progress of each piece of content. I’m going to call mine “In Progress”, “Editing”, “Ready to Post”, and “Live”. You don’t have to copy me – what you do here will be dictated by the process you follow when creating a piece of content. 
+Once you’ve set up your board you’re going to want to add the people who will be working on these tasks with you. To do this click on “show menu” (top right) then “add members”. Don’t worry, if they’re not already signed up to Trello, they’ll receive an invite explaining what they need to do.
+When you’re ready to get started, you can begin adding cards. I recommend creating one card for each content idea.
+From here you can add a description for the topic, add comments, labels (allowing you to categorize the content), create checklists, add a due date, and tag people who need to pay particular attention to that card. 
+Lastly, as a piece of content progresses, you simply drag the card into the next list. 
+
+FREE ECOURSE: Want To Create A Content Strategy To Grow Your Business Within Two Weeks? Join My Free Ecourse Now!
+6. Contently
+Chances are you don’t have the time or skills to do everything yourself. In this case you might look at hiring a member of staff. Unfortunately, that’s an expensive and relatively inflexible move. The alternative is to hire a freelancer.
+There are heaps of websites out there offering the services of freelancers for anything from content writing and infographic design, to content promotion and web development. A lot of these sites’ key selling point is their affordability. A whole eBook for $5? Tempting, admittedly. Even the writer’s reviews are stacked well in their favor; out of 547 buyer reviews, they receive a positive rating of 4.9 out of 5.
+But an original, quality eBook for $5? Nope, I’m not buying it. It took me and Rob Wormleyabout 100 hours between us to complete 100 Days of Growth, and we worked hard. No one can write a quality book in a short enough time that they would be able to sustain themselves on $5. No one. You can bet that corners are being cut, one way or another.
+Thankfully, there are services that can connect you with talented freelancers that are experts in their field. Will it cost you? Yep. But you get what you pay for. If you value your reputation and actually care about getting results, you’re going to have to either put the hours in yourself, or pay fairly for that work to be completed somewhere else.
+Contently can help you do that.
+How much will it cost?
+Contently is completely bespoke so expect the price of every project to differ. However, according to a user on Quora, you can expect to pay around $275 per post (of what length, I have no idea). It would be awesome if anyone with more experience in the cost of content created through Contently could share some insights in the comments below!
+How does it work?
+Again, as Contently is a bespoke tool, you need to “schedule a chat” with one of their team members before you can get started.
+To do that, simply click on the “Talk To Us” button in the top right of the screen. 
+Then, fill out the contact form. 
+7. Social Image Resizer Tool
+Using images in social media posts increases engagement – drastically: 
+Unfortunately, designing and resizing images so that they render correctly across different sites can take up a lot of time, and can be pretty costly if you’re relying on a tool like Photoshop.
+Enter – Internet Marketing Ninja’s Image Resizer Tool.
+It’s a super-simple to use tool that allows marketers to quickly crop and resize images to fit most common social media formats. This means you can instantly create an image that’s the right size and shape to be used as a Facebook cover photo, in a Tweet, or as an Instagram profile photo (to name a few).
+How much will it cost?
+Absolutely nothing – it’s completely free.
+How does it work?
+It’s pretty self-explanatory.
+
+Choose and upload the image you want to resize: 
+Select what type of image you want to create: 
+Edit your photo and click “Done Editing”: 
+Download your new image.
+
+8. Hubspot’s Blog Topic Generator
+This is a fun little tool which, while useful, shouldn’t be taken too seriously. It’s great for those moments when you’re completely out of ideas. Just be sure to treat the topics it generates with a big pinch of salt.
+How much does it cost?
+It’s completely and utterly free.
+How does it work?
+Just enter three terms related to the topics you’re interested in writing about and click “Give Me Blog Topics!” 
+9. Wonder
+I have to admit, I’ve not actually tried this one myself… yet. But I will. It’s an excellent concept, and if it lives up to the claims, could be a huge timesaver.
+In short, Wonder is a tool that does your research for you. However, this isn’t a search engine. It’s completely bespoke. Ask a question and a dedicated researcher will “scour the lesser known parts of the web” to hunt the answer down on your behalf. 
+Wonder then reviews the research – presumably for accuracy and to check its actually usefulness – then passes it along to you.
+I think the value here is determined by how much useful information you gain from the research, and how easy (or not) it would have been to track down that info yourself.
+Wonder offers up a handful of examples to show the types of answers you can expect, and to their credit, they look pretty detailed.
+How much does it cost?
+A single query will cost you $19.99. If this becomes a regular tool in your arsenal, you can save money by bulk-buying requests. 15 queries will cost you $279.99 (a 7% savings), while 50 will cost you $899.99 (a 10% savings).
+How does it work?
+
+Scroll down the page a little and you’ll see a button allowing you to try the service for free. If you’ve not used it before, I suggest you click that. 
+Next, ask your question. 
+Lastly, fill in your details so their researchers know where to send your answer. 
+
+10. Quuu.co
+Quuu’s a relatively new kid on the block but it has quickly become one of my favorite tools. Quuu hand-curates content suggestions for social media and automatically sends them over to Buffer where they get scheduled to be posted throughout the day.
+How much does it cost?
+It’s free for up to two scheduled posts a day (and I’m told, will remain free forever). If you refer your friends, you’ll get three extra posts a day (for life). You can also upgrade to a paid account which will get you up to 10 posts a day, for $10 a month.
+How does it work?
+
+Quuu won’t work unless you have Buffer (for the moment, at least). If you’re not already using Buffer, get yourself an account, then connect it with Quuu.
+On the Quuu homepage, fill out your name and email address, and select the number of posts you want scheduled each day.
+Lastly, head over to “Categories” to select the type of posts that matter to you. Your first post will be scheduled to go out the following day.
+
+So, there are ten really awesome tools that can help you cut back on the time you spend on your content marketing, allowing you to be faster and more productive. But don’t head off just yet…
+Before I wrap up, I want to show you two “bonus” tools. My very own ContentMarketer.io and Narrow.io.
+11. ContentMarketer.io
+If you’re a regular visitor here, you have probably heard me mention Content Marketer a few times. It’s a browser based tool that’s designed to help marketers streamline their outreach efforts by offering a quick and easy way to find and contact relevant industry influencers. 
+How much does it cost?
+A basic account is free. A “Pro” account is $9 a month. The top package, a “Marketer” account, is $19 a month. Head over to the homepage  to get yourself a free trial of the top package (don’t worry, you don’t need a credit card to get started).
+How does it work?
+Once you’re signed up, you can use Content Marketer to supercharge the process of building an outreach list by either:
+
+Uploading a post – we’ll scan it to find bloggers or sites you’ve mentioned and find their details for you
+Uploading a CSV of influencers – we’ll track down their details to fill in the gaps
+
+You can then use our tried-and-tested templates to send outreach emails or Tweets – all from within the tool.
+12. Narrow.io
+Narrow is designed to help you quickly build a targeted Twitter following by making it as easy as possible for you to interact with relevant audiences. 
+How much does it cost?
+A basic package (which allows you to connect one Twitter account) is $9 a month. A pro package (up to three Twitter accounts) is $19 a month. The Business package (10 Twitter accounts) is $49 a month. I’m also currently offering a free, no-credit-card-required trial of the tool.
+How does it work?
+Once you’ve created an account and hooked your Twitter profile up to the tool, you can begin by entering keywords which Narrow will use to build a targeted audience.
+We usually advise that you target at least 10 unique audiences.
+Once you’ve approved your audiences, Narrow will begin working its magic. This entails:
+
+Auto-following roughly 25-40 targeted accounts a day
+Favoriting around 100 targeted tweets a day
+Unfollowing accounts that don’t follow back and unfavoriting tweets after a few days
+
+FREE ECOURSE: Want To Create A Content Strategy To Grow Your Business Within Two Weeks? Join My Free Ecourse Now!
+That’s it for the 10 12 time-saving content marketing tools I recommend adding to your arsenal. I hope you find them useful. If you’re using anything else that you think’s worth shouting about, let us know in the comments below!
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+						Comments
+		
+
+
+
+
+
+ Rajmi Yadda says: 
+
+
+
+								March 12, 2016 at 1:21 am							
+
+
+
+
+Very nice post Mr. Sujan. Thanks
+
+Reply 
+
+
+
+
+
+ Hope says: 
+
+
+
+								March 31, 2016 at 10:09 am							
+
+
+
+
+This is an amazing list! Some of these I currently use and love, like Trello and Quuu. I’ve known about IFTTT for a while but haven’t really used it much. Do you have any favorite or go-to IFTTT recipes? Thanks for this awesome post; will pass it on and share.
+
+Reply 
+
+
+
+Leave a Reply Cancel reply 
+Your email address will not be published. Required fields are marked *Comment Name * 
+Email * 
+Website 
+ 
+
+ 
+
+
+
+
+
+
+
+
+Podcast 
+Most Popular Posts 
+
+
+					My 2016 Year in Review
+					December 28 2016
+
+
+
+
+					How to Turn Web Traffic Into Mobile App Users
+					October 31 2016
+
+
+
+
+					The Step-by-Step Guide on How Sales Can Leverage Content
+					August 1 2016
+
+
+
+
+					7 Simple Tips for Repurposing Your Best Content
+					July 5 2016
+
+
+
+
+					How New SaaS Companies Should Be Using Content Marketing
+					May 23 2016
+
+
+
+
+					25 Content Marketing Tips Every Marketer Needs To Know
+					May 10 2016
+
+
+
+
+					How to Craft the Perfect Outreach Email
+					February 22 2016
+
+
+
+
+					Difference Between B2B vs B2C Content Marketing
+					January 25 2016
+
+
+
+
+					10 Great Content Examples That Prove the Little Guys Can Compete
+					December 1 2015
+
+
+
+
+					16 Ways to Turn Customers into Brand Advocates
+					October 12 2015
+
+
+
+ 
+Hire Me To Speak 
+
+ 
+
+
+
+
+Find out how I can help you.
+
+
+
+
+
+
+ Sujan Patel
+
+
+
+
+
+
+ 
+
+Let’s Talk. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+                        © 2017 SujanPatel.com - All Rights Reserved                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
