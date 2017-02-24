@@ -1,0 +1,194 @@
+<!DOCTYPE html><html lang="pt"><head><meta charset="utf-8" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"30c3d15562","applicationID":"32194629","transactionName":"dFhXREVbVVpWF00WWkRDSh9EXFZB","queueTime":0,"applicationTime":1140,"ttGuid":"","agentToken":null,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><meta content="" name="keywords" /><meta content="" name="description" /><meta content="user-scalable=no, minimum-scale=1.0, initial-scale=1.0, width=device-width, minimal-ui" name="viewport" /><title>Wel, Wel, Wel, que passeio do Arsenal | ESPN FC - O site que veste a camisa</title><meta content="414631205259299" property="fb:app_id" /><meta content="1006450660" property="fb:admins" /><script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script><meta content="Wel, Wel, Wel, que passeio do Arsenal" property="og:title" /><meta content="Quando foi divulgada a sele&amp;ccedil;&amp;atilde;o do onze titular, confesso ter ficado surpreso com o ..." property="og:description" /><meta content="http://espnfc.espn.com.br/thumbs/610x350+5+0?uid=2017/01/28/19/08/30/822/GettyImages_632917916.jpg" name="twitter:image:src" /><meta content="http://espnfc.espn.com.br/thumbs/610x350+5+0?uid=2017/01/28/19/08/30/822/GettyImages_632917916.jpg" property="og:image" /><meta content="http://espnfc.espn.com.br/thumbs/610x350+5+0?uid=2017/01/28/19/08/30/822/GettyImages_632917916.jpg" itemprop="image" /><link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic" media="all" rel="stylesheet" type="text/css" /><link href="/assets/application-ceccb73b8fb90cdb7d9264904d0dd810.css" media="all" rel="stylesheet" /><script src="/assets/application-5e3f06ed7481f5f8d640eece1b70ef2a.js"></script><script id="navegg" src="//tag.navdmp.com/tm23572.js" type="text/javascript"></script><meta content="authenticity_token" name="csrf-param" />
+<meta content="ob+aWUwmZ2XIWY/LgTTyMovmGBTcBIHkhgJVv91QLSA=" name="csrf-token" /><!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script><![endif]--><script type="text/javascript">
+  var _gaq = _gaq || [];
+  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-39636870-9']);
+  _gaq.push(['_addIgnoredRef', 'espn.uol.com.br']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_setCustomVar',4,'Site layout','WWW (padrão)',2]);
+  _gaq.push(['_trackPageview']);
+  setTimeout("_gaq.push(['_trackEvent', '15_segundos', 'read'])",15000);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script src="//assets.adobedtm.com/709a9f01b202a8880b54baa20471b84742f6fb88/satelliteLib-950bfcab41fad56cad89344840b17c4e847b4703.js" type="text/javascript"></script></head><body class="posts-show" role="document"><div id="wrapper"><div id="content"><header class="team-header" role="banner"><script type="text/javascript">window.universal_variable = window.universal_variable || {};
+window.universal_variable.dfp = {
+  "custom_params" : {
+    "subchan" : "",
+  }
+};
+window.uolads = window.uolads || [];
+;(function() {
+  var scr = document.createElement("script");
+  scr.async = true;
+  scr.src =  "//tm.jsuol.com.br/uoltm.js?id=gibci4";
+  var el = document.getElementsByTagName("script")[0];
+  el.parentNode.insertBefore(scr, el);
+})();</script><style type="text/css">header.team-header .menu-navigation {
+  background-color: #b22222;
+}
+
+header.team-header #main_search a {
+  background-color: #b22222
+}
+
+@media all and (min-width: 1024px) {
+  header.team-header #main_search a:hover {
+    background-color: rgba(255,255,255,0.2);
+  }
+}
+
+.contents .accordion-tabs-minimal a.tab-link.is-active {
+  color: #b22222;
+  border-color: #b22222;
+}
+
+.post .post-metadata span.post-author a {
+  color: #b22222
+}
+
+@media all and (min-width: 1024px) {
+  .post:hover .post-title {
+    color: #b22222
+  }
+}
+
+#load_more_posts {
+  background-color: #b22222
+}
+
+#post-wrapper .share.horizontal li { margin-left: 0 !important }
+
+#post-wrapper .share.horizontal li a {
+  background-color: transparent !important;
+  color: #b22222;
+}
+
+@media all and (min-width: 1024px) {
+  #post-wrapper .share.horizontal li a:hover {
+    background-color: #b22222 !important;
+    color: #fff;
+  }
+}
+
+#post-sidebar .sidebar-title {
+  background: #b22222;
+}
+
+#post-wrapper a { color: #b22222 }
+
+#main_search > div { background-color: #b22222 }</style><div class="menu-navigation"><div class="menu-wrapper"><a href="/" alt="ESPN FC - O site que veste a camisa" id="logo" title="ESPN FC - O site que veste a camisa">ESPN FC - O site que veste a camisa</a><form accept-charset="UTF-8" action="/busca" id="main_search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div><a href="#" id="search-for">Buscar</a><div class="wrap"><input id="title-search" name="title" placeholder="O que deseja encontrar?" type="text" /><button type="submit">Buscar</button></div></form><div id="team-head"><a href="/arsenal"><span>Arsenal</span><img alt="Arsenal" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzcvMzk4OGRmZmViNi9hcnNlbmFsLnBuZyJdXQ?sha=202240d548ccaae0" title="Arsenal" /></a></div><span id="information"><a href="/quero-ser-blogueiro">Sobre o ESPN FC</a></span><div id="teams"><a href="#">Times</a><div><style type="text/css">header .menu-navigation #teams > div {
+  height: 392px !important;
+}</style><div class="coln"><span>Nacionais</span><ul><li><a href="/america-mineiro"><img alt="América Mineiro" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzcvMTMwYzg5ZDM1ZC9hbWVyaWNhbWluZWlyby5wbmciXV0?sha=e84053a0887b5a94" title="América Mineiro" /></a></li><li><a href="/america-rj"><img alt="America-RJ" src="/media/W1siZiIsIjIwMTUvMDYvMTEvMTQvMzgvN2FlYWNkZGVmYS9lc2N1ZG9fdmFyaWFjb2VzLmpwZyJdXQ?sha=75ba2f6b7e891ecc" title="America-RJ" /></a></li><li><a href="/atletico-goianiense"><img alt="Atlético Goianiense" src="/media/W1siZiIsIjIwMTcvMDEvMTIvMTcvNTMvMTcvOTI3L2F0bGV0aWNvX2dvX2ZpcnN0LmpwZyJdXQ?sha=b528e3b875631641" title="Atlético Goianiense" /></a></li><li><a href="/atletico-mineiro"><img alt="Atlético Mineiro" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzcvNjQwZDk3M2I0OS9hdGxldGljb21pbmVpcm8ucG5nIl1d?sha=d785c81fa9a5431d" title="Atlético Mineiro" /></a></li><li><a href="/atletico-paranaense"><img alt="Atlético Paranaense" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzcvYzE1OWQ0MjM2Mi9hdGxldGljb3BhcmFuYWVuc2UucG5nIl1d?sha=f423e4cde61edac4" title="Atlético Paranaense" /></a></li><li><a href="/avai"><img alt="Avaí" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzcvYjRjMmFmMmQyNS9hdmFpLnBuZyJdXQ?sha=d29c8eb8258b43c8" title="Avaí" /></a></li><li><a href="/bahia"><img alt="Bahia" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzcvNzNjOGM1MjY0My9iYWhpYS5wbmciXV0?sha=e7e3cd63b0385bb7" title="Bahia" /></a></li><li><a href="/botafogo"><img alt="Botafogo" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzgvZmMzNTIwMmNiMC9ib3RhZm9nby5wbmciXV0?sha=e91fde24acca6478" title="Botafogo" /></a></li><li><a href="/brasil-de-pelotas"><img alt="Brasil de Pelotas" src="/media/W1siZiIsIjIwMTYvMTIvMDgvMTgvMzMvYjlkYzJmNDhjYS81MTJ4NTEyX3N0cmV0Y2hfMjljNzc4X2Y4NWI2OTRhODJjMjQ1YTFhNzRlY2NkNDFiMTFkNmI5LmpwZyJdXQ?sha=6448f8f8a2ff0060" title="Brasil de Pelotas" /></a></li><li><a href="/chapecoense"><img alt="Chapecoense" src="/media/W1siZiIsIjIwMTYvMTIvMDgvMTgvMzEvZWJlZDZlZTY5Ni9lc2N1ZG8tY2hhcGUyMDE3LmpwZyJdXQ?sha=97d677db6f93efa7" title="Chapecoense" /></a></li><li><a href="/corinthians"><img alt="Corinthians" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzgvNGJjNjY0YTA3MC9jb3JpbnRoaWFucy5wbmciXV0?sha=c4a98bf62afd49e8" title="Corinthians" /></a></li><li><a href="/coritiba"><img alt="Coritiba" src="/media/W1siZiIsIjIwMTQvMTIvMDEvMjMvNDUvNDVhNDk3MjkxYi9jb3JpdGliYS5wbmciXV0?sha=b2c258c58800cb3c" title="Coritiba" /></a></li><li><a href="/cruzeiro"><img alt="Cruzeiro" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzgvZjQ4Njc1MGU1Zi9jcnV6ZWlyby5wbmciXV0?sha=244b331c0e112f7f" title="Cruzeiro" /></a></li><li><a href="/figueirense"><img alt="Figueirense" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzgvMmM4NzJiZWRhZS9maWd1ZWlyZW5zZS5wbmciXV0?sha=1e1dab46f8338487" title="Figueirense" /></a></li><li><a href="/flamengo"><img alt="Flamengo" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzgvMjU0ZWVjNjE1My9mbGFtZW5nby5wbmciXV0?sha=052327bc934c8eac" title="Flamengo" /></a></li><li><a href="/fluminense"><img alt="Fluminense" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzgvYzgwMjQxZjhhZS9mbHVtaW5lbnNlLnBuZyJdXQ?sha=60e0a26adbea1b2e" title="Fluminense" /></a></li><li><a href="/goias"><img alt="Goiás" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzkvOGQ2MWZhZjcxNC9nb2lhcy5wbmciXV0?sha=7be165115d0768ec" title="Goiás" /></a></li><li><a href="/gremio"><img alt="Grêmio" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzkvMjY5YmZjODhjZS9ncmVtaW8ucG5nIl1d?sha=51740dd550856f18" title="Grêmio" /></a></li><li><a href="/guarani"><img alt="Guarani" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzkvYzA3NjM1NTlkNi9ndWFyYW5pLnBuZyJdXQ?sha=ce132ca41f66a1e6" title="Guarani" /></a></li><li><a href="/internacional"><img alt="Internacional" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzkvNzJhM2M1NWY5Ny9pbnRlcm5hY2lvbmFsLnBuZyJdXQ?sha=c1c76868ded7c999" title="Internacional" /></a></li><li><a href="/palmeiras"><img alt="Palmeiras" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvNDAvMmRiM2MxMDRlNy9wYWxtZWlyYXMucG5nIl1d?sha=6c46a22f153b8140" title="Palmeiras" /></a></li><li><a href="/ponte-preta"><img alt="Ponte Preta" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvNDAvMzQ0YjI0ODhmNy9wb250ZXByZXRhLnBuZyJdXQ?sha=0832dd0921a05d04" title="Ponte Preta" /></a></li><li><a href="/portuguesa"><img alt="Portuguesa" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvNDAvZmRiYTIwZTQ2Ny9wb3J0dWd1ZXNhLnBuZyJdXQ?sha=99622fa2808d3178" title="Portuguesa" /></a></li><li><a href="/remo"><img alt="Remo" src="/media/W1siZiIsIjIwMTQvMTIvMTEvMTEvMTkvOThiZDI2Yjg3NC9yZW1vLnBuZyJdXQ?sha=8b9e8454a4dcac79" title="Remo" /></a></li><li><a href="/santa-cruz"><img alt="Santa Cruz" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvNDAvZmU2NmFiNTgxNS9zYW50YWNydXoucG5nIl1d?sha=77f833f5fcf58cd7" title="Santa Cruz" /></a></li><li><a href="/santos"><img alt="Santos" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvNDAvOTA3NDAzMDY3Ny9zYW50b3MucG5nIl1d?sha=1f564d14547c0dfe" title="Santos" /></a></li><li><a href="/sao-paulo"><img alt="São Paulo" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvNDEvYjQ5OTJkYzdkMC9zYW9wYXVsby5wbmciXV0?sha=18cd424ba4ea2904" title="São Paulo" /></a></li><li><a href="/sport"><img alt="Sport" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvNDEvZmY0NzczNzNiMy9zcG9ydC5wbmciXV0?sha=acb3061cb290edb1" title="Sport" /></a></li><li><a href="/vasco"><img alt="Vasco" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvNDEvZjIyYzBlMjRlNy92YXNjby5wbmciXV0?sha=09b83231421d4539" title="Vasco" /></a></li><li><a href="/vitoria"><img alt="Vitória" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvNDEvNzA2MzUzNzJmYS92aXRvcmlhLnBuZyJdXQ?sha=bd951f04b75d57eb" title="Vitória" /></a></li></ul></div><div class="coln"><span>Internacionais</span><ul><li><a href="/arsenal"><img alt="Arsenal" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzcvMzk4OGRmZmViNi9hcnNlbmFsLnBuZyJdXQ?sha=202240d548ccaae0" title="Arsenal" /></a></li><li><a href="/athletic-bilbao"><img alt="Athletic Bilbao" src="/media/W1siZiIsIjIwMTYvMDkvMjYvMTgvMjIvYzA2NTczZGM3YS9iaWxiYW8uanBnIl1d?sha=c98fe19b93fffc94" title="Athletic Bilbao" /></a></li><li><a href="/atletico-de-madrid"><img alt="Atletico de Madrid" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzcvMDk3NjZhZTkzMy9hdGxldGljb21hZHJpZC5wbmciXV0?sha=becc65361730576b" title="Atletico de Madrid" /></a></li><li><a href="/barcelona"><img alt="Barcelona" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzcvOGY4NDZiMjZiZi9iYXJjZWxvbmEucG5nIl1d?sha=cf9622f2ffaddc8c" title="Barcelona" /></a></li><li><a href="/bayern-de-munique"><img alt="Bayern de Munique" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzcvMmY2ZDgzNzUwNC9iYXllcm4ucG5nIl1d?sha=6573d707c5a689a3" title="Bayern de Munique" /></a></li><li><a href="/boca-juniors"><img alt="Boca Juniors" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzgvYjJjMDA4ODUyMC9ib2NhanVuaW9ycy5wbmciXV0?sha=fe4687e42235185a" title="Boca Juniors" /></a></li><li><a href="/borussia-dortmund"><img alt="Borussia Dortmund" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzgvMmZlMmYwNDM1Mi9ib3JydXNpYS5wbmciXV0?sha=9abf3ccdd9b14980" title="Borussia Dortmund" /></a></li><li><a href="/chelsea"><img alt="Chelsea" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzgvMDhmMzQwYjAyMy9jaGVsc2VhLnBuZyJdXQ?sha=28b3685f85c3b158" title="Chelsea" /></a></li><li><a href="/internazionale"><img alt="Internazionale" src="/media/W1siZiIsIjIwMTQvMTIvMDEvMjMvNDIvNGE3MWZkNWVhMi9pbnRlcm5hemlvbmFsZS5wbmciXV0?sha=f841ae1e00e57307" title="Internazionale" /></a></li><li><a href="/juventus"><img alt="Juventus" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzkvZGMxY2I0NTIzOS9qdXZlbnR1cy5wbmciXV0?sha=9a00277e0c97c93d" title="Juventus" /></a></li><li><a href="/leicester"><img alt="Leicester" src="/media/W1siZiIsIjIwMTYvMDgvMDEvMTgvMzkvZWY2ODExNmJhZC9sZWljZXN0ZXIucG5nIl1d?sha=ad882a2c8dd386d7" title="Leicester" /></a></li><li><a href="/liverpool"><img alt="Liverpool" src="/media/W1siZiIsIjIwMTMvMDgvMTIvMTQvNTAvYTY1NzY5Y2JhYS9saXZlcnBvb2wucG5nIl1d?sha=1df87656d2a7447e" title="Liverpool" /></a></li><li><a href="/manchester-city"><img alt="Manchester City" src="/media/W1siZiIsIjIwMTYvMDcvMDYvMTQvMTIvNGE4ODFiY2IyYS9tYW5jaGVzdGVyLWNpdHkucG5nIl1d?sha=72cebe35823e6d2e" title="Manchester City" /></a></li><li><a href="/manchester-united"><img alt="Manchester United" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzkvNjJiYTk2NjliMy9tYW5jaGVzdGVydW5pdGVkLnBuZyJdXQ?sha=6443d390f3c7a35f" title="Manchester United" /></a></li><li><a href="/milan"><img alt="Milan" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzkvOTIxYzA3ZDUyYy9taWxhbi5wbmciXV0?sha=84e843fb05df8090" title="Milan" /></a></li><li><a href="/napoli"><img alt="Napoli" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvMzkvN2QzMzQ4MmI5Zi9uYXBvbGkucG5nIl1d?sha=f417d7a80c570cb2" title="Napoli" /></a></li><li><a href="/psg"><img alt="PSG" src="/media/W1siZiIsIjIwMTQvMTIvMDIvMDAvMDYvMWM3OWEwZjkwYi9wYXJpcy1zYWludC1nZXJtYWluLnBuZyJdXQ?sha=8d828599763a298b" title="PSG" /></a></li><li><a href="/real-madrid"><img alt="Real Madrid" src="/media/W1siZiIsIjIwMTQvMTIvMDEvMjMvNTgvMTE1YmNmNGI3YS9yZWFsLW1hZHJpZC5wbmciXV0?sha=6637a45ddba26482" title="Real Madrid" /></a></li><li><a href="/river-plate"><img alt="River Plate" src="/media/W1siZiIsIjIwMTMvMDgvMDEvMTkvNDAvNGY1YjA0YzgzMi9yaXZlcnBsYXRlLnBuZyJdXQ?sha=786852322a1d62a1" title="River Plate" /></a></li><li><a href="/roma"><img alt="Roma" src="/media/W1siZiIsIjIwMTQvMTIvMDkvMTMvNDgvY2Y1ZjAwMzcyYy9hc19yb21hX2xvZ28ucG5nIl1d?sha=6bc076740593b2b2" title="Roma" /></a></li><li><a href="/sampdoria"><img alt="Sampdoria" src="/media/W1siZiIsIjIwMTUvMDQvMTYvMTUvMzUvMzM1NjBjYTNmZC9zYW1wZG9yaWEucG5nIl1d?sha=d6b246af169dc605" title="Sampdoria" /></a></li><li><a href="/sevilla"><img alt="Sevilla" src="/media/W1siZiIsIjIwMTYvMDkvMjYvMTgvMTkvNWU3NDI5YmUxNC9zZXZpbGxhLnBuZyJdXQ?sha=5db8755439bb1c78" title="Sevilla" /></a></li><li><a href="/tottenham"><img alt="Tottenham" src="/media/W1siZiIsIjIwMTUvMDgvMTcvMTIvNDEvN2FiNzY1ZWZlMS90b3R0ZW5oYW1fbG9nby1hdmF0YXIuanBnIl1d?sha=b5148e3cfebb4435" title="Tottenham" /></a></li></ul></div></div></div><div id="blogs"><a href="#">blogs</a><div><ul><li><a href="/arsenal/arsenalismos" title="Arsenalismos">Arsenalismos</a></li><li><a href="/arsenal/gunners-on-the-table" title="Gunners on the Table">Gunners on the Table</a></li></ul></div></div></div></div></header>
+<div  class="ad ad-920x100 "
+      data-position=";pos=strip"
+      data-size="920x100"
+      
+      data-tag=arsenal/arsenalismos
+      >
+</div>
+<div class="contents"><section id="post-wrapper"><div class="header"><h1 class="full-post-title">Wel, Wel, Wel, que passeio do Arsenal</h1><div class="full-post-metadata"><span>Por </span><p>Alcysio Canette, do <a href="/arsenal/arsenalismos">Arsenalismos</a></p><time>28 de janeiro de 2017, 17:21</time></div><div class="share horizontal"><li class="facebook-share"><a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[title]=Wel, Wel, Wel, que passeio do Arsenal&amp;p[url]=http://espnfc.espn.com.br/arsenal/arsenalismos/12808-wel-wel-wel-que-passeio-do-arsenal" data-network="Facebook" id="facebook_share" title="Compartilhar esse post no Facebook">b</a></li><li class="twitter-share"><a href="http://twitter.com/share?text=Wel, Wel, Wel, que passeio do Arsenal - &amp;url=http://espnfc.espn.com.br/arsenal/arsenalismos/12808-wel-wel-wel-que-passeio-do-arsenal" data-network="Twitter" id="twitter_share" title="Twittar este post">a</a></li><li class="google-plus-share"><a href="https://plus.google.com/share?url=http://espnfc.espn.com.br/arsenal/arsenalismos/12808-wel-wel-wel-que-passeio-do-arsenal" data-network="Google+" id="google_share">c</a></li></div></div><div class="full-post-content"><p><p>Quando foi divulgada a sele&ccedil;&atilde;o do onze titular, confesso ter ficado surpreso com o desd&eacute;m do Wenger em rela&ccedil;&atilde;o &agrave; FA Cup. Adelaide, Ox e M.Niles n&atilde;o &eacute; exatamente um meio de campo que inspira grande confian&ccedil;a num jogo contra um advers&aacute;rio de Premier League.</p>
+<br /><p>Mas nossa escala&ccedil;&atilde;o ultraofensiva deu super certo, com um time ligado desde o come&ccedil;o e expondo uma zaga bastante fraca do advers&aacute;rio. O grande destaque da constru&ccedil;&atilde;o desse placar foi Welbeck, que fez os dois primeiros e deu o passe para o terceiro depois de nove meses sem come&ccedil;ar uma partida por causa de uma grave&nbsp;les&atilde;o no joelho direito.</p>
+<br /><div class="postfigure fcenter"><small class="credit"><em>Getty Images</em></small>
+<br /><div class="figure"><img src="/thumbs/589x455+5+5?uid=2017/01/28/19/08/30/822/GettyImages_632917916.jpg" alt="Getty Images" data-media-id="2017/01/28/19/08/30/822/GettyImages_632917916.jpg" /></div>
+<br /><div class="figcaption"><em>&Eacute; muito estilo para um cara s&oacute;</em></div>
+<br /></div>
+<br /><p>Seu entrosamento com Lucas tamb&eacute;m surpreendeu, afinal os dois pouco jogaram juntos. Parece que o espanhol tem um estilo que faz qualquer um se dar bem com ele logo de cara. Giroud e Alexis tamb&eacute;m encaixaram com nosso camisa nove rapidamente.</p>
+<br /><p>Outro que surpreendeu a ponto de merecer destaque foi o Ox, que, de volante, fez grandes lan&ccedil;amentos e comp&ocirc;s bem defensivamente. Claro que o Southampton estava mortinho em campo, mas sua atua&ccedil;&atilde;o foi muito superior &agrave; do jogo contra o Preston na &uacute;ltima rodada da FA Cup.</p>
+<br /><p>Com um 3-0 bem garantido, chegou a hora do fominha do Alexis entrar em campo para tentar dar uma inflada nos n&uacute;meros dele. Achei bastante irrespons&aacute;vel por parte do Wenger, mas o chileno deve ter alugado as ideias de todo mundo at&eacute; ganhar um joguinho.</p>
+<br /><p>Conseguiu rapidamente assistir Walcott para o 4-0 e para o 5-0, dando um hattrick para o papa l&eacute;guas ap&oacute;s retornar de les&atilde;o. O pr&oacute;prio Alexis poupou for&ccedil;as ao entrar em campo e n&atilde;o for&ccedil;ou a barra, o que &eacute; raro da parte dele.</p>
+<br /><p>O dia que come&ccedil;ou como preocupante terminou com a maior vit&oacute;ria do Arsenal contra o time do sul em seus dom&iacute;nios. Que diferen&ccedil;a em rela&ccedil;&atilde;o a anos anteriores.</p></p></div><div class="outbrain-widget"><div class="OUTBRAIN" data-ob-template="ESPNFCBrazil" data-src="http://espnfc.espn.com.br/arsenal/arsenalismos/12808-wel-wel-wel-que-passeio-do-arsenal" data-widget-id="AR_1"></div><script async="async" src="http://widgets.outbrain.com/outbrain.js" type="text/javascript"></script></div><div class="full-post-comments"><div class='fb-comments' data-href='http://espnfc.espn.com.br/arsenal/arsenalismos/12808-wel-wel-wel-que-passeio-do-arsenal' data-numposts='5' data-width='100%'></div>
+</div></section><sidebar id="post-sidebar">
+<div  class="ad ad-300x250 "
+      data-position=";pos=arroba"
+      data-size="300x250"
+      
+      data-tag=arsenal/arsenalismos
+      >
+</div>
+<div class="popular-posts posts-list"><h4 class="sidebar-title">Mais lidos</h4><ul><li><a href="http://espnfc.espn.com.br/arsenal/arsenalismos/13148-mais-um-vexame-para-a-colecao-de-wenger">Mais um vexame para a coleção de Wenger</a></li><li><a href="http://espnfc.espn.com.br/arsenal/gunners-on-the-table/13199-um-pais-contra-um-time-com-o-arsenal-e-possivel">Um país contra um time? Com o Arsenal é possível</a></li><li><a href="http://espnfc.espn.com.br/arsenal/arsenalismos/13177-ozil-e-o-bode-expiatorio-perfeito">Özil é o bode expiatório perfeito</a></li><li><a href="http://espnfc.espn.com.br/arsenal/gunners-on-the-table/13169-ate-os-amigos-estao-abandonando-wenger">Até os amigos estão abandonando Wenger</a></li><li><a href="http://espnfc.espn.com.br/arsenal/arsenalismos/13203-torcida-unica-vai-na-contramao-da-premier-league">Torcida única vai na contramão da Premier League</a></li></ul></div><div class="latest-posts posts-list"><h4 class="sidebar-title">Últimos</h4><ul><li><a href="http://espnfc.espn.com.br/arsenal/arsenalismos/13203-torcida-unica-vai-na-contramao-da-premier-league">Torcida única vai na contramão da Premier League</a></li><li><a href="http://espnfc.espn.com.br/arsenal/gunners-on-the-table/13199-um-pais-contra-um-time-com-o-arsenal-e-possivel">Um país contra um time? Com o Arsenal é possível</a></li><li><a href="http://espnfc.espn.com.br/arsenal/arsenalismos/13177-ozil-e-o-bode-expiatorio-perfeito">Özil é o bode expiatório perfeito</a></li><li><a href="http://espnfc.espn.com.br/arsenal/gunners-on-the-table/13169-ate-os-amigos-estao-abandonando-wenger">Até os amigos estão abandonando Wenger</a></li><li><a href="http://espnfc.espn.com.br/arsenal/arsenalismos/13148-mais-um-vexame-para-a-colecao-de-wenger">Mais um vexame para a coleção de Wenger</a></li></ul></div>
+<div  class="ad ad-300x250 "
+      data-position=";pos=arroba"
+      data-size="300x250"
+      
+      data-tag=arsenal/arsenalismos
+      >
+</div>
+</sidebar></div>
+<div  class="ad ad-920x100 "
+      data-position=";pos=strip"
+      data-size="920x100"
+      
+      data-tag=arsenal/arsenalismos
+      >
+</div>
+</div><footer role="contentinfo"><div class="footer-container">
+  <div class="footer-logo">
+    <span>ESPN FC © 2017</span>
+
+    <ul>
+      <li><a href="https://disneyprivacycenter.com/privacy-policy-translations/brazilian-portuguese/" target="_blank">Política de Privacidade</a></li>
+      <li><a href="http://www.disney.com.br/termos" target="_blank">Termos de Uso</a></li>
+      <li><a href="http://preferences-mgr.truste.com/?type=espn&affiliateId=148" target="_blank">Sobre Anúncios</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-secondary-links">
+    <ul class="social horizontal">
+      <li class='facebook'>
+        <a href="https://www.facebook.com/espnfcbra" alt="ESPN-FC no Facebook" data-network="Facebook" title="ESPN-FC no Facebook">b</a>
+      </li>
+      <li class='twitter'>
+        <a href="https://twitter.com/ESPNFCbra" alt="ESPN-FC no Twitter" data-network="Twitter" title="ESPN-FC no Twitter">a</a>
+      </li>
+      <li class="rss">
+        <a href="http://espnfc.espn.uol.com.br/home.rss" alt="ESPN-FC Feeds" title="ESPN-FC Feeds">,</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</footer><script type="text/javascript">
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=414631205259299";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- SiteCatalyst code version: H.20.2. Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
+<script type="text/javascript" charset="ISO-8859-1" src="http://me.jsuol.com.br/omtr/espn.js"></script>
+
+<script type="text/javascript"><!--
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=uol_sc.t();if(s_code)document.write(s_code)//--></script>
+<!-- End SiteCatalyst code version: H.20.2. -->
+</div><script type="text/javascript">var section = window.location.pathname.split('/')[1] || "";
+var _sf_async_config={};
+  /** CONFIGURATION START **/
+  _sf_async_config.uid = 22222;
+  _sf_async_config.domain = 'espn.uol.com.br';
+  _sf_async_config.sections = section;
+  _sf_async_config.authors = "espnfc";
+  _sf_async_config.useCanonical = true;
+  /** CONFIGURATION END **/
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src', '//static.chartbeat.com/js/chartbeat_video.js');
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+       loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();</script><script type="text/javascript">_satellite.pageBottom();</script></body></html>
