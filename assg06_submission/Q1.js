@@ -14,6 +14,10 @@ var svg=d3.select("#chart")
     .attr("width",w).attr("height",h);
 
 d3.json("graph.json", function(error, graph) {
+    svg
+      .append("text")
+      .text(graph.nodes[0].username).attr("x",100).attr("y",100);
+
     var simulation = d3.forceSimulation()
       .nodes(graph.nodes);
 
