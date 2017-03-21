@@ -45,10 +45,7 @@
  .data(graph.links) 
  .enter() 
  .append("line") 
- .attr("class", "link") 
- .attr("stroke","#09F") 
- .attr("stroke-opacity","0.4") 
- .style("stroke-width",1); 
+ .attr("class", "link"); 
   
  var node = svg.selectAll(".node") 
  .data(graph.nodes) 
