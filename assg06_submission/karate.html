@@ -49,7 +49,7 @@ d3.json("karate.json", function(graph){
 
   node.append("title").text(function(d) { return d.name; });
 
-  node.append("circle")
+  var nodeCircle=node.append("circle")
       .attr("r", 5)
       .attr("fill", circleColour);
 
@@ -58,7 +58,7 @@ d3.json("karate.json", function(graph){
       {
         return "red";
       }
-      else if(d.sex =="M")
+      else if(d.group ==1)
       {
         return "blue";
       }
@@ -70,7 +70,7 @@ d3.json("karate.json", function(graph){
 
   svg.on("click",function() {
       flag=1-flag
-      node.attr("fill", circleColour);
+      nodeCircle.attr("fill", circleColour);
   })
 
   simulation.on("tick", tickActions );
