@@ -23,7 +23,7 @@ var svg = d3.select("svg"),
   height = +svg.attr("height");
 
 d3.json("graph.json", function(graph){
-  window.alert(graph.nodes[0].username);
+  window.alert(graph.nodes[1].gender);
 
   var simulation = d3.forceSimulation()
     .nodes(graph.nodes);
@@ -55,9 +55,11 @@ d3.json("graph.json", function(graph){
 
   node.append("title").text(function(d) { return d.username; });
 
+  /*
   node.append("circle")
         .attr("r", 5)
         .attr("fill", "red");
+  */
 
   simulation.on("tick", tickActions );
 
