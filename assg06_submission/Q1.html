@@ -12,13 +12,6 @@
   stroke-width: 1.5px;
 }
 
-.nodetext {
- fill: #000;
- font-size:12px;
- cursor:pointer;
- pointer-events:none;
-}
-
 </style>
 <svg width="1366" height="768"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -30,6 +23,8 @@ var svg = d3.select("svg"),
   height = +svg.attr("height");
 
 d3.json("graph.json", function(graph){
+  window.alert(graph.nodes[0].gender);
+
   var simulation = d3.forceSimulation()
     .nodes(graph.nodes);
 
@@ -49,11 +44,9 @@ d3.json("graph.json", function(graph){
   node.append("title").text(function(d) { return d.username; });
 
   node.append("text")
+    .attr("dx", 12)
     .attr("dy", ".3em")
-    .attr("class","nodetext")
-    .style("text-anchor", "middle")
     .text(function(d) { return d.username; }); 
-
 
   simulation.on("tick", tickActions );
 
