@@ -22,7 +22,7 @@ var svg = d3.select("svg"),
     height = +svg.attr("height");
 
 d3.json("graph.json", function(data) {
-  window.alert(data.nodes[0]);
+  window.alert(data.nodes[0].gender);
 });
 
 var nodes_data =  [
