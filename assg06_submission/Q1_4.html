@@ -33,6 +33,7 @@ d3.json("graph.json", function(graph){
     .force("charge_force", d3.forceManyBody())
     .force("center_force", d3.forceCenter(width / 2, height / 2));
 */
+  simulation.force("center_force", d3.forceCenter(width / 2, height / 2));
 
   var node = svg.append("g")
     .attr("class", "nodes")
