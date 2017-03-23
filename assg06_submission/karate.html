@@ -27,7 +27,7 @@ var svg = d3.select("svg"),
   width = +svg.attr("width"),
   height = +svg.attr("height");
 
-var flag=0
+var flag=0;
 
 d3.json("karate.json", function(graph){
   var simulation = d3.forceSimulation()
@@ -40,7 +40,7 @@ d3.json("karate.json", function(graph){
   var node = svg.selectAll(".node")
       .data(graph.nodes)
       .enter().append("g")
-      .attr("class", "node")
+      .attr("class", "node");
 
   node.append("text")
       .attr("dx", 12)
@@ -70,9 +70,9 @@ d3.json("karate.json", function(graph){
 
   simulation.on("tick", tickActions );
 
-  var link_force =  d3.forceLink(graph.links).distance(100)
+  var link_force =  d3.forceLink(graph.links);
 
-  simulation.force("links",link_force)
+  simulation.force("links",link_force);
 
   var link = svg.append("g")
     .attr("class", "links")
@@ -98,7 +98,7 @@ d3.json("karate.json", function(graph){
   }
 
   svg.on("click",function() {
-      flag=1-flag
+      flag=1-flag;
       nodeCircle.attr("fill", circleColour);
       link.style("display", linkDisplay);
   })
