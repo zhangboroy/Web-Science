@@ -79,8 +79,8 @@ d3.json("karate.json", function(graph){
     .selectAll("line")
     .data(graph.links)
     .enter().append("line")
-    .attr("stroke-width", 2);
-    .style("display", "inline");
+    .attr("stroke-width", 2)
+    .style("display", linkDisplay);
 
   function linkDisplay(d){
       if(flag ==0)
