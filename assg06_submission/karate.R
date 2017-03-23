@@ -1,0 +1,12 @@
+library("igraph")
+data = as.matrix(read.table("karate.txt"))
+karate = graph_from_adjacency_matrix(data, mode = "undirected", weighted = TRUE)
+ebc = edge.betweenness.community(karate)
+cut = cutat(ebc,2)
+colors = rainbow(2)
+plot(karate, vertex.color=colors[cut])
+cut
+E(karate)
+write_graph(karate, "karateGraph.txt", format = "edgelist")
+write.table("nodes.gender:", "karateGraph.txt", append=TRUE, quote = FALSE, sep ="\n", row.names = FALSE, col.names = FALSE)
+write.table(cut, "karateGraph.txt", append=TRUE, sep ="\n", row.names = FALSE, col.names = FALSE)
