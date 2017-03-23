@@ -64,14 +64,9 @@ d3.json("karate.json", function(graph){
       }
       else
       {
-        return "pink";
+        return "yellow";
       }
   }
-
-  svg.on("click",function() {
-      flag=1-flag
-      nodeCircle.attr("fill", circleColour);
-  })
 
   simulation.on("tick", tickActions );
 
@@ -85,6 +80,28 @@ d3.json("karate.json", function(graph){
     .data(graph.links)
     .enter().append("line")
     .attr("stroke-width", 2);
+    .style("display", linkDisplay);
+
+  function linkDisplay(d){
+      if(flag ==0)
+      {
+        return "inline";
+      }
+      else if(d.broken == 0)
+      {
+        return "inline";
+      }
+      else
+      {
+        return "none";
+      }
+  }
+
+  svg.on("click",function() {
+      flag=1-flag
+      nodeCircle.attr("fill", circleColour);
+      link.style("display", linkDisplay);
+  })
 
   function tickActions() {
     link
