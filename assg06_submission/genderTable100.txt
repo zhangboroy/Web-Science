@@ -1,102 +1,35 @@
-Username            Gender
-1n9r1d              female
-AngelaWoodall       female
-BexAnnalisa         female
-CassPF              female
-Cee_Finley          female
-HBee2015            female
-HollyCroft          female
-KarenKvaughan       female
-KingsleySteph       female
-MeghanHoyer         female
-Miel_vds            female
-Mittrach_garten     female
-MyriamCTraub        female
-OKMotovlog          female
-PruittAL            female
-ShathaJY            female
-annika_hinze        female
-artlibrariannyc     female
-avadigs             female
-brendaberkelaar     female
-carole_gagne        female
-elizhoagcarhart     female
-es_land             female
-hollips             female
-infod1va            female
-jessicasmith541     female
-jubrogers           female
-katestarbird        female
-kzwa                female
-lili_czarina        female
-lissertations       female
-mekonkol            female
-nwatzman            female
-peripatesis         female
-pvanhaitsma         female
-rebeccaholte        female
-stierholz           female
-74paddycakes        male
-AntonJRasmussen     male
-CLIRDLF             male
-CrowNaito           male
-DanKerchner         male
-DavidUnderdown9     male
-DevAhmedhosni       male
-Dr_Abomohra         male
-ErichdotPy          male
-Fernando___Melo     male
-GardnerCampbell     male
-Grant_ODU           male
-HugoAViana          male
-HussamHallak1       male
-JCrueger            male
-JDecourselle        male
-JakeOrlowitz        male
-JayNuetron          male
-John_B_Howard       male
-KennyDiedrich       male
-KevinLevrone3       male
-LarryWilson1942     male
-LuytenBram          male
-Manoj_Chandra11     male
-MarkGraham          male
-Mohamma47262302     male
-MohdKamal6          male
-RikerHampton        male
-SalimChemlal        male
-Shaaban_Migo        male
-TEILandmark         male
-TueHLarsen          male
-White__Knuckles     male
-_mstevenson         male
-abziegler           male
-andrewjbtw          male
-arjenpdevries       male
-bicho_daniel        male
-bitarchivist        male
-bruno_leonard_      male
-cazzerson           male
-claussni            male
-dineshpaladhi       male
-doviethung          male
-futuresma           male
-helgeho             male
-johnaberlin         male
-landlibrarian       male
-lmercereau          male
-lysander07          male
-manoj_chandra_k     male
-marcinwilkowski     male
-minornotez          male
-mrchyr              male
-normeu              male
-pampel              male
-phonedude_mln       male
-pmyoung84           male
-risse691            male
-ruebot              male
-saadaitomation      male
-seamuslawless       male
-subsublibrary       male
-ycpdan              male
+Username            Gender	Username            Gender	Username            Gender
+1n9r1d              female	AngelaWoodall       female	BexAnnalisa         female
+CassPF              female	Cee_Finley          female	HBee2015            female
+HollyCroft          female	KarenKvaughan       female	KingsleySteph       female
+MeghanHoyer         female	Miel_vds            female	Mittrach_garten     female
+MyriamCTraub        female	OKMotovlog          female	PruittAL            female
+ShathaJY            female	annika_hinze        female	artlibrariannyc     female
+avadigs             female	brendaberkelaar     female	carole_gagne        female
+elizhoagcarhart     female	es_land             female	hollips             female
+infod1va            female	jessicasmith541     female	jubrogers           female
+katestarbird        female	kzwa                female	lili_czarina        female
+lissertations       female	mekonkol            female	nwatzman            female
+peripatesis         female	pvanhaitsma         female	rebeccaholte        female
+stierholz           female	74paddycakes        male	AntonJRasmussen     male
+CLIRDLF             male	CrowNaito           male	DanKerchner         male
+DavidUnderdown9     male	DevAhmedhosni       male	Dr_Abomohra         male
+ErichdotPy          male	Fernando___Melo     male	GardnerCampbell     male
+Grant_ODU           male	HugoAViana          male	HussamHallak1       male
+JCrueger            male	JDecourselle        male	JakeOrlowitz        male
+JayNuetron          male	John_B_Howard       male	KennyDiedrich       male
+KevinLevrone3       male	LarryWilson1942     male	LuytenBram          male
+Manoj_Chandra11     male	MarkGraham          male	Mohamma47262302     male
+MohdKamal6          male	RikerHampton        male	SalimChemlal        male
+Shaaban_Migo        male	TEILandmark         male	TueHLarsen          male
+White__Knuckles     male	_mstevenson         male	abziegler           male
+andrewjbtw          male	arjenpdevries       male	bicho_daniel        male
+bitarchivist        male	bruno_leonard_      male	cazzerson           male
+claussni            male	dineshpaladhi       male	doviethung          male
+futuresma           male	helgeho             male	johnaberlin         male
+landlibrarian       male	lmercereau          male	lysander07          male
+manoj_chandra_k     male	marcinwilkowski     male	minornotez          male
+mrchyr              male	normeu              male	pampel              male
+phonedude_mln       male	pmyoung84           male	risse691            male
+ruebot              male	saadaitomation      male	seamuslawless       male
+subsublibrary       male	ycpdan              male

@@ -1,636 +1,213 @@
-Username            Gender
-1n9r1d              female
-5280BigData         female
-AliShamim333        female
-AlinaDeniau         female
-Alisia1092          female
-AngelaWoodall       female
-AnnaPerricci        female
-ArchivingIt         female
-BeeneSteph          female
-BexAnnalisa         female
-CamtheWicked        female
-CassPF              female
-Cee_Finley          female
-GerdaMueller2       female
-GetDownODU          female
-HBee2015            female
-HollyCroft          female
-IngeRudomino        female
-J_IreneTieman       female
-JenServenti         female
-Julibabe21          female
-K4arkive            female
-KarenKvaughan       female
-KarolHolu           female
-KingsleySteph       female
-LizCohee            female
-LyndaLSF            female
-MarthaBunton        female
-MeghanHoyer         female
-MellissaBuys        female
-Mercedesew211       female
-Miel_vds            female
-Milena_Dobreva      female
-Mittrach_garten     female
-MonicaDYOIart       female
-MyriamCTraub        female
-Naima3704           female
-NancyAjarmeh        female
-OKMotovlog          female
-PruittAL            female
-Sandra_Mason        female
-SarahBellefleur     female
-SciTechProf         female
-ShathaJY            female
-TeriBerg96          female
-TessaFallon         female
-abugseye            female
-anatbd              female
-annika_hinze        female
-archivesmatter      female
-artlibrariannyc     female
-avadigs             female
-badgerhartman       female
-bethcron            female
-brendaberkelaar     female
-carole_gagne        female
-ccmarshall          female
-cklk90              female
-continuants         female
-crobinj7074         female
-dhowell             female
-downey_cara         female
-elizhoagcarhart     female
-emcaulay            female
-erikaris            female
-es_land             female
-gmj2053             female
-hhockx              female
-hollips             female
-hryanski            female
-inadlweb            female
-infod1va            female
-jessicasmith541     female
-jessili             female
-jessogden           female
-johanna_lautner     female
-jubrogers           female
-k8lin               female
-karenhansn          female
-karensnet           female
-katestarbird        female
-katjakra            female
-kaylamarie0110      female
-kvanmalssen         female
-kzwa                female
-landeart            female
-liblaura            female
-lili_czarina        female
-lisallynch          female
-lissertations       female
-margymavery         female
-mdiazdigpres        female
-meblake             female
-mekonkol            female
-mgallinger          female
-momof3inov          female
-nwatzman            female
-opba                female
-peripatesis         female
-pvanhaitsma         female
-rebeccaholte        female
-rosalielack         female
-saraaubry           female
-saschel             female
-seahorseadmirer     female
-shirapeltzman       female
-silvertje           female
-skhartmann          female
-sshreeves           female
-stierholz           female
-stillinsky          female
-taylor_amy          female
-technelily          female
-toinette1607        female
-trinketapp          female
-umurthy             female
-vneblitt            female
-wrap_ed             female
-yasmina_anwar       female
-74paddycakes        male
-AAlasaadi           male
-AntonJRasmussen     male
-AricAumann          male
-BeachAutoBroker     male
-BrianDavison        male
-BrosephElder        male
-CLIRDLF             male
-ChuChoResano        male
-CrowNaito           male
-DanKerchner         male
-DataG               male
-DavidUnderdown9     male
-DevAhmedhosni       male
-Dr_Abomohra         male
-EJWalters           male
-ELittley            male
-ErichdotPy          male
-Erikfreiser         male
-Fernando___Melo     male
-FjellHenning        male
-Galsondor           male
-GardnerCampbell     male
-GeorgeRBuchanan     male
-GerhardGossen       male
-Ghozia              male
-GraemeEarl          male
-GrahamSeaman        male
-Grant_ODU           male
-HugoAViana          male
-HussamHallak1       male
-IgorBrigadir        male
-JCrueger            male
-JDecourselle        male
-Jakdemir            male
-JakeOrlowitz        male
-JayNuetron          male
-JohnChangGWU        male
-John_B_Howard       male
-JonesWCaleb         male
-JoshCowls           male
-KennyDiedrich       male
-KevinLevrone3       male
-LarryWilson1942     male
-LuytenBram          male
-Manoj_Chandra11     male
-MarkGraham          male
-MaxKemman           male
-MildlyBored         male
-Moha_Magdy          male
-Mohamma47262302     male
-MohdKamal6          male
-NKrabben            male
-NeilMonday          male
-NielsBr             male
-OpenMaze            male
-PeterOnymos         male
-Philipp_Mayr        male
-PoorOldMoot         male
-RaifordGuins        male
-Reloaded2Boot       male
-RikerHampton        male
-RjLyric             male
-RobVesse            male
-SalimChemlal        male
-Shaaban_Migo        male
-SimpleSimon2013     male
-StanZheng           male
-StanfordLibs        male
-SteveMcLaugh        male
-Strollerman         male
-TEILandmark         male
-THEBenLeBrun        male
-TaksNz              male
-Thaer_samar         male
-TimelessFuture      male
-TueHLarsen          male
-WeskerAlbert777     male
-WessamElhefnawy     male
-White__Knuckles     male
-WolframElvis        male
-_matef              male
-_mstevenson         male
-aag1091             male
-aalsum              male
-abrennr             male
-abziegler           male
-acnwala             male
-acocciolo           male
-aheshamSalem        male
-andrewjbtw          male
-archivetype         male
-arjenpdevries       male
-atomotic            male
-azaroth42           male
-bertramlyons        male
-bfluzin             male
-bhaslhofer          male
-bicho_daniel        male
-bindonlane          male
-bitarchivist        male
-blefurgy            male
-bruno_leonard_      male
-carltonnorthern     male
-cazzerson           male
-claussni            male
-cyberlaw            male
-daniel_rehn         male
-dchud               male
-digitalfay          male
-dineshpaladhi       male
-djw0952             male
-dmimno              male
-docmattweber        male
-doppelen            male
-doviethung          male
-dwhitenist          male
-e_mccain            male
-edsu                male
-ehetzner            male
-ekansa              male
-elunca              male
-ericleasemorgan     male
-erikchoi            male
-euanc               male
-f_nanni             male
-felipebravom        male
-fmccown             male
-furuta              male
-futuresma           male
-fzaker              male
-gauravguptak1       male
-gjfowler            male
-hariharshankar      male
-hdo003              male
-helgeho             male
-hochstenbach        male
-hvdsomp             male
-iFromm              male
-iamtimmo            male
-ianmilligan1        male
-involutish          male
-itroch              male
-j_w_baker           male
-jakkbl              male
-jasonmarkwebber     male
-jefferson_bail      male
-jgsmith             male
-joc7188             male
-johnaberlin         male
-junklight           male
-justinfbrunelle     male
-kberberi            male
-keesone             male
-kennethec1          male
-kevingashley        male
-klischka            male
-kurtluther          male
-kzakza              male
-landlibrarian       male
-ldmm                male
-lintool             male
-lmercereau          male
-lnsails             male
-lorcanD             male
-lysander07          male
-machawk1            male
-maherzog            male
-mamund              male
-manoj_chandra_k     male
-marcinwilkowski     male
-mart1nkle1n         male
-maturban1           male
-mcdonald            male
-meterz1             male
-minornotez          male
-mjgiarlo            male
-mlzman              male
-mousta              male
-mrchyr              male
-mwittin             male
-mzarro              male
-n_audenaert         male
-narfman0            male
-normeu              male
-northgardner        male
-nullhandle          male
-olyerickson         male
-palewire            male
-pampel              male
-paulwalk            male
-peterkz_swe         male
-petrknoth           male
-phonedude_mln       male
-pj_webster          male
-pkeane              male
-plamen26968325      male
-plbogen             male
-pmyoung84           male
-prwheatley          male
-rdhyee              male
-risse691            male
-rodwittenberg       male
-ruebot              male
-rundavidrun         male
-rwincewicz          male
-saadaitomation      male
-seamuslawless       male
-shajid333           male
-smalljones          male
-sspranay            male
-stevehit            male
-subotic             male
-subsublibrary       male
-tedlawless          male
-thabing             male
-thefaisalahmad      male
-this_phillips       male
-tjowens             male
-trevormunoz         male
-tsuomela            male
-twarko              male
-txkuhn              male
-vector_ctrl         male
-vincelebow          male
-vphill              male
-weblawlib           male
-westfood            male
-williamjnixon       male
-witch_doctor81      male
-xabuci              male
-ycpdan              male
-zeonfernando        male
-ziadmatni           male
-zittrain            male
-6T7VXu11XcTiAbd     unknown
-9ulovesu            unknown
-ACMSIGIR            unknown
-ARLIS_NY            unknown
-AT_Webarchive       unknown
-AVArchivist         unknown
-AlephArchives       unknown
-AllThingsGraph      unknown
-AndreaGoethals      unknown
-AndreeaCorinaM2     unknown
-Antenna_Lab         unknown
-Arkivum             unknown
-ArnoudGoos          unknown
-AutonomyIncub8r     unknown
-BL_Labs             unknown
-BelaGipp            unknown
-BergisJules         unknown
-BizApproved         unknown
-CRajaharsha         unknown
-CScoutTech          unknown
-ChiefScientist      unknown
-ChrisAldrich        unknown
-CodioHQ             unknown
-CommonCrawl         unknown
-CorrenMcCoy         unknown
-DLWebBnF            unknown
-DLWeb_Seb           unknown
-DLib2014            unknown
-DanMilanko          unknown
-DialUCL             unknown
-DigiCultureKCL      unknown
-DrAinenwar          unknown
-DrDanetteAllen      unknown
-DwiDwisyafitri      unknown
-EdelOShea83         unknown
-Educopia            unknown
-EmeraldIKM          unknown
-EmeraldLibrary      unknown
-FFuqiang            unknown
-Faryane             unknown
-ForgetITProject     unknown
-FredericikB         unknown
-GJST                unknown
-HCIR_GeneG          unknown
-HamptonRFinest      unknown
-Hindawi             unknown
-HistWebArchives     unknown
-History2point0      unknown
-ISRJINDIA           unknown
-IntelligenceTV      unknown
-IuliaCristina12     unknown
-JCDLConf            unknown
-JS_Smith_71         unknown
-JStoddert           unknown
-Jack_Stran          unknown
-JesseforCouncil     unknown
-JoeLemanski         unknown
-Karki693            unknown
-KhTalha6            unknown
-KyleFJackson        unknown
-KyleStr             unknown
-LulwahMA            unknown
-MPanula             unknown
-Magda69425548       unknown
-Mementoweb          unknown
-MeredithA           unknown
-Milbala             unknown
-MonarchsAimHigh     unknown
-NDSA2               unknown
-NetLab_dk           unknown
-NetPreserve         unknown
-NgYewli             unknown
-NicolaJBingham      unknown
-NorfolkVA_          unknown
-ODUAlumni           unknown
-ODUAuxServices      unknown
-ODUPeninsulaCtr     unknown
-ODURugby_           unknown
-OTHSEAFOOD          unknown
-Oorlogsbronnen      unknown
-OpenResearchExe     unknown
-PSleeman            unknown
-Paisadalo           unknown
-PapachriL           unknown
-PeerProd            unknown
-PolitAdArchive      unknown
-Pravacana_Mats      unknown
-RJIJDNA             unknown
-RSSNewsmaster       unknown
-RajnishMallick      unknown
-ReedTechCorp        unknown
-RossiAtanassova     unknown
-SIGIR17             unknown
-SPARC_NA            unknown
-SoftGid_com         unknown
-SouthernKiaGB       unknown
-Stesker3D           unknown
-TPDL2016            unknown
-TagTrees            unknown
-TrueHiddenFact      unknown
-Tunaz_Islam         unknown
-UKWebArchive        unknown
-WOSP2014            unknown
-WPKefi              unknown
-WSUNDSA             unknown
-WebART12            unknown
-WebArchivists       unknown
-WebSciDL            unknown
-WehoMan88           unknown
-Wikicite            unknown
-XYOU                unknown
-_akisato            unknown
-acquire_UCLA        unknown
-agrotke             unknown
-ahmedkalka97        unknown
-alexwade            unknown
-amaranaas           unknown
-amlhasbat           unknown
-andy_anjoyh         unknown
-anjacks0n           unknown
-annediaz01          unknown
-archiveis           unknown
-archiveitorg        unknown
-archivelle          unknown
-archivportal        unknown
-athurman            unknown
-awptix              unknown
-beatles__beatle     unknown
-beyondcitation      unknown
-bodhisattvaOS       unknown
-brettbobley         unknown
-brijmohanrana4      unknown
-bumdots4eva         unknown
-calpopp             unknown
-carolc16            unknown
-cbmrccc             unknown
-cgknowles           unknown
-chglass             unknown
-chrisbellekom       unknown
-chrisfreeland       unknown
-chrislaoscott       unknown
-clarellewellyn      unknown
-clem_kev            unknown
-cni_org             unknown
-covenant_ws         unknown
-datacartel1         unknown
-dbpedia             unknown
-degruyter_lib       unknown
-desouzatech         unknown
-detailmatters       unknown
-dhombe3             unknown
-digiarchiveteam     unknown
-digitopia_nl        unknown
-diglib              unknown
-documentnow         unknown
-dswarm              unknown
-dtscnc              unknown
-erinengle           unknown
-forschungsdaten     unknown
-foucaultwelles      unknown
-fromADMwithlove     unknown
-goodenjm            unknown
-grotophorst         unknown
-hanysalaheldeen     unknown
-iPRES2013           unknown
-iPRESconf           unknown
-ibnesayeed          unknown
-icdm2016            unknown
-idokius             unknown
-ijdl                unknown
-imafuturemedic      unknown
-impactzoneco        unknown
-internetarchive     unknown
-isi2015conf         unknown
-jalbertbowdenii     unknown
-jcdl2012            unknown
-jcdl2013            unknown
-jcdl2015            unknown
-jcdl2016            unknown
-jcdl2017            unknown
-jesseajohnston      unknown
-jkamps              unknown
-joansm1th           unknown
-joemcgonegal        unknown
-jotschirr           unknown
-jschneider          unknown
-jsicot              unknown
-jteevan             unknown
-kboughida           unknown
-kingswebit          unknown
-klhiggins33         unknown
-knmnyn              unknown
-kraabus             unknown
-kristsi             unknown
-kylewilliams87      unknown
-ldirks              unknown
-lestextesR          unknown
-lljohnston          unknown
-lmaccork            unknown
-lookouthoney        unknown
-lwynholds           unknown
-maheedhargunnam     unknown
-maikhanhlam         unknown
-majetisiri          unknown
-masroorfreaks       unknown
-mbutel              unknown
-mdzellerCDAL        unknown
-metalinker          unknown
-mgome0072           unknown
-migcosta            unknown
-mixnode             unknown
-mmicros1            unknown
-mre1920             unknown
-mridulish           unknown
-mummifyit           unknown
-myerscarpenter      unknown
-nanopub_org         unknown
-nattiyak            unknown
-nichworby           unknown
-njcomputergroup     unknown
-no_identd           unknown
-noumenal_woman      unknown
-oaisdujour          unknown
-oducs               unknown
-ohttic              unknown
-oreficeplumbing     unknown
-oso525gang          unknown
-peplluis7           unknown
-permacc             unknown
-perrycollins        unknown
-pigandpublish       unknown
-pre11e              unknown
-printuu             unknown
-ptrourke            unknown
-rdayMedia           unknown
-robin_ruggaber      unknown
-robina_naazli       unknown
-robinmkatz          unknown
-ruyhliu             unknown
-ryanfb              unknown
-salamancaschool     unknown
-samalanmeister      unknown
-samy_tawab          unknown
-save4use            unknown
-schuurmanna         unknown
-shawnmjones         unknown
-sheershasamach1     unknown
-skurt               unknown
-smartfit_atees      unknown
-sooraya_sadulla     unknown
-sorgentelinda       unknown
-space360vr          unknown
-squealermusic       unknown
-syamiliC            unknown
-tamingdata          unknown
-theovv              unknown
-tmeehleib           unknown
-todrobbins          unknown
-topgolfvabeach      unknown
-tpdl2017            unknown
-ttso                unknown
-tywalters1          unknown
-unknown_6           unknown
-unmil               unknown
-unstablearchive     unknown
-usa8951             unknown
-uskudarli           unknown
-violetailik         unknown
-walkeroh            unknown
-webrecorder_io      unknown
-weiglemc            unknown
-williamjturkel      unknown
-woilgoo             unknown
-wosp2015            unknown
-wospworkshop        unknown
-www2013rio          unknown
-wwwtxt              unknown
-xuxomln             unknown
-zhaohuan_wang       unknown
-zimeon              unknown
-zxie                unknown
+Username            Gender	Username            Gender	Username            Gender
+1n9r1d              female	5280BigData         female	AliShamim333        female
+AlinaDeniau         female	Alisia1092          female	AngelaWoodall       female
+AnnaPerricci        female	ArchivingIt         female	BeeneSteph          female
+BexAnnalisa         female	CamtheWicked        female	CassPF              female
+Cee_Finley          female	GerdaMueller2       female	GetDownODU          female
+HBee2015            female	HollyCroft          female	IngeRudomino        female
+J_IreneTieman       female	JenServenti         female	Julibabe21          female
+K4arkive            female	KarenKvaughan       female	KarolHolu           female
+KingsleySteph       female	LizCohee            female	LyndaLSF            female
+MarthaBunton        female	MeghanHoyer         female	MellissaBuys        female
+Mercedesew211       female	Miel_vds            female	Milena_Dobreva      female
+Mittrach_garten     female	MonicaDYOIart       female	MyriamCTraub        female
+Naima3704           female	NancyAjarmeh        female	OKMotovlog          female
+PruittAL            female	Sandra_Mason        female	SarahBellefleur     female
+SciTechProf         female	ShathaJY            female	TeriBerg96          female
+TessaFallon         female	abugseye            female	anatbd              female
+annika_hinze        female	archivesmatter      female	artlibrariannyc     female
+avadigs             female	badgerhartman       female	bethcron            female
+brendaberkelaar     female	carole_gagne        female	ccmarshall          female
+cklk90              female	continuants         female	crobinj7074         female
+dhowell             female	downey_cara         female	elizhoagcarhart     female
+emcaulay            female	erikaris            female	es_land             female
+gmj2053             female	hhockx              female	hollips             female
+hryanski            female	inadlweb            female	infod1va            female
+jessicasmith541     female	jessili             female	jessogden           female
+johanna_lautner     female	jubrogers           female	k8lin               female
+karenhansn          female	karensnet           female	katestarbird        female
+katjakra            female	kaylamarie0110      female	kvanmalssen         female
+kzwa                female	landeart            female	liblaura            female
+lili_czarina        female	lisallynch          female	lissertations       female
+margymavery         female	mdiazdigpres        female	meblake             female
+mekonkol            female	mgallinger          female	momof3inov          female
+nwatzman            female	opba                female	peripatesis         female
+pvanhaitsma         female	rebeccaholte        female	rosalielack         female
+saraaubry           female	saschel             female	seahorseadmirer     female
+shirapeltzman       female	silvertje           female	skhartmann          female
+sshreeves           female	stierholz           female	stillinsky          female
+taylor_amy          female	technelily          female	toinette1607        female
+trinketapp          female	umurthy             female	vneblitt            female
+wrap_ed             female	yasmina_anwar       female	74paddycakes        male
+AAlasaadi           male	AntonJRasmussen     male	AricAumann          male
+BeachAutoBroker     male	BrianDavison        male	BrosephElder        male
+CLIRDLF             male	ChuChoResano        male	CrowNaito           male
+DanKerchner         male	DataG               male	DavidUnderdown9     male
+DevAhmedhosni       male	Dr_Abomohra         male	EJWalters           male
+ELittley            male	ErichdotPy          male	Erikfreiser         male
+Fernando___Melo     male	FjellHenning        male	Galsondor           male
+GardnerCampbell     male	GeorgeRBuchanan     male	GerhardGossen       male
+Ghozia              male	GraemeEarl          male	GrahamSeaman        male
+Grant_ODU           male	HugoAViana          male	HussamHallak1       male
+IgorBrigadir        male	JCrueger            male	JDecourselle        male
+Jakdemir            male	JakeOrlowitz        male	JayNuetron          male
+JohnChangGWU        male	John_B_Howard       male	JonesWCaleb         male
+JoshCowls           male	KennyDiedrich       male	KevinLevrone3       male
+LarryWilson1942     male	LuytenBram          male	Manoj_Chandra11     male
+MarkGraham          male	MaxKemman           male	MildlyBored         male
+Moha_Magdy          male	Mohamma47262302     male	MohdKamal6          male
+NKrabben            male	NeilMonday          male	NielsBr             male
+OpenMaze            male	PeterOnymos         male	Philipp_Mayr        male
+PoorOldMoot         male	RaifordGuins        male	Reloaded2Boot       male
+RikerHampton        male	RjLyric             male	RobVesse            male
+SalimChemlal        male	Shaaban_Migo        male	SimpleSimon2013     male
+StanZheng           male	StanfordLibs        male	SteveMcLaugh        male
+Strollerman         male	TEILandmark         male	THEBenLeBrun        male
+TaksNz              male	Thaer_samar         male	TimelessFuture      male
+TueHLarsen          male	WeskerAlbert777     male	WessamElhefnawy     male
+White__Knuckles     male	WolframElvis        male	_matef              male
+_mstevenson         male	aag1091             male	aalsum              male
+abrennr             male	abziegler           male	acnwala             male
+acocciolo           male	aheshamSalem        male	andrewjbtw          male
+archivetype         male	arjenpdevries       male	atomotic            male
+azaroth42           male	bertramlyons        male	bfluzin             male
+bhaslhofer          male	bicho_daniel        male	bindonlane          male
+bitarchivist        male	blefurgy            male	bruno_leonard_      male
+carltonnorthern     male	cazzerson           male	claussni            male
+cyberlaw            male	daniel_rehn         male	dchud               male
+digitalfay          male	dineshpaladhi       male	djw0952             male
+dmimno              male	docmattweber        male	doppelen            male
+doviethung          male	dwhitenist          male	e_mccain            male
+edsu                male	ehetzner            male	ekansa              male
+elunca              male	ericleasemorgan     male	erikchoi            male
+euanc               male	f_nanni             male	felipebravom        male
+fmccown             male	furuta              male	futuresma           male
+fzaker              male	gauravguptak1       male	gjfowler            male
+hariharshankar      male	hdo003              male	helgeho             male
+hochstenbach        male	hvdsomp             male	iFromm              male
+iamtimmo            male	ianmilligan1        male	involutish          male
+itroch              male	j_w_baker           male	jakkbl              male
+jasonmarkwebber     male	jefferson_bail      male	jgsmith             male
+joc7188             male	johnaberlin         male	junklight           male
+justinfbrunelle     male	kberberi            male	keesone             male
+kennethec1          male	kevingashley        male	klischka            male
+kurtluther          male	kzakza              male	landlibrarian       male
+ldmm                male	lintool             male	lmercereau          male
+lnsails             male	lorcanD             male	lysander07          male
+machawk1            male	maherzog            male	mamund              male
+manoj_chandra_k     male	marcinwilkowski     male	mart1nkle1n         male
+maturban1           male	mcdonald            male	meterz1             male
+minornotez          male	mjgiarlo            male	mlzman              male
+mousta              male	mrchyr              male	mwittin             male
+mzarro              male	n_audenaert         male	narfman0            male
+normeu              male	northgardner        male	nullhandle          male
+olyerickson         male	palewire            male	pampel              male
+paulwalk            male	peterkz_swe         male	petrknoth           male
+phonedude_mln       male	pj_webster          male	pkeane              male
+plamen26968325      male	plbogen             male	pmyoung84           male
+prwheatley          male	rdhyee              male	risse691            male
+rodwittenberg       male	ruebot              male	rundavidrun         male
+rwincewicz          male	saadaitomation      male	seamuslawless       male
+shajid333           male	smalljones          male	sspranay            male
+stevehit            male	subotic             male	subsublibrary       male
+tedlawless          male	thabing             male	thefaisalahmad      male
+this_phillips       male	tjowens             male	trevormunoz         male
+tsuomela            male	twarko              male	txkuhn              male
+vector_ctrl         male	vincelebow          male	vphill              male
+weblawlib           male	westfood            male	williamjnixon       male
+witch_doctor81      male	xabuci              male	ycpdan              male
+zeonfernando        male	ziadmatni           male	zittrain            male
+6T7VXu11XcTiAbd     unknown	9ulovesu            unknown	ACMSIGIR            unknown
+ARLIS_NY            unknown	AT_Webarchive       unknown	AVArchivist         unknown
+AlephArchives       unknown	AllThingsGraph      unknown	AndreaGoethals      unknown
+AndreeaCorinaM2     unknown	Antenna_Lab         unknown	Arkivum             unknown
+ArnoudGoos          unknown	AutonomyIncub8r     unknown	BL_Labs             unknown
+BelaGipp            unknown	BergisJules         unknown	BizApproved         unknown
+CRajaharsha         unknown	CScoutTech          unknown	ChiefScientist      unknown
+ChrisAldrich        unknown	CodioHQ             unknown	CommonCrawl         unknown
+CorrenMcCoy         unknown	DLWebBnF            unknown	DLWeb_Seb           unknown
+DLib2014            unknown	DanMilanko          unknown	DialUCL             unknown
+DigiCultureKCL      unknown	DrAinenwar          unknown	DrDanetteAllen      unknown
+DwiDwisyafitri      unknown	EdelOShea83         unknown	Educopia            unknown
+EmeraldIKM          unknown	EmeraldLibrary      unknown	FFuqiang            unknown
+Faryane             unknown	ForgetITProject     unknown	FredericikB         unknown
+GJST                unknown	HCIR_GeneG          unknown	HamptonRFinest      unknown
+Hindawi             unknown	HistWebArchives     unknown	History2point0      unknown
+ISRJINDIA           unknown	IntelligenceTV      unknown	IuliaCristina12     unknown
+JCDLConf            unknown	JS_Smith_71         unknown	JStoddert           unknown
+Jack_Stran          unknown	JesseforCouncil     unknown	JoeLemanski         unknown
+Karki693            unknown	KhTalha6            unknown	KyleFJackson        unknown
+KyleStr             unknown	LulwahMA            unknown	MPanula             unknown
+Magda69425548       unknown	Mementoweb          unknown	MeredithA           unknown
+Milbala             unknown	MonarchsAimHigh     unknown	NDSA2               unknown
+NetLab_dk           unknown	NetPreserve         unknown	NgYewli             unknown
+NicolaJBingham      unknown	NorfolkVA_          unknown	ODUAlumni           unknown
+ODUAuxServices      unknown	ODUPeninsulaCtr     unknown	ODURugby_           unknown
+OTHSEAFOOD          unknown	Oorlogsbronnen      unknown	OpenResearchExe     unknown
+PSleeman            unknown	Paisadalo           unknown	PapachriL           unknown
+PeerProd            unknown	PolitAdArchive      unknown	Pravacana_Mats      unknown
+RJIJDNA             unknown	RSSNewsmaster       unknown	RajnishMallick      unknown
+ReedTechCorp        unknown	RossiAtanassova     unknown	SIGIR17             unknown
+SPARC_NA            unknown	SoftGid_com         unknown	SouthernKiaGB       unknown
+Stesker3D           unknown	TPDL2016            unknown	TagTrees            unknown
+TrueHiddenFact      unknown	Tunaz_Islam         unknown	UKWebArchive        unknown
+WOSP2014            unknown	WPKefi              unknown	WSUNDSA             unknown
+WebART12            unknown	WebArchivists       unknown	WebSciDL            unknown
+WehoMan88           unknown	Wikicite            unknown	XYOU                unknown
+_akisato            unknown	acquire_UCLA        unknown	agrotke             unknown
+ahmedkalka97        unknown	alexwade            unknown	amaranaas           unknown
+amlhasbat           unknown	andy_anjoyh         unknown	anjacks0n           unknown
+annediaz01          unknown	archiveis           unknown	archiveitorg        unknown
+archivelle          unknown	archivportal        unknown	athurman            unknown
+awptix              unknown	beatles__beatle     unknown	beyondcitation      unknown
+bodhisattvaOS       unknown	brettbobley         unknown	brijmohanrana4      unknown
+bumdots4eva         unknown	calpopp             unknown	carolc16            unknown
+cbmrccc             unknown	cgknowles           unknown	chglass             unknown
+chrisbellekom       unknown	chrisfreeland       unknown	chrislaoscott       unknown
+clarellewellyn      unknown	clem_kev            unknown	cni_org             unknown
+covenant_ws         unknown	datacartel1         unknown	dbpedia             unknown
+degruyter_lib       unknown	desouzatech         unknown	detailmatters       unknown
+dhombe3             unknown	digiarchiveteam     unknown	digitopia_nl        unknown
+diglib              unknown	documentnow         unknown	dswarm              unknown
+dtscnc              unknown	erinengle           unknown	forschungsdaten     unknown
+foucaultwelles      unknown	fromADMwithlove     unknown	goodenjm            unknown
+grotophorst         unknown	hanysalaheldeen     unknown	iPRES2013           unknown
+iPRESconf           unknown	ibnesayeed          unknown	icdm2016            unknown
+idokius             unknown	ijdl                unknown	imafuturemedic      unknown
+impactzoneco        unknown	internetarchive     unknown	isi2015conf         unknown
+jalbertbowdenii     unknown	jcdl2012            unknown	jcdl2013            unknown
+jcdl2015            unknown	jcdl2016            unknown	jcdl2017            unknown
+jesseajohnston      unknown	jkamps              unknown	joansm1th           unknown
+joemcgonegal        unknown	jotschirr           unknown	jschneider          unknown
+jsicot              unknown	jteevan             unknown	kboughida           unknown
+kingswebit          unknown	klhiggins33         unknown	knmnyn              unknown
+kraabus             unknown	kristsi             unknown	kylewilliams87      unknown
+ldirks              unknown	lestextesR          unknown	lljohnston          unknown
+lmaccork            unknown	lookouthoney        unknown	lwynholds           unknown
+maheedhargunnam     unknown	maikhanhlam         unknown	majetisiri          unknown
+masroorfreaks       unknown	mbutel              unknown	mdzellerCDAL        unknown
+metalinker          unknown	mgome0072           unknown	migcosta            unknown
+mixnode             unknown	mmicros1            unknown	mre1920             unknown
+mridulish           unknown	mummifyit           unknown	myerscarpenter      unknown
+nanopub_org         unknown	nattiyak            unknown	nichworby           unknown
+njcomputergroup     unknown	no_identd           unknown	noumenal_woman      unknown
+oaisdujour          unknown	oducs               unknown	ohttic              unknown
+oreficeplumbing     unknown	oso525gang          unknown	peplluis7           unknown
+permacc             unknown	perrycollins        unknown	pigandpublish       unknown
+pre11e              unknown	printuu             unknown	ptrourke            unknown
+rdayMedia           unknown	robin_ruggaber      unknown	robina_naazli       unknown
+robinmkatz          unknown	ruyhliu             unknown	ryanfb              unknown
+salamancaschool     unknown	samalanmeister      unknown	samy_tawab          unknown
+save4use            unknown	schuurmanna         unknown	shawnmjones         unknown
+sheershasamach1     unknown	skurt               unknown	smartfit_atees      unknown
+sooraya_sadulla     unknown	sorgentelinda       unknown	space360vr          unknown
+squealermusic       unknown	syamiliC            unknown	tamingdata          unknown
+theovv              unknown	tmeehleib           unknown	todrobbins          unknown
+topgolfvabeach      unknown	tpdl2017            unknown	ttso                unknown
+tywalters1          unknown	unknown_6           unknown	unmil               unknown
+unstablearchive     unknown	usa8951             unknown	uskudarli           unknown
+violetailik         unknown	walkeroh            unknown	webrecorder_io      unknown
+weiglemc            unknown	williamjturkel      unknown	woilgoo             unknown
+wosp2015            unknown	wospworkshop        unknown	www2013rio          unknown
+wwwtxt              unknown	xuxomln             unknown	zhaohuan_wang       unknown
+zimeon              unknown	zxie                unknown
