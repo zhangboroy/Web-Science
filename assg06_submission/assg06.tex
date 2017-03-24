@@ -1,0 +1,99 @@
+\documentclass{article}
+	\usepackage{geometry}
+	\geometry{left=1.0cm,right=1.0cm}
+	\usepackage{graphicx}
+	\usepackage{indentfirst}
+	\usepackage[hyphens]{url}
+	\usepackage{listings}
+	\usepackage{color}
+	\definecolor{gray}{rgb}{0.3,0.3,0.3}
+	\usepackage{caption}
+	\DeclareCaptionFont{white}{\color{white}}
+	\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+	\captionsetup[lstlisting]{format=listing,labelfont={bf,sf,white},textfont={bf,sf,white}}
+	\usepackage{xcolor}
+	\usepackage{booktabs}
+	\captionsetup[table]{labelfont=bf}
+	\usepackage[colorlinks,linkcolor=red]{hyperref}
+
+	\begin{document}
+		\begin{center}\textbf{Bo Zhang\\01063214}
+		\end{center}
+		\section{D3 graphing}
+		Use D3 to visualize your Twitter followers. Use my twitter account if you do not have $>$= 50 followers.\\
+
+		\noindent\textbf{Algorithm: }\\
+		\indent1. Use the script from \url{http://stackoverflow.com/questions/31000178/how-to-get-large-list-of-
+followers-tweepy} to download the information of all followers, and save them to \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg06_submission/twitterFollowers.csv}{``twitterFollowers.csv''}.\\
+		\indent2. Open \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg06_submission/twitterFollowers.csv}{``twitterFollowers.csv''}, read all kinds of the information to different lists.\\
+		\indent3. Use the package ``gender-detector''(\url{https://pypi.python.org/pypi/gender-detector/0.1.0}) to guess the gender and save it to another list.\\
+		\indent4. Select 100 from the followers whose gender could be guessed, and mark them. Mark the main account as well.\\
+		\indent5. Save all the followers as nodes to \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg06_submission/graph.csv}{``graph.csv''}.\\
+		\indent6. Use the package ``tweepy''(\url{http://docs.tweepy.org/en/latest/api.html}) to get the friendship within the 100 followers. If anyone of the 2 followers followed the other, save it as an edge to \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg06_submission/graph.csv}{``graph.csv''}.\\
+		\indent7. Open \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg06_submission/graph.csv}{``graph.csv''}, read all the information and add the edges between the main account and the followers.\\
+		\indent8. Use the package ``networkx''(\url{https://networkx.readthedocs.io/en/stable/}) to save the graph to \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg06_submission/graph.json}{``graph.json''}.\\
+		\indent9. Use the D3 to visualize the graph.\\\\
+		\textbf{References:\\}
+		\indent1. \url{https://bl.ocks.org/puzzler10/4efcb280a23c2f9b824879771ae41592}\\
+		\indent2. \url{http://www.puzzlr.org/force-directed-graph-using-node-and-link-attributes/}\\
+		\indent3. \url{http://stackoverflow.com/questions/18164230/add-text-label-to-d3-node-in-force-directed-graph-and-resize-on-hover}\\\\
+		\textbf{Source code:}
+		\lstinputlisting[language=python, breakatwhitespace=false), label=downloadTwitterFollowers.py, caption=The content of downloadTwitterFollowers.py]{downloadTwitterFollowers.py}
+		\lstinputlisting[language=python, breakatwhitespace=false), label=FollowersCheck.py, caption=The content of FollowersCheck.py]{FollowersCheck.py}
+		\lstinputlisting[language=python, breakatwhitespace=false), label=graphWrite-json.py, caption=The content of graphWrite-json.py]{graphWrite-json.py}
+		\lstinputlisting[language=html, breakatwhitespace=false), label=Q1.html, caption=The content of Q1.html]{Q1.html}
+
+		\noindent\\\textbf{Results: }\url{https://cdn.rawgit.com/zhangboroy/cs532-s17/b56ae831/assg06_submission/Q1.html}
+
+		\section{Gender homophily in your Twitter graph}
+		\indent Take the Twitter graph you generated in question \#1 and test for male-female homophily. For the purposes of this question you can consider the graph as undirected. Use the twitter name and programatically determine if the user is male or female.\\
+		\indent Create a table of Twitter users and their likely gender. List any accounts that can't be determined and remove them from the graph. Does your Twitter graph exhibit gender homophily?\\
+
+		\textbf{Algorithm:}\\
+		\indent1. Open \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg06_submission/graph.csv}{``graph.csv''}, read all the information and save it to an output list. Sort the output list with gender and save it to \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg06_submission/genderTable.txt}{``genderTable.txt''}.\\
+		\indent2. Select the 101 marked account from the output list and save them to another output list.\\
+		\indent3. Compute the total edge number and account number of different genders.\\
+		\indent4. Save the new output list to \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg06_submission/genderTable100.txt}{``genderTable100.txt''}.\\
+		\indent5. Compute the number of edges between different genders within the 101 accounts.\\
+		\indent6. Print the account number of different genders, Randomly assigned cross-gender edge fraction, total edge number, cross-gender edge number and Actual cross-gender edge fraction.\\
+		\indent7. Use the result from step 6 in R to run Exact Binomial Test.\\
+
+		\noindent\textbf{Source code:}
+		\lstinputlisting[language=python, breakatwhitespace=false), label=homophilyTest.py, caption=The content of homophilyTest.py]{homophilyTest.py}
+		\lstinputlisting[language=R, breakatwhitespace=false), label=Q2.R, caption=The content of Q2.R]{Q2.R}
+
+		\noindent\\\textbf{Results: }
+		\lstinputlisting[language=R, breakatwhitespace=false), label=genderTable.txt, caption=The content of genderTable.txt]{genderTable.txt}
+		\lstinputlisting[language=R, breakatwhitespace=false), label=genderTable100.txt, caption=The content of genderTable100.txt]{genderTable100.txt}
+		\begin{table}[!htb]
+			\centering
+			\caption{\textbf{Gender Homophily Test Result}}
+			\begin{tabular}{cccccc}
+				\toprule
+				\textbf{Male} & \textbf{Female} & \textbf{Total edges} & \textbf{Cross-gender edges} & \textbf{p-value} & \textbf{95 percent confidence interval}\\
+				64 & 37 & 256 & 108 & 0.1882 & 0.3606438 - 0.4849366\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+
+		According to these figures, Randomly assigned cross-gender edge fraction is 0.4642682, Actual cross-gender edge fraction is 0.421875 and just 9\% off. The Exact Binomial Test p-value is 0.1882, which means the possibility of 81.2\% that they are not equal. So the gender homophily exists but slightly.\\
+		\section{Using D3, create a graph of the Karate club before and after the split.}
+		\indent Have the transition from before/after the split occur on a mouse click. This is a toggle, so the graph will go back and forth beween connected and disconnected.\\
+
+		\textbf{Algorithm:}\\
+		\indent1. Copy the last 34 lines of the matrix in \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg06_submission/zachary.dat}{``zachary.dat''} and save them into \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg06_submission/karate.txt}{``karate.txt''}.\\
+		\indent2. Use the package ``igraph''(\url{http://igraph.org/r/}) in R to open \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg06_submission/karate.txt}{``karate.txt''}.\\
+		\indent3. Use the edge betweenness community detection algorithm.\\
+		\indent4. Cut the merge tree to get 2 communities.\\
+		\indent5. Plot the 2 communities.\\
+		\indent6. Save the graph in ``edgelist'' format to \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg06_submission/karateGraph.txt}{``karateGraph.txt''} and add the group index of the nodes to the file.\\
+		\indent7. Open \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg06_submission/karateGraph.txt}{``karateGraph.txt''}, for every edge check if the nodes are from different groups and add mark to the edge.\\
+		\indent8. Use the package ``networkx''(\url{https://networkx.readthedocs.io/en/stable/}) to save the graph to \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg06_submission/karate.json}{``karate.json''}.\\
+		\indent9. Use the D3 to visualize the graph.\\\\
+		\textbf{Source code:}
+		\lstinputlisting[language=R, breakatwhitespace=false), label=karate.R, caption=The content of karate.R]{karate.R}
+		\lstinputlisting[language=python, breakatwhitespace=false), label=graphWrite-karate.py, caption=The content of graphWrite-karate.py]{graphWrite-karate.py}
+		\lstinputlisting[language=html, breakatwhitespace=false), label=karate.html, caption=The content of karate.html]{karate.html}
+
+		\noindent\\\textbf{Results: }\url{https://cdn.rawgit.com/zhangboroy/cs532-s17/01870cb6/assg06_submission/karate.html}
+	\end{document}
