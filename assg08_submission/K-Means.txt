@@ -1,0 +1,130 @@
+k=5:
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+['SEM REGRAS', 'Friday Night Dream', 'MTJR RANTS & RAVES ON MUSIC']
+
+
+['"DANCING IN CIRCLES"', 'Web Science and Digital Libraries Research Group', 'The Stearns Family', "Pirate's Log", "isyeli's", 'Playing Favorites', 'Unexpectedly Bart (King!)', 'Sonology', 'Hello', 'Dust and Water Studios', 'ELLIA TOWNSEND A2', 'sweeping the kitchen', 'Bonjour Girl', 'from a voice plantation', 'A Dying Breed', 'Label Goes Here', 'tumbleweed', 'The Professional Daydreamer', 'The Great Adventure 2016', 'Kid F', 'Words', "MarkEOrtega's Journalism Portfolio", 'What A Wonderful World', 'Yestermorrow', 'the traveling neighborhood', 'Mile In Mine', 'The Themes of My Life', 'The Bunker', 'The Ideal Copy', "Room 19's Blog 2016", 'beep boop', "i'm in too truthful a mood", 'One Stunning Single Egg', 'Visual Feeling', 'Cherry Area', 'ORGANMYTH', 'Boggle Me Thursday', 'A2 MEDIA COURSEWORK JOINT BLOG', "She's mad but she's magic. There's no lie in her fire.", 'Rants from the Pants', 'Pithy Title Here', 'Out of my Mind']
+
+
+['Abu Everyday', 'THE HUB', 'Mystic Chords Of Memory', 'LOST  PLACES', 'LA BOUTIQUE', 'PALMIRA A PISTA TRES', 'New Day Rising', '@65 Sounding Booth', 'Green Eggs and Ham Mondays 8-10am', 'Who needs a TV?', 'the fast break of champions', 'I/LOVE/TOTAL/DESTRUCTION', 'Chemical Robert!', 'FOLK IS NOT HAPPY', 'Lost in the Shuffle']
+
+
+['MPC']
+
+
+['The Campus Buzz on WSOU', 'Hip In Detroit', 'Steel City Rust', 'SPACE KiDZ a GoGo', 'Music Album Torrent Download Link Suggestions', 'Bleak Bliss', 'ALL MY BROTHERS AND SISTERS', 'Indie Top 20 - The Blog!', 'Parish Radio', 'my music world', 'Swinging Singles Club', 'My Name Is Blue Canary', '*Sixeyes: by Alan Williamson', "Paul's Winnipeg", 'Stereo Pills', 'Some Call It Noise....', 'The Stark Online', 'SEVEN1878', 'mattgarman', 'the roofy leak', 'Anthems and Atleticos', "MarkFisher's-MusicReview", 'F-Measure', 'Everything Starts With an A...', "It'll Glow On You", 'One Base on an Overthrow', 'Myopiamuse', 'www.doginasweater.com Live Show Review Archive', 'KiDCHAIR', 'macthemost', 'Eli Jace | The Mind Is A Terrible Thing To Paste', 'STANLEY SAYS', 'aubade', 'hello my name is justin.', 'SunStock Music', 'Ian Hill Stuff', '.', 'Everything Flows', 'no gift for the gab']
+
+
+
+k=10:
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+['New Day Rising', 'MTJR RANTS & RAVES ON MUSIC']
+
+
+['"DANCING IN CIRCLES"', 'THE HUB', 'The Bunker', 'Boggle Me Thursday']
+
+
+['Web Science and Digital Libraries Research Group', "Pirate's Log", 'Steel City Rust', 'Playing Favorites', 'Bleak Bliss', 'Indie Top 20 - The Blog!', 'Swinging Singles Club', 'the roofy leak', 'Everything Starts With an A...', 'The Ideal Copy', 'One Base on an Overthrow', 'www.doginasweater.com Live Show Review Archive', 'STANLEY SAYS', 'hello my name is justin.', '.']
+
+
+['MPC']
+
+
+['The Stearns Family', "isyeli's", 'sweeping the kitchen', 'Bonjour Girl', 'Label Goes Here', 'tumbleweed', 'The Professional Daydreamer', "MarkEOrtega's Journalism Portfolio", 'What A Wonderful World', 'Yestermorrow', 'One Stunning Single Egg', 'Visual Feeling', 'ORGANMYTH']
+
+
+['Abu Everyday', 'Mystic Chords Of Memory', 'LOST  PLACES', 'Dust and Water Studios', 'LA BOUTIQUE', '@65 Sounding Booth', 'Green Eggs and Ham Mondays 8-10am', 'Who needs a TV?', 'the fast break of champions', 'I/LOVE/TOTAL/DESTRUCTION', 'Chemical Robert!', 'FOLK IS NOT HAPPY', 'Lost in the Shuffle']
+
+
+['PALMIRA A PISTA TRES', 'SEM REGRAS', 'Friday Night Dream']
+
+
+['mattgarman', 'Mile In Mine', 'Ian Hill Stuff', "She's mad but she's magic. There's no lie in her fire.", 'Out of my Mind']
+
+
+['The Campus Buzz on WSOU', 'Hip In Detroit', 'SPACE KiDZ a GoGo', 'Music Album Torrent Download Link Suggestions', 'ALL MY BROTHERS AND SISTERS', 'Parish Radio', 'ELLIA TOWNSEND A2', 'my music world', 'My Name Is Blue Canary', '*Sixeyes: by Alan Williamson', "Paul's Winnipeg", 'Stereo Pills', 'Some Call It Noise....', 'The Stark Online', 'Anthems and Atleticos', "MarkFisher's-MusicReview", 'F-Measure', "It'll Glow On You", 'Myopiamuse', 'KiDCHAIR', 'macthemost', 'Eli Jace | The Mind Is A Terrible Thing To Paste', 'aubade', 'SunStock Music', 'A2 MEDIA COURSEWORK JOINT BLOG', 'Everything Flows', 'no gift for the gab']
+
+
+['Unexpectedly Bart (King!)', 'Sonology', 'Hello', 'from a voice plantation', 'A Dying Breed', 'The Great Adventure 2016', 'Kid F', 'SEVEN1878', 'Words', 'the traveling neighborhood', 'The Themes of My Life', "Room 19's Blog 2016", 'beep boop', "i'm in too truthful a mood", 'Cherry Area', 'Rants from the Pants', 'Pithy Title Here']
+
+
+
+k=20:
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+[]
+
+
+['Indie Top 20 - The Blog!', 'Stereo Pills', 'Ian Hill Stuff']
+
+
+['PALMIRA A PISTA TRES', 'New Day Rising', 'SEM REGRAS', 'Friday Night Dream']
+
+
+["isyeli's", 'Playing Favorites', 'Dust and Water Studios', 'Swinging Singles Club', 'My Name Is Blue Canary', 'Kid F', "It'll Glow On You", 'www.doginasweater.com Live Show Review Archive', 'STANLEY SAYS', '.']
+
+
+['The Campus Buzz on WSOU', 'Hip In Detroit', 'Steel City Rust', 'SPACE KiDZ a GoGo', 'ALL MY BROTHERS AND SISTERS', 'ELLIA TOWNSEND A2', 'my music world', '*Sixeyes: by Alan Williamson', "Paul's Winnipeg", 'Some Call It Noise....', 'The Stark Online', 'the roofy leak', 'Anthems and Atleticos', "MarkFisher's-MusicReview", 'F-Measure', 'Who needs a TV?', 'Myopiamuse', 'KiDCHAIR', 'Eli Jace | The Mind Is A Terrible Thing To Paste', 'aubade', 'SunStock Music', 'A2 MEDIA COURSEWORK JOINT BLOG', 'Everything Flows', 'no gift for the gab']
+
+
+['Yestermorrow', 'Visual Feeling']
+
+
+[]
+
+
+['MPC', 'The Bunker']
+
+
+['Boggle Me Thursday']
+
+
+['Abu Everyday', 'THE HUB', 'Bleak Bliss', 'LA BOUTIQUE', 'sweeping the kitchen', 'Everything Starts With an A...', 'the fast break of champions', 'macthemost']
+
+
+[]
+
+
+["She's mad but she's magic. There's no lie in her fire.", 'FOLK IS NOT HAPPY', 'Lost in the Shuffle']
+
+
+['Music Album Torrent Download Link Suggestions', 'Parish Radio']
+
+
+['mattgarman']
+
+
+['Mystic Chords Of Memory', 'LOST  PLACES', 'A Dying Breed', '@65 Sounding Booth', 'Green Eggs and Ham Mondays 8-10am', 'Words', 'I/LOVE/TOTAL/DESTRUCTION', 'hello my name is justin.', 'Pithy Title Here', 'Chemical Robert!']
+
+
+['MTJR RANTS & RAVES ON MUSIC']
+
+
+['Unexpectedly Bart (King!)', 'SEVEN1878']
+
+
+['"DANCING IN CIRCLES"']
+
+
+['Web Science and Digital Libraries Research Group', 'The Stearns Family', "Pirate's Log", 'Sonology', 'Hello', 'Bonjour Girl', 'from a voice plantation', 'Label Goes Here', 'tumbleweed', 'The Professional Daydreamer', 'The Great Adventure 2016', "MarkEOrtega's Journalism Portfolio", 'What A Wonderful World', 'the traveling neighborhood', 'Mile In Mine', 'The Themes of My Life', 'The Ideal Copy', "Room 19's Blog 2016", 'beep boop', "i'm in too truthful a mood", 'One Stunning Single Egg', 'Cherry Area', 'ORGANMYTH', 'Rants from the Pants', 'Out of my Mind']
+
+
+['One Base on an Overthrow']
