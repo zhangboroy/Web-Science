@@ -1,0 +1,119 @@
+\documentclass{article}
+	\usepackage{geometry}
+	\geometry{left=2cm,right=2cm}
+	\usepackage{graphicx}
+	\usepackage{indentfirst}
+	\usepackage[hyphens]{url}
+	\usepackage{listings}
+	\usepackage{color}
+	\definecolor{gray}{rgb}{0.3,0.3,0.3}
+	\usepackage{caption}
+	\DeclareCaptionFont{white}{\color{white}}
+	\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+	\captionsetup[lstlisting]{format=listing,labelfont={bf,sf,white},textfont={bf,sf,white}}
+	\usepackage{xcolor}
+	\usepackage{booktabs}
+	\captionsetup[table]{labelfont=bf}
+	\usepackage[colorlinks,linkcolor=red]{hyperref}
+
+	\begin{document}
+		\begin{center}\textbf{Bo Zhang\\01063214}
+		\end{center}
+		\section{KNN}
+		Using the data from A8:\\
+		- Consider each row in the blog-term matrix as a 1000 dimension vector, corresponding to a blog.\\
+		- From chapter 8, replace numpredict.euclidean() with cosine as the distance metric. In other words, you'll be computing the cosine between vectors of 1000 dimensions.\\
+		- Use knnestimate() to compute the nearest neighbors for both:\\
+		\indent\url{http://f-measure.blogspot.com/}\\
+		\indent\url{http://ws-dl.blogspot.com/}\\
+		for k=\{1,2,5,10,20\}.\\
+
+		\noindent\textbf{Algorithm: }\\
+		\indent1. Open \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg10_submission/blogdata(allFilter).txt}{``blogdata(allFilter).txt''} to read the Blog data.\\
+		\indent2. Modify the script from ``Programming Collective Intelligence'' to replace euclidean() with cosine as the distance metric and replace the return of knnestimate() with the names of K ``nearest neighbors''.\\
+		\indent3. Use the script from ``Programming Collective Intelligence'' to get K ``nearest neighbors'' of ``F-Measure'' and ``Web Science and Digital Libraries Research Group''.\\
+
+		\noindent\textbf{Source code:}
+		\lstinputlisting[language=python, breakatwhitespace=false, label=Q1.py, caption=The content of Q1.py]{Q1.py}
+
+		\noindent\\\textbf{Results:}
+		\begin{table}[!htb]
+			\centering
+			\caption{\textbf{KNN Result}}
+			\begin{tabular}{ccc}
+				\toprule
+				\textbf{K} & \textbf{F-Measure} & \textbf{Web Science and Digital Libraries Research Group}\\
+				\midrule
+				1 & F-Measure & Web Science and Digital Libraries Research Group\\
+				\midrule
+				2 & F-Measure & Web Science and Digital Libraries Research Group\\
+				 & My Name Is Blue Canary & Anthems and Atleticos\\
+				\midrule
+				 & F-Measure & Web Science and Digital Libraries Research Group\\
+				 & My Name Is Blue Canary & Anthems and Atleticos\\
+				5 & KiDCHAIR & The Ideal Copy\\
+				 & One Base on an Overthrow & Pithy Title Here\\
+				 & SunStock Music & Sonology\\
+				\midrule
+				 & F-Measure & Web Science and Digital Libraries Research Group\\
+				 & My Name Is Blue Canary & Anthems and Atleticos\\
+				 & KiDCHAIR & The Ideal Copy\\
+				 & One Base on an Overthrow & Pithy Title Here\\
+				10 & SunStock Music & Sonology\\
+				 & Everything Flows & ELLIA TOWNSEND A2\\
+				 & Some Call It Noise.... & SEVEN1878\\
+				 & Indie Top 20 - The Blog! & macthemost\\
+				 & . & Indie Top 20 - The Blog!\\
+				 & Eli Jace | The Mind Is A Terrible Thing To Paste & The Great Adventure 2016\\
+				\midrule
+				 & F-Measure & Web Science and Digital Libraries Research Group\\
+				 & My Name Is Blue Canary & Anthems and Atleticos\\
+				 & KiDCHAIR & The Ideal Copy\\
+				 & One Base on an Overthrow & Pithy Title Here\\
+				 & SunStock Music & Sonology\\
+				 & Everything Flows & ELLIA TOWNSEND A2\\
+				 & Some Call It Noise.... & SEVEN1878\\
+				 & Indie Top 20 - The Blog! & macthemost\\
+				 & . & Indie Top 20 - The Blog!\\
+				20 & Eli Jace | The Mind Is A Terrible Thing To Paste & The Great Adventure 2016\\
+				 & Swinging Singles Club & SunStock Music\\
+				 & www.doginasweater.com Live Show Review Archive & Steel City Rust\\
+				 & the roofy leak & Hip In Detroit\\
+				 & no gift for the gab & STANLEY SAYS\\
+				 & Bleak Bliss & Mile In Mine\\
+				 & ALL MY BROTHERS AND SISTERS & hello my name is justin.\\
+				 & Steel City Rust & from a voice plantation\\
+				 & Myopiamuse & .\\
+				 & Hip In Detroit & no gift for the gab\\
+				 & SPACE KiDZ a GoGo & Everything Flows\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+
+		\section{SVM}
+		Rerun A9, Q2 but this time using LIBSVM. If you have n categories, you'll have to run it n times.\\
+		\indent Use the 1000 term vectors describing each blog as the features, and your mannally assigned classifications as the true values. Use 10-fold cross-validation and report the percentage correct for each of your categories.\\
+
+		\noindent\textbf{Algorithm:}\\
+		\indent1. Use the script from A8 to generate entries vectors, but do not filter the wordlist with frequencies and only generate entries in \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg10_submission/entries.txt}{``entries.txt''}. Save the entries vectors into \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg10_submission/feeddata.txt}{``feeddata.txt''}.\\
+		\indent2. Open \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg10_submission/feeddata.txt}{``feeddata.txt''} and \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg10_submission/entries.txt}{``entries.txt''} to read the title, word frequency vector and category of each entry.\\
+		\indent3. Generate 4 lists of categories based on the category list. For each category, use 10-fold cross-validation to split the categories lists and word frequency vectors into training group and testing group.\\
+		\indent4. For each split, use the script from ``Programming Collective Intelligence'' to train the SVM on the training group data, then use SVM to guess the classification of the testing group data.\\
+		\indent5. For each category, compute the average accuracy of all the splits.\\
+
+		\noindent\textbf{Source code:}
+		\lstinputlisting[language=python, breakatwhitespace=false, label=generatefeedvector.py, caption=The content of generatefeedvector.py]{generatefeedvector.py}
+		\lstinputlisting[language=python, breakatwhitespace=false, label=Q2.py, caption=The content of Q2.py]{Q2.py}
+
+		\noindent\\\textbf{Results:}
+		\begin{table}[!htb]
+			\centering
+			\caption{\textbf{SVM Prediction Performance Assessment}}
+			\begin{tabular}{cccc}
+				\toprule
+				\textbf{Dance} & \textbf{Music} & \textbf{Books} & \textbf{Movies}\\
+				83.0\% & 75.0\% & 70.0\% & 72.0\%\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+	\end{document}

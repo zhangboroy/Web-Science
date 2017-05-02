@@ -37,7 +37,6 @@ for i in range(len(categories)):
             
 
 svm_model.predict = lambda self, x: svm_predict([0], [x], self)[0][0]
-
 param = svm_parameter()
 param.kernel_type = RBF
 
