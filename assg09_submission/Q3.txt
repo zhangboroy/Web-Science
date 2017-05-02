@@ -1,0 +1,11 @@
+title	actual	predicted
+Street Style: Coachella 2017	Music	Dance
+The Book Review Podcast: Power and Punishment	Books	Books
+Open Book: Murder, He Wrote	Books	Books
+Young Adult: New Y.A. Novels Tackle Crime and Its Consequences	Books	Dance
+Listen to the Young Soprano Who Is Winning Awards and Acclaim	Music	Music
+Books of The Times: ‘The New Book of Snobs’ Updates the Shifting Science of Social Cues	Books	Books
+Andy Karl, Star of Musical ‘Groundhog Day,’ Is Injured During Preview	Movies	Music
+‘Star Wars: The Last Jedi’ Movie Trailer Is Released	Movies	Movies
+What in the Name of Pop Is Going on With Eurovision?	Music	Music
+Review: Angst, Jealousy and ‘My Entire High School Sinking Into the Sea’	Movies	Music

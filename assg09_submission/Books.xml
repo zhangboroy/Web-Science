@@ -1,0 +1,610 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:nyt="http://www.nytimes.com/namespaces/rss/2.0" version="2.0">
+  <channel>
+    <title>NYT &gt; Books</title>
+    <link>https://www.nytimes.com/section/books?partner=rss&amp;emc=rss</link>
+    <atom:link rel="self" type="application/rss+xml" href="http://www.nytimes.com/services/xml/rss/nyt/Books.xml"/>
+    <description/>
+    <language>en-us</language>
+    <copyright>Copyright 2017  The New York Times Company</copyright>
+    <lastBuildDate>Wed, 19 Apr 2017 03:51:59 GMT </lastBuildDate>
+    <image>
+      <title>NYT &gt; Books</title>
+      <url>https://static01.nyt.com/images/misc/NYT_logo_rss_250x40.png</url>
+      <link>https://www.nytimes.com/section/books?partner=rss&amp;emc=rss</link>
+    </image>
+    <item>
+      <title>Books of The Times: &#x2018;The New Book of Snobs&#x2019; Updates the Shifting Science of Social Cues</title>
+      <link>https://www.nytimes.com/2017/04/18/books/review-new-book-of-snobs-dj-taylor.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/18/books/review-new-book-of-snobs-dj-taylor.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/18/books/review-new-book-of-snobs-dj-taylor.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/19/arts/19BOOKTAYLOR-jp/19BOOKTAYLOR-jp-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit>Sonny Figueroa/The New York Times</media:credit>
+      <description>D.J. Taylor&#x2019;s clever and timely work contends that the world would be a poorer place without a bit of insolence and ostentation.</description>
+      <dc:creator>DWIGHT GARNER</dc:creator>
+      <pubDate>Tue, 18 Apr 2017 19:49:01 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The New Book of Snobs: A Definitive Guide to Modern Snobbery (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">D.J. Taylor</category>
+    </item>
+    <item>
+      <title>Books of The Times: &#x2018;Shattered&#x2019; Charts Hillary Clinton&#x2019;s Course Into the Iceberg</title>
+      <link>https://www.nytimes.com/2017/04/17/books/shattered-charts-hillary-clintons-course-into-the-iceberg.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/17/books/shattered-charts-hillary-clintons-course-into-the-iceberg.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/17/books/shattered-charts-hillary-clintons-course-into-the-iceberg.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/18/us/18bookallen-print/18bookallen-print-moth-v2.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit>Patricia Wall/The New York Times</media:credit>
+      <description>Jonathan Allen and Amie Parnes&#x2019;s account of the 2016 presidential election depicts a dysfunctional Clinton campaign and the many mistakes it made.</description>
+      <dc:creator>MICHIKO KAKUTANI</dc:creator>
+      <pubDate>Mon, 17 Apr 2017 19:54:24 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Shattered: Inside Hillary Clinton's Doomed Campaign (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Clinton, Hillary Rodham</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Presidential Election of 2016</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Allen, Jonathan</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Parnes, Amie</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Books and Literature</category>
+    </item>
+    <item>
+      <title>Nonfiction: Elizabeth Warren Lays Out the Reasons Democrats Should Keep Fighting</title>
+      <link>https://www.nytimes.com/2017/04/18/books/review/this-fight-is-our-fight-elizabeth-warren.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/18/books/review/this-fight-is-our-fight-elizabeth-warren.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/18/books/review/this-fight-is-our-fight-elizabeth-warren.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/18/books/review/krugman/krugman-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit/>
+      <description>In &#x201C;This Fight Is Our Fight,&#x201D; Elizabeth Warren offers a manifesto for the Democratic resistance to President Trump.</description>
+      <dc:creator>PAUL KRUGMAN</dc:creator>
+      <pubDate>Tue, 18 Apr 2017 17:38:01 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Warren, Elizabeth</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">This Fight Is Our Fight: The Battle to Save Americas Middle Class  (Book)</category>
+    </item>
+    <item>
+      <title>Nonfiction: Bush Nostalgia Is Overrated, but His Book of Paintings Is Not</title>
+      <link>https://www.nytimes.com/2017/04/17/books/review/george-w-bush-portraits-of-courage.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/17/books/review/george-w-bush-portraits-of-courage.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/17/books/review/george-w-bush-portraits-of-courage.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/23/books/review/23Alter2/23Alter2-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Sgt. First Class Michael R. Rodriguez, U.S. Army.</media:description>
+      <media:credit>President George W. Bush</media:credit>
+      <description>The work in George W. Bush&#x2019;s &#x201C;Portraits of Courage&#x201D; reveals a surprisingly adept artist who has dramatically improved his technique while also doing penance for a great disaster of American history.</description>
+      <dc:creator>JONATHAN ALTER</dc:creator>
+      <pubDate>Mon, 17 Apr 2017 09:00:01 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Portraits of Courage: A Commander in Chief's Tribute to America's Warriors (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Bush, George W</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Presidents and Presidency (US)</category>
+    </item>
+    <item>
+      <title>Match Book: Mom Seeks Novel for Family Book Club, No Kafka or Y.A. Allowed</title>
+      <link>https://www.nytimes.com/2017/04/18/books/review/match-book-family-book-club.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/18/books/review/match-book-family-book-club.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/18/books/review/match-book-family-book-club.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/03/16/books/review/16matchbook-image/16matchbook-image-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit>Joon Mo Kang</media:credit>
+      <description>In this installment of Match Book, a woman seeks a work of fiction that will unite her &#x201C;disparate group of avid readers,&#x201D; also known as her children.</description>
+      <dc:creator>NICOLE LAMY</dc:creator>
+      <pubDate>Tue, 18 Apr 2017 09:50:01 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+    </item>
+    <item>
+      <title>Q. &amp; A.: Tell Us 5 Things About Your Book: Stephen Tobolowsky&#x2019;s &#x2018;My Adventures With God&#x2019;</title>
+      <link>https://www.nytimes.com/2017/04/16/books/tell-us-5-things-about-your-book-stephen-tobolowskys-my-adventures-with-god.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/16/books/tell-us-5-things-about-your-book-stephen-tobolowskys-my-adventures-with-god.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/16/books/tell-us-5-things-about-your-book-stephen-tobolowskys-my-adventures-with-god.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/17/books/review/17tobolowsky-sub/17tobolowsky-sub-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit>Patricia Wall/The New York Times</media:credit>
+      <description>The actor talks about his new book, which details his &#x201C;always-changing, ever-fascinating&#x201D; relationship to spirituality, and particularly Judaism.</description>
+      <dc:creator>JOHN WILLIAMS</dc:creator>
+      <pubDate>Sun, 16 Apr 2017 20:53:19 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Tobolowsky, Stephen</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">My Adventures With God (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Writing and Writers</category>
+    </item>
+    <item>
+      <title>Nonfiction: Power and Punishment: Two New Books About Race and Crime</title>
+      <link>https://www.nytimes.com/2017/04/14/books/review/locking-up-our-own-james-forman-jr-colony-in-nation-chris-hayes.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/books/review/locking-up-our-own-james-forman-jr-colony-in-nation-chris-hayes.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/books/review/locking-up-our-own-james-forman-jr-colony-in-nation-chris-hayes.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/books/review/16Muhammad-Cover/16Muhammad-Cover-moth-v2.jpg" medium="image" height="151" width="151"/>
+      <media:description>Prisoners at prayer at Gadsden County Jail, Quincy, Fla.</media:description>
+      <media:credit>Fred R. Conrad for The New York Times</media:credit>
+      <description>James Forman Jr.&#x2019;s &#x201C;Locking Up Our Own&#x201D; and Chris Hayes&#x2019;s &#x201C;A Colony in a Nation&#x201D; compel readers to wrestle with very tough questions about racism, inequality and punishment.</description>
+      <dc:creator>KHALIL GIBRAN MUHAMMAD</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 19:32:17 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Locking Up Our Own: Crime and Punishment in Black America (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Forman, James Jr</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">A Colony in a Nation (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Hayes, Chris (1979- )</category>
+    </item>
+    <item>
+      <title>The Enthusiast: In Praise of Agatha Christie&#x2019;s Accidental Sleuths</title>
+      <link>https://www.nytimes.com/2017/04/13/books/agatha-christie-literary-obsessions.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/books/agatha-christie-literary-obsessions.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/books/agatha-christie-literary-obsessions.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14christie1/14christie1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>The mystery writer Agatha Christie at her home in Wallingford, England, in 1956. </media:description>
+      <media:credit>Hubert de Segonzac/Paris Match, via Getty Images</media:credit>
+      <description>The doyenne of mysteries is best known for Poirot and Miss Marple. But her less famous detectives are the ones who keep this reader coming back.</description>
+      <dc:creator>RADHIKA JONES</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 05:48:14 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Christie, Agatha</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_keyword">Mysteries</category>
+    </item>
+    <item>
+      <title>Nonfiction: People Have Limited Knowledge. What&#x2019;s the Remedy? Nobody Knows</title>
+      <link>https://www.nytimes.com/2017/04/18/books/review/knowledge-illusion-steven-sloman-philip-fernbach.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/18/books/review/knowledge-illusion-steven-sloman-philip-fernbach.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/18/books/review/knowledge-illusion-steven-sloman-philip-fernbach.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/23/books/review/0423-BKS-Harari/0423-BKS-Harari-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit>Janet Hansen</media:credit>
+      <description>In a complex world, people fail to realize just how ignorant they are. In &#x201C;The Knowledge Illusion,&#x201D; Steven Sloman and Philip Fernbach tell them.</description>
+      <dc:creator>YUVAL HARARI</dc:creator>
+      <pubDate>Tue, 18 Apr 2017 11:00:23 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Fernbach, Philip</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Sloman, Sloman</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Knowledge Illusion: Why We Never Think Alone (Book)</category>
+    </item>
+    <item>
+      <title>Fiction: A Debut Calls a Ferrante-Style Female Friendship to the Fore</title>
+      <link>https://www.nytimes.com/2017/04/18/books/review/marlena-julie-buntin.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/18/books/review/marlena-julie-buntin.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/18/books/review/marlena-julie-buntin.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/23/books/review/23Shapiro/23Shapiro-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Julie Buntin</media:description>
+      <media:credit>Nina Subin</media:credit>
+      <description>In Julie Buntin&#x2019;s first novel, &#x201C;Marlena,&#x201D; the past and present overlap in a portrait of an electric friendship cut short.</description>
+      <dc:creator>DEBORAH SHAPIRO</dc:creator>
+      <pubDate>Tue, 18 Apr 2017 09:00:13 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Buntin, Julie</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Marlena (Book)</category>
+    </item>
+    <item>
+      <title>Noted: Charlamagne Tha God Puts His Straight Talk in a Book</title>
+      <link>https://www.nytimes.com/2017/04/17/style/charlamagne-tha-god-book.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/17/style/charlamagne-tha-god-book.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/17/style/charlamagne-tha-god-book.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/fashion/16NOTED1/16NOTED1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Charlamagne Tha God in the iHeartRadio offices in TriBeCa, where he is a co-host of &#x201C;The Breakfast Club.&#x201D;</media:description>
+      <media:credit>Andrew White for The New York Times</media:credit>
+      <description>In &#x201C;Black Privilege,&#x201D; the radio and TV host recommends honesty as a form of self-empowerment.</description>
+      <dc:creator>STEVEN KURUTZ</dc:creator>
+      <pubDate>Mon, 17 Apr 2017 19:50:03 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Charlamagne Tha God</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Black Privilege (Book)</category>
+    </item>
+    <item>
+      <title>Maureen Chiquet&#x2019;s Move From Chanel to Self-Empowerment</title>
+      <link>https://www.nytimes.com/2017/04/15/fashion/maureen-chiquet-chanel-book.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/15/fashion/maureen-chiquet-chanel-book.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/15/fashion/maureen-chiquet-chanel-book.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/fashion/16CVCHIQUET/16CVCHIQUET-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Maureen Chiquet, the former global chief executive of Chanel, has a book deal and a new career path.</media:description>
+      <media:credit>Nathan Bajar for The New York Times</media:credit>
+      <description>Fired from her job with the French fashion brand, Ms. Chiquet emerged with a new career plan and a new relationship.</description>
+      <dc:creator>VANESSA FRIEDMAN</dc:creator>
+      <pubDate>Mon, 17 Apr 2017 14:27:33 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Chiquet, Maureen (1963- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Fashion and Apparel</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Chanel SA</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Beyond the Label: Women, Leadership, and Success on Our Own Terms (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Careers and Professions</category>
+    </item>
+    <item>
+      <title>Open Book: Murder, He Wrote</title>
+      <link>https://www.nytimes.com/2017/04/14/books/review/murder-he-wrote.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/books/review/murder-he-wrote.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/books/review/murder-he-wrote.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/books/review/0416-BKS-OpenBook/0416-BKS-OpenBook-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit>Joon Mo Kang</media:credit>
+      <description>The recently reissued &#x201C;Killings&#x201D; collects pieces of Calvin Trillin&#x2019;s true-crime writing for The New Yorker.</description>
+      <dc:creator>JOHN WILLIAMS</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 17:08:13 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Trillin, Calvin</category>
+    </item>
+    <item>
+      <title>Alec Baldwin Settles Scores in New Memoir</title>
+      <link>https://www.nytimes.com/2017/04/14/books/review/alec-baldwin-settles-scores-in-new-memoir.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/books/review/alec-baldwin-settles-scores-in-new-memoir.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/books/review/alec-baldwin-settles-scores-in-new-memoir.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/23/books/review/0423-BKS-LIST/0423-BKS-LIST-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Alec Baldwin</media:description>
+      <media:credit/>
+      <description>&#x201C;Nevertheless&#x201D; debuts at No. 5 on the hardcover nonfiction best-seller list.</description>
+      <dc:creator>PARUL SEHGAL</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 17:04:53 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+    </item>
+    <item>
+      <title>Bana al-Abed, Girl Whose Tweets Told of Aleppo&#x2019;s Horrors, Gets Book Deal</title>
+      <link>https://www.nytimes.com/2017/04/14/world/middleeast/bana-al-abed-syria-aleppo-twitter-book-deal.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/world/middleeast/bana-al-abed-syria-aleppo-twitter-book-deal.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/world/middleeast/bana-al-abed-syria-aleppo-twitter-book-deal.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/15/world/15Bana/15Bana-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Bana al-Abed and her mother, Fatemah, in Ankara, Turkey, in December.</media:description>
+      <media:credit>Adem Altan/Agence France-Presse &#x2014; Getty Images</media:credit>
+      <description>The 7-year-old, now a refugee in Turkey, hopes her book, to be published by Simon &amp; Schuster, will &#x201C;bring peace to children all over the world.&#x201D;</description>
+      <dc:creator>RUSSELL GOLDMAN</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 16:43:05 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Al-Abed, Bana</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Aleppo (Syria)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Twitter</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Refugees and Displaced Persons</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Simon &amp; Schuster Inc</category>
+    </item>
+    <item>
+      <title>The Book Review Podcast: Power and Punishment</title>
+      <link>https://www.nytimes.com/2017/04/14/books/review/power-and-punishment.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/books/review/power-and-punishment.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/books/review/power-and-punishment.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/13/books/review/13hayes/13hayes-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit/>
+      <description>Chris Hayes talks about &#x201C;A Colony in a Nation,&#x201D; and Jason Zinoman discusses &#x201C;Letterman: The Last Giant of Late Night.&#x201D;</description>
+      <dc:creator/>
+      <pubDate>Fri, 14 Apr 2017 19:23:07 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Hayes, Chris (1979- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">A Colony in a Nation (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Zinoman, Jason</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Letterman: The Last Giant of Late Night (Book)</category>
+    </item>
+    <item>
+      <title>Fiction: Gilded Cage: A Wealthy White Family in East Africa Faces an Islamist Uprising</title>
+      <link>https://www.nytimes.com/2017/04/14/books/review/the-dhow-house-jean-mcneil.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/books/review/the-dhow-house-jean-mcneil.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/books/review/the-dhow-house-jean-mcneil.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/books/review/0416-BKS-Finn/0416-BKS-Finn-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit>Anna Resmini</media:credit>
+      <description>In Jean McNeil&#x2019;s novel &#x201C;The Dhow House,&#x201D; East Africa&#x2019;s violent unrest threatens a privileged white family.</description>
+      <dc:creator>MELANIE FINN</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 13:00:23 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Dhow House (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">McNeil, Jean</category>
+    </item>
+    <item>
+      <title>Fiction: Robert Louis Stevenson Never Wrote This Novel. So Brian Doyle Did It for Him.</title>
+      <link>https://www.nytimes.com/2017/04/14/books/review/-adventures-of-john-carson-in-several-quarters-of-the-world-brian-doyle-robert-louis-stevenson.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/books/review/-adventures-of-john-carson-in-several-quarters-of-the-world-brian-doyle-robert-louis-stevenson.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/books/review/-adventures-of-john-carson-in-several-quarters-of-the-world-brian-doyle-robert-louis-stevenson.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/books/review/16Davidson/16Davidson-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Robert Louis Stevenson at work.</media:description>
+      <media:credit>Culture Club/Getty Images</media:credit>
+      <description>Brian Doyle&#x2019;s &#x201C;The Adventures of John Carson in Several Quarters of the World&#x201D; is an affectionate homage to the author of &#x201C;Treasure Island&#x201D; anchored in the months he spent living in San Francisco.</description>
+      <dc:creator>JENNY DAVIDSON</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 11:00:32 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Stevenson, Robert Louis</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Adventures of John Carson in Several Quarters of the World: A Novel of Robert Louis Stevenson (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Brian Doyle (1956- )</category>
+    </item>
+    <item>
+      <title>Nonfiction: A New Biography of Martin Luther Reveals the Life Beyond the Theses</title>
+      <link>https://www.nytimes.com/2017/04/14/books/review/martin-luther-renegade-and-prophet-lyndal-roper.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/books/review/martin-luther-renegade-and-prophet-lyndal-roper.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/books/review/martin-luther-renegade-and-prophet-lyndal-roper.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/books/review/16Pettegree/16Pettegree-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Luther in a 1523 engraving.</media:description>
+      <media:credit>GraphicaArtis/Getty Images</media:credit>
+      <description>In &#x201C;Martin Luther,&#x201D; Lyndal Roper explores the theologian&#x2019;s life and improbable career.</description>
+      <dc:creator>ANDREW PETTEGREE</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 11:00:31 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Martin Luther: Renegade and Prophet (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Luther, Martin</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Roper, Lyndal (1956- )</category>
+    </item>
+    <item>
+      <title>Letters to the Editor</title>
+      <link>https://www.nytimes.com/2017/04/14/books/review/letters-to-the-editor.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/books/review/letters-to-the-editor.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/books/review/letters-to-the-editor.html?partner=rss&amp;emc=rss"/>
+      <description>Readers respond to Fran Lebowitz, Angus Deaton&#x2019;s review &#x201C;The Crisis of the Middle-Class Constitution&#x201D; and more.</description>
+      <dc:creator/>
+      <pubDate>Fri, 14 Apr 2017 11:00:02 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Books and Literature</category>
+    </item>
+    <item>
+      <title>Nonfiction: The South (and the West) through Joan Didion&#x2019;s Eyes</title>
+      <link>https://www.nytimes.com/2017/04/14/books/review/-south-and-west-joan-didion.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/books/review/-south-and-west-joan-didion.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/books/review/-south-and-west-joan-didion.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/books/review/16Lailami/16Lailami-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Joan Didion with her Corvette, 1971.</media:description>
+      <media:credit>Julian Wasser</media:credit>
+      <description>Through excerpts from her notebooks, Joan Didion recounts a monthlong road trip through the Gulf states during the 1970s in &#x201C;South and West.&#x201D;</description>
+      <dc:creator>LAILA LALAMI</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 09:00:41 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Didion, Joan</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">South and West: From a Notebook (Book)</category>
+    </item>
+    <item>
+      <title>Nonfiction: Have a Banana. On Second Thought, Don&#x2019;t.</title>
+      <link>https://www.nytimes.com/2017/04/14/books/review/never-out-of-season-raj-patel.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/books/review/never-out-of-season-raj-patel.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/books/review/never-out-of-season-raj-patel.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/books/review/16patel/16patel-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>The 19th-century potato blight in Ireland.</media:description>
+      <media:credit>Illustrated London News/Getty Images</media:credit>
+      <description>In &#x201C;Never Out of Season,&#x201D; Robert Dunn looks at how modern societies make themselves vulnerable to crop devastation.</description>
+      <dc:creator>RAJ PATEL</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 18:36:56 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Never Out of Season: How Having the Food We Want When We Want It Threatens Our Food Supply and Our Future (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Dunn, Robert R (1975- )</category>
+    </item>
+    <item>
+      <title>Fiction: In This Tale of Online Intimacy, the Only Wise Characters Are Luddites</title>
+      <link>https://www.nytimes.com/2017/04/13/books/review/sympathy-olivia-sudjic.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/books/review/sympathy-olivia-sudjic.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/books/review/sympathy-olivia-sudjic.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/books/review/0416-BKS-Phillips/0416-BKS-Phillips-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit>Miguel Porlan</media:credit>
+      <description>&#x201C;Sympathy,&#x201D; Olivia Sudjic&#x2019;s debut novel about social media obsession and digital heartbreak, tracks the dark side of online companionship.</description>
+      <dc:creator>KAITLIN PHILLIPS</dc:creator>
+      <pubDate>Thu, 13 Apr 2017 21:00:14 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Sympathy (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Sudjic, Olivia</category>
+    </item>
+    <item>
+      <title>Crime: Silos, Sulfur and Stolen Identities: The Best of New Crime Fiction</title>
+      <link>https://www.nytimes.com/2017/04/13/books/review/fallout-sara-paretsky.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/books/review/fallout-sara-paretsky.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/books/review/fallout-sara-paretsky.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/books/review/0416-BKS-Crime/0416-BKS-Crime-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit>Christoph Niemann</media:credit>
+      <description>This week&#x2019;s crime column features two familiar sleuths, V.I. Warshawski and Lincoln Rhyme, as well as a disgraced reporter and a Victorian detective.</description>
+      <dc:creator>MARILYN STASIO</dc:creator>
+      <pubDate>Thu, 13 Apr 2017 21:00:01 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Fallout (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Paretsky, Sara</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Burial Hour (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Deaver, Jeffery</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Perfect Stranger (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Miranda, Megan (Author)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">A Fever of the Blood (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">de Muriel, Oscar</category>
+    </item>
+    <item>
+      <title>Paperback Row</title>
+      <link>https://www.nytimes.com/2017/04/13/books/review/paperback-row.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/books/review/paperback-row.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/books/review/paperback-row.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/13/books/review/prstrip/prstrip-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit/>
+      <description>Six new paperbacks to check out this week.</description>
+      <dc:creator>JOUMANA KHATIB</dc:creator>
+      <pubDate>Thu, 13 Apr 2017 22:26:48 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+    </item>
+    <item>
+      <title>11 New Books We Recommend This Week</title>
+      <link>https://www.nytimes.com/2017/04/13/books/review/11-new-books-we-recommend-this-week.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/books/review/11-new-books-we-recommend-this-week.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/books/review/11-new-books-we-recommend-this-week.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/books/review/16edchoice-1/16edchoice-1-moth-v2.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit/>
+      <description>Suggested reading from critics and editors at The New York Times.</description>
+      <dc:creator/>
+      <pubDate>Fri, 14 Apr 2017 15:26:27 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+    </item>
+    <item>
+      <title>By the Book: Lesley Stahl: By the Book</title>
+      <link>https://www.nytimes.com/2017/04/13/books/review/lesley-stahl-by-the-book.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/books/review/lesley-stahl-by-the-book.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/books/review/lesley-stahl-by-the-book.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/books/review/0416-BKS-ByTheBook/0416-BKS-ByTheBook-moth-v3.jpg" medium="image" height="151" width="151"/>
+      <media:description>Lesley Stahl</media:description>
+      <media:credit>Illustration by Jillian Tamaki</media:credit>
+      <description>The journalist and author of &#x201C;Becoming Grandma&#x201D; says Ann Patchett&#x2019;s &#x201C;Bel Canto&#x201D; reminded her of Gabriel Garc&#xED;a M&#xE1;rquez, a high compliment: &#x201C;My all-time favorite book . . . is &#x2018;Love in the Time of Cholera.&#x2019;&#x201D;</description>
+      <dc:creator/>
+      <pubDate>Thu, 13 Apr 2017 11:00:01 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Writing and Writers</category>
+    </item>
+    <item>
+      <title>Bookends: Which Force is More Harmful to the Arts: Elitism or Populism?</title>
+      <link>https://www.nytimes.com/2017/04/13/books/review/which-force-is-more-harmful-to-the-arts-elitism-or-populism.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/books/review/which-force-is-more-harmful-to-the-arts-elitism-or-populism.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/books/review/which-force-is-more-harmful-to-the-arts-elitism-or-populism.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2013/09/08/books/review/Bookends-Adam-Kirsch/Bookends-Adam-Kirsch-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Adam Kirsch</media:description>
+      <media:credit>Illustration by R. Kikuo Johnson</media:credit>
+      <description>Adam Kirsch and Liesl Schillinger discuss the art yielded by populist and elite mind-sets.</description>
+      <dc:creator>ADAM KIRSCH and LIESL SCHILLINGER</dc:creator>
+      <pubDate>Thu, 13 Apr 2017 10:00:01 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Writing and Writers</category>
+    </item>
+    <item>
+      <title>Patricia McKissack, Prolific Author Who Championed Black Heroes, Dies at 72</title>
+      <link>https://www.nytimes.com/2017/04/12/books/obituary-patricia-mckissack-dead-childrens-book-author.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/books/obituary-patricia-mckissack-dead-childrens-book-author.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/books/obituary-patricia-mckissack-dead-childrens-book-author.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/13/arts/13mckissack-obit-1/13mckissack-obit-1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Patricia McKissack and her husband, Fredrick, shared a &#x201C;missionary zeal&#x201D; to write books about black personalities &#x201C;where there hadn&#x2019;t been any before,&#x201D; their son said.</media:description>
+      <media:credit>John L. White/St. Louis Post-Dispatch, via Associated Press</media:credit>
+      <description>Ms. McKissack looked for children&#x2019;s literature about black history and saw a void. So she filled it, writing more than 100 books.</description>
+      <dc:creator>SAM ROBERTS</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 20:55:40 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">McKissack, Patricia C</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Deaths (Obituaries)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Blacks</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Children and Childhood</category>
+    </item>
+    <item>
+      <title>Q. &amp; A.: Tell Us 5 Things About Your Book: 21 Great Buildings Throughout History</title>
+      <link>https://www.nytimes.com/2017/04/12/books/tell-us-5-things-about-your-book-21-great-buildings-throughout-history.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/books/tell-us-5-things-about-your-book-21-great-buildings-throughout-history.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/books/tell-us-5-things-about-your-book-21-great-buildings-throughout-history.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/12/books/12fallen/12fallen-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit/>
+      <description>In &#x201C;Fallen Glory,&#x201D; James Crawford provides a tour from the Tower of Babel to the World Trade Center.</description>
+      <dc:creator>JOHN WILLIAMS</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 23:01:17 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Writing and Writers</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Fallen Glory: The Lives and Deaths of History's Greatest Buildings (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Crawford, James (Author)</category>
+    </item>
+    <item>
+      <title>James Baldwin&#x2019;s Archive, Long Hidden, Comes (Mostly) Into View</title>
+      <link>http://www.nytimes.com/2017/04/12/arts/james-baldwins-archive-long-hidden-comes-mostly-into-view.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">http://www.nytimes.com/2017/04/12/arts/james-baldwins-archive-long-hidden-comes-mostly-into-view.html</guid>
+      <atom:link rel="standout" href="http://www.nytimes.com/2017/04/12/arts/james-baldwins-archive-long-hidden-comes-mostly-into-view.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/12/us/15archive4/15archive4-moth-v2.jpg" medium="image" height="151" width="151"/>
+      <media:description>A page from &#x201C;The Amen Corner,&#x201D; a three-act play by James Baldwin, part of his personal papers that are now at the Schomburg Center for Research in Black Culture.</media:description>
+      <media:credit>Emon Hassan for The New York Times</media:credit>
+      <description>The Schomburg Center in Harlem has bought this author&#x2019;s rich archive. But the private letters admirers have longed to read will largely remain under seal.</description>
+      <dc:creator>JENNIFER SCHUESSLER</dc:creator>
+      <pubDate>Thu, 13 Apr 2017 00:13:17 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Baldwin, James (1924-87)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Schomburg Center for Research in Black Culture</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">New York Public Library</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Letters</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Archives and Records</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Blacks</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Writing and Writers</category>
+    </item>
+    <item>
+      <title>Books of The Times: The Osage Indians Struck It Rich, Then Paid the Price</title>
+      <link>https://www.nytimes.com/2017/04/12/books/review-killers-of-flower-moon-david-grann.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/books/review-killers-of-flower-moon-david-grann.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/books/review-killers-of-flower-moon-david-grann.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/13/arts/13book-grann-print1/13book-grann-print1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>The Osage Indian sisters, from left, Minnie, Anna and Mollie Burkhart. </media:description>
+      <media:credit>Raymond Red Corn</media:credit>
+      <description>&#x201C;Killers of the Flower Moon,&#x201D; David Grann&#x2019;s new book, recalls how Indians were killed by whites who coveted the oil under their land in 1920s Oklahoma.</description>
+      <dc:creator>DWIGHT GARNER</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 21:16:16 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Killers of the Flower Moon: The Osage Murders and the Birth of the FBI (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Grann, David</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Native Americans</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Murders, Attempted Murders and Homicides</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Oklahoma</category>
+    </item>
+    <item>
+      <title>Bill Cosby&#x2019;s Books Join &#x2018;Most Challenged&#x2019; List</title>
+      <link>http://www.nytimes.com/2017/04/12/books/bill-cosbys-books-join-most-challenged-list.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">http://www.nytimes.com/2017/04/12/books/bill-cosbys-books-join-most-challenged-list.html</guid>
+      <atom:link rel="standout" href="http://www.nytimes.com/2017/04/12/books/bill-cosbys-books-join-most-challenged-list.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/13/arts/13cosby/13cosby-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>One of the titles in Bill Cosby&#x2019;s &#x201C;Little Bill&#x201D; book series.</media:description>
+      <media:credit>Scholastic</media:credit>
+      <description>There have been calls for the removal of Mr. Cosby&#x2019;s children&#x2019;s book series from schools and libraries.</description>
+      <dc:creator>GRAHAM BOWLEY</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 19:15:22 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Sex Crimes</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Cosby, Bill</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">American Library Assn</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_keyword">Little Bill</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Censorship</category>
+    </item>
+    <item>
+      <title>A Second Bite of the Wonka Bar: Reimagining &#x2018;Charlie&#x2019; for Broadway</title>
+      <link>https://www.nytimes.com/2017/04/12/theater/a-second-bite-of-the-wonka-bar-reimagining-charlie-for-broadway.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/theater/a-second-bite-of-the-wonka-bar-reimagining-charlie-for-broadway.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/theater/a-second-bite-of-the-wonka-bar-reimagining-charlie-for-broadway.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/arts/16charlierevamp5-1491925827458/16charlierevamp5-1491925827458-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>A golden ticket: Jake Ryan Flynn as Charlie Bucket in &#x201C;Charlie and the Chocolate Factory&#x201D; on Broadway.</media:description>
+      <media:credit>Sara Krulwich/The New York Times</media:credit>
+      <description>The New York musical version of &#x201C;Charlie and the Chocolate Factory&#x201D; required a new director, a new cast, a partial rewrite and old favorite songs.</description>
+      <dc:creator>MICHAEL PAULSON</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 17:26:44 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Theater</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Charlie and the Chocolate Factory (Play)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">O'Brien, Jack (1939- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Mendes, Sam</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Borle, Christian</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Dahl, Roald</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Charlie and the Chocolate Factory (Book)</category>
+    </item>
+    <item>
+      <title>Nonfiction: A New Rule Book for the Great Game</title>
+      <link>https://www.nytimes.com/2017/04/12/books/review/chessboard-and-the-web-anne-marie-slaughter.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/books/review/chessboard-and-the-web-anne-marie-slaughter.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/books/review/chessboard-and-the-web-anne-marie-slaughter.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/books/review/16Schmemann/16Schmemann-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Anne-Marie Slaughter</media:description>
+      <media:credit>New America</media:credit>
+      <description>In &#x201C;The Chessboard and the Web,&#x201D; Anne-Marie Slaughter calls on foreign-policy makers to radically update their vision of global order.</description>
+      <dc:creator>SERGE SCHMEMANN</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 11:00:21 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Slaughter, Anne-Marie</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Chessboard and the Web: Strategies of Connection in a Networked World (Book)</category>
+    </item>
+    <item>
+      <title>The Shortlist: Food Marks Milestones in These Culinary Collections</title>
+      <link>https://www.nytimes.com/2017/04/12/books/review/foodoirs.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/books/review/foodoirs.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/books/review/foodoirs.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/books/review/0416-BKS-Shortlist/0416-BKS-Shortlist-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit>John Gall</media:credit>
+      <description>Three food-oriented memoirs take readers as far as the Pacific Northwest and Iran, and as near as a New York matriarch&#x2019;s kitchen.</description>
+      <dc:creator>MAX WATMAN</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 11:00:21 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Temporary Bride: A Memoir of Love and Food in Iran (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Klinec, Jennifer</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">A Year Right Here: Adventures With Food and Family in the Great Nearby (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Thomson, Jess</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">My Mother's Kitchen: Breakfast, Lunch, Dinner, and the Meaning of Life (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Gethers, Peter</category>
+    </item>
+    <item>
+      <title>Young Adult: New Y.A. Novels Tackle Crime and Its Consequences</title>
+      <link>https://www.nytimes.com/2017/04/12/books/review/ya-fiction-crime-and-consequences.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/books/review/ya-fiction-crime-and-consequences.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/books/review/ya-fiction-crime-and-consequences.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/books/review/0416-BKS-Doll1/0416-BKS-Doll1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit/>
+      <description>A roundup of new young adult fiction includes stories of a thief seeking justice, a skeleton revealing a city&#x2019;s shameful past and a gorilla spinning tales.</description>
+      <dc:creator>JEN DOLL</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 09:00:40 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Bang (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Lyga, Barry</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Overturned (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Giles, Lamar</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Murderer's Ape (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Wegelius, Jakob</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Graves, Peter (1942- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">A List of Cages (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Roe, Robin (Author)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Dreamland Burning (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Latham, Jennifer</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">City of Saints and Thieves (Book)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Anderson, Natalie C</category>
+    </item>
+  </channel>
+</rss>

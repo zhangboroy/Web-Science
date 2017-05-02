@@ -1,0 +1,629 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:nyt="http://www.nytimes.com/namespaces/rss/2.0" version="2.0">
+  <channel>
+    <title>NYT &gt; Music</title>
+    <link>https://www.nytimes.com/section/arts/music?partner=rss&amp;emc=rss</link>
+    <atom:link rel="self" type="application/rss+xml" href="http://www.nytimes.com/services/xml/rss/nyt/Music.xml"/>
+    <description/>
+    <language>en-us</language>
+    <copyright>Copyright 2017  The New York Times Company</copyright>
+    <lastBuildDate>Wed, 19 Apr 2017 04:16:11 GMT </lastBuildDate>
+    <image>
+      <title>NYT &gt; Music</title>
+      <url>https://static01.nyt.com/images/misc/NYT_logo_rss_250x40.png</url>
+      <link>https://www.nytimes.com/section/arts/music?partner=rss&amp;emc=rss</link>
+    </image>
+    <item>
+      <title>Los Angeles Has America&#x2019;s Most Important Orchestra. Period.</title>
+      <link>https://www.nytimes.com/2017/04/18/arts/music/los-angeles-has-americas-most-important-orchestra-period.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/18/arts/music/los-angeles-has-americas-most-important-orchestra-period.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/18/arts/music/los-angeles-has-americas-most-important-orchestra-period.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/19/arts/19philharmonic2/19philharmonic2-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>The Icelandic rock band Sigur Ros performing with the Los Angeles Philharmonic.</media:description>
+      <media:credit>Craig T. Mathew/Mathew Imaging</media:credit>
+      <description>Our critic finds that an inspiring leader has left the Los Angeles Philharmonic in peerless artistic shape.</description>
+      <dc:creator>ZACHARY WOOLFE</dc:creator>
+      <pubDate>Tue, 18 Apr 2017 20:28:22 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Classical Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Los Angeles Philharmonic</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">New York Philharmonic</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Sigur Ros</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Borda, Deborah</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Dudamel, Gustavo</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_keyword">Reykjavik Festival</category>
+    </item>
+    <item>
+      <title>How Prince Concealed His Addiction: Aspirin Bottles of Opiates</title>
+      <link>https://www.nytimes.com/2017/04/17/arts/music/prince-opioid-death.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/17/arts/music/prince-opioid-death.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/17/arts/music/prince-opioid-death.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/18/arts/18PRINCE/18PRINCE-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Prince, who died last April at the age of 57, was concealing an addiction to opiates, according to investigators.</media:description>
+      <media:credit>Jumana El Heloueh/Reuters</media:credit>
+      <description>Newly released court documents reveal that the singer&#x2019;s home was strewn with narcotic painkillers for which he did not have prescriptions.</description>
+      <dc:creator>JOE COSCARELLI and SERGE F. KOVALESKI</dc:creator>
+      <pubDate>Mon, 17 Apr 2017 18:32:50 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Prince (1958- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Pain-Relieving Drugs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Schulenberg, Michael T (1969- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Minnesota</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Drug Abuse and Traffic</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Pop and Rock Music</category>
+    </item>
+    <item>
+      <title>Review: Kendrick Lamar&#x2019;s Anxiety Leads to Joy and Jabs on New Album</title>
+      <link>https://www.nytimes.com/2017/04/16/arts/music/kendrick-lamar-damn-review.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/16/arts/music/kendrick-lamar-damn-review.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/16/arts/music/kendrick-lamar-damn-review.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/17/arts/17kendrick2/17kendrick2-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Kendrick Lamar at the Music Hall of Williamsburg in December.</media:description>
+      <media:credit>Bryan Bedder/Getty Images for American Express</media:credit>
+      <description>The rapper reflects on interior concerns on his &#x201C;tart and punchy&#x201D; fourth studio album, &#x201C;DAMN.&#x201D;</description>
+      <dc:creator>JON CARAMANICA</dc:creator>
+      <pubDate>Sun, 16 Apr 2017 21:28:37 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Rap and Hip-Hop</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Lamar, Kendrick</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">DAMN (Album)</category>
+    </item>
+    <item>
+      <title>A Word With: After a Half-Century in Music, Clive Davis Is Still in Love</title>
+      <link>https://www.nytimes.com/2017/04/17/arts/music/clive-davis-soundtrack-of-our-lives-film-interview.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/17/arts/music/clive-davis-soundtrack-of-our-lives-film-interview.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/17/arts/music/clive-davis-soundtrack-of-our-lives-film-interview.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/18/arts/18CLIVE1/18CLIVE1-moth-v2.jpg" medium="image" height="151" width="151"/>
+      <media:description>Clive Davis&#x2019;s long career in the music business is the subject of a documentary opening the Tribeca Film Festival: &#x201C;Clive Davis: The Soundtrack of Our Lives.&#x201D;</media:description>
+      <media:credit>Bryan Derballa for The New York Times</media:credit>
+      <description>This executive&#x2019;s long career is the subject of a new documentary, &#x201C;Clive Davis: The Soundtrack of Our Lives.&#x201D;</description>
+      <dc:creator>BEN SISARIO</dc:creator>
+      <pubDate>Mon, 17 Apr 2017 19:44:42 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Davis, Clive</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Tribeca Film Festival (NYC)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Documentary Films and Programs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Clive Davis: The Soundtrack of Our Lives (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Perkel, Chris</category>
+    </item>
+    <item>
+      <title>Allan Holdsworth, Virtuoso Guitarist, Dies at 70</title>
+      <link>https://www.nytimes.com/2017/04/18/arts/music/allan-holdsworth-virtuoso-guitarist-dies-at-70.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/18/arts/music/allan-holdsworth-virtuoso-guitarist-dies-at-70.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/18/arts/music/allan-holdsworth-virtuoso-guitarist-dies-at-70.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/19/arts/19holdsworth-obit/19holdsworth-obit-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Allan Holdsworth performing with the progressive rock group U.K. in Central Park in 1978.</media:description>
+      <media:credit>Michael Putland/Getty Images</media:credit>
+      <description>Mr. Holdsworth, whose talent amazed better-known peers like Frank Zappa and Eddie Van Halen, played in seminal bands including Soft Machine before making a series of solo albums.</description>
+      <dc:creator>GIOVANNI RUSSONELLO</dc:creator>
+      <pubDate>Tue, 18 Apr 2017 23:24:36 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Holdsworth, Allan (1946-2017)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Pop and Rock Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Jazz</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Deaths (Obituaries)</category>
+    </item>
+    <item>
+      <title>Sylvia Moy, Songwriter Who Worked With Stevie Wonder, Dies at 78</title>
+      <link>https://www.nytimes.com/2017/04/18/arts/music/sylvia-moy-songwriter-who-worked-with-stevie-wonder-dies-at-78.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/18/arts/music/sylvia-moy-songwriter-who-worked-with-stevie-wonder-dies-at-78.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/18/arts/music/sylvia-moy-songwriter-who-worked-with-stevie-wonder-dies-at-78.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/19/arts/19moy-obit/19moy-obit-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Sylvia Moy and Stevie Wonder, with, behind from left, James Jamerson, Earl Van Dyke and Robert White of the Funk Brothers, in 1967.</media:description>
+      <media:credit>Motown Records Archives</media:credit>
+      <description>Ms. Moy was a Motown record producer who helped write hits like &#x201C;My Cherie Amour&#x201D; and &#x201C;Uptight (Everything&#x2019;s Alright).&#x201D;</description>
+      <dc:creator>RICHARD SANDOMIR</dc:creator>
+      <pubDate>Tue, 18 Apr 2017 23:21:47 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Deaths (Obituaries)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Moy, Sylvia (1938-2017)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Wonder, Stevie</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Motown Records</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Gaye, Marvin</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Uptight (Everything's Alright) (Song)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">My Cherie Amour (Song)</category>
+    </item>
+    <item>
+      <title>Diamanda Gal&#xE1;s Delves Into Darkness, Revisiting 8 Haunting Tracks</title>
+      <link>https://www.nytimes.com/2017/04/18/arts/music/diamanda-galas-key-tracks.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/18/arts/music/diamanda-galas-key-tracks.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/18/arts/music/diamanda-galas-key-tracks.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/19/arts/19DIAMANDA1/19DIAMANDA1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Diamanda Gal&#xE1;s released two albums simultaneously in March, &#x201C;All the Way&#x201D; and &#x201C;At Saint Thomas the Apostle Harlem.&#x201D;</media:description>
+      <media:credit>Chad Batka for The New York Times</media:credit>
+      <description>The avant-garde vocalist looks back at her nearly 40-year career as she releases two new albums.</description>
+      <dc:creator>ZACHARY WOOLFE</dc:creator>
+      <pubDate>Tue, 18 Apr 2017 19:15:38 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Blues Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Galas, Diamanda</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">All the Way (Album)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">At Saint Thomas the Apostle Harlem (Album)</category>
+    </item>
+    <item>
+      <title>Alan Lomax Recordings Are Digitized in a New Online Collection</title>
+      <link>https://www.nytimes.com/2017/04/18/arts/music/alan-lomax-recordings-the-global-jukebox-digitized.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/18/arts/music/alan-lomax-recordings-the-global-jukebox-digitized.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/18/arts/music/alan-lomax-recordings-the-global-jukebox-digitized.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/19/arts/19lomax2/19lomax2-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Alan Lomax, in 1992. As computer technology progressed, Lomax envisioned a searchable database for music from around the world.</media:description>
+      <media:credit>G. Paul Burnett/The New York Times</media:credit>
+      <description>The project, the Global Jukebox, has more than 6,000 songs from 1,000 cultures &#x2014; including many songs from Lomax&#x2019;s personal collection.</description>
+      <dc:creator>ANDREW R. CHOW</dc:creator>
+      <pubDate>Tue, 18 Apr 2017 19:00:01 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Archives and Records</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Lomax, Alan</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Association for Cultural Equity</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Library of Congress</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Global Jukebox</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Audio Recordings, Downloads and Streaming</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_keyword">ACE Online Archives</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_keyword">ethnomusicology</category>
+    </item>
+    <item>
+      <title>Listen to the Young Soprano Who Is Winning Awards and Acclaim</title>
+      <link>https://www.nytimes.com/2017/04/18/arts/music/opera-nadine-sierra-tucker-award.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/18/arts/music/opera-nadine-sierra-tucker-award.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/18/arts/music/opera-nadine-sierra-tucker-award.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/19/arts/19tuckeritem/19tuckeritem-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>The soprano Nadine Sierra, who has just won the 2017 Richard Tucker Award, in Mozart&#x2019;s &#x201C;Idomeneo&#x201D; in March at the Metropolitan Opera.</media:description>
+      <media:credit>Hiroyuki Ito for The New York Times</media:credit>
+      <description>Nadine Sierra, 28, started getting noticed when she was only in high school. Now she&#x2019;s won the prestigious Richard Tucker Award and its $50,000 prize.</description>
+      <dc:creator>MICHAEL COOPER</dc:creator>
+      <pubDate>Tue, 18 Apr 2017 12:00:24 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Opera</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Tucker, Richard, Music Foundation</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Sierra, Nadine</category>
+    </item>
+    <item>
+      <title>Concerts Celebrate Isang Yun, a Musical Bridge Between Asia and Europe</title>
+      <link>https://www.nytimes.com/2017/04/18/arts/music/concerts-isang-yun-asia-europe.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/18/arts/music/concerts-isang-yun-asia-europe.html</guid>
+      <media:content url="https://static01.nyt.com/images/2017/04/18/arts/18yun-inyt/18yun-inyt-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Isang Yun was born in what is now South Korea in 1917. He moved to West Berlin to study in 1957 and was later jailed in South Korea, but he eventually became a West German citizen.</media:description>
+      <media:credit>Keystone/Getty Images</media:credit>
+      <description>Mr. Yun, a Korean composer who later lived in West Berlin, explored questions of identity. Events this season will mark the centenary of his birth.</description>
+      <dc:creator>REBECCA SCHMID</dc:creator>
+      <pubDate>Tue, 18 Apr 2017 07:23:04 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Yun, Isang</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Classical Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">South Korea</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">North Korea</category>
+    </item>
+    <item>
+      <title>My Favorite Page: &#x2018;It Demands Everything of You&#x2019;: Alisa Weilerstein on Bach</title>
+      <link>https://www.nytimes.com/2017/04/17/arts/music/it-demands-everything-of-you-alisa-weilerstein-on-bach.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/17/arts/music/it-demands-everything-of-you-alisa-weilerstein-on-bach.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/17/arts/music/it-demands-everything-of-you-alisa-weilerstein-on-bach.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/15/arts/18alisa2/18alisa2-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Alisa Weilerstein in her dressing room at Boston Symphony Hall.</media:description>
+      <media:credit>Tony Luong for The New York Times</media:credit>
+      <description>Ms. Weilerstein, set to perform all six of Bach&#x2019;s solo cello suites in a single concert on Saturday, chooses her favorite page of the score.</description>
+      <dc:creator>DAVID ALLEN</dc:creator>
+      <pubDate>Mon, 17 Apr 2017 22:56:17 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Classical Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Ninety-Second Street Y</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Weilerstein, Alisa</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Bach, Johann Sebastian</category>
+    </item>
+    <item>
+      <title>Noted: Charlamagne Tha God Puts His Straight Talk in a Book</title>
+      <link>https://www.nytimes.com/2017/04/17/style/charlamagne-tha-god-book.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/17/style/charlamagne-tha-god-book.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/17/style/charlamagne-tha-god-book.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/fashion/16NOTED1/16NOTED1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Charlamagne Tha God in the iHeartRadio offices in TriBeCa, where he is a co-host of &#x201C;The Breakfast Club.&#x201D;</media:description>
+      <media:credit>Andrew White for The New York Times</media:credit>
+      <description>In &#x201C;Black Privilege,&#x201D; the radio and TV host recommends honesty as a form of self-empowerment.</description>
+      <dc:creator>STEVEN KURUTZ</dc:creator>
+      <pubDate>Mon, 17 Apr 2017 19:50:03 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Charlamagne Tha God</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Black Privilege (Book)</category>
+    </item>
+    <item>
+      <title>Street Style: Coachella 2017</title>
+      <link>https://www.nytimes.com/2017/04/17/fashion/street-style-coachella-2017.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/17/fashion/street-style-coachella-2017.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/17/fashion/street-style-coachella-2017.html?partner=rss&amp;emc=rss"/>
+      <description>Scenes from the annual music and arts festival.</description>
+      <dc:creator>THE NEW YORK TIMES</dc:creator>
+      <pubDate>Mon, 17 Apr 2017 18:31:13 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Coachella Valley Music and Arts Festival</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Fashion and Apparel</category>
+    </item>
+    <item>
+      <title>The Chainsmokers Prove They&#x2019;re a Hit on the Album Chart, Too</title>
+      <link>https://www.nytimes.com/2017/04/17/arts/music/chainsmokers-memories-billboard-chart.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/17/arts/music/chainsmokers-memories-billboard-chart.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/17/arts/music/chainsmokers-memories-billboard-chart.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/18/arts/18arts/18arts-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Alex Pall, left, and Andrew Taggart of the Chainsmokers, whose &#x201C;Memories...Do Not Open&#x201D; debuted at No. 1 on the Billboard album charts.</media:description>
+      <media:credit>Mauricio Santana/Getty Images</media:credit>
+      <description>The duo&#x2019;s singles have performed well, and now its debut LP has opened at No. 1, bumping Drake&#x2019;s &#x201C;More Life&#x201D; to No. 2.</description>
+      <dc:creator>BEN SISARIO</dc:creator>
+      <pubDate>Mon, 17 Apr 2017 16:57:08 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Pop and Rock Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Rap and Hip-Hop</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Chainsmokers (Music Group)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Drake (Rapper)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">More Life (Album)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Memories...Do Not Open (Album)</category>
+    </item>
+    <item>
+      <title>A &#x2018;Carousel&#x2019; Revival Promises Stars, Onstage and Off</title>
+      <link>https://www.nytimes.com/2017/04/16/theater/a-carousel-revival-promises-stars-onstage-and-off.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/16/theater/a-carousel-revival-promises-stars-onstage-and-off.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/16/theater/a-carousel-revival-promises-stars-onstage-and-off.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/17carousel-combo/14carousel-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>The stars of next season&#x2019;s &#x201C;Carousel&#x201D; revival: from left, Jessie Mueller, Joshua Henry and Ren&#xE9;e Fleming.</media:description>
+      <media:credit>From left: Ruth Fremson/The New York Times, Allen J. Schaben/Los Angeles Times via Getty, and Damon Winter/The New York Times.</media:credit>
+      <description>The cast includes Jessie Mueller, Joshua Henry and Ren&#xE9;e Fleming, while New York City Ballet&#x2019;s Justin Peck will choreograph.</description>
+      <dc:creator>MICHAEL PAULSON</dc:creator>
+      <pubDate>Mon, 17 Apr 2017 02:00:23 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Theater</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Carousel (Play)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">O'Brien, Jack (1939- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Peck, Justin</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Fleming, Renee</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Mueller, Jessie</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Henry, Joshua</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Hammerstein, Oscar II</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Rodgers, Richard</category>
+    </item>
+    <item>
+      <title>Bruce Langhorne, Guitarist Who Inspired &#x2018;Mr. Tambourine Man,&#x2019; Dies at 78</title>
+      <link>https://www.nytimes.com/2017/04/16/arts/music/bruce-langhorne-dead-guitarist-with-bob-dylan.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/16/arts/music/bruce-langhorne-dead-guitarist-with-bob-dylan.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/16/arts/music/bruce-langhorne-dead-guitarist-with-bob-dylan.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/obituaries/17LANGHORNE/17LANGHORNE-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Bruce Langhorne, far left, in an image from a YouTube video with Carolyn Hester, Bob Dylan and Bill Lee in 1961 in a studio in New York.</media:description>
+      <media:credit>Brucelanghornemusic, via YouTube</media:credit>
+      <description>Mr. Langhorne played on many influential folk-rock albums, most notably Bob Dylan&#x2019;s landmark &#x201C;Bringing It All Back Home.&#x201D;</description>
+      <dc:creator>BILL FRISKICS-WARREN</dc:creator>
+      <pubDate>Sun, 16 Apr 2017 16:39:26 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Langhorne, Bruce (1938-2017)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Folk Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Dylan, Bob</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Deaths (Obituaries)</category>
+    </item>
+    <item>
+      <title>That Decisive Moment: Mozart, Made New: This Week&#x2019;s 8 Best Classical Music Moments</title>
+      <link>https://www.nytimes.com/2017/04/14/arts/music/mozart-made-new-this-weeks-8-best-classical-music-moments.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/arts/music/mozart-made-new-this-weeks-8-best-classical-music-moments.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/arts/music/mozart-made-new-this-weeks-8-best-classical-music-moments.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/15/arts/15moments2/15moments2-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Dancers surround Erin Morley, left, as Sophie, and Elina Garanca as Octavian in &#x201C;Der Rosenkavalier&#x201D; at the Metropolitan Opera.</media:description>
+      <media:credit>Sara Krulwich/The New York Times</media:credit>
+      <description>Mozart, Made New: This Week&#x2019;s 8 Best Classical Music Moments</description>
+      <dc:creator/>
+      <pubDate>Sat, 15 Apr 2017 10:42:50 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Classical Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Opera</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Elbphilharmonie (Hamburg, Germany)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Metropolitan Opera</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Der Rosenkavalier (Opera)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">St John Passion (Musical Work)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Sweeney Todd: The Demon Barber of Fleet Street (Play)</category>
+    </item>
+    <item>
+      <title>J. Cole, the Platinum Rap Dissident, Steps Back From the Spotlight</title>
+      <link>https://www.nytimes.com/2017/04/14/arts/music/j-cole-4-your-eyez-only-hbo-interview.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/arts/music/j-cole-4-your-eyez-only-hbo-interview.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/arts/music/j-cole-4-your-eyez-only-hbo-interview.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/15/us/15JCOLE1/15JCOLE1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>J. Cole has avoided the traditional life of a platinum rap star. In a new HBO special, he travels to cities that have personal or political resonance for him.</media:description>
+      <media:credit>Anthony Supreme for Dreamville</media:credit>
+      <description>He&#x2019;s a superstar rapper who has avoided the life of a superstar rapper. In a new HBO special, &#x201C;J. Cole: 4 Your Eyez Only,&#x201D; he shows fans what he&#x2019;d rather think about.</description>
+      <dc:creator>JON CARAMANICA</dc:creator>
+      <pubDate>Sat, 15 Apr 2017 00:16:50 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Rap and Hip-Hop</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">J Cole</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">4 Your Eyez Only (Album)</category>
+    </item>
+    <item>
+      <title>Playlist: The Playlist: Kamasi Washington Releases a Blast of &#x2018;Truth&#x2019;</title>
+      <link>https://www.nytimes.com/2017/04/14/arts/music/playlist-frank-ocean-linkin-park-kamasi-washington.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/arts/music/playlist-frank-ocean-linkin-park-kamasi-washington.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/arts/music/playlist-frank-ocean-linkin-park-kamasi-washington.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/15/arts/15PLAYLIST/15PLAYLIST-moth-v2.jpg" medium="image" height="151" width="151"/>
+      <media:description>"Truth," one of the tracks from Kamasi Washington's Whitney Biennial project "Harmony of Difference," came out online this week.</media:description>
+      <media:credit>Michelle V. Agins/The New York Times</media:credit>
+      <description>Hear the new songs that mattered this week, from Frank Ocean's collaboration with Jay Z to the latest from Amadou &amp; Mariam.</description>
+      <dc:creator>JON PARELES, JON CARAMANICA and GIOVANNI RUSSONELLO</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 21:40:03 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Rap and Hip-Hop</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Video Recordings, Downloads and Streaming</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Pop and Rock Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Amadou &amp; Mariam (Music Group)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Blaze, The</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Linkin Park</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Migos (Music Group)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Sex Mob</category>
+    </item>
+    <item>
+      <title>Bach&#x2019;s &#x2018;St. John Passion&#x2019; Has More Humanity Than Anti-Semitism</title>
+      <link>https://www.nytimes.com/2017/04/14/arts/music/bachs-st-john-passion-has-more-humanity-than-anti-semitism.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/arts/music/bachs-st-john-passion-has-more-humanity-than-anti-semitism.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/arts/music/bachs-st-john-passion-has-more-humanity-than-anti-semitism.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/15johnpassions3/15johnpassions3-moth-v2.jpg" medium="image" height="151" width="151"/>
+      <media:description>From left, the soprano Megan Chartrand and the flutists David Ross and Immanuel Davis performing Bach&#x2019;s &#x201C;St. John Passion&#x201D; at St. Paul&#x2019;s Chapel, Trinity Church.</media:description>
+      <media:credit>Leo Sorel/Trinity Church Wall Street</media:credit>
+      <description>The &#x201C;St. John&#x201D; has been accused of fanning bigotry, but judging from recent performances and recordings, it has much to teach us today.</description>
+      <dc:creator>JAMES R. OESTREICH</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 20:37:02 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Classical Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Bach, Johann Sebastian</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">St John Passion (Musical Work)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Easter and Holy Week</category>
+    </item>
+    <item>
+      <title>Critic's Notebook: With Politics as Backdrop, Hamburg&#x2019;s New Hall Looks to America</title>
+      <link>https://www.nytimes.com/2017/04/14/arts/music/with-politics-as-backdrop-hamburgs-new-hall-looks-to-america.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/arts/music/with-politics-as-backdrop-hamburgs-new-hall-looks-to-america.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/arts/music/with-politics-as-backdrop-hamburgs-new-hall-looks-to-america.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/15/arts/17transatlantic1/17transatlantic1-moth-v2.jpg" medium="image" height="151" width="151"/>
+      <media:description>The Venezuelan bass Iv&#xE1;n Garc&#xED;a, center, performing Wednesday in the Transatlantik festival at the Elbphilharmonie in Hamburg.</media:description>
+      <media:credit>Gordon Welters for The New York Times</media:credit>
+      <description>Several themed program clusters in the Elbphilharmonie&#x2019;s sold-out opening season have focused attention on music from across the Atlantic.</description>
+      <dc:creator>CORINNA da FONSECA-WOLLHEIM</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 19:21:22 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Elbphilharmonie (Hamburg, Germany)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Lieben-Seutter, Christoph</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Classical Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_keyword">Transatlantik</category>
+    </item>
+    <item>
+      <title>How Do You Solve a Problem Like the Chainsmokers?</title>
+      <link>https://www.nytimes.com/2017/04/14/arts/music/popcast-chainsmokers-edm-memories-do-not-open.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/arts/music/popcast-chainsmokers-edm-memories-do-not-open.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/arts/music/popcast-chainsmokers-edm-memories-do-not-open.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/15/arts/15POPCAST/15POPCAST-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Alex Pall, left, and Drew Taggart of the Chainsmokers. The duo&#x2019;s first full album, &#x201C;Memories&#x2026;Do Not Open,&#x201D; inches them closer to pop than dance music.</media:description>
+      <media:credit>Mauricio Santana/Getty Images</media:credit>
+      <description>In three years, the duo has had several hits while offending all sorts of people. What does its sound say about EDM? A panel discussion, on Popcast.</description>
+      <dc:creator>THE NEW YORK TIMES</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 16:38:37 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Pop and Rock Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Chainsmokers (Music Group)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Memories...Do Not Open (Album)</category>
+    </item>
+    <item>
+      <title>Monterey Pop, the Rock Festival That Sparked It All, Returns</title>
+      <link>https://www.nytimes.com/2017/04/14/arts/music/monterey-pop-festival-50th-anniversary.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/arts/music/monterey-pop-festival-50th-anniversary.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/arts/music/monterey-pop-festival-50th-anniversary.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/11/arts/16MONTEREY7-NEW/16MONTEREY7-NEW-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Janis Joplin performed with Big Brother and the Holding Company at Monterey Pop. After the festival, she was swiftly signed by Clive Davis.</media:description>
+      <media:credit>Ted Streshinsky/Corbis, via Getty Images</media:credit>
+      <description>The California event that defined the spirit of the Summer of Love, and gave Jimi Hendrix and Janis Joplin a boost, will rise again in June at 50.</description>
+      <dc:creator>BEN SISARIO</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 23:43:10 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Pop and Rock Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Big Brother and the Holding Co</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Grateful Dead</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Mamas and the Papas</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Who, The (Music Group)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Adler, Lou (1933- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Hendrix, Jimi</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Jagger, Mick</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Dylan, Bob</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">James, Jim (1978- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Joplin, Janis</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Lesh, Phil</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_keyword">Monterey Pop (Music Festival)</category>
+    </item>
+    <item>
+      <title>What in the Name of Pop Is Going on With Eurovision?</title>
+      <link>https://www.nytimes.com/2017/04/14/arts/music/eurovision-2017-russia-ukraine.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/arts/music/eurovision-2017-russia-ukraine.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/arts/music/eurovision-2017-russia-ukraine.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/music/eurovision-img2/eurovision-img2-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>The Russian singer Yulia Samoylova had been chosen to participate in the 2017 Eurovision Song Contest.</media:description>
+      <media:credit>Maria Antipina/Associated Press</media:credit>
+      <description>Geopolitics and pop culture clash as Ukraine bars Russia's entry into the 2017 Eurovision contest because of a visit by the contestant, Yulia Samoylova, to Crimea.</description>
+      <dc:creator>CHRISTOPHER D. SHEA</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 18:12:02 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Eurovision Song Contest</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Pop and Rock Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Russia</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Crimea (Ukraine)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Samoylova, Yulia</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Jamala (1983- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Contests and Prizes</category>
+    </item>
+    <item>
+      <title>Revival for the Notekillers, Still Noisy After All These Years</title>
+      <link>https://www.nytimes.com/2017/04/14/nyregion/notekillers-band-david-first.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/nyregion/notekillers-band-david-first.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/nyregion/notekillers-band-david-first.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/nyregion/16NOTEKILLERS4/16NOTEKILLERS4-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>David First, in his Brooklyn apartment, led the noise-rock band the Notekillers, who played the New York music scene in the late 1970s and early &#x2018;80s.</media:description>
+      <media:credit>Demetrius Freeman for The New York Times</media:credit>
+      <description>The unsung noise-rock band and its leader, David First, are somewhat closer to having a moment. Finally.</description>
+      <dc:creator>SARAH GRANT</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 11:00:02 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Pop and Rock Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">First, David (1953- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Notekillers (Music Group)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Moore, Thurston</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Sonic Youth (Music Group)</category>
+    </item>
+    <item>
+      <title>Review: Ren&#xE9;e Fleming&#x2019;s Poignant Farewell to &#x2018;Der Rosenkavalier&#x2019;</title>
+      <link>https://www.nytimes.com/2017/04/14/arts/music/rosenkavalier-renee-fleming-met.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/arts/music/rosenkavalier-renee-fleming-met.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/arts/music/rosenkavalier-renee-fleming-met.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/13/arts/15ROSENKAVALIER1/15ROSENKAVALIER1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Elina Garanca, left, as Octavian, and Ren&#xE9;e Fleming as the Marschallin in Richard Strauss&#x2019;s &#x201C;Rosenkavalier&#x201D; at the Metropolitan Opera.</media:description>
+      <media:credit>Sara Krulwich/The New York Times</media:credit>
+      <description>This superstar soprano has been retiring her signature roles one by one, and however her career evolves, she should be proud of this magnificent performance at the Met.</description>
+      <dc:creator>ANTHONY TOMMASINI</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 22:10:39 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Opera</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Metropolitan Opera</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Fleming, Renee</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Der Rosenkavalier (Opera)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Garanca, Elina</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Carsen, Robert</category>
+    </item>
+    <item>
+      <title>Classical Music in NYC This Week</title>
+      <link>https://www.nytimes.com/2017/04/13/arts/music/classical-music-in-nyc-this-week.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/arts/music/classical-music-in-nyc-this-week.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/arts/music/classical-music-in-nyc-this-week.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14LISTCLASSICAL1/14LISTCLASSICAL1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>The violinist Anne Akiko Meyers at Carnegie Hall in 2014.</media:description>
+      <media:credit>Kevin Hagen for The New York Times</media:credit>
+      <description>Our guide to the city&#x2019;s best classical music and opera.</description>
+      <dc:creator>CORINNA da FONSECA-WOLLHEIM</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 05:48:20 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Classical Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Opera</category>
+    </item>
+    <item>
+      <title>Pop, Rock and Jazz in NYC This Week</title>
+      <link>https://www.nytimes.com/2017/04/13/arts/music/pop-rock-and-jazz-in-nyc-this-week.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/arts/music/pop-rock-and-jazz-in-nyc-this-week.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/arts/music/pop-rock-and-jazz-in-nyc-this-week.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14LISTPOP1/14LISTPOP1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>From left, Ibrahim Ag Alhabib, Abdallah Ag Alhousseyni and Hassan Ag Touhami of the North African group Tinariwen.</media:description>
+      <media:credit>David Ole</media:credit>
+      <description>Our guide to pop and rock shows and the best of live jazz.</description>
+      <dc:creator/>
+      <pubDate>Fri, 14 Apr 2017 05:48:12 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Pop and Rock Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Jazz</category>
+    </item>
+    <item>
+      <title>When You Know It&#x2019;s Love: Her Lyrics Move You</title>
+      <link>https://www.nytimes.com/2017/04/13/fashion/weddings/when-you-know-its-love-her-lyrics-move-you.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/fashion/weddings/when-you-know-its-love-her-lyrics-move-you.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/fashion/weddings/when-you-know-its-love-her-lyrics-move-you.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/fashion/11WheninLove/11WheninLove-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>The singer and songwriter Andy Grammer and his wife, Aijia Grammer, also a singer.</media:description>
+      <media:credit>Echo and EARL</media:credit>
+      <description>A songwriter found love after agreeing to help a music school classmate compose a song for an ailing friend.</description>
+      <dc:creator>BROOKE LEA FOSTER</dc:creator>
+      <pubDate>Thu, 13 Apr 2017 14:33:41 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Music</category>
+    </item>
+    <item>
+      <title>After a Soprano&#x2019;s Crisis, a Br&#xFC;nnhilde Is Born</title>
+      <link>https://www.nytimes.com/2017/04/13/arts/music/after-a-soprano-christine-goerke-crisis-a-brnnhilde-is-born.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/arts/music/after-a-soprano-christine-goerke-crisis-a-brnnhilde-is-born.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/arts/music/after-a-soprano-christine-goerke-crisis-a-brnnhilde-is-born.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/arts/16GOERKE1/16GOERKE1-moth-v2.jpg" medium="image" height="151" width="151"/>
+      <media:description>Christine Goerke blowing a kiss to the crowd during a curtain call in February after her performance as Br&#xFC;nnhilde in &#x201C;G&#xF6;tterd&#xE4;mmerung&#x201D; at the Canadian Opera Company.</media:description>
+      <media:credit>Cole Burston for The New York Times</media:credit>
+      <description>Christine Goerke nearly quit opera after vocal troubles, but painstakingly remade herself into America&#x2019;s reigning dramatic diva.</description>
+      <dc:creator>MICHAEL COOPER</dc:creator>
+      <pubDate>Thu, 13 Apr 2017 14:00:16 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Opera</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Goerke, Christine</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Houston Grand Opera</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Lyric Opera of Chicago</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Metropolitan Opera</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Die Walkure (Opera)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Der Ring des Nibelungen (Opera)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Gotterdammerung (Opera)</category>
+    </item>
+    <item>
+      <title>Review: The Chainsmokers Find That Pop Is an Awkward Fit</title>
+      <link>https://www.nytimes.com/2017/04/12/arts/music/chainsmokers-memories-do-not-open-review.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/arts/music/chainsmokers-memories-do-not-open-review.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/arts/music/chainsmokers-memories-do-not-open-review.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/18/arts/13CHAINSMOKERS1/13CHAINSMOKERS1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Alex Pall, left, and Drew Taggart of the Chainsmokers. Their debut album, &#x201C;Memories&#x2026;Do Not Open,&#x201D; underscores the duo&#x2019;s weaknesses and strengths.</media:description>
+      <media:credit>Jack Plunkett/Invision, via Associated Press</media:credit>
+      <description>Dance music&#x2019;s inside jokesters suffer under the pop spotlight on &#x201C;Memories&#x2026;Do Not Open.&#x201D;</description>
+      <dc:creator>JON CARAMANICA</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 21:27:53 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Pop and Rock Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Chainsmokers (Music Group)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Taggart, Andrew (1989- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Pall, Alex (1985- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Memories...Do Not Open (Album)</category>
+    </item>
+    <item>
+      <title>A Label That Fostered Mexican Cumbia Gets Its Own Shout-Out</title>
+      <link>http://www.nytimes.com/2017/04/12/arts/music/discos-barba-azul-mexican-cumbia-sonidera.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">http://www.nytimes.com/2017/04/12/arts/music/discos-barba-azul-mexican-cumbia-sonidera.html</guid>
+      <atom:link rel="standout" href="http://www.nytimes.com/2017/04/12/arts/music/discos-barba-azul-mexican-cumbia-sonidera.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/13/arts/13DISCOS1/13DISCOS1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Jorge Ariano, a D.J. known as Sonidero Rumbandela, recited a constant stream of shout-outs at a party celebrating the release of &#x201C;&#xA1;Un Saludo! &#x2014; Mexican Soundsystem Cumbia in LA.&#x201D;</media:description>
+      <media:credit>Farah Sosa</media:credit>
+      <description>Discos Barba Azul, which operated until 2013, nurtured a massive cross-border underground. A new compilation collects and celebrates its recordings.</description>
+      <dc:creator>GREGORY SCRUGGS</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 21:18:16 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_keyword">cumbia sonidera</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Pedraza, Vicente</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Discos Barba Azul</category>
+    </item>
+    <item>
+      <title>An Opera About Robert Moses Is Among the River to River Festival Highlights</title>
+      <link>https://www.nytimes.com/2017/04/12/arts/river-to-river-festival-2017-opera-about-robert-moses.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/arts/river-to-river-festival-2017-opera-about-robert-moses.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/arts/river-to-river-festival-2017-opera-about-robert-moses.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/13/arts/13river-item/13river-item-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Maria Hassabi, left, and Hristoula Harakas in Ms. Hassabi&#x2019;s &#x201C;Show&#x201D; at the River to River Festival in 2012. Ms. Hassabi&#x2019;s work returns to the festival this year.</media:description>
+      <media:credit>Andrea Mohin/The New York Times</media:credit>
+      <description>The Lower Manhattan Cultural Council has unveiled its lineup for the 16th annual festival of dance, music, theater and visual art.</description>
+      <dc:creator>JOSHUA BARONE</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 17:00:00 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">River to River Festival (NYC)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Theater</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Dancing</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Opera</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Lower Manhattan Cultural Council</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Governors Island (Manhattan, NY)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_keyword">Black Gotham Experience</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">A Marvelous Order (Opera)</category>
+    </item>
+    <item>
+      <title>Anne Schwanewilms Performs Wolf and Strauss at Lincoln Center</title>
+      <link>https://www.nytimes.com/2017/04/12/arts/music/anne-schwanewilms-performs-wolf-and-strauss-at-lincoln-center.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/arts/music/anne-schwanewilms-performs-wolf-and-strauss-at-lincoln-center.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/arts/music/anne-schwanewilms-performs-wolf-and-strauss-at-lincoln-center.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/11/arts/16classical-week/16classical-week-moth-v2.jpg" medium="image" height="151" width="151"/>
+      <media:description>The German soprano Anne Schwanewilms will perform at Alice Tully Hall on Sunday, April 16, with the pianist Malcolm Martineau.</media:description>
+      <media:credit>Javier del Real</media:credit>
+      <description>This elusive German soprano will be accompanied by the eloquent pianist Malcolm Martineau.</description>
+      <dc:creator>CORINNA da FONSECA-WOLLHEIM</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 16:06:50 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Classical Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Alice Tully Hall (Manhattan, NY)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Schwanewilms, Anne</category>
+    </item>
+    <item>
+      <title>Ruff Ryders, Reunite! It&#x2019;s Time for More Hip-Hop Nostalgia</title>
+      <link>https://www.nytimes.com/2017/04/12/arts/music/ruff-ryders-reunite-its-time-for-more-hip-hop-nostalgia.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/arts/music/ruff-ryders-reunite-its-time-for-more-hip-hop-nostalgia.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/arts/music/ruff-ryders-reunite-its-time-for-more-hip-hop-nostalgia.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/11/arts/16POP-WEEK1/16POP-WEEK1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>DMX will perform as part of the Ruff Ryders reunion concert at Barclays Center.</media:description>
+      <media:credit>Emon Hassan for The New York Times</media:credit>
+      <description>DMX, Eve, Swizz Beats, the Lox and more of the 1990s Yonkers crew will perform at Barclays Center.</description>
+      <dc:creator>JON CARAMANICA</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 15:58:05 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Rap and Hip-Hop</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Barclays Center (Brooklyn, NY)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Ruff Ryders</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">DMX</category>
+    </item>
+    <item>
+      <title>Feature: The Return of Lorde</title>
+      <link>https://www.nytimes.com/2017/04/12/magazine/the-return-of-lorde.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/magazine/the-return-of-lorde.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/magazine/the-return-of-lorde.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/magazine/16lorde1/16lorde1-moth-v2.jpg" medium="image" height="151" width="151"/>
+      <media:description/>
+      <media:credit>Jack Davison for The New York Times</media:credit>
+      <description>Four years after her debut album, the pop prodigy is back with a testimonial to heartbreak and solitude.</description>
+      <dc:creator>JONAH WEINER</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 09:00:02 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Lorde</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">New York City</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Pop and Rock Music</category>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,643 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:nyt="http://www.nytimes.com/namespaces/rss/2.0" version="2.0">
+  <channel>
+    <title>NYT &gt; Movies</title>
+    <link>https://www.nytimes.com/section/movies?partner=rss&amp;emc=rss</link>
+    <atom:link rel="self" type="application/rss+xml" href="http://www.nytimes.com/services/xml/rss/nyt/Movies.xml"/>
+    <description/>
+    <language>en-us</language>
+    <copyright>Copyright 2017  The New York Times Company</copyright>
+    <lastBuildDate>Wed, 19 Apr 2017 04:03:25 GMT </lastBuildDate>
+    <image>
+      <title>NYT &gt; Movies</title>
+      <url>https://static01.nyt.com/images/misc/NYT_logo_rss_250x40.png</url>
+      <link>https://www.nytimes.com/section/movies?partner=rss&amp;emc=rss</link>
+    </image>
+    <item>
+      <title>Mark Your Calendar: The Tribeca Film Festival, Day by Day</title>
+      <link>https://www.nytimes.com/2017/04/18/movies/tribeca-film-festival-highlights.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/18/movies/tribeca-film-festival-highlights.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/18/movies/tribeca-film-festival-highlights.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/19/arts/19tribeca-gilbert/19tribeca-gilbert-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Gilbert Gottfried in &#x201C;Gilbert.&#x201D;</media:description>
+      <media:credit>Arlene Gottfried</media:credit>
+      <description>To plan your itinerary, here are movies, talks and events, from a documentary on Gilbert Gottfried to &#x201C;The Godfather.&#x201D;</description>
+      <dc:creator>MIKE HALE</dc:creator>
+      <pubDate>Tue, 18 Apr 2017 21:11:44 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Tribeca Film Festival (NYC)</category>
+    </item>
+    <item>
+      <title>A Word With: After a Half-Century in Music, Clive Davis Is Still in Love</title>
+      <link>https://www.nytimes.com/2017/04/17/arts/music/clive-davis-soundtrack-of-our-lives-film-interview.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/17/arts/music/clive-davis-soundtrack-of-our-lives-film-interview.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/17/arts/music/clive-davis-soundtrack-of-our-lives-film-interview.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/18/arts/18CLIVE1/18CLIVE1-moth-v2.jpg" medium="image" height="151" width="151"/>
+      <media:description>Clive Davis&#x2019;s long career in the music business is the subject of a documentary opening the Tribeca Film Festival: &#x201C;Clive Davis: The Soundtrack of Our Lives.&#x201D;</media:description>
+      <media:credit>Bryan Derballa for The New York Times</media:credit>
+      <description>This executive&#x2019;s long career is the subject of a new documentary, &#x201C;Clive Davis: The Soundtrack of Our Lives.&#x201D;</description>
+      <dc:creator>BEN SISARIO</dc:creator>
+      <pubDate>Mon, 17 Apr 2017 19:44:42 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Davis, Clive</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Tribeca Film Festival (NYC)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Documentary Films and Programs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Clive Davis: The Soundtrack of Our Lives (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Perkel, Chris</category>
+    </item>
+    <item>
+      <title>&#x2018;Fate of the Furious&#x2019; Slows at Home but Roars Overseas</title>
+      <link>https://www.nytimes.com/2017/04/16/movies/fate-of-the-furious-slows-at-home-but-roars-overseas.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/16/movies/fate-of-the-furious-slows-at-home-but-roars-overseas.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/16/movies/fate-of-the-furious-slows-at-home-but-roars-overseas.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/17/arts/17box1/17box1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Tyrese Gibson in &#x201C;The Fate of the Furious,&#x201D; the eighth chapter in one of Hollywood&#x2019;s most popular movie series.</media:description>
+      <media:credit>Universal Pictures</media:credit>
+      <description>The latest chapter in the car-racing franchise took in $532.5 million worldwide in its opening weekend, one of the largest arrivals on record.</description>
+      <dc:creator>BROOKS BARNES</dc:creator>
+      <pubDate>Sun, 16 Apr 2017 19:21:36 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Fate of the Furious (Movie)</category>
+    </item>
+    <item>
+      <title>A Sisterhood of Scares</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/female-horror-movie-fans-horror-hound.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/female-horror-movie-fans-horror-hound.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/female-horror-movie-fans-horror-hound.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/09/arts/16HORRORWOMEN4/16HORRORWOMEN4-moth-v4.jpg" medium="image" height="151" width="151"/>
+      <media:description>Sonya Lynch, 34, from Cincinnati, at HorrorHound.</media:description>
+      <media:credit>Maddie McGarvey for The New York Times</media:credit>
+      <description>What&#x2019;s it like to be a female fan at a horror convention? Fifteen women spill their guts.</description>
+      <dc:creator>ERIK PIEPENBURG and MADDIE McGARVEY</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 18:12:45 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Women and Girls</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">HorrorHound Weekend</category>
+    </item>
+    <item>
+      <title>Review: Family Values and Hot Rides in &#x2018;Fate of the Furious&#x2019;</title>
+      <link>https://www.nytimes.com/2017/04/12/movies/fate-of-the-furious-review-fast-and-furious-8.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/movies/fate-of-the-furious-review-fast-and-furious-8.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/movies/fate-of-the-furious-review-fast-and-furious-8.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14fatefurious1/14fatefurious1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Charlize Theron faces off against Vin Diesel in &#x201C;The Fate of the Furious.&#x201D;</media:description>
+      <media:credit>Universal Pictures, via Associated Press</media:credit>
+      <description>Each installment of &#x201C;Fast and Furious&#x201D; is more enjoyably ludicrous than the last, even as the death of the star Paul Walker continues to hang over the franchise.</description>
+      <dc:creator>MANOHLA DARGIS</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 20:33:00 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Fate of the Furious (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Diesel, Vin</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Gray, F Gary</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Rodriguez, Michelle</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Walker, Paul (1973-2013)</category>
+    </item>
+    <item>
+      <title>Review: &#x2018;A Quiet Passion&#x2019; Poetically Captures Emily Dickinson</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/review-a-quiet-passion-poetically-captures-emily-dickinson.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/review-a-quiet-passion-poetically-captures-emily-dickinson.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/review-a-quiet-passion-poetically-captures-emily-dickinson.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/0414QUIET-PRINT/0414QUIET-PRINT-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Cynthia Nixon as Emily Dickinson in &#x201C;A Quiet Passion,&#x201D; directed by Terence Davies.</media:description>
+      <media:credit>Johan Voets/Music Box Films</media:credit>
+      <description>Cynthia Nixon brings a great 19th-century American poet to vivid life in Terence Davies&#x2019;s new film.</description>
+      <dc:creator>A. O. SCOTT</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 03:57:53 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">A Quiet Passion (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Davies, Terence</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Nixon, Cynthia</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Dickinson, Emily</category>
+    </item>
+    <item>
+      <title>Review: Hearts of Darkness and Light in &#x2018;The Lost City of Z&#x2019;</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/the-lost-city-of-z-review-charlie-hunnam.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/the-lost-city-of-z-review-charlie-hunnam.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/the-lost-city-of-z-review-charlie-hunnam.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14lostcity1/14lostcity1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Tom Holland, center left, and Charlie Hunnam, center right, in &#x201C;The Lost City of Z.&#x201D;</media:description>
+      <media:credit>Aidan Monaghan/Amazon Studios, Bleecker Street</media:credit>
+      <description>Charlie Hunnam stars in this period adventure story about love, loss and mystery in the Amazon from the director James Gray.</description>
+      <dc:creator>MANOHLA DARGIS</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 13:40:37 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Gray, James (1969- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Lost City of Z (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Grann, David</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Hunnam, Charlie</category>
+    </item>
+    <item>
+      <title>Anatomy of a Scene: F. Gary Gray on Shooting in Cuba for &#x2018;The Fate of the Furious&#x2019;</title>
+      <link>https://www.nytimes.com/2017/04/14/movies/the-fate-of-the-furious-f-gary-gray-interview-cuba.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/movies/the-fate-of-the-furious-f-gary-gray-interview-cuba.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/movies/the-fate-of-the-furious-f-gary-gray-interview-cuba.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/15/arts/furious-cuba2/furious-cuba2-moth-v2.jpg" medium="image" height="151" width="151"/>
+      <media:description>A scene from &#x201C;The Fate of the Furious,&#x201D; shot in Havana.</media:description>
+      <media:credit>Universal Pictures</media:credit>
+      <description>The director explains the challenges and thrills of filming in Havana, where his team was the first to shoot a sequence for a Hollywood film in more than 50 years.</description>
+      <dc:creator>MEKADO MURPHY</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 16:18:52 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Fate of the Furious (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Gray, F Gary</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Diesel, Vin</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Havana (Cuba)</category>
+    </item>
+    <item>
+      <title>Hey, New York Film Lovers, Another Art House Is (Back) on the Scene</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/charles-s-cohen-interview-quad-cinema.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/charles-s-cohen-interview-quad-cinema.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/charles-s-cohen-interview-quad-cinema.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/quad1/quad1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Charles S. Cohen, the film distributor and real estate developer who has bought and remodeled the Quad Cinema in Greenwich Village.</media:description>
+      <media:credit>Todd Heisler/The New York Times</media:credit>
+      <description>The Quad has gotten a modern makeover. Charles S. Cohen, the owner, explains why a theater makes sense in an age of screens in the palm of your hand.</description>
+      <dc:creator>MEKADO MURPHY</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 05:04:05 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Theaters (Buildings)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Quad Cinema</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Cohen, Charles Steven</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Cohen Media Group</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Greenwich Village (Manhattan, NY)</category>
+    </item>
+    <item>
+      <title>Playtime During the Previews? Playgrounds Are the Latest Movie Theater Accessories</title>
+      <link>https://www.nytimes.com/2017/04/18/business/movie-theater-playgrounds.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/18/business/movie-theater-playgrounds.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/18/business/movie-theater-playgrounds.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/12/movies/00cinema-3/00cinema-3-moth-v2.jpg" medium="image" height="151" width="151"/>
+      <media:description>Children play before watching a movie at the Cin&#xE9;polis Junior movie theater in Pico Rivera, Calif.</media:description>
+      <media:credit>Mike Blake/Reuters</media:credit>
+      <description>Two California theaters have play areas in their auditoriums for 3- to 12-year-olds. But don&#x2019;t worry, they&#x2019;re not open while the show plays.</description>
+      <dc:creator>CHRISTOPHER MELE</dc:creator>
+      <pubDate>Tue, 18 Apr 2017 14:55:57 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Playgrounds</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">California</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Cinepolis</category>
+    </item>
+    <item>
+      <title>A Word With: Steve Martin on Teaching You (and Himself) How to Be a Comedian</title>
+      <link>https://www.nytimes.com/2017/04/18/arts/steve-martin-comedy-dave-chappelle.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/18/arts/steve-martin-comedy-dave-chappelle.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/18/arts/steve-martin-comedy-dave-chappelle.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/18/arts/19stevemartin-1/19stevemartin-1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>&#x201C;I&#x2019;ve always had empathy with comedians and their struggle,&#x201D; said Steve Martin, who is now sharing lessons from his stand-up career. &#x201C;I know it inside out, and the struggles remain the same.&#x201D;</media:description>
+      <media:credit>Chad Batka for The New York Times</media:credit>
+      <description>Mr. Martin takes a rare, retrospective dive into his stand-up career to find lessons for aspiring comics and reflect on what he&#x2019;s learned.</description>
+      <dc:creator>DAVE ITZKOFF</dc:creator>
+      <pubDate>Tue, 18 Apr 2017 09:00:23 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Comedy and Humor</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Martin, Steve</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">MasterClass</category>
+    </item>
+    <item>
+      <title>Disney&#x2019;s &#x2018;Frozen&#x2019; Musical Casts Its Princesses</title>
+      <link>https://www.nytimes.com/2017/04/17/theater/disneys-frozen-musical-casts-its-princesses.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/17/theater/disneys-frozen-musical-casts-its-princesses.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/17/theater/disneys-frozen-musical-casts-its-princesses.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/18/arts/18ARTS-DISNEY-FROZEN-GRID/17DISNEY-FROZEN-GRID-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Patti Murin, left, will play Anna and Caissie Levy, right, will play Elsa in a new musical adaptation of the animated film &#x201C;Frozen.&#x201D;</media:description>
+      <media:credit>From left: Rob Kim/Getty Images; Walt Disney Pictures; Michael Loccisano/Getty Images</media:credit>
+      <description>Disney Theatrical Productions said Monday that it had chosen Caissie Levy to play Elsa and Patti Murin to play Anna in this adaptation of the 2013 film.</description>
+      <dc:creator>MICHAEL PAULSON</dc:creator>
+      <pubDate>Mon, 17 Apr 2017 18:00:34 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Theater</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Frozen (Play)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Murin, Patti</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Levy, Caissie</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Walt Disney Company</category>
+    </item>
+    <item>
+      <title>Injured but Determined, Andy Karl Opens &#x2018;Groundhog Day&#x2019;</title>
+      <link>https://www.nytimes.com/2017/04/17/theater/andy-karl-groundhog-day-to-perform-on-opening-night.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/17/theater/andy-karl-groundhog-day-to-perform-on-opening-night.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/17/theater/andy-karl-groundhog-day-to-perform-on-opening-night.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/19/arts/19karl-print/08karlA-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Andy Karl talks about his injury in a dressing room interview minutes after the opening performance of &#x201C;Groundhog Day&#x201D; on Broadway.</media:description>
+      <media:credit>Sara Krulwich/The New York Times</media:credit>
+      <description>Three days after tearing his A.C.L. during a preview performance of the Broadway production, the actor put on a brace and put on a show.</description>
+      <dc:creator>MICHAEL PAULSON</dc:creator>
+      <pubDate>Tue, 18 Apr 2017 04:17:15 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Theater</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Knees</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Karl, Andy (Actor)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Groundhog Day (Play)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Minchin, Tim</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Rubin, Danny (1957- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Warchus, Matthew</category>
+    </item>
+    <item>
+      <title>Clifton James, Who Played a Sheriff in 2 Bond Films, Dies at 96</title>
+      <link>https://www.nytimes.com/2017/04/16/movies/clifton-james-who-played-a-sheriff-in-2-bond-films-dies-at-96.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/16/movies/clifton-james-who-played-a-sheriff-in-2-bond-films-dies-at-96.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/16/movies/clifton-james-who-played-a-sheriff-in-2-bond-films-dies-at-96.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/18/arts/18james-obit/17clifton-obitsub-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Clifton James, right, and Roger Moore in a scene from &#x201C;The Man With the Golden Gun&#x201D; (1974).</media:description>
+      <media:credit>United Artists/Getty Images</media:credit>
+      <description>Though he was born and raised in the Northwest, Mr. James often played a convincing Southerner in films like &#x201C;Cool Hand Luke&#x201D; and &#x201C;Live and Let Die.&#x201D;</description>
+      <dc:creator>THE ASSOCIATED PRESS</dc:creator>
+      <pubDate>Sun, 16 Apr 2017 19:48:30 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">James, Clifton (1920-2017)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Actors and Actresses</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Bond, James (Fictional Character)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Deaths (Obituaries)</category>
+    </item>
+    <item>
+      <title>Andy Karl, Star of Musical &#x2018;Groundhog Day,&#x2019; Is Injured During Preview</title>
+      <link>https://www.nytimes.com/2017/04/15/theater/andy-karl-injured-groundhog-day-musical.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/15/theater/andy-karl-injured-groundhog-day-musical.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/15/theater/andy-karl-injured-groundhog-day-musical.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/15/arts/15groundhog_web1/15groundhog_web1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Andy Karl as Phil Connors in the musical &#x201C;Groundhog Day&#x201D; last month at the August Wilson Theater in New York.</media:description>
+      <media:credit>Sara Krulwich/The New York Times</media:credit>
+      <description>Three days before the musical was set to open, its star hurt his knee. Saturday performances have been affected, and impact on opening night is unclear.</description>
+      <dc:creator>MICHAEL PAULSON</dc:creator>
+      <pubDate>Sat, 15 Apr 2017 14:38:48 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Theater</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Karl, Andy (Actor)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Groundhog Day (Play)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Accidents and Safety</category>
+    </item>
+    <item>
+      <title>Christopher Morahan, a Producer and Director of &#x2018;The Jewel in the Crown,&#x2019; Dies at 87</title>
+      <link>https://www.nytimes.com/2017/04/14/arts/television/christopher-morahan-dead-directed-jewel-in-the-crown.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/arts/television/christopher-morahan-dead-directed-jewel-in-the-crown.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/arts/television/christopher-morahan-dead-directed-jewel-in-the-crown.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/18/arts/18morahan-obit-1/15morahan-obit-1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>The director Christopher Morahan, far left, with, from left, Michael Frayn, Michael Codron and John Cleese on the set of the film &#x201C;Clockwise,&#x201D; in 1986.</media:description>
+      <media:credit>Universal, via Everett Collection</media:credit>
+      <description>Beyond that heralded TV series and plays for television, Mr. Morahan&#x2019;s career spanned the stage and film.</description>
+      <dc:creator>WILLIAM GRIMES</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 22:09:24 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Morahan, Christopher</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Jewel in the Crown (TV Program)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Television</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Theater</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Deaths (Obituaries)</category>
+    </item>
+    <item>
+      <title>&#x2018;Star Wars: The Last Jedi&#x2019; Movie Trailer Is Released</title>
+      <link>https://www.nytimes.com/2017/04/14/movies/trailer-star-wars-last-jedi.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/movies/trailer-star-wars-last-jedi.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/movies/trailer-star-wars-last-jedi.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/15/movies/15xp-jedi/15xp-jedi-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>The character Rey in the opening of the trailer to &#x201C;Star Wars: The Last Jedi.&#x201D;</media:description>
+      <media:credit>Star Wars, via YouTube</media:credit>
+      <description>The official trailer is filled with images of characters from &#x201C;The Force Awakens&#x201D; but leaves plenty of mystery about what is to come.</description>
+      <dc:creator>CHRISTOPHER MELE</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 17:35:11 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Star Wars (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Star Wars: The Last Jedi (Movie)</category>
+    </item>
+    <item>
+      <title>Streaming: With &#x2018;Tramps,&#x2019; Netflix Digs Deeper for Original Films</title>
+      <link>https://www.nytimes.com/2017/04/14/movies/tramps-netflix-adam-leon.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/14/movies/tramps-netflix-adam-leon.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/14/movies/tramps-netflix-adam-leon.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/arts/16STREAMING/16STREAMING-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Grace Van Patten and Callum Turner in &#x201C;Tramps,&#x201D; coming to Netflix.</media:description>
+      <media:credit>Ashley Connor</media:credit>
+      <description>Adam Leon&#x2019;s film, making its debut on April 21, will bypass theatrical release altogether after acclaim at the Toronto International Film Festival.</description>
+      <dc:creator>GLENN KENNY</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 15:48:05 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Netflix Inc</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Leon, Adam</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Gimme the Loot (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Tramps (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Toronto International Film Festival</category>
+    </item>
+    <item>
+      <title>This Week&#x2019;s Movies: April 14, 2017</title>
+      <link>https://www.nytimes.com/video/movies/100000005037947/this-weeks-movies-april-14-2017.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/video/movies/100000005037947/this-weeks-movies-april-14-2017.html</guid>
+      <description>The New York Times film critics review &#x201C;The Fate of the Furious,&#x201D; &#x201C;The Lost City of Z&#x201D; and &#x201C;Norman."</description>
+      <dc:creator/>
+      <pubDate>Thu, 13 Apr 2017 22:52:18 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/nyt_ttl">The Fate of the Furious (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/nyt_ttl">The Lost City of Z (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/nyt_ttl">Norman (Movie)</category>
+    </item>
+    <item>
+      <title>Film Series in NYC This Week</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/film-series-in-nyc-this-week.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/film-series-in-nyc-this-week.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/film-series-in-nyc-this-week.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14LISTMOVIES1/14LISTMOVIES1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Mariangela Melato in &#x201C;Love &amp; Anarchy,&#x201D; showing at the Quad as part of a Lina Wertm&#xFC;ller retrospective.</media:description>
+      <media:credit>Kino Lorber</media:credit>
+      <description>Our guide to film series and special screenings.</description>
+      <dc:creator>BEN KENIGSBERG</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 04:47:51 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+    </item>
+    <item>
+      <title>Review: In &#x2018;Tommy&#x2019;s Honour,&#x2019; a Family Feud on and Off the Green</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/tommys-honour-review.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/tommys-honour-review.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/tommys-honour-review.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14tommy1/14tommy1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Jack Lowden as Tommy Morris in &#x201C;Tommy&#x2019;s Honour.&#x201D;</media:description>
+      <media:credit>Neil Davidson/Roadside Attractions</media:credit>
+      <description>The director Jason Connery&#x2019;s staid biopic is about the 19th-century golf pioneer Tom Morris and his son, with class conflict as a backdrop.</description>
+      <dc:creator>JEANNETTE CATSOULIS</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 14:11:08 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Cook, Kevin</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Tommy's Honour (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Connery,  Jason  (1963- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Mullan, Peter</category>
+    </item>
+    <item>
+      <title>Review: Angst, Jealousy and &#x2018;My Entire High School Sinking Into the Sea&#x2019;</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/my-entire-high-school-sinking-into-the-sea-review.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/my-entire-high-school-sinking-into-the-sea-review.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/my-entire-high-school-sinking-into-the-sea-review.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14myentire2/14myentire2-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>A scene from Dash Shaw&#x2019;s animated feature &#x201C;My Entire High School Sinking Into the Sea.&#x201D;</media:description>
+      <media:credit>Gkids</media:credit>
+      <description>Teenage anxiety (voiced by Dash Shaw, Lena Dunham and others) takes a back seat to survival after an earthquake hits a cliffside high school.</description>
+      <dc:creator>GLENN KENNY</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 14:00:27 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">My Entire High School Sinking Into the Sea (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Shaw, Dash</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Animated Films</category>
+    </item>
+    <item>
+      <title>Review: In &#x2018;Mimosas,&#x2019; a Cryptic Mountain Trek</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/mimosas-review.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/mimosas-review.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/mimosas-review.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14mimosas3/14mimosas3-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Sa&#xEF;d Aagli in &#x201C;Mimosas,&#x201D; directed by Oliver Laxe.</media:description>
+      <media:credit>Grasshopper Film</media:credit>
+      <description>In following nomads on a mission in Morocco, this tale considers the fortifying power of faith, while scrambling the viewer&#x2019;s sense of time.</description>
+      <dc:creator>JEANNETTE CATSOULIS</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 13:53:26 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Laxe, Oliver</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Mimosas (Movie)</category>
+    </item>
+    <item>
+      <title>Review: &#x2018;Maurizio Cattelan: Be Right Back&#x2019; Relishes a Mischievous Artist</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/maurizio-cattelan-be-right-back-review.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/maurizio-cattelan-be-right-back-review.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/maurizio-cattelan-be-right-back-review.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14maurizio/14maurizio-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>&#x201C;La Nona Ora,&#x201D; an artwork imagining Pope John Paul II hit by a meteorite, is featured in &#x201C;Maurizio Cattelan: Be Right Back.&#x201D;</media:description>
+      <media:credit>Bond360</media:credit>
+      <description>The documentary explores the artworks and pranks of an Italian trickster.</description>
+      <dc:creator>KEN JAWOROWSKI</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 13:46:43 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Cattelan, Maurizio</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Maurizio Cattelan: Be Right Back (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Axelrod, Maura</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Documentary Films and Programs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Art</category>
+    </item>
+    <item>
+      <title>Review: In &#x2018;Little Boxes,&#x2019; a Biracial Family Meets a White Town</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/little-boxes-review.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/little-boxes-review.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/little-boxes-review.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14littlebox/14littlebox-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>From left, Nelsan Ellis, Armani Jackson and Melanie Lynskey in &#x201C;Little Boxes,&#x201D; about a biracial family&#x2019;s move from Brooklyn to small-town America.</media:description>
+      <media:credit>Mark Doyle/Gunpowder &amp; Sky Distribution</media:credit>
+      <description>A family ventures beyond the bubble of gentrified Brooklyn to a small town and is thrown out of its comfort zone.</description>
+      <dc:creator>NEIL GENZLINGER</dc:creator>
+      <pubDate>Mon, 17 Apr 2017 22:13:00 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Little Boxes (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Meyer, Rob</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Lynskey, Melanie</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Howell, Annie J</category>
+    </item>
+    <item>
+      <title>Review: &#x2018;Finding Oscar,&#x2019; and Hope, in Massacre&#x2019;s Aftermath</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/finding-oscar-review.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/finding-oscar-review.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/finding-oscar-review.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14findoscar-1491598535170/14findoscar-1491598535170-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Oscar Ram&#xED;rez, right, the subject of the documentary &#x201C;Finding Oscar,&#x201D; with the soldier, also named Oscar, who abducted him.</media:description>
+      <media:credit>Oscar Ram&#xED;rez/FilmRise</media:credit>
+      <description>This documentary looks at a Guatemalan village that was wiped out during a civil war, and searches for one of the few survivors.</description>
+      <dc:creator>KEN JAWOROWSKI</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 13:15:41 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Finding Oscar (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Suffern, Ryan</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Documentary Films and Programs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Guatemala</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">War Crimes, Genocide and Crimes Against Humanity</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+    </item>
+    <item>
+      <title>Review: In &#x2018;Chasing Trane,&#x2019; Where&#x2019;s the Joy of Sax?</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/chasing-trane-the-john-coltrane-documentary-review.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/chasing-trane-the-john-coltrane-documentary-review.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/chasing-trane-the-john-coltrane-documentary-review.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14chasing1/14chasing1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>John Coltrane in John Scheinfeld&#x2019;s documentary.</media:description>
+      <media:credit>Abramorama</media:credit>
+      <description>John Scheinfeld&#x2019;s documentary about John Coltrane draws on interviews, including those with Bill Clinton, Carlos Santana and Cornel West.</description>
+      <dc:creator>BEN KENIGSBERG</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 13:15:24 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Documentary Films and Programs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Jazz</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Coltrane, John</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Chasing Trane: The John Coltrane Documentary (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Scheinfeld, John</category>
+    </item>
+    <item>
+      <title>Review: A Fragmented Past in &#x2018;By the Time It Gets Dark&#x2019;</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/by-the-time-it-gets-dark-review.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/by-the-time-it-gets-dark-review.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/by-the-time-it-gets-dark-review.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14bytime-print/14bytime-print-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>A scene from Anocha Suwichakornpong&#x2019;s &#x201C;By the Time It Gets Dark.&#x201D;</media:description>
+      <media:credit>KimStim</media:credit>
+      <description>In examining a violent suppression of university protesters in Bangkok, this film uses a mutating narrative to reflect the impossibility of revisiting history.</description>
+      <dc:creator>BEN KENIGSBERG</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 13:03:56 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">By the Time It Gets Dark (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Suwichakornpong, Anocha</category>
+    </item>
+    <item>
+      <title>Review: &#x2018;All These Sleepless Nights&#x2019; Roams the Streets of Warsaw</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/all-these-sleepless-nights-review.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/all-these-sleepless-nights-review.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/all-these-sleepless-nights-review.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14allsleep1/14allsleep1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>From left, Krzysztof Baginski, Eva Lebuef and Michal Huszcza in &#x201C;All These Sleepless Nights,&#x201D; directed by Michal Marczak.</media:description>
+      <media:credit>The Orchard</media:credit>
+      <description>A Polish film follows its young protagonist as he flirts, attends parties until dawn and gyrates to a perpetual backbeat.</description>
+      <dc:creator>BEN KENIGSBERG</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 12:58:05 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">All These Sleepless Nights (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Marczak, Michal</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Documentary Films and Programs</category>
+    </item>
+    <item>
+      <title>Anatomy of a Scene | &#x2018;The Fate of the Furious&#x2019;</title>
+      <link>https://www.nytimes.com/video/movies/100000005043381/anatomy-of-a-scene-the-fate-of-the-furious.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/video/movies/100000005043381/anatomy-of-a-scene-the-fate-of-the-furious.html</guid>
+      <description>F. Gary Gray narrates a sequence from his film featuring Vin Diesel and Celestino Cornielle.</description>
+      <dc:creator/>
+      <pubDate>Thu, 13 Apr 2017 21:26:21 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/nyt_per">Diesel, Vin</category>
+      <category domain="http://www.nytimes.com/namespaces/nyt_ttl">The Fate of the Furious (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/nyt_per">Gray, F Gary</category>
+    </item>
+    <item>
+      <title>Review: &#x2018;Heal the Living,&#x2019; a Sentimental Sales Pitch for Organ Donation</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/heal-the-living-review.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/heal-the-living-review.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/heal-the-living-review.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14healliving1/14healliving1-moth-v2.jpg" medium="image" height="151" width="151"/>
+      <media:description>Gabin Verdet, center, plays the brain-dead son to Kool Shen, left, and Emmanuelle Seigner in &#x201C;Heal the Living.&#x201D;</media:description>
+      <media:credit>Cohen Media Group</media:credit>
+      <description>Life, death and a heart transplant are at the center of this French film that moves among three distinct groups.</description>
+      <dc:creator>JEANNETTE CATSOULIS</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 13:53:08 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Heal the Living (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Quillevere, Katell</category>
+    </item>
+    <item>
+      <title>A &#x2018;Star Wars&#x2019; Salvo in the Toy-Store Gender Wars</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/a-star-wars-salvo-in-the-toy-store-gender-wars.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/a-star-wars-salvo-in-the-toy-store-gender-wars.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/a-star-wars-salvo-in-the-toy-store-gender-wars.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14starwars1/14starwars1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Disney will roll out animated shorts and a related line of merchandise based on female &#x201C;Star Wars&#x201D; characters, above. The project is called &#x201C;Star Wars Forces of Destiny.&#x201D;</media:description>
+      <media:credit>Walt Disney Consumer Products</media:credit>
+      <description>Disney animated shorts and merchandise will celebrate female characters. The initiative comes after critics took the company to task over lack of gender parity.</description>
+      <dc:creator>BROOKS BARNES</dc:creator>
+      <pubDate>Fri, 14 Apr 2017 12:24:32 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Toys</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Walt Disney Company</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Women and Girls</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Star Wars: The Force Awakens (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Star Wars Rebels (TV Program)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_keyword">Star Wars Forces of Destiny</category>
+    </item>
+    <item>
+      <title>Cannes Film Festival Announces 2017 Lineup</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/cannes-film-festival-2017-lineup.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/cannes-film-festival-2017-lineup.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/cannes-film-festival-2017-lineup.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/world/14Cannes/14Cannes-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>The Cannes Film Festival, to be held May 17-28, opens with a lineup that includes 49 films from 29 countries, 12 of them by female directors.</media:description>
+      <media:credit>Philippe Wojazer/Reuters</media:credit>
+      <description>Sofia Coppola, Noah Baumbach, Todd Haynes and Michael Haneke will be among the directors competing for this year&#x2019;s Palme d&#x2019;Or.</description>
+      <dc:creator>RACHEL DONADIO</dc:creator>
+      <pubDate>Thu, 13 Apr 2017 14:07:29 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Awards, Decorations and Honors</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Cannes International Film Festival</category>
+    </item>
+    <item>
+      <title>Review: Richard Gere as &#x2018;Norman,&#x2019; an Aspirational Fixer</title>
+      <link>https://www.nytimes.com/2017/04/13/movies/norman-review-richard-gere.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/13/movies/norman-review-richard-gere.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/13/movies/norman-review-richard-gere.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/14/arts/14norman/14norman-moth-v3.jpg" medium="image" height="151" width="151"/>
+      <media:description>Richard Gere as a compulsive schmoozer in &#x201C;Norman: The Moderate Rise and Tragic Fall of a New York Fixer,&#x201D; directed by Joseph Cedar.</media:description>
+      <media:credit>Niko Tavernise/Sony Pictures Classics</media:credit>
+      <description>&#x2018;Norman: The Moderate Rise and Tragic Fall of a New York Fixer,&#x2019; Joseph Cedar&#x2019;s latest film, pits Jew against Jew on the fringes of power and influence.</description>
+      <dc:creator>A. O. SCOTT</dc:creator>
+      <pubDate>Thu, 13 Apr 2017 09:00:27 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Gere, Richard</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Cedar, Joseph</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Norman (Movie)</category>
+    </item>
+    <item>
+      <title>&#x2018;Fantastic Beasts&#x2019; Has a New Dumbledore: Jude Law</title>
+      <link>https://www.nytimes.com/2017/04/12/movies/fantastic-beasts-dumbledore-jude-law.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/movies/fantastic-beasts-dumbledore-jude-law.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/movies/fantastic-beasts-dumbledore-jude-law.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/13/arts/13Wizard2/13Wizard2-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Michael Gambon as Albus Dumbledore in &#x201C;Harry Potter and the Half-Blood Prince&#x201D; (2009).</media:description>
+      <media:credit>Jaap Buitendjik/Warner Bros. Pictures</media:credit>
+      <description>The actor will play a younger version of the professor in the next installment of J.K. Rowling&#x2019;s franchise.</description>
+      <dc:creator>CARA BUCKLEY</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 18:16:47 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Law, Jude</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Fantastic Beasts and Where to Find Them (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Yates, David</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Rowling, J K</category>
+    </item>
+    <item>
+      <title>A Second Bite of the Wonka Bar: Reimagining &#x2018;Charlie&#x2019; for Broadway</title>
+      <link>https://www.nytimes.com/2017/04/12/theater/a-second-bite-of-the-wonka-bar-reimagining-charlie-for-broadway.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/theater/a-second-bite-of-the-wonka-bar-reimagining-charlie-for-broadway.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/theater/a-second-bite-of-the-wonka-bar-reimagining-charlie-for-broadway.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/arts/16charlierevamp5-1491925827458/16charlierevamp5-1491925827458-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>A golden ticket: Jake Ryan Flynn as Charlie Bucket in &#x201C;Charlie and the Chocolate Factory&#x201D; on Broadway.</media:description>
+      <media:credit>Sara Krulwich/The New York Times</media:credit>
+      <description>The New York musical version of &#x201C;Charlie and the Chocolate Factory&#x201D; required a new director, a new cast, a partial rewrite and old favorite songs.</description>
+      <dc:creator>MICHAEL PAULSON</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 17:26:44 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Theater</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Charlie and the Chocolate Factory (Play)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">O'Brien, Jack (1939- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Mendes, Sam</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Borle, Christian</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Dahl, Roald</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Charlie and the Chocolate Factory (Book)</category>
+    </item>
+    <item>
+      <title>MoMA Explores Black Representation in Movies</title>
+      <link>https://www.nytimes.com/2017/04/12/movies/moma-explores-black-representation-in-movies.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/movies/moma-explores-black-representation-in-movies.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/movies/moma-explores-black-representation-in-movies.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/16/arts/16GUIDE7/16GUIDE7-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>Francine Everett as Gertie La Rue in &#x201C;Dirty Gertie From Harlem U.S.A.,&#x201D; part of &#x201C;Making Faces on Film: A Collaboration With BFI Black Star,&#x201D; at the Museum of Modern Art.</media:description>
+      <media:credit>Kino Lorber</media:credit>
+      <description>The program, &#x201C;Making Faces on Film,&#x201D; kicks off with a 1925 film by Oscar Micheaux featuring Paul Robeson in two roles.</description>
+      <dc:creator>ANDY WEBSTER</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 16:18:28 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Blacks</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Museum of Modern Art</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">British Film Institute (BFI) National Archive</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Carmen Jones (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Stormy Weather (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Micheaux, Oscar</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Preminger, Otto</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Robeson, Paul</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Body and Soul (Movie)</category>
+    </item>
+    <item>
+      <title>Oprah Winfrey on &#x2018;The Immortal Life of Henrietta Lacks&#x2019;</title>
+      <link>https://www.nytimes.com/2017/04/12/arts/television/oprah-winfrey-on-the-the-immortal-life-of-henrietta-lacks.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2017/04/12/arts/television/oprah-winfrey-on-the-the-immortal-life-of-henrietta-lacks.html</guid>
+      <atom:link rel="standout" href="https://www.nytimes.com/2017/04/12/arts/television/oprah-winfrey-on-the-the-immortal-life-of-henrietta-lacks.html?partner=rss&amp;emc=rss"/>
+      <media:content url="https://static01.nyt.com/images/2017/04/07/arts/16OPRAH1/16OPRAH1-moth.jpg" medium="image" height="151" width="151"/>
+      <media:description>From left, Rose Byrne as Rebecca Skloot and Oprah Winfrey as Deborah Lacks in &#x201C;The Immortal Life of Henrietta Lacks.&#x201D;</media:description>
+      <media:credit>Quantrell Colbert/HBO</media:credit>
+      <description>Ms. Winfrey, the star of the HBO film adaptation, talks about the book&#x2019;s resonance and her reluctant decision to be in the movie.</description>
+      <dc:creator>SALAMISHAH TILLET</dc:creator>
+      <pubDate>Wed, 12 Apr 2017 14:34:50 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Television</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Winfrey, Oprah</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Lacks, Henrietta</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Immortal Life of Henrietta Lacks (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Home Box Office</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Wolfe, George C</category>
+    </item>
+  </channel>
+</rss>
