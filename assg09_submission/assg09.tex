@@ -1,0 +1,102 @@
+\documentclass{article}
+	\usepackage{geometry}
+	\geometry{left=2cm,right=2cm}
+	\usepackage{graphicx}
+	\usepackage{indentfirst}
+	\usepackage[hyphens]{url}
+	\usepackage{listings}
+	\usepackage{color}
+	\definecolor{gray}{rgb}{0.3,0.3,0.3}
+	\usepackage{caption}
+	\DeclareCaptionFont{white}{\color{white}}
+	\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+	\captionsetup[lstlisting]{format=listing,labelfont={bf,sf,white},textfont={bf,sf,white}}
+	\usepackage{xcolor}
+	\usepackage{booktabs}
+	\captionsetup[table]{labelfont=bf}
+	\usepackage[colorlinks,linkcolor=red]{hyperref}
+
+	\begin{document}
+		\begin{center}\textbf{Bo Zhang\\01063214}
+		\end{center}
+		\section{Create ``Ground Truth'' Data}
+		Choose a blog or a newsfeed (or something similar with an Atom or RSS feed). Every student should do a unique feed, so please ``claim'' the feed on the class email list (first come, first served). It should be on a topic or topics of which you are qualified to provide classification training data. Find something with at least 100 entries (or items if RSS).\\
+		\indent Create between four and eight different categories for the entries in the feed. Download and process the pages of the feed as per the week 12 class slides. Create a table with 100 rows of entries' names and categories.\\
+
+		\noindent\textbf{Algorithm: }\\
+		\indent1. Open the feeds 1 by 1.\\
+		\indent2. Get the title and summary of each different entry, use the feed's title as the category, then save the first 100 entries' titles and their categories to \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg09_submission/entries.txt}{``entries.txt''} and save the first 100 summaries to \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg09_submission/summary.txt}{``summary.txt''}.\\
+
+		\noindent\textbf{Source code:}
+		\lstinputlisting[language=python, breakatwhitespace=false, label=categoriesSplit.py, caption=The content of categoriesSplit.py]{categoriesSplit.py}
+
+		\noindent\\\textbf{Results:}\\
+		\indent\href{https://github.com/zhangboroy/cs532-s17/blob/master/assg09_submission/Books.xml}{Books.xml}\\
+		\indent\href{https://github.com/zhangboroy/cs532-s17/blob/master/assg09_submission/Dance.xml}{Dance.xml}\\
+		\indent\href{https://github.com/zhangboroy/cs532-s17/blob/master/assg09_submission/Movies.xml}{Movies.xml}\\
+		\indent\href{https://github.com/zhangboroy/cs532-s17/blob/master/assg09_submission/Music.xml}{Music.xml}\\
+		\indent\href{https://github.com/zhangboroy/cs532-s17/blob/master/assg09_submission/entries.txt}{entries.txt}\\
+		\indent\href{https://github.com/zhangboroy/cs532-s17/blob/master/assg09_submission/summary.txt}{summary.txt}\\
+
+		\section{50/50 Prediction}
+		Train the Fisher classifier on the first 50 entries, then use the classifier to guess the classification of the
+next 50 entries.\\
+		\indent Assess the performance of your classifier in each of your categories by computing precision, recall, and F-measure.\\
+
+		\noindent\textbf{Algorithm:}\\
+		\indent1. Open \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg09_submission/entries.txt}{``entries.txt''} and \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg09_submission/summary.txt}{``summary.txt''} to read the title, summary and category of each entry.\\
+		\indent2. Use the script from ``Programming Collective Intelligence'' to train the Fisher classifier on the first 50 entries, then use the classifier to guess the classification of the next 50 entries and save the prediction to \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg09_submission/Q2.txt}{``Q2.txt''}.\\
+		\indent3. Compute the precision, recall, and F-measure of each category as well as the ``macro-averaged''
+of all categories and print the result.\\
+
+		\noindent\textbf{Source code:}
+		\lstinputlisting[language=python, breakatwhitespace=false, label=Q2.py, caption=The content of Q2.py]{Q2.py}
+
+		\noindent\\\textbf{Results:}\\
+		\indent\href{https://github.com/zhangboroy/cs532-s17/blob/master/assg09_submission/Q2.txt}{Q2.txt}\\
+		\begin{table}[!htb]
+			\centering
+			\caption{\textbf{50/50 Prediction Performance Assessment}}
+			\begin{tabular}{cccc}
+				\toprule
+				\textbf{Category} & \textbf{Precision} & \textbf{Recall} & \textbf{F-measure}\\
+				\midrule
+				Movies & 0.600 & 0.400 & 0.480\\
+				Music & 0.429 & 0.400 & 0.414\\
+				Dance & 0.167 & 0.600 & 0.261\\
+				Books & 0.375 & 0.200 & 0.261\\
+				Average & 0.360 & 0.360 & 0.360\\				
+				\bottomrule
+			\end{tabular}
+		\end{table}
+
+		\section{90/10 Prediction}
+		Repeat question \#2, but use the first 90 entries to train your classifier and the last 10 entries for testing.\\
+
+		\noindent\textbf{Algorithm:}\\
+		\indent1. Open \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg09_submission/entries.txt}{``entries.txt''} and \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg09_submission/summary.txt}{``summary.txt''} to read the title, summary and category of each entry.\\
+		\indent2. Use the script from ``Programming Collective Intelligence'' to train the Fisher classifier on the first 90 entries, then use the classifier to guess the classification of the next 10 entries and save the prediction to \href{https://github.com/zhangboroy/cs532-s17/blob/master/assg09_submission/Q3.txt}{``Q3.txt''}.\\
+		\indent3. Compute the precision, recall, and F-measure of each category as well as the "macro-averaged"
+of all categories and print the result.(let the recall be 1 if TP=FN=0)\\
+
+		\noindent\textbf{Source code:}
+		\lstinputlisting[language=python, breakatwhitespace=false, label=Q3.py, caption=The content of Q3.py]{Q3.py}
+
+		\noindent\\\textbf{Results:}\\
+		\indent\href{https://github.com/zhangboroy/cs532-s17/blob/master/assg09_submission/Q3.txt}{Q3.txt}\\
+		\begin{table}[!htb]
+			\centering
+			\caption{\textbf{90/10 Prediction Performance Assessment}}
+			\begin{tabular}{cccc}
+				\toprule
+				\textbf{Category} & \textbf{Precision} & \textbf{Recall} & \textbf{F-measure}\\
+				\midrule
+				Dance & 0.00 & 1.00 & 0.00\\
+				Books & 1.00 & 0.75 & 0.86\\
+				Movies & 1.00 & 0.33 & 0.50\\
+				Music & 0.50 & 0.67 & 0.57\\
+				Average & 0.60 & 0.60 & 0.60\\			
+				\bottomrule
+			\end{tabular}
+		\end{table}
+	\end{document}
