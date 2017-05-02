@@ -202,8 +202,6 @@ for cat in categories:
         recall=1
     else:
         recall=categories[cat][0]/(categories[cat][0]+categories[cat][1])
-    print (cat+'\t{}'.format(categories[cat][0])+'\t{}'.format(categories[cat][1])
-           +'\t{}'.format(categories[cat][2]))
     print (cat+'\t{}'.format(precision)+'\t{}'.format(recall)
            +'\t{}'.format(2*precision*recall/(precision+recall)))
 
@@ -212,6 +210,5 @@ FP=FP/len(categories)
 FN=FN/len(categories)
 precision=TP/(TP+FP)
 recall=TP/(TP+FN)
-print ('Average\t{}'.format(TP)+'\t{}'.format(FN)+'\t{}'.format(FP))
 print ('Average\t{}'.format(precision)+'\t{}'.format(recall)
        +'\t{}'.format(2*precision*recall/(precision+recall)))
